@@ -102,6 +102,7 @@ body {
 	margin-top: 0.02em;
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
   border-radius: 2px;
+  display: grid;
 }
 
 /*this wasn't necessarily needed, but kept for extensibility*/
@@ -128,32 +129,23 @@ body {
 }
 
 #editButton {
-	color: #9691b3;
+	color: #b58fb5;
 }
 
 #settingsButton {
-	color: #8aac8b;
+	color: #ACA98A;
 }
 
 .heading {
-	font: normal normal 20px "Outfit", sans-serif;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1)/*#ff0*/;
+	font: normal normal 20px "Readex Pro", sans-serif;
 }
 
 .heading1 {
 	color: #ACA98A;
 }
 
-.moreHeading1 {
-	color: #FC8A94;
-}
-
 .heading2 {
 	color: #8aac8b;
-}
-
-.moreHeading2 {
-	color: #DA91CE;
 }
 
 .heading3 {
@@ -189,55 +181,10 @@ body {
 	margin-left: 1.5em;
 }
 
-.moreBookmarks {
-	border: 3px solid rgba(34,40,53,0.75);
-	background: #222222;
-	box-shadow: 0 0px 1px rgba(0,0,0,1) inset;
-	display: flex;
-	font: normal normal 16.5px "Outfit", sans-serif;
- 	color: rgba(239,239,239,0.95);
-	padding-bottom: 0.25em;
-}
-
-.bookmark, .moreBookmark {
+.bookmark {
 	text-align: center;
 	padding: 0.5em 0.5em 0.5em 0.5em;
-}
-
-.bookmark {
 	width: 33.3%;
-}
-
-.moreBookmark {
-	width: 50%;
-}
-
-#editContainer {
-	display: none;
-	opacity: 1;
-	background: #0f0f0f;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-60%);
-	box-shadow: 0px 10px 25px rgba(0,0,0, 0.85);
-	padding: 2em;
-	/*transition: display 0.15s linear 0s, opacity 0.15s linear 0s;*/ /*animation overwrites this*/
-	animation-name: slide;
-	animation-duration: 0.175s;
-	width: 20%;
-}
-
-.editContainerButtons {
-	margin-top: 0.75em;
-	display: flex;
-	justify-content: center;
-}
-
-/*animation for editContainers; "fade" animation for .mainContainer is done using transition alone*/
-@keyframes slide {
-	from { transform: translate(-50%,-52%); opacity: 0;}
-	to { transform: translate(-50%,-60%); opacity: 1;}
 }
 
 ::selection {

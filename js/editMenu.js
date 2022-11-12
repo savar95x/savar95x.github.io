@@ -15,3 +15,7 @@ function backToHome() {
 function editSettings() {
 	window.open("https://github.com/skaar513/skaar513.github.io", "_self")
 }
+
+function openWebsite() {
+	window.open("https://skaar513.github.io/old/movies.html", "_self")
+}
