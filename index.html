@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<title>Home</title>
+	<link rel=stylesheet href=css/style.css />
+	<link rel=icon href=imgs/heart.svg />
+	<meta charset=UTF-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<div class=mainContainer id=mainContainer>
+	<img src=imgs/boseman.jpg height=220px />
+	<div class=noImg>
+	<div class=searchContainer>
+	<input id=searchInput placeholder="Please enable JS" autocomplete=off />
+	<button class="material-icons" id=clearButton onclick="clearInput()">close</button>
+	<button class="material-icons" id=searchButton onclick="search()">search</button>
+	</div>
+	<div class=noSearchbar>
+	<div id=toggleContainer>
+		<span class=buttonWrapper><button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">loop</button></span>
+		<span class=buttonWrapper><button onclick="editBookmarks()" title="More Bookmarks" id=editButton class="material-icons">bookmark_outline</button></span>
+		<span class=buttonWrapper><button onclick="editSettings()" title="Source Code" id=settingsButton class="material-icons-round">code</button></span>
+	</div>
+	<div class=bookmarks>
+		<div class="bookmark">
+		<a class="heading heading1">Web</a><br>
+		<div class=links>
+		<div>
+		<a href=https://feathericons.com class=link>feather</a><br>
+		<a href=https://fonts.google.com class=link>fonts</a><br>
+		</div>
+		</div>
+		</div>
+		<div class="bookmark">
+		<a class="heading heading2">Dev</a><br>
+		<div class=links>
+		<div>
+		<a href=https://searx.space class=link>searx</a><br>
+		<a href=https://github.com class=link>github</a><br>
+		</div>
+		</div>
+		</div>
+		<div class="bookmark">
+		<a class="heading heading3">Docs</a><br>
+		<div class=links>
+		<div>
+		<a href=https://berrywm.org class=link>berrywm</a><br>
+		<a href=https://elkowar.github.io/eww class=link>eww</a><br>
+		</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>
+<div id=editContainer>
+	<div class=moreBookmarks>
+		<div class="moreBookmark">
+		<a class="heading moreHeading1">Videos</a><br>
+		<div class=links>
+		<div>
+		<a href=https://videos.lukesmith.xyz class=link>luke</a><br>
+		</div>
+		</div>
+		</div>
+		<div class="moreBookmark">
+		<a class="heading moreHeading2">Podcasts</a><br>
+		<div class=links>
+		<div>
+		<a href=https://notrelated.xyz class=link>nr!</a><br>
+		</div>
+		</div>
+		</div>
+	</div>
+		<div class=editContainerButtons>
+		<span class=decoyButtonContainer><button onclick="backToHome()" title="Return" id=settingsButton class="material-icons">arrow_back</button></span>
+		</div>
+</div>
+</body>
+
+<script src=js/allEngines.js></script>
+<script src=js/functions.js></script>
+<script src=js/editMenu.js></script>
+
+<script>
+// created functions : toggleEngine(), toggleEngineReverse(), search(), clearInput(), editBookmarks(), hideClearButton()
+
+	document.getElementById("searchInput").addEventListener("keydown", event =>
+			{ if (event.key == "Enter") search(); // keycode 13
+			else if (event.altKey && event.key == "Tab") toggleEngine(); // keycode 9
+			else if (event.altKey && event.shiftKey && event.key == "Tab") toggleEngineReverse(); // keycode 9
+      });
+
+	document.getElementById("searchInput").addEventListener("input", hideClearButton);
+
+</script>
+</html>
