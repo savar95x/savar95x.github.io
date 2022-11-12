@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Outfit");/*Please don't be mad, the site wouldn't have looked nice without this*/
+
+body {
+	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB);
+	line-height: 1.55em;
+}
+
+.container {
+	background: #171B25;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	width: 55%;
+	border: 5px solid #222835;
+	border-radius: 5px 5px 5px 5px;
+	padding: 3% 7% 3% 7%;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+}
+
+.heading {
+	background: #F7AEB7;
+	border-radius: 0.18em 0px 0px 0.18em;
+	color: #171B25;
+	display: inline-block;
+	padding: 0.3125em 0.3225em 0.3125em 0.3125em;
+	font: normal bold 32px "Oswald", sans-serif;
+}
+
+.watchlistsubheading {
+	font: normal bold 25px "Oswald", sans-serif;
+	padding: 0.28em;
+	border-radius: 5px 0 0 5px;
+	background: #94D6A3;
+	color: #171B25;
+	display: inline-block;
+}
+
+.subheading1, .subheading2 {
+	font: normal normal 25px "Oswald", sans-serif;
+}
+.subheading1 {
+	color: #FBE091;
+}
+.subheading2 {
+	color: #A8BEFB;
+}
+
+.maintext {
+	color: #D9D7D6;
+	font: normal normal 18px "Outfit", sans-serif;
+	border: 0px solid pink;
+	border-radius: 5px;
+	background: transparent;
+}
+
+.textexceptheading  {
+	border: 0px solid pink;
+	border-radius: 7px;
+}
+li {
+	font: inherit;
+}
+
+a {
+	transition: color 0.125s ease-in-out 0s;
+	color: #EFEFEF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FC8A94;
+	text-decoration: underline;
+}
+
+.dividercontainer {
+	display: flex;
+	width: 50%;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: -1%;
+}
+hr {
+	border-top: 2px solid #8AE29D;
+	width: 37%;
+	font: 38px "Outfit", sans-serif;
+}
+.dividerx1, .dividerx2, .dividerx3 {
+	font: 28px "Outfit", sans-serif;
+}
+.dividerx1 {
+	color: #FBE091;
+}
+.dividerx2 {
+	color: #FC8A94;
+}
+.dividerx3 {
+	color: #A8BEFB;
+}
+
+.aboutsubheading {
+	font: normal normal 23px "Oswald", sans-serif;
+	padding: 1%;
+	border-radius: 5px 0 0 5px;
+	color: #DA91CE;
+}
+.abouttext {
+	color: #D9D7D6;
+	padding: 1%;
+	font: normal normal 15px "outfit", sans-serif;
+	margin: -2% 0 0 0;
+}
+/*.aboutreferencecontainer {
+	display: flex;
+	color: #D9D7D6;
+	padding: 1%;
+	font: normal normal 14px "outfit", sans-serif;
+	margin: -2% 0 0 0;
+}*/
+.aboutreference {
+	width: 30%;
+	color: #82D5EF;
+}
+.me, .star {
+	color: #82D5EF;
+}
+
+::selection {
+  color: #171B25;
+  background: rgba(239,239,239,0.85);/*#EFEFEF*/;
+}
+
