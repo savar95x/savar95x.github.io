@@ -7,7 +7,7 @@
 		document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
 
 		document.getElementById('toggleButton').style.color = activeEngine.color;
-		document.getElementById('searchButton').style.color = activeEngine.color;
+		//document.getElementById('searchButton').style.color = activeEngine.color;
 		document.getElementById('searchInput').focus(); };
 
 	function search() { let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F").replace(/:/g,"%3A");
