@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Readex+Pro");
+@import url("https://fonts.googleapis.com/css?family=Readex+Pro|Work+Sans");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 /*removes the unattractive defaults*/
@@ -161,7 +161,7 @@ body {
 
 .link {
 	color: #d8d8d8;
-	font: normal normal 17px "Readex Pro", sans-serif;
+	font: normal normal 17px "Work Sans", sans-serif;
 	text-decoration: none;
 	transition: color 0.125s ease-in-out 0s;
 }
