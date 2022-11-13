@@ -12,7 +12,7 @@ function backToHome() {
 	document.getElementById("mainContainer").style["pointer-events"] = "auto";
 }
 
-function editSettings() {
+function sourceCode() {
 	window.open("https://github.com/skaar513/skaar513.github.io", "_self")
 }
 
