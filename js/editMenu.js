@@ -17,5 +17,5 @@ function sourceCode() {
 }
 
 function openWebsite() {
-	window.open("https://skaar513.github.io/old/movies.html", "_self")
+	window.open("old/movies.html", "_self")
 }
