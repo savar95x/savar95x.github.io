@@ -53,9 +53,11 @@ body {
 }
 #searchInput:focus {
 	color: #d8d8d8;
+	font: normal bold 18px "Work Sans", sans-serif;
 }
 #searchInput::placeholder {
   color: rgba(240,240,240,0.5);
+	font: normal normal 18px "Readex Pro", sans-serif;
 }
 
 #searchButton, #clearButton {
