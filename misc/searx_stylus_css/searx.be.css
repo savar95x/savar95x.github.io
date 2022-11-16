@@ -155,6 +155,11 @@ a:hover {
     color: #4b4b4b !important;
 }
 
+#sidebar_results > p > small {
+    font: normal 500 12px "work sans", sans-serif !important;
+    padding: 0.65em;
+}
+
 .panel {
 	box-shadow: 0 0px 1px rgba(0,0,0,1) !important;
     border: 0px solid black;
@@ -248,7 +253,7 @@ a:hover {
 	transition: background 0.06s ease-in-out 0s;
 }
 
-#result-1, #result-2, #result-3, #result-4, #result-5, #result-6, #result-7, #result-8, #result-9, #result-10, #result-12, #result-13, #result-14, #result-15 {
+#result-1, #result-2, #result-3, #result-4, #result-5, #result-6, #result-7, #result-8, #result-9, #result-10, #result-12, #result-13, #result-14, #result-15, #result-16, #result-17, #result-18, #result-19, #result-20, #result-21, #result-22, #result-23, #result-24, #result-25, #result-26, #result-27, #result-28, #result-29, #result-30 {
     font: normal 400 18px "readex pro", sans-serif !important;
 }
 
@@ -276,19 +281,64 @@ a:hover {
 #pagination > div > form > button {
     width: 100% !important;
     border-radius: 2px !important;
+    color: rgba(240,240,240,0.55) !important;
+}
+
+#pagination > div > form > button:hover {
+    color: #222 !important;
 }
 
 #pagination > div > form > button > .glyphicon {
     display: none;
 }
 
-#pagination > div > form > button[disabled]:hover {
+#pagination > div > form > button[disabled], #pagination > div > form > button[disabled]:hover {
     background: #222 !important;
     color: #535353 !important;
     cursor: not-allowed !important;
 }
 
+.tab-pane > a > .btn, .tab-pane > .btn {
+    margin: 0.5em;
+    padding: 1em !important;
+    color: rgba(240,240,240,0.55) !important;
+    font: normal 500 15px "work sans", sans-serif !important;
+    width: 150px;
+    border-radius: 2px !important;
+}
+
+.tab-pane > a > .btn:hover, .tab-pane > .btn:hover {
+    color: #222 !important;
+}
+
+h1 {
+    font: normal 400 35px "readex pro", sans-serif;
+}
+
+.nav {
+    font: normal 400 14px "readex pro", sans-serif;
+}
+
+.nav > li > a {
+	transition: background 0.05s ease-in-out 0s;
+    border-radius: 2px 2px 0 0 !important;
+    border: 0 solid black !important;
+    outline: 0 solid black !important;
+}
+
+.nav > li.active > a {
+    background: pink !important;
+}
+
+.nav > li > a:hover {
+    background: #535353 !important;
+}
+
+.help-block {
+    font: normal 400 14px "work sans", sans-serif;
+}
+
 .footer {
-    font: normal 500 14px "work sans", sans-serif !important;
+    font: normal 500 14px "work sans", sans-serif;
 }
 /*}*/
