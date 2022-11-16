@@ -1,0 +1,294 @@
+/*@-moz-document domain("searx.be") {*/
+body {
+    background: #0f0f0f !important;
+}
+
+.searxng-navbar {
+    background: #191919;
+    height: 2.2em;
+}
+
+.pull-left, .pull-right {
+    font: normal 600 13px "work sans", sans-serif !important;
+}
+
+img {
+    border: 0px solid #2a2a2a;
+    border-radius: 1px !important;
+}
+
+a {
+    color: #8fb4b5 !important;
+	transition: color 0.05s ease-in-out 0s;
+}
+
+a:hover {
+    color: #9691b3 !important;
+}
+
+.input-group {
+    border: 0px solid red !important;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    border-radius: 2px !important;
+}
+
+#time-range, #language {
+	box-shadow: 0 0px 1px rgba(0,0,0,1) !important;
+    border-radius: 2px !important;
+}
+
+.form-control, .form-control:focus {
+    border: 0px solid pink !important;
+    width: 100% !important;
+    margin: 0px !important;
+    font: normal 500 16px "work sans", sans-serif;
+    padding: 0.8em !important;
+    height: 49px !important;
+    background: #222 !important;
+}
+
+#q {
+    border-radius: 2px 0 0 2px !important;
+}
+
+.form-control:focus {
+    font: normal 500 16px "work sans", sans-serif;
+}
+
+.form-control::placeholder {
+    font: normal normal 16px "readex pro", sans-serif;
+    color: rgba(240,240,240,0.5) !important;
+}
+
+.custom-select, .custom-select:focus {
+    font: normal normal 14px "readex pro", sans-serif;
+    color: rgba(240,240,240,0.45) !important;
+}
+
+.btn:focus {
+    border: 0 solid black !important;
+    cursor: default !important;
+}
+
+.btn {
+    padding: 1em !important;
+    border: 0px solid black !important;
+    margin-left: 3px !important;
+    width: 50px;
+    background: #222 !important;
+    cursor: default !important;
+    color: #535353 !important;
+	transition: background 0.05s ease-in-out 0s;
+}
+
+.btn:hover {
+    background: #535353 !important;
+    color: #222 !important;
+}
+
+.btn-xs {
+    width: calc(100% - 15px) !important;
+    color: #d8d8d8 !important;
+    font: normal 400 13px "work sans", sans-serif !important;
+	transition: background 0.05s ease-in-out 0s;
+}
+
+.btn-xs:hover {
+    border-radius: 1px !important;
+}
+
+.suggestion_item {
+    width: 1000px !important;
+}
+
+#clear_search {
+    border-radius: 0 2px 2px 0 !important;
+}
+
+.input-group-btn {
+    background: transparent !important;
+}
+
+#categories {
+    border-radius: 2px !important;
+    border: 0 solid black !important;
+}
+
+#categories > label {
+    border: 0 solid black !important;
+    border-radius: 2px !important;
+    background: #181818 !important;
+    font: normal 400 13px "work sans", sans-serif !important;
+    color: rgba(240,240,240,0.65) !important;
+    margin: 1.5px;
+	box-shadow: 0 0px 1px rgba(0,0,0,1) !important;
+}
+
+/*
+#categories > label {
+    outline: 10px solid pink !important;
+    border: 10px solid black !important;
+    border-bottom: 10px solid black !important;
+}
+*/
+
+#categories > label:hover {
+    cursor: pointer;
+}
+
+.alert {
+    background: #ac8a8c;
+    border: 0 solid black;
+    border-radius: 2px !important;
+    font: normal 500 14px "readex pro", sans-serif !important;
+    color: #0f0f0f;
+    padding: 1.2em 1.2em 1.9em 1.2em;
+	box-shadow: 0 0px 2px rgba(0,0,0,1) !important;
+}
+
+.alert > p > a {
+    color: #535353 !important;
+	transition: color 0.05s ease-in-out 0s;
+}
+
+.alert > p > a:hover {
+    color: #4b4b4b !important;
+}
+
+.panel {
+	box-shadow: 0 0px 1px rgba(0,0,0,1) !important;
+    border: 0px solid black;
+    border-radius: 2px !important;
+}
+
+.panel-heading {
+    background: #222 !important;
+    border-radius: 2px 2px 0 0 !important;
+    padding: 1.12em;
+}
+
+.panel-title {
+    font: normal 600 15px "readex pro", sans-serif !important;
+}
+
+.panel-body {
+    background: #181818 !important;
+    padding: 1.3em;
+}
+
+.infobox_part {
+    font: normal normal 15px "readex pro", sans-serif !important;
+}
+
+.btn-xs {
+    background: transparent !important;
+    cursor: pointer !important;
+}
+
+.btn-xs:hover {
+    cursor: pointer !important;
+}
+
+.infobox_part > bdi > .btn-xs {
+    cursor: default !important;
+    margin: -0.3em 0 -0.4em 0;
+}
+
+.infobox_part > bdi > .btn-xs:hover {
+    background: transparent !important;
+    cursor: default !important;
+    box-shadow: 0 0 0 black;
+}
+
+.panel-footer {
+    background: #222 !important;
+    border-radius: 0 0 2px 2px !important;
+    margin-top: -2px;
+    border: 0px solid black!important;
+    color: #535353 !important;
+    padding: 1em;
+	transition: background 0.05s ease-in-out 0s;
+    cursor: default !important;
+}
+
+.panel-footer:hover {
+    background: #373737 !important;
+    color: #181818 !important;
+    cursor: default !important;
+}
+
+.panel-body {
+    border-radius: 0 0 2px 2px !important;
+}
+
+.form-group > label {
+    font: normal 500 16px "work sans", sans-serif !important;
+}
+
+.form-group > input {
+    font: normal 500 14px "work sans", sans-serif !important;
+    border-radius: 1px !important;
+}
+
+.well {
+    border-radius: 3px !important;
+    font: normal 500 13px "work sans", sans-serif !important;
+    background: #222;
+    border: 0 solid black;
+    padding: 1.15em !important;
+    box-shadow: 0 0 1px rgba(0,0,0,1);
+}
+
+.well:hover {
+    border-radius: 10px !important;
+}
+
+.result {
+    padding: 15px;
+	transition: background 0.06s ease-in-out 0s;
+}
+
+#result-1, #result-2, #result-3, #result-4, #result-5, #result-6, #result-7, #result-8, #result-9, #result-10, #result-12, #result-13, #result-14, #result-15 {
+    font: normal 400 18px "readex pro", sans-serif !important;
+}
+
+.result:hover {
+    background: #222 !important;
+    border-radius: 2px !important;
+	box-shadow: 0 0px 2px rgba(0,0,0,1) !important;
+}
+
+.result-content {
+    color: rgba(240,240,240,0.7) !important;
+    font: normal normal 14px "work sans", sans-serif !important;
+}
+
+.external-link {
+    color: #8aac8b !important;
+    font: normal 500 14px "work sans", sans-serif !important;
+}
+
+.label {
+    font: normal 600 11px "work sans", sans-serif !important;
+    color: rgba(240,240,240,0.75);
+}
+
+#pagination > div > form > button {
+    width: 100% !important;
+    border-radius: 2px !important;
+}
+
+#pagination > div > form > button > .glyphicon {
+    display: none;
+}
+
+#pagination > div > form > button[disabled]:hover {
+    background: #222 !important;
+    color: #535353 !important;
+    cursor: not-allowed !important;
+}
+
+.footer {
+    font: normal 500 14px "work sans", sans-serif !important;
+}
+/*}*/
