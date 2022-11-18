@@ -246,6 +246,7 @@ body {
 	.mainContainer {
 		width: 85%;
 		box-shadow: none;
+    border: 0 solid black;
 		padding: 2.25em;
 	}
 
