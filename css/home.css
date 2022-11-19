@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Readex+Pro|Work+Sans");
+@import url("https://fonts.googleapis.com/css?family=Readex+Pro|Work+Sans|JetBrains+Mono");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 /*removes the unattractive defaults*/
@@ -20,7 +20,7 @@ body {
 	padding: 4.75em;
 	width: 57%;
 	border-radius: 0px;
-	border: 2px solid #222222;
+	border: 1px solid #222222;
 	box-shadow: 0px 3px 11px #222222;
 	position: absolute;
 	top: 50%;
@@ -53,7 +53,7 @@ body {
 }
 #searchInput:focus {
 	color: #d8d8d8;
-	font: normal 600 18px "Work Sans", sans-serif;
+	font: normal 600 18px "JetBrains Mono", sans-serif;
 }
 #searchInput::placeholder {
   color: rgba(240,240,240,0.5);
@@ -240,6 +240,11 @@ body {
 	#editContainer {
 		width: 32%;
 	}
+
+  #searchInput:focus {
+	  color: #d8d8d8;
+	  font: normal 600 18px "Work Sans", sans-serif;
+  }
 }
 
 @media screen and (max-width: 5.75in) {
