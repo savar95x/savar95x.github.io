@@ -45,7 +45,7 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal 600 18px "Work Sans", sans-serif;
+	font: normal 500 17px "JetBrains Mono", sans-serif;
 	padding: 0.7em;
 	background: #222222;
 	border-radius: 2px 0 0 2px;
@@ -53,7 +53,7 @@ body {
 }
 #searchInput:focus {
 	color: #d8d8d8;
-	font: normal 500 18px "JetBrains Mono", sans-serif;
+	font: normal 500 17px "JetBrains Mono", sans-serif;
 }
 #searchInput::placeholder {
   color: rgba(240,240,240,0.5);
@@ -242,6 +242,10 @@ body {
 	}
 
   #searchInput:focus {
+	  color: #d8d8d8;
+	  font: normal 600 18px "Work Sans", sans-serif;
+  }
+  #searchInput {
 	  color: #d8d8d8;
 	  font: normal 600 18px "Work Sans", sans-serif;
   }
