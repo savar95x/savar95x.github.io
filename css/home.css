@@ -19,12 +19,12 @@ body {
 	background: #0f0f0f;
 	padding: 4.75em;
 	width: 57%;
-	border-radius: 8px;
+	border-radius: 0px;
 /*	border: 1px solid #222222; */
-  border-width: 0px;
+  border-width: 1px;
   border-color: #222;
   border-style: solid;
-	box-shadow: 0px 2px 9px rgba(172, 138, 140, 0.3);
+	box-shadow: 0px 2px 11px rgba(172, 138, 140, 0.1);
 	position: absolute;
 	top: 50%;
 	left: 50%;
