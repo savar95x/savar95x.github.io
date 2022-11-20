@@ -67,7 +67,7 @@
 	document.getElementById("searchInput").addEventListener("keydown", event =>
 			{ if (event.key == "Enter") search(); // keycode 13
 			else if (event.altKey && event.key == "Tab") toggleEngine(); // keycode 9
-			else if (event.altKey && event.shiftKey && event.key == "Tab") toggleEngineReverse(); // keycode 9
+			else if (event.altKey && event.key == "c") clearInput();
       });
 
 	document.getElementById("searchInput").addEventListener("input", hideClearButton);
