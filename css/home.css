@@ -5,7 +5,7 @@
 input{outline:none;border:none;}/**/button{border:none;}
 
 img {
-	border: 4px solid #222222;
+	border: 3px solid #222222;
   border-radius: 2px;
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
 }
@@ -20,7 +20,6 @@ body {
 	padding: 4.75em;
 	/*width: 57%;*/
 	border-radius: 0px;
-/*	border: 1px solid #222222; */
   border-width: 1px;
   border-color: #222;
   border-style: solid;
@@ -28,7 +27,7 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-57%);
+	/*transform: translate(-50%,-57%);*/
 	display: flex;
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
@@ -41,14 +40,14 @@ body {
 .searchContainer {
 	margin: auto;
 	display: flex;
-	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	box-shadow: 0 0px 1px rgba(0,0,0,1);
 	border-radius: 2px 2px 2px 2px;
 	width: calc(100%);
 }
 
 #searchInput {
 	width: 100%;
-	font: normal 500 17px "JetBrains Mono", sans-serif;
+	font: normal 500 16px "JetBrains Mono", sans-serif;
 	padding: 0.7em;
 	background: #222222;
 	border-radius: 2px 0 0 2px;
@@ -56,11 +55,11 @@ body {
 }
 #searchInput:focus {
 	color: #d8d8d8;
-	font: normal 500 17px "JetBrains Mono", sans-serif;
+	font: normal 500 16px "JetBrains Mono", sans-serif;
 }
 #searchInput::placeholder {
   color: rgba(240,240,240,0.5);
-	font: normal normal 18px "Readex Pro", sans-serif;
+	font: normal normal 17.5px "Readex Pro", sans-serif;
 }
 
 #searchButton, #clearButton {
@@ -74,7 +73,7 @@ body {
 	margin-left: 4px;
 	color: #535353;
 	background: #222222;
-	font: normal normal 27px "Material Icons", sans-serif;
+	font: normal normal 26px "Material Icons", sans-serif;
 }
 
 #clearButton {
@@ -124,7 +123,7 @@ body {
 	padding: 0.35em;
 	background: #222222;
 	/*color: #EFEFEF;*/
-	font: normal normal 22px "Material Icons", sans-serif;
+	font: normal normal 21.5px "Material Icons", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
 	/*margin: auto; not needed*/
 }
@@ -142,7 +141,7 @@ body {
 }
 
 .heading {
-	font: normal normal 20px "Readex Pro", sans-serif;
+	font: normal normal 19.5px "Readex Pro", sans-serif;
 }
 
 .heading1 {
@@ -166,7 +165,7 @@ body {
 
 .link {
 	color: #d8d8d8;
-	font: normal normal 17px "Work Sans", sans-serif;
+	font: normal normal 16.5px "Work Sans", sans-serif;
 	text-decoration: none;
 	transition: color 0.125s ease-in-out 0s;
 }
@@ -200,7 +199,7 @@ body {
 @media screen and (min-width: 10in) {
 	.mainContainer {
 		width: 675px;
-		transform: translate(-50%,-60%);
+		transform: translate(-50%,-58%);
 	}
 }
 
