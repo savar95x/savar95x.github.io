@@ -1,53 +1,44 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Outfit");/*Please don't be mad, the site wouldn't have looked nice without this*/
+@import url("https://fonts.googleapis.com/css?family=Readex+Pro|Work Sans");/*Please don't be mad, the site wouldn't have looked nice without this*/
 
 body {
-	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB);
+	background: #0f0f0f;
 	line-height: 1.55em;
 }
 
 .container {
-	background: #171B25;
+	background: #0f0f0f;
 	margin: auto;
 	margin-top: 2%;
 	margin-bottom: 5%;
 	width: 55%;
-	border: 5px solid #222835;
-	border-radius: 5px 5px 5px 5px;
+	border: 1px solid #222;
+	border-radius: 10px;
 	padding: 3% 7% 3% 7%;
-	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 11px rgba(240, 240, 240, 0.04);
 }
 
 .heading {
-	background: #F7AEB7;
-	border-radius: 0.18em 0px 0px 0.18em;
-	color: #171B25;
-	display: inline-block;
+	background: transparent;
+	border-radius: 0em 0px 0px 0em;
+	color: #ac8a8c;
+	/*display: inline-block;*/
 	padding: 0.3125em 0.3225em 0.3125em 0.3125em;
-	font: normal bold 32px "Oswald", sans-serif;
-}
-
-.watchlistsubheading {
-	font: normal bold 25px "Oswald", sans-serif;
-	padding: 0.28em;
-	border-radius: 5px 0 0 5px;
-	background: #94D6A3;
-	color: #171B25;
-	display: inline-block;
+	font: normal bold 32px "Readex Pro", sans-serif;
 }
 
 .subheading1, .subheading2 {
-	font: normal normal 25px "Oswald", sans-serif;
+	font: normal normal 25px "Readex Pro", sans-serif;
 }
 .subheading1 {
-	color: #FBE091;
+	color: #ACA98A;
 }
 .subheading2 {
-	color: #A8BEFB;
+	color: #9691b3;
 }
 
 .maintext {
 	color: #D9D7D6;
-	font: normal normal 18px "Outfit", sans-serif;
+	font: normal normal 18px "Work Sans", sans-serif;
 	border: 0px solid pink;
 	border-radius: 5px;
 	background: transparent;
@@ -63,12 +54,12 @@ li {
 
 a {
 	transition: color 0.125s ease-in-out 0s;
-	color: #EFEFEF;
+	color: #f0f0f0;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #FC8A94;
+	color: #ac8a8c;
 	text-decoration: underline;
 }
 
@@ -80,31 +71,31 @@ a:hover {
 	margin-bottom: -1%;
 }
 hr {
-	border-top: 2px solid #8AE29D;
+	border-top: 2px solid #8aac8b;
 	width: 37%;
-	font: 38px "Outfit", sans-serif;
+	font: 38px "Work Sans", sans-serif;
 }
 .dividerx1, .dividerx2, .dividerx3 {
-	font: 28px "Outfit", sans-serif;
+	font: 28px "Work Sans", sans-serif;
 }
 .dividerx1 {
-	color: #FBE091;
+	color: #ACA98A;
 }
 .dividerx2 {
-	color: #FC8A94;
+	color: #ac8a8c;
 }
 .dividerx3 {
-	color: #A8BEFB;
+	color: #9691b3;
 }
 
 .aboutsubheading {
-	font: normal normal 23px "Oswald", sans-serif;
+	font: normal normal 23px "Readex Pro", sans-serif;
 	padding: 1%;
 	border-radius: 5px 0 0 5px;
-	color: #DA91CE;
+	color: #C49EC4;
 }
 .abouttext {
-	color: #D9D7D6;
+	color: rgba(240, 240, 240, 0.65);
 	padding: 1%;
 	font: normal normal 15px "outfit", sans-serif;
 	margin: -2% 0 0 0;
@@ -118,14 +109,14 @@ hr {
 }*/
 .aboutreference {
 	width: 30%;
-	color: #82D5EF;
+	color: #8fb4b5;
 }
 .me, .star {
-	color: #82D5EF;
+	color: #8fb4b5;
 }
 
 ::selection {
-  color: #171B25;
-  background: rgba(239,239,239,0.85);/*#EFEFEF*/;
+  color: #0f0f0f;
+  background: rgba(240,240,240,0.725);/*#EFEFEF*/;
 }
 
