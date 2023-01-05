@@ -16,7 +16,6 @@
 
   <div id=searchContainer>
 	  <input id=searchInput placeholder="Search with Google" autocomplete=off />
-	  <button class="material-icons" id=clearButton onclick="clearInput()">close</button>
 	  <button class="material-icons" id=searchButton onclick="search()">search</button>
   </div>
 </div>
@@ -60,8 +59,5 @@
 			else if (event.altKey && event.key == "Tab") toggleEngine(); // keycode 9
 			else if (event.altKey && event.key == "c") clearInput();
       });
-
-	document.getElementById("searchInput").addEventListener("input", hideClearButton);
-
 </script>
 </html>

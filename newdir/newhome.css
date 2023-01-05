@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Readex+Pro|Work+Sans|JetBrains+Mono");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
 /*removes the unattractive defaults*/
 input{outline:none;border:none;}/**/button{border:none;}
 
@@ -43,7 +40,7 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal 600 17px "JetBrainsMono Nerd Font", sans-serif;
+	font: normal 600 17px "JetBrainsMono Nerd Font", monospace;
 	padding: 0.7em;
 	background: #3C3836;
 	border-radius: 2px 0 0 2px;
@@ -51,146 +48,32 @@ body {
 }
 #searchInput:focus {
 	color: #BDAE93;
-	font: normal 600 17px "JetBrainsMono Nerd Font", sans-serif;
+	font: normal 600 17px "JetBrainsMono Nerd Font", monospace;
 }
 #searchInput::placeholder {
-  color: rgba(240,240,240,0.5);
-	font: normal normal 17px "JetBrainsMono Nerd Font", sans-serif;
-}
-
-#searchButton, #clearButton {
-	color: #282828;
-	transition: background 0.05s ease-in-out 0s;
+  color: rgba(189,174,147,0.7);
+	font: normal normal 17px "JetBrainsMono Nerd Font", monospace;
 }
 
 #searchButton {
 	border-radius: 0 2px 2px 0;
 	padding: 0.378em 0.45em 0.378em 0.45em;
 	margin-left: 2px;
-	color: #535353;
 	background: #3C3836;
+  color: rgba(189,174,147,0.3);
+	transition: background 0.05s ease-in-out 0s;
   width: 57px;
 	font: normal 500 27px "Material Icons", sans-serif;
 }
 
-#clearButton {
-	padding: 0.15em 0.35em 0.15em 0.15em;
-	font: normal normal 24px "Material Icons", sans-serif;
-	background: #222222;
-  color: #414141;
-	transition: color 0.175s ease-in-out 0s;
-	display: none;
-}
-
-#clearButton:hover {
-	color: #535353;
-}
-
 #searchButton:hover {
-	background: #535353;
-	color: #0f0f0f;
-}
-
-.noSearchbar {
-	display: flex;
-	margin-top: 1.25em;
-	height: 165px;
-}
-
-#toggleContainer {
-  background: #222;
-	height: 100%;
-	margin-top: 0.02em;
-	box-shadow: 0 0px 1px rgba(0,0,0,1);
-  border-radius: 1px;
-  display: grid;
-}
-
-/*this wasn't necessarily needed, but kept for extensibility*/
-.buttonWrapper {
-	display: flex;
-  background: transparent;
-	align-items: center;
-  padding: 0.17em;
-}
-
-#toggleButton, #editButton, #settingsButton {
-	border-radius: 1px;
-	border: 1px solid #222222;
-	padding: 0.35em;
-	background: #222222;
-	/*color: #EFEFEF;*/
-	font: normal normal 21.5px "Material Icons", sans-serif;
-	transition: color 0.125s ease-in-out 0s;
-	/*margin: auto; not needed*/
-}
-
-#toggleButton {
-	color: hsl(355,75%,76%);
-}
-
-#editButton {
-	color: #b58fb5;
-}
-
-#settingsButton {
-	color: #ACA98A;
-}
-
-.heading {
-	font: normal normal 20px "Readex Pro", sans-serif;
-}
-
-.heading1 {
-	color: #ACA98A;
-}
-
-.heading2 {
-	color: #8aac8b;
-}
-
-.heading3 {
-	color: #8fb4b5;
-}
-
-.links {
-	height: calc(85% - 0.5em);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.link {
-	color: #BDAE93;
-	font: normal normal 17px "Work Sans", sans-serif;
-	text-decoration: none;
-	transition: color 0.125s ease-in-out 0s;
-}
-
-.link:hover {
-	cursor: default;
-	color: #f0f0f0;
-}
-
-.bookmarks {
-	width: 100%;
-	display: flex;
-  border-radius: 1px;
-	border: 10px solid #222222;
-	background: #222222;
-	box-shadow: 0 0px 1px rgba(0,0,0,1);
-	margin-left: 1.25em;
-}
-
-.bookmark {
-	text-align: center;
-	padding: 0.5em 0.5em 0.5em 0.5em;
-	width: 33.3%;
+  background: rgba(189,174,147,0.3);
+	color: #2e2e2e;
 }
 
 ::selection {
-	color: #0f0f0f;
-	background: rgba(240,240,240,0.725);
+	color: #282828;
+  background: rgba(189,174,147,0.4);
 }
 
 @media screen and (min-width: 10in) {
