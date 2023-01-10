@@ -54,6 +54,8 @@
 <script>
 // created functions : toggleEngine(), search(), clearInput(), hideClearButton()
 
+  document.getElementById('searchInput').focus();
+
 	document.getElementById("searchInput").addEventListener("keydown", event =>
 			{ if (event.key == "Enter") search(); // keycode 13
 			else if (event.altKey && event.key == "Tab") toggleEngine(); // keycode 9
