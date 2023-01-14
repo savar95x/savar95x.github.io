@@ -77,97 +77,31 @@ body {
 }
 
 @media screen and (min-width: 10in) {
-	.mainContainer {
+	#mainContainer {
 		width: 725px;
-		transform: translate(-50%,-58%);
 	}
 }
 
 @media screen and (max-width: 9.5in) {
-	.mainContainer {
+	#mainContainer {
 		width: 75%;
-		transform: translate(-50%,-60%);
 	}
 }
 
 @media screen and (max-width: 8.2in) {
-	.mainContainer {
+	#mainContainer {
 		width: 82%;
-		padding: 2.85em;
 	}
-}
-
-@media screen and (max-width: 7.2in) {
-	img {
-		display: none;
-	}
-
-	.noImg {
-		margin-left: 0;
-	}
-
-	.mainContainer {
-		width: 65%;
-		padding: 2.5em;
-	}
-
-  #searchInput:focus {
-	  color: #BDAE93;
-	  font: normal 600 18px "Work Sans", sans-serif;
-  }
-  #searchInput {
-	  color: #BDAE93;
-	  font: normal 600 18px "Work Sans", sans-serif;
-  }
 }
 
 @media screen and (max-width: 5.75in) {
-	.mainContainer {
+	#mainContainer {
 		width: 85%;
-		box-shadow: none;
-    border: 0 solid black;
-		padding: 2.25em;
 	}
 }
 
 @media screen and (max-width: 4.3in) {
-	.mainContainer {
+	#mainContainer {
 		width: 90%;
-		padding: 0em;
-		margin: none;
-	}
-
-	.noSearchbar {
-		margin-top: 1em;
-	}
-
-	.bookmarks {
-		margin-left: 1em;
-	}
-}
-
-@media screen and (max-width: 3.3in) {
-	.noSearchbar {
-		flex-direction: column;
-	}
-
-	.noSearchbar {
-		margin-top: 0;
-	}
-
-	.bookmarks {
-		margin-left: 0;
-	}
-
-	#toggleContainer {
-		display: flex;
-		flex-direction: row;
-		margin-top: 0.55em;
-		margin-bottom: 0.55em;
-	}
-
-	.buttonWrapper {
-		margin-left: 0.8em;
-		margin-right: 0.8em;
 	}
 }
