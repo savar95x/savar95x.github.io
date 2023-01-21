@@ -7,7 +7,7 @@ img {
 }
 
 body {
-	background: #282828;
+	background: #0F0F0F;
 	line-height: 1.35em;
 }
 
@@ -34,42 +34,42 @@ body {
 	margin: auto;
 	display: flex;
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
-	border-radius: 2px;
+	border-radius: 22px;
 	width: calc(100%-57px);
   margin: 2em;
 }
 
 #searchInput {
 	width: 100%;
-	font: normal 600 17px "JetBrainsMono Nerd Font", monospace;
-	padding: 0.7em;
-	background: #3C3836;
-	border-radius: 2px 0 0 2px;
+	font: normal 600 17px "roboto mono", monospace;
+	padding: 0.9em 0.9em 0.9em 0.9em;
+	background: #222222;
+	border-radius: 25px 0 0 25px;
 	color: #BDAE93;
 }
 #searchInput:focus {
-	color: #BDAE93;
-	font: normal 600 17px "JetBrainsMono Nerd Font", monospace;
+	color: rgba(216, 216, 216, 0.7);
+	font: normal 600 17px "roboto mono", monospace;
 }
 #searchInput::placeholder {
-  color: rgba(189,174,147,0.7);
-	font: normal normal 17px "JetBrainsMono Nerd Font", monospace;
+	color: rgba(216, 216, 216, 0.4);
+	font: normal normal 17px "roboto mono", monospace;
 }
 
 #searchButton {
-	border-radius: 0 2px 2px 0;
-	padding: 0.378em 0.45em 0.378em 0.45em;
+	border-radius: 0 25px 25px 0;
+	padding: 0.378em 0.55em 0.378em 0.45em;
 	margin-left: 2px;
-	background: #3C3836;
-  color: rgba(189,174,147,0.3);
+	background: #2a2a2a;
+	color: rgba(216, 216, 216, 0.5);
 	transition: background 0.05s ease-in-out 0s;
   width: 57px;
 	font: normal 500 27px "Material Icons", sans-serif;
 }
 
 #searchButton:hover {
-  background: rgba(189,174,147,0.3);
-	color: #2e2e2e;
+  background: #535353;
+	color: #191919;
 }
 
 ::selection {
