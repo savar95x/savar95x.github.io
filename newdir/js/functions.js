@@ -5,9 +5,9 @@
 		x = x + 1;
 		activeEngine = allEngines[x];
 		document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
-
+//		document.getElementById('searchInput').style.color = activeEngine.color;
+//		document.getElementById('searchContainer').style.boxShadow = "0px 1px 1px " + activeEngine.color;
 		document.getElementById('toggleButton').style.color = activeEngine.color;
-		//document.getElementById('searchButton').style.color = activeEngine.color;
 		document.getElementById('searchInput').focus(); };
 
 	function search() {

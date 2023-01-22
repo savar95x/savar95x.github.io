@@ -1,7 +1,7 @@
 const allEngines = [
- { name:"Google", preposition:"with", color:"hsl(355,75%,76%)", url:"google.com/search?q=", urlFilters:"" },
- //{ name:"SearX", preposition:"with", color:"#8aac8b", url:"searx.be/search?q=", urlFilters:"" },
- { name:"ArchWiki", preposition:"over", color:"#9691b3", url:"wiki.archlinux.org/index.php?search=", urlFilters:"" },
- { name:"YouTube", preposition:"over", color:"#ac8a8c", url:"youtube.com/results?search_query=", urlFilters:"" },
- { name:"Github", preposition:"over", color:"#8fb4b5", url:"github.com/search?q=", urlFilters:"&s=stars" },
+ { name:"Google", preposition:"with", color:"rgba(143, 138, 172, 0.85)", url:"google.com/search?q=", urlFilters:"" },
+ { name:"GentooWiki", preposition:"over", color:"rgba(181, 143, 181, 0.85)", url:"wiki.gentoo.org/index.php?title=Special%3ASearch&search=", urlFilters:"&go=Go" },
+ { name:"SearX", preposition:"with", color:"rgba(138, 172, 139, 0.85)", url:"searx.be/search?q=", urlFilters:"" },
+ { name:"YouTube", preposition:"over", color:"rgba(172, 138, 140, 0.85)", url:"youtube.com/results?search_query=", urlFilters:"" },
+ { name:"Github", preposition:"over", color:"#535353", url:"github.com/search?q=", urlFilters:"&s=stars" },
 ];
