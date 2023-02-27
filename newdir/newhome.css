@@ -53,7 +53,7 @@ body {
 	font: normal 500 17px "roboto mono", monospace;
 }
 #searchInput::placeholder {
-	color: rgba(216, 216, 216, 0.6);
+	color: rgba(216, 216, 216, 0.55);
 	font: normal normal 17px "roboto mono", monospace;
 }
 
@@ -129,8 +129,13 @@ body {
 	}
 }
 
-@media screen and (max-width: 4.3in) {
+@media screen and (max-width: 4.9in) {
 	#mainContainer {
 		width: 90%;
+	}
+
+@media screen and (max-width: 4.425in) {
+	#mainContainer {
+		width: 110%;
 	}
 }
