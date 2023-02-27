@@ -100,11 +100,6 @@ body {
 	font: normal 500 20px "Material Icons", sans-serif;
 }
 
-#toggleButton:hover {
-  background: #2a2a2a;
-	color: #191919;
-}
-
 ::selection {
 	color: #282828;
   background: rgba(189,174,147,0.4);
