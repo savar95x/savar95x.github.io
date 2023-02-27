@@ -73,14 +73,30 @@ body {
 	color: #191919;
 }
 
+#clearButton {
+	border-radius: 0;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+	margin-left: -1px;
+	background: #222222;
+	color: rgba(216, 216, 216, 0.5);
+	transition: background 0.08s ease-in-out 0s;
+  width: 57px;
+	font: normal 500 22px "Material Icons", sans-serif;
+  display: none;
+}
+
+#clearButton:hover {
+  color: rgba(216,216,216,0.6);
+}
+
 #toggleButton {
-	border-radius: 25px;
-	padding: 0.378em 0.55em 0.378em 0.45em;
+	border-radius: 3px;
+	padding: 0.4em 0.5em 0.4em 0.5em;
 	margin-left: 2px;
 	background: #202020;
 	color: rgba(216, 216, 216, 0.5);
 	transition: background 0.05s ease-in-out 0s;
-  width: 57px;
+  width: 40px;
 	font: normal 500 20px "Material Icons", sans-serif;
 }
 
