@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 /*removes the unattractive defaults*/
 input{outline:none;border:none;}/**/button{border:none;}
@@ -42,7 +42,7 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal 500 17px "roboto mono", monospace;
+	font: normal 500 17px "space mono", monospace;
 	padding: 0.9em 0.9em 0.9em 0.9em;
 	background: #222222;
 	border-radius: 25px 0 0 25px;
@@ -50,11 +50,11 @@ body {
 }
 #searchInput:focus {
 	color: rgba(216, 216, 216, 0.9);
-	font: normal 500 17px "roboto mono", monospace;
+	font: normal 500 17px "space mono", monospace;
 }
 #searchInput::placeholder {
 	color: rgba(216, 216, 216, 0.5);
-	font: normal normal 17px "roboto mono", monospace;
+	font: normal normal 17px "space mono", monospace;
 }
 
 #searchButton {
@@ -69,7 +69,8 @@ body {
 }
 
 #searchButton:hover {
-  background: #535353;
+  background: #9691B3;
+  background: var(--td-background-color);
 	color: #191919;
 }
 
