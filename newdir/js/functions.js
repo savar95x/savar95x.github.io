@@ -1,5 +1,6 @@
 var activeEngine;
 var x = -1;
+const srchBtn = document.getElementById('searchButton');
 
 function toggleEngine() {
   x = (x == allEngines.length - 1) ? -1:x; 
@@ -7,6 +8,7 @@ function toggleEngine() {
 	activeEngine = allEngines[x];
 	document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
 	document.getElementById('toggleButton').style.color = activeEngine.color;
+  srchBtn.style.setProperty('--srchBtnHoverBg', activeEngine.color);
 	document.getElementById('searchInput').focus();
 };
 

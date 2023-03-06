@@ -3,6 +3,10 @@
 /*removes the unattractive defaults*/
 input{outline:none;border:none;}/**/button{border:none;}
 
+:root {
+  --srchBtnHoverBg: #9691B3;
+}
+
 img {
   margin: -1em;
 }
@@ -70,7 +74,7 @@ body {
 
 #searchButton:hover {
   background: #9691B3;
-  background: var(--td-background-color);
+  background: var(--srchBtnHoverBg);
 	color: #191919;
 }
 
