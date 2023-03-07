@@ -96,12 +96,12 @@ body {
 
 #toggleButton {
 	border-radius: 1.0em;
-	padding: 0.5em 0.5em 0.5em 0.5em;
 	margin-left: 2px;
 	background: #202020;
 	color: rgba(216, 216, 216, 0.5);
 	transition: background 0.05s ease-in-out 0s;
   width: 40px;
+  height: 40px;
 	font: normal 500 20px "Material Icons", sans-serif;
 }
 
