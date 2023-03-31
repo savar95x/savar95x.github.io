@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/*removes the unattractive defaults*/
+input{outline:none;border:none;}/**/button{border:none;}
+
+:root {
+  --srchBtnHoverBg: #9691B3;
+}
+
+img {
+  margin: -1em;
+}
+
+body {
+	background: #0F0F0F;
+	line-height: 1.35em;
+}
+
+#mainContainer {
+	background: transparent;
+  text-align: center;
+	width: 650px;
+	border-radius: 0px;
+  border-width: 1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-55%);
+	display: grid;
+	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
+}
+
+.noImg {
+	width: 100%;
+	margin-left: 1.25em;
+}
+
+#searchContainer {
+	margin: auto;
+	display: flex;
+	box-shadow: 0 0px 1px rgba(0,0,0,1);
+	border-radius: 22px;
+	width: calc(100%-57px);
+  margin: 2em;
+}
+
+#searchInput {
+	width: 100%;
+	font: normal 500 17px "space mono", monospace;
+	padding: 0.9em 0.9em 0.9em 0.9em;
+	background: #222222;
+	border-radius: 25px 0 0 25px;
+	color: rgba(216, 216, 216, 0.9);
+}
+#searchInput:focus {
+	color: rgba(216, 216, 216, 0.9);
+	font: normal 500 17px "space mono", monospace;
+}
+#searchInput::placeholder {
+	color: rgba(216, 216, 216, 0.5);
+	font: normal normal 17px "space mono", monospace;
+}
+
+#searchButton {
+	border-radius: 0 25px 25px 0;
+	padding: 0.378em 0.55em 0.378em 0.45em;
+	margin-left: 2px;
+	background: #2a2a2a;
+	color: rgba(216, 216, 216, 0.5);
+	transition: background 0.05s ease-in-out 0s;
+  width: 57px;
+	font: normal 500 27px "Material Icons", sans-serif;
+}
+
+#searchButton:hover {
+  background: #9691B3;
+  background: var(--srchBtnHoverBg);
+	color: #191919;
+}
+
+#clearButton {
+	border-radius: 0;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+	margin-left: -1px;
+	background: #222222;
+	color: rgba(216, 216, 216, 0.5);
+	transition: background 0.08s ease-in-out 0s;
+  width: 57px;
+	font: normal 500 22px "Material Icons", sans-serif;
+  display: none;
+}
+
+#clearButton:hover {
+  color: rgba(216,216,216,0.6);
+}
+
+#toggleButton {
+	border-radius: 1.0em;
+	margin-left: 2px;
+	background: #202020;
+	color: rgba(216, 216, 216, 0.5);
+	transition: background 0.05s ease-in-out 0s;
+  width: 40px;
+  height: 40px;
+	font: normal 500 20px "Material Icons", sans-serif;
+}
+
+::selection {
+	color: #282828;
+  background: rgba(189,174,147,0.4);
+}
+
+@media screen and (min-width: 10in) {
+	#mainContainer {
+		width: 725px;
+	}
+}
+
+@media screen and (max-width: 9.5in) {
+	#mainContainer {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 8.2in) {
+	#mainContainer {
+		width: 82%;
+	}
+}
+
+@media screen and (max-width: 5.75in) {
+	#mainContainer {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 4.9in) {
+	#mainContainer {
+		width: 90%;
+	}
+
+@media screen and (max-width: 4.425in) {
+	#mainContainer {
+		width: 100%;
+	}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<title>~/</title>
+	<link rel=stylesheet href=home.css />
+  <link rel=icon href=imgs/sun.svg />
+	<meta charset=UTF-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <button class="material-icons" id=toggleButton onclick="toggleEngine()">trip_origin</button>
+  <div id=mainContainer>
+    <div id=myicondiv>
+	    <img id=myicon src=imgs/panda.png height=240px />
+    </div>
+    <div id=searchContainer>
+	    <input id=searchInput placeholder="Search with SearX" autocomplete=off />
+	    <button class="material-icons" id=clearButton onclick="clearInput()">close</button>
+	    <button class="material-icons" id=searchButton onclick="search()">search</button>
+    </div>
+  </div>
+</body>
+
+<script src=js/allEngines.js></script>
+<script src=js/functions.js></script>
+
+<script>
+// created functions : toggleEngine(), search(), clearInput(), hideClearButton()
+
+  document.getElementById('searchInput').focus();
+
+	document.getElementById("searchInput").addEventListener("keydown", event => {
+    if (event.key == "Enter") search(); // keycode 13
+		else if (event.altKey && event.key == "s") toggleEngine();
+		else if (event.altKey && event.key == "c") clearInput();
+  });
+
+	document.getElementById("searchInput").addEventListener("input", hideClearButton);
+
+</script>
+</html>
