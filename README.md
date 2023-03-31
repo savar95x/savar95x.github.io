@@ -1,1 +1,2 @@
-website in works
+wesite in works
+currently working on startpage
