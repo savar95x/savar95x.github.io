@@ -1,3 +1,3 @@
 website in works
 
-currently working on startpage(s)
+currently working on the homepage for the site.
