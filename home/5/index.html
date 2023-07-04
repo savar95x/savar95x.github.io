@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<title>Home</title>
+	<link rel=stylesheet href=newhome.css />
+  <!--link rel=icon href=imgs/heart.svg /-->
+	<meta charset=UTF-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<div id=mainContainer>
+  <div id=myicon>
+	  <img src=imgs/socrates.png height=230px />
+  </div>
+
+  <div id=searchContainer>
+	  <input id=searchInput placeholder="Search with DuckDuckgo" autocomplete=off />
+	  <button class="material-icons" id=searchButton onclick="search()">search</button>
+  </div>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src=js/allEngines.js></script>
+<script src=js/functions.js></script>
+<script src=js/editMenu.js></script>
+
+<script>
+// created functions : toggleEngine(), search(), clearInput(), hideClearButton()
+
+  document.getElementById('searchInput').focus();
+
+	document.getElementById("searchInput").addEventListener("keydown", event =>
+			{ if (event.key == "Enter") search(); // keycode 13
+			else if (event.altKey && event.key == "r") toggleEngine(); // keycode 9
+			else if (event.altKey && event.key == "c") clearInput();
+      });
+</script>
+</html>
