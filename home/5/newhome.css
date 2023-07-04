@@ -13,10 +13,10 @@ body {
 
 #mainContainer {
 	background: transparent;
-  text-align: center;
+	text-align: center;
 	width: 650px;
 	border-radius: 0px;
-  border-width: 1px;
+	border-width: 1px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -36,12 +36,12 @@ body {
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
 	border-radius: 2px;
 	width: calc(100%-57px);
-  margin: 2em;
+	margin: 2em;
 }
 
 #searchInput {
 	width: 100%;
-	font: normal 600 16px "robot mono Nerd Font", monospace;
+	font: normal 600 16px "roboto mono Nerd Font", monospace;
 	padding: 1.0em;
 	background: #3C3836;
 	border-radius: 2px 0 0 2px;
@@ -49,11 +49,11 @@ body {
 }
 #searchInput:focus {
 	color: #BDAE93;
-	font: normal 600 16px "robot mono Nerd Font", monospace;
+	font: normal 600 16px "roboto mono Nerd Font", monospace;
 }
 #searchInput::placeholder {
-  color: rgba(189,174,147,0.45);
-	font: normal normal 16px "robot mono Nerd Font", monospace;
+	color: rgba(189,174,147,0.45);
+	font: normal normal 16px "roboto mono Nerd Font", monospace;
 }
 
 #searchButton {
@@ -96,6 +96,10 @@ body {
 }
 
 @media screen and (max-width: 5.75in) {
+	#searchContainer {
+		display: none;
+	}
+
 	#mainContainer {
 		width: 85%;
 	}
