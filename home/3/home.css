@@ -39,7 +39,7 @@ body {
 	margin: auto;
 	display: flex;
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
-	border-radius: 22px;
+	border-radius: 2px;
 	width: calc(100%-57px);
   margin: 2em;
 }
@@ -49,7 +49,7 @@ body {
 	font: normal 500 17px "space mono", monospace;
 	padding: 0.9em 0.9em 0.9em 0.9em;
 	background: #222222;
-	border-radius: 25px 0 0 25px;
+	border-radius: 2px 0 0 2px;
 	color: rgba(216, 216, 216, 0.9);
 }
 #searchInput:focus {
@@ -62,8 +62,8 @@ body {
 }
 
 #searchButton {
-	border-radius: 0 25px 25px 0;
-	padding: 0.378em 0.55em 0.378em 0.45em;
+	border-radius: 0 2px 2px 0;
+	padding: 0.378em 0.5em 0.378em 0.5em;
 	margin-left: 2px;
 	background: #2a2a2a;
 	color: rgba(216, 216, 216, 0.5);
