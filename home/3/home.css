@@ -5,6 +5,7 @@ input{outline:none;border:none;}/**/button{border:none;}
 
 :root {
   --srchBtnHoverBg: #9691B3;
+  --bg: #151515;
 }
 
 img {
@@ -12,7 +13,7 @@ img {
 }
 
 body {
-	background: #0F0F0F;
+	background: var(--bg);
 	line-height: 1.35em;
 }
 
@@ -73,7 +74,6 @@ body {
 }
 
 #searchButton:hover {
-  background: #9691B3;
   background: var(--srchBtnHoverBg);
 	color: #191919;
 }
