@@ -4,12 +4,12 @@
 input{outline:none;border:none;}/**/button{border:none;}
 
 :root {
-  --srchBtnHoverBg: #9691B3;
-  --bg: #151515;
+	--srchBtnHoverBg: #9691B3;
+	--bg: #151515;
 }
 
 img {
-  margin: -1em;
+	margin: -1em;
 }
 
 body {
@@ -19,10 +19,10 @@ body {
 
 #mainContainer {
 	background: transparent;
-  text-align: center;
+	text-align: center;
 	width: 650px;
 	border-radius: 0px;
-  border-width: 1px;
+	border-width: 1px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -42,12 +42,12 @@ body {
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
 	border-radius: 2px;
 	width: calc(100%-57px);
-  margin: 2em;
+	margin: 2em;
 }
 
 #searchInput {
 	width: 100%;
-	font: normal 500 17px "space mono", monospace;
+	font: normal 500 17px "roboto mono", monospace;
 	padding: 0.9em 0.9em 0.9em 0.9em;
 	background: #222222;
 	border-radius: 2px 0 0 2px;
@@ -55,11 +55,11 @@ body {
 }
 #searchInput:focus {
 	color: rgba(216, 216, 216, 0.9);
-	font: normal 500 17px "space mono", monospace;
+	font: normal 500 17px "roboto mono", monospace;
 }
 #searchInput::placeholder {
 	color: rgba(216, 216, 216, 0.5);
-	font: normal normal 17px "space mono", monospace;
+	font: normal normal 17px "roboto mono", monospace;
 }
 
 #searchButton {
@@ -69,12 +69,12 @@ body {
 	background: #2a2a2a;
 	color: rgba(216, 216, 216, 0.5);
 	transition: background 0.05s ease-in-out 0s;
-  width: 57px;
+	width: 57px;
 	font: normal 500 27px "Material Icons", sans-serif;
 }
 
 #searchButton:hover {
-  background: var(--srchBtnHoverBg);
+	background: var(--srchBtnHoverBg);
 	color: #191919;
 }
 
@@ -85,13 +85,13 @@ body {
 	background: #222222;
 	color: rgba(216, 216, 216, 0.5);
 	transition: background 0.08s ease-in-out 0s;
-  width: 57px;
+	width: 57px;
 	font: normal 500 22px "Material Icons", sans-serif;
-  display: none;
+	display: none;
 }
 
 #clearButton:hover {
-  color: rgba(216,216,216,0.6);
+	color: rgba(216,216,216,0.6);
 }
 
 #toggleButton {
@@ -100,14 +100,14 @@ body {
 	background: #202020;
 	color: rgba(216, 216, 216, 0.5);
 	transition: background 0.05s ease-in-out 0s;
-  width: 40px;
-  height: 40px;
+	width: 40px;
+	height: 40px;
 	font: normal 500 20px "Material Icons", sans-serif;
 }
 
 ::selection {
 	color: #282828;
-  background: rgba(189,174,147,0.4);
+	background: rgba(189,174,147,0.4);
 }
 
 @media screen and (min-width: 10in) {
@@ -139,8 +139,8 @@ body {
 		width: 90%;
 	}
 
-@media screen and (max-width: 4.425in) {
-	#mainContainer {
-		width: 100%;
+	@media screen and (max-width: 4.425in) {
+		#mainContainer {
+			width: 100%;
+		}
 	}
-}
