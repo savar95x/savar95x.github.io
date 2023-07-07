@@ -47,7 +47,7 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal 500 17px "roboto mono", monospace;
+	font: normal 500 15px "martian mono", monospace;
 	padding: 0.9em 0.9em 0.9em 0.9em;
 	background: #222222;
 	border-radius: 2px 0 0 2px;
@@ -55,11 +55,11 @@ body {
 }
 #searchInput:focus {
 	color: rgba(216, 216, 216, 0.9);
-	font: normal 500 17px "roboto mono", monospace;
+	font: normal 500 15px "martian mono", monospace;
 }
 #searchInput::placeholder {
 	color: rgba(216, 216, 216, 0.5);
-	font: normal normal 17px "roboto mono", monospace;
+	font: normal normal 15px "martian mono", monospace;
 }
 
 #searchButton {
