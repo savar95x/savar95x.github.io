@@ -71,7 +71,7 @@ body {
 #searchButton {
 	border-radius: 0 1px 1px 0;
 	padding: 0.375em 0.45em 0.375em 0.45em;
-	margin-right: 4px;
+	margin-left: 4px;
 	color: #535353;
 	background: #222222;
 	font: normal 500 27px "Material Icons", sans-serif;
