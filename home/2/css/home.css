@@ -6,7 +6,7 @@ input{outline:none;border:none;}/**/button{border:none;}
 
 img {
 	border: 4px solid #222222;
-  border-radius: 1px;
+	border-radius: 1px;
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
 }
 
@@ -18,12 +18,13 @@ body {
 .mainContainer {
 	background: #0f0f0f;
 	padding: 4.9em;
-	width: 725px;
+	width: 675px;
 	border-radius: 0px;
-  border-width: 1px;
-  border-color: #222;
-  border-style: solid;
-	box-shadow: 0px 2px 11px rgba(172, 138, 140, 0.1);
+	border-width: 0px;
+	border-color: #222;
+	border-style: solid;
+	/*box-shadow: 0px 2px 11px rgba(172, 138, 140, 0.1);
+	 */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -58,7 +59,7 @@ body {
 	font: normal 600 17px "Work Sans", sans-serif;
 }
 #searchInput::placeholder {
-  color: rgba(240,240,240,0.5);
+	color: rgba(240,240,240,0.5);
 	font: normal normal 18px "Readex Pro", sans-serif;
 }
 
@@ -70,7 +71,7 @@ body {
 #searchButton {
 	border-radius: 0 1px 1px 0;
 	padding: 0.375em 0.45em 0.375em 0.45em;
-	margin-left: 4px;
+	margin-right: 4px;
 	color: #535353;
 	background: #222222;
 	font: normal 500 27px "Material Icons", sans-serif;
@@ -80,7 +81,7 @@ body {
 	padding: 0.15em 0.35em 0.15em 0.15em;
 	font: normal normal 24px "Material Icons", sans-serif;
 	background: #222222;
-  color: #414141;
+	color: #414141;
 	transition: color 0.175s ease-in-out 0s;
 	display: none;
 }
@@ -101,20 +102,20 @@ body {
 }
 
 #toggleContainer {
-  background: #222;
+	background: #222;
 	height: 100%;
 	margin-top: 0.02em;
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
-  border-radius: 1px;
-  display: grid;
+	border-radius: 1px;
+	display: grid;
 }
 
 /*this wasn't necessarily needed, but kept for extensibility*/
 .buttonWrapper {
 	display: flex;
-  background: transparent;
+	background: transparent;
 	align-items: center;
-  padding: 0.17em;
+	padding: 0.17em;
 }
 
 #toggleButton, #editButton, #settingsButton {
@@ -178,7 +179,7 @@ body {
 .bookmarks {
 	width: 100%;
 	display: flex;
-  border-radius: 1px;
+	border-radius: 1px;
 	border: 10px solid #222222;
 	background: #222222;
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
@@ -198,7 +199,7 @@ body {
 
 @media screen and (min-width: 10in) {
 	.mainContainer {
-		width: 725px;
+		width: 675px;
 		transform: translate(-50%,-58%);
 	}
 }
@@ -231,21 +232,21 @@ body {
 		padding: 2.5em;
 	}
 
-  #searchInput:focus {
-	  color: #d8d8d8;
-	  font: normal 600 18px "Work Sans", sans-serif;
-  }
-  #searchInput {
-	  color: #d8d8d8;
-	  font: normal 600 18px "Work Sans", sans-serif;
-  }
+	#searchInput:focus {
+		color: #d8d8d8;
+		font: normal 600 18px "Work Sans", sans-serif;
+	}
+	#searchInput {
+		color: #d8d8d8;
+		font: normal 600 18px "Work Sans", sans-serif;
+	}
 }
 
 @media screen and (max-width: 5.75in) {
 	.mainContainer {
-		width: 85%;
+		width: 80%;
 		box-shadow: none;
-    border: 0 solid black;
+		border: 0 solid black;
 		padding: 2.25em;
 	}
 }
