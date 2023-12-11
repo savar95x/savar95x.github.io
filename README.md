@@ -5,6 +5,8 @@ This is a collection of my webpages, eventually being my website.
 ### 2
 ![preview](.assets/2_1.png)
 ![preview](.assets/2_2.png)
+![preview](.assets/2_3.png)
+![preview](.assets/2_4.png)
 
 ## Currently in works
 My Landing page or porfolio or introduction page.  
