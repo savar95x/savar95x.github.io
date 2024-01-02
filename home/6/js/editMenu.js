@@ -5,5 +5,6 @@ function sourceCode() {
 }
 
 function openWebsite() {
-	window.open("misc/old/movies.html", "_self")
+	//window.open("misc/old/movies.html", "_self")
+	window.open("https://keep.google.com", "_self")
 }
