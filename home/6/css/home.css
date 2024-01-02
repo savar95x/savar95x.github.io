@@ -12,7 +12,7 @@ img {
 body {
 	background-color: #202020;
 	opacity: 1;
-	background-image:  radial-gradient(#333333 2px, transparent 2px), radial-gradient(#333333 2px, #202020 2px);
+	background-image:  radial-gradient(#303030 2px, transparent 2px), radial-gradient(#303030 2px, #202020 2px);
 	background-size: 100px 100px;
 	background-position: 0 0,50px 50px;
 	line-height: 1.35em;
