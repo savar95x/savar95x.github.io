@@ -10,7 +10,11 @@ img {
 }
 
 body {
-	background: #202020;
+	background-color: #202020;
+	opacity: 1;
+	background-image:  radial-gradient(#333333 2px, transparent 2px), radial-gradient(#333333 2px, #202020 2px);
+	background-size: 80px 80px;
+	background-position: 0 0,40px 40px;
 	line-height: 1.35em;
 }
 
@@ -44,7 +48,8 @@ body {
 	width: 100%;
 	font: normal 600 17px "Work Sans", sans-serif;
 	padding: 0.7em;
-	background: transparent;
+	/*background: transparent; */
+	background: #202020;
 	color: #D4BE98;
 }
 #searchInput:focus {
@@ -88,7 +93,7 @@ body {
 
 .noSearchbar {
 	display: flex;
-	margin-top: 1.25em;
+	margin-top: 1em;
 	height: 165px;
 }
 
@@ -105,7 +110,7 @@ body {
 	display: flex;
 	background: #333333;
 	align-items: center;
-	padding: 0.17em;
+	padding: 0.27em;
 }
 
 #toggleButton, #editButton, #settingsButton {
@@ -171,7 +176,7 @@ body {
 	border: 10px solid #333333;
 	background: #333333;
 	box-shadow: 0 0px 1px rgba(0,0,0,1);
-	margin-left: 1.25em;
+	margin-left: 1em;
 }
 
 .bookmark {
