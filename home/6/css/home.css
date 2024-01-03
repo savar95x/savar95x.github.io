@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Readex+Pro|Work+Sans|JetBrains+Mono");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 /*removes the unattractive defaults*/
@@ -12,6 +13,7 @@ img {
 body {
 	background-color: #202020;
 	opacity: 1;
+	/*background-image:  url("../imgs/house.jpg");*/
 	background-image:  radial-gradient(#303030 2px, transparent 2px), radial-gradient(#303030 2px, #202020 2px);
 	background-size: 100px 100px;
 	background-position: 0 0,50px 50px;
@@ -46,7 +48,7 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal 600 17px "Work Sans", sans-serif;
+	font: normal 600 17px "Rubik", sans-serif;
 	padding: 0.7em;
 	/*background: transparent; */
 	background: #202020;
@@ -54,7 +56,7 @@ body {
 }
 #searchInput:focus {
 	color: #D4BE98;
-	font: normal 600 17px "Work Sans", sans-serif;
+	font: normal 600 17px "Rubik", sans-serif;
 }
 #searchInput::placeholder {
 	color: rgba(240,240,240,0.5);
@@ -160,7 +162,7 @@ body {
 
 .link {
 	color: #D4BE98;
-	font: normal normal 17px "Work Sans", sans-serif;
+	font: normal normal 17px "Rubik", sans-serif;
 	text-decoration: none;
 	transition: color 0.125s ease-in-out 0s;
 }
@@ -227,11 +229,11 @@ body {
 
 	#searchInput:focus {
 		color: #D4BE98;
-		font: normal 600 18px "Work Sans", sans-serif;
+		font: normal 600 18px "Rubik", sans-serif;
 	}
 	#searchInput {
 		color: #D4BE98;
-		font: normal 600 18px "Work Sans", sans-serif;
+		font: normal 600 18px "Rubik", sans-serif;
 	}
 }
 
