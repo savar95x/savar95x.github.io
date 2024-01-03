@@ -9,7 +9,7 @@ input{outline:none;border:none;}/**/button{border:none;}
 }
 
 #myImg {
-	margin: 1em 2em 1em 0;
+	margin: 1em 2em 1em 1em;
 	border-radius: 5%;
 }
 body {
@@ -23,7 +23,7 @@ h2 {
 }
 
 #mainContainer {
-	background: #333333;
+	background: transparent;
 	text-align: center;
 	width: 950px;
 	border-radius: 0px;
@@ -43,64 +43,80 @@ h2 {
 
 #top {
 	background: #333;
+	padding: 20px;
 	text-align: left;
 	width: 100%;
 	border-radius: 0px;
 	border-width: 1px;
 	display: flex;
+	box-shadow: 0 0px 3px rgba(0,0,0,0.5);
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
 
 #middle {
-	background: #f00;
-	text-align: left;
+	background: transparent;
+	padding: 20px;
 	width: 100%;
-	border-radius: 0px;
-	border-width: 1px;
-	display: inline;
+	margin-top: 1em;
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
+
+#myWork {
+	margin: 1em;
+}
+
 #projects {
 	display: flex;
 }
 .project {
 	margin: auto;
 	text-align: center;
-	background: #202020;
-	padding: 2em;
+	background: transparent;
+	padding: 1.6em;
+	border-radius: 4px;
 }
 .link {
+	margin: auto;
+	text-align: center;
+	background: #303030;
+	padding: 1.4em 3em 1.4em 3em;
+	border-radius: 0px;
+	box-shadow: 0px 0px 1px 1px  rgba(0,0,0,0.5);
 	color: #D4BE98;
 	font: normal normal 17px "Rubik", sans-serif;
 	text-decoration: none;
-	transition: color 0.125s ease-in-out 0s;
+	transition: color,box-shadow 0.125s ease-in-out 0s;
+}
+.link:hover {
+	background: #353535;
+	box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5);
 }
 
 #intro {
 }
 html, body {
-    margin: 0;
-    height: 100%;
+	margin: 0;
+	height: 100%;
 }
 body {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "main" "footer";
-    grid-template-rows: 1fr 80px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-areas: "main" "footer";
+	grid-template-rows: 1fr 80px;
 }
 main {
-    background-color: #F8BBD0;
-    grid-area: main;
+	background-color: #F8BBD0;
+	grid-area: main;
 }
 footer {
-    background-color: transparent;
-    grid-area: footer;
-  text-align: center;
+	background-color: transparent;
+	grid-area: footer;
+	text-align: center;
 }
 .phicons {
-  color: #7E7562;
-  margin: 0.6em;
+	color: #7E7562;
+	margin: 0.6em;
 	font: normal normal 22px "Rubik", sans-serif;
 	text-decoration: none;
 	transition: color 0.125s ease-in-out 0s;
