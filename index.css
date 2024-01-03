@@ -3,26 +3,31 @@
 input{outline:none;border:none;}/**/button{border:none;}
 
 :root {
-	--bg: #282828;
+	--bg: #202020;
 	--projectbg: #282828;
 	--secondarybg: #222222;
 }
 
 #myImg {
-	margin: 1em;
+	margin: 1em 2em 1em 0;
 	border-radius: 5%;
 }
-
 body {
 	background: var(--bg);
 	line-height: 1.35em;
+	color: #D4BE98;
+}
+
+h2 {
+	color: #FBF1C7;
 }
 
 #mainContainer {
-	background: white;
+	background: #333333;
 	text-align: center;
 	width: 950px;
 	border-radius: 0px;
+	padding: 40px;
 	border-width: 1px;
 	position: absolute;
 	top: 50%;
@@ -37,7 +42,7 @@ body {
 }
 
 #top {
-	background: #ff0;
+	background: #333;
 	text-align: left;
 	width: 100%;
 	border-radius: 0px;
@@ -58,11 +63,46 @@ body {
 #projects {
 	display: flex;
 }
-#project {
+.project {
 	margin: auto;
 	text-align: center;
-	background: var(--projectbg);
+	background: #202020;
+	padding: 2em;
+}
+.link {
+	color: #D4BE98;
+	font: normal normal 17px "Rubik", sans-serif;
+	text-decoration: none;
+	transition: color 0.125s ease-in-out 0s;
 }
 
 #intro {
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer";
+    grid-template-rows: 1fr 80px;
+}
+main {
+    background-color: #F8BBD0;
+    grid-area: main;
+}
+footer {
+    background-color: transparent;
+    grid-area: footer;
+  text-align: center;
+}
+.phicons {
+  color: #7E7562;
+  margin: 0.6em;
+	font: normal normal 22px "Rubik", sans-serif;
+	text-decoration: none;
+	transition: color 0.125s ease-in-out 0s;
+
 }
