@@ -45,18 +45,19 @@ h2 {
 	background: #333;
 	padding: 20px;
 	text-align: left;
-	width: 100%;
+	width: calc(100%-20px);
+	height: calc(120px+1em);
 	border-radius: 0px;
 	border-width: 1px;
 	display: flex;
-	box-shadow: 0 0px 3px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
 
 #middle {
-	background: transparent;
+	background: pink;
 	padding: 20px;
-	width: 100%;
+	width: calc(100%-20px);
 	margin-top: 1em;
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
@@ -81,15 +82,16 @@ h2 {
 	background: #303030;
 	padding: 1.4em 3em 1.4em 3em;
 	border-radius: 0px;
-	box-shadow: 0px 0px 1px 1px  rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
 	color: #D4BE98;
 	font: normal normal 17px "Rubik", sans-serif;
 	text-decoration: none;
-	transition: color,box-shadow 0.125s ease-in-out 0s;
+	transition: all 0.125s ease-in-out 0s;
 }
 .link:hover {
 	background: #353535;
 	box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5);
+	color: #eddfb7;
 }
 
 #intro {
@@ -123,7 +125,7 @@ footer {
 
 }
 .phicons:hover {
-	color: #BDAE93;
+	color: #a1947d;
 }
 
 @media screen and (min-width: 10in) {
@@ -132,91 +134,51 @@ footer {
 	}
 }
 
-@media screen and (max-width: 9.5in) {
+@media screen and (max-width: 9.7in) {
 	#mainContainer {
-		width: 75%;
+		width: 85%;
 		transform: translate(-50%,-60%);
 	}
-}
-
-@media screen and (max-width: 8.2in) {
-	#mainContainer {
-		width: 82%;
-		padding: 2.85em;
+	.project {
+		padding: 1.4em 0 0 0;
 	}
 }
 
-@media screen and (max-width: 7.2in) {
+@media screen and (max-width: 9in) {
 	img {
 		display: none;
 	}
+}
 
-	.noImg {
-		margin-left: 0;
-	}
-
-	#mainContainer {
-		width: 65%;
-		padding: 2.5em;
-	}
-
-	#searchInput:focus {
-		color: #D4BE98;
-		font: normal 600 18px "Rubik", sans-serif;
-	}
-	#searchInput {
-		color: #D4BE98;
-		font: normal 600 18px "Rubik", sans-serif;
+@media screen and (max-width: 8.6in) {
+	.project {
 	}
 }
 
-@media screen and (max-width: 5.75in) {
-	#mainContainer {
-		width: 80%;
-		box-shadow: none;
-		border: 0 solid black;
-		padding: 2.25em;
+@media screen and (max-width: 6in) {
+	.link {
+		padding: 1em 2em 1em 2em;
+	}
+	.project {
+		padding: 1em 0 0 0;
 	}
 }
 
-@media screen and (max-width: 4.3in) {
-	#mainContainer {
-		width: 90%;
-		padding: 0em;
-		margin: none;
-	}
+@media screen and (max-width: 5.6in) {
 
-	.noSearchbar {
-		margin-top: 1em;
-	}
-
-	.bookmarks {
-		margin-left: 1em;
-	}
-}
-
-@media screen and (max-width: 3.3in) {
-	.noSearchbar {
+	#projects {
 		flex-direction: column;
 	}
-
-	.noSearchbar {
-		margin-top: 0;
+	.link {
+		padding: 1.2em 2.6em 1.2em 2.6em;
 	}
-
-	.bookmarks {
-		margin-left: 0;
+	.project {
+		padding: 1.6em;
 	}
+}
 
-	#toggleContainer {
-		display: flex;
-		flex-direction: row;
-		margin-top: 0.55em;
-		margin-bottom: 0.55em;
-	}
-
-	.buttonWrapper {
-		margin-left: 0.8em;
-		margin-right: 0.8em;
+@media screen and (max-width: 4.7in) {
+	#mainContainer {
+		width: 80%;
 	}
 }
