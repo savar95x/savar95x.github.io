@@ -13,10 +13,21 @@ input{outline:none;border:none;}/**/button{border:none;}
 	margin: 1em 0.5em 1em 1em;
 	border-radius: 5%;
 }
+
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
 body {
 	background: var(--bg);
 	line-height: 1.35em;
 	color: #D4BE98;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-areas: "main" "footer";
+	grid-template-rows: 1fr 70px;
 }
 
 h2 {
@@ -73,22 +84,19 @@ h2 {
 }
 
 #projects {
-	display: flex;
-}
-.project {
+	/*thanks https://manas.is-a.dev for this part*/
+	display: grid;
 	margin: auto;
-	text-align: center;
-	background: transparent;
-	padding: 1.6em;
-	border-radius: 4px;
+	gap: 2em;
+	grid-template-columns: repeat(3, 1fr);
+	/*width: calc(100% - 2em);*/
+	width: 100%;
 }
 .link {
-	margin: auto;
-	text-align: center;
+	margin: 0;
 	background: #303030;
-	padding: 1.4em 3em 1.4em 3em;
+	padding: 2em 0;
 	font: normal 450 1em "Rubik", sans-serif;
-	border-radius: 0px;
 	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
 	color: #D4BE98;
 	text-decoration: none;
@@ -103,26 +111,7 @@ h2 {
 #identity p {
 	font: normal 450 1em "Rubik", sans-serif;
 }
-html, body {
-	margin: 0;
-	height: 100%;
-}
-body {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: 1fr;
-	grid-template-areas: "main" "footer";
-	grid-template-rows: 1fr 80px;
-}
-main {
-	background-color: #F8BBD0;
-	grid-area: main;
-}
-footer {
-	background-color: transparent;
-	grid-area: footer;
-	text-align: center;
-}
+
 .phicons {
 	color: #7E7562;
 	margin: 0.6em;
@@ -133,6 +122,12 @@ footer {
 }
 .phicons:hover {
 	color: #a1947d;
+}
+
+footer {
+	background-color: transparent;
+	grid-area: footer;
+	text-align: center;
 }
 
 ::selection {
@@ -151,9 +146,6 @@ footer {
 		width: 85%;
 		transform: translate(-50%,-60%);
 	}
-	.project {
-		padding: 1.4em 0 0 0;
-	}
 }
 
 @media screen and (max-width: 9in) {
@@ -163,29 +155,22 @@ footer {
 }
 
 @media screen and (max-width: 8.6in) {
-	.project {
-	}
 }
 
 @media screen and (max-width: 6in) {
 	.link {
-		padding: 1em 2em 1em 2em;
-	}
-	.project {
-		padding: 1em 0 0 0;
+		padding: 1em 0;
 	}
 }
 
 @media screen and (max-width: 5.6in) {
 
 	#projects {
+		display: flex;
 		flex-direction: column;
 	}
 	.link {
-		padding: 1.2em 2.6em 1.2em 2.6em;
-	}
-	.project {
-		padding: 1.6em;
+		padding: 2em 0;
 	}
 }
 
