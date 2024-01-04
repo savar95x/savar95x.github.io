@@ -3,7 +3,7 @@ This is a collection of my webpages.
 There are a total of 6 startpages that I've made (for personal use). Feel free to check them out.
 
 ## Homepage
-![preview](.assets/home.png)
+![preview](.assets/home_2.png)
 ## My Startpage(s)
 ![6_1](.assets/6_1.png)
 
