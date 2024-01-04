@@ -11,3 +11,4 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 - homepage needs addition
 - blogs; natural hypertrophy notes for public use.
 - startpage 6; make a new startpage (eventually) with the same colorscheme but a style like Bento. The current one looks too packed unnecessarily.
+- get an is-a.dev domain
