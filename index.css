@@ -55,7 +55,7 @@ h2 {
 }
 
 #middle {
-	background: pink;
+	background: transparent;
 	padding: 20px;
 	width: calc(100%-20px);
 	margin-top: 1em;
