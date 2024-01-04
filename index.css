@@ -18,9 +18,9 @@ body {
 	color: #D4BE98;
 }
 
-#identity h2 {
+h2 {
 	color: #FBF1C7;
-	font: Bold 2em "Rubik", sans-serif;
+	font: Bold 1.5em "Rubik", sans-serif;
 }
 
 #mainContainer {
@@ -84,7 +84,7 @@ body {
 	text-align: center;
 	background: #303030;
 	padding: 1.4em 3em 1.4em 3em;
-	font: normal 600 1em "Rubik", sans-serif;
+	font: normal 500 1em "Rubik", sans-serif;
 	border-radius: 0px;
 	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
 	color: #D4BE98;
@@ -98,7 +98,7 @@ body {
 }
 
 #identity p {
-	font: normal 600 1em "Rubik", sans-serif;
+	font: normal 500 1em "Rubik", sans-serif;
 }
 html, body {
 	margin: 0;
