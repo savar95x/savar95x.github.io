@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
+
 /*removes the unattractive defaults*/
 input{outline:none;border:none;}/**/button{border:none;}
 
@@ -7,11 +8,7 @@ input{outline:none;border:none;}/**/button{border:none;}
 	--bg: #202020;
 	--projectbg: #282828;
 	--secondarybg: #222222;
-}
-
-#myImg {
-	margin: 1em 0.5em 1em 1em;
-	border-radius: 5%;
+	--fg: #D4BE98;
 }
 
 html, body {
@@ -22,12 +19,17 @@ html, body {
 body {
 	background: var(--bg);
 	line-height: 1.35em;
-	color: #D4BE98;
+	color: var(--fg);
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 1fr;
 	grid-template-areas: "main" "footer";
 	grid-template-rows: 1fr 70px;
+}
+
+#top img {
+	margin: 1em 0.5em 1em 1em;
+	border-radius: 5%;
 }
 
 h2 {
@@ -52,23 +54,26 @@ h2 {
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
 
-#identity {
-	margin-top: 0.75em;
-	margin-left: 1em;
-}
-
-
 #top {
 	background: #333;
 	padding: 20px;
 	text-align: left;
-	width: calc(100%-20px);
-	height: calc(120px+1em);
+	width: calc(100% - 40px);
+	height: calc(120px + 1em);
 	border-radius: 0px;
 	border-width: 1px;
 	display: flex;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
+}
+
+#top div {
+	margin-top: 0.75em;
+	margin-left: 1em;
+}
+
+#top div p {
+	font: normal 450 1em "Rubik", sans-serif;
 }
 
 #middle {
@@ -79,11 +84,11 @@ h2 {
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
 
-#myWork {
+#middle h2 {
 	margin: 1em;
 }
 
-#projects {
+#cards {
 	/*thanks https://manas.is-a.dev for this part*/
 	display: grid;
 	margin: auto;
@@ -92,27 +97,23 @@ h2 {
 	/*width: calc(100% - 2em);*/
 	width: 100%;
 }
-.link {
+#cards a {
 	margin: 0;
 	background: #303030;
 	padding: 2em 0;
 	font: normal 450 1em "Rubik", sans-serif;
 	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
-	color: #D4BE98;
+	color: var(--fg);
 	text-decoration: none;
 	transition: all 0.125s ease-in-out 0s;
 }
-.link:hover {
+#cards a:hover {
 	background: #353535;
 	box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5);
 	color: #eddfb7;
 }
 
-#identity p {
-	font: normal 450 1em "Rubik", sans-serif;
-}
-
-.phicons {
+footer a {
 	color: #7E7562;
 	margin: 0.6em;
 	font: normal normal 20px "Rubik", sans-serif;
@@ -120,62 +121,17 @@ h2 {
 	transition: color 0.125s ease-in-out 0s;
 
 }
-.phicons:hover {
+footer a:hover {
 	color: #a1947d;
 }
 
-footer {
-	background-color: transparent;
-	grid-area: footer;
-	text-align: center;
-}
+footer { grid-area: footer; text-align: center; }
 
-::selection {
-	color: #222222;
-	background: #a1947d;
-}
+::selection { color: #222222; background: #a1947d; }
 
-@media screen and (min-width: 10in) {
-	#mainContainer {
-		transform: translate(-50%,-58%);
-	}
-}
-
-@media screen and (max-width: 9.7in) {
-	#mainContainer {
-		width: 85%;
-		transform: translate(-50%,-60%);
-	}
-}
-
-@media screen and (max-width: 9in) {
-	img {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 8.6in) {
-}
-
-@media screen and (max-width: 6in) {
-	.link {
-		padding: 1em 0;
-	}
-}
-
-@media screen and (max-width: 5.6in) {
-
-	#projects {
-		display: flex;
-		flex-direction: column;
-	}
-	.link {
-		padding: 2em 0;
-	}
-}
-
-@media screen and (max-width: 4.7in) {
-	#mainContainer {
-		width: 80%;
-	}
-}
+@media screen and (max-width: 9.7in) { #mainContainer { width: 85%; } }
+@media screen and (max-width: 9in) { img { display: none; } }
+@media screen and (max-width: 8.6in) { }
+@media screen and (max-width: 6in) { #cards a { padding: 1em 0; } }
+@media screen and (max-width: 5.6in) { #projects { display: flex; flex-direction: column; } #cards a { padding: 2em 0; } }
+@media screen and (max-width: 4.7in) { #mainContainer { width: 80%; } }
