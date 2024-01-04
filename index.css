@@ -20,7 +20,7 @@ body {
 
 h2 {
 	color: #FBF1C7;
-	font: Bold 600 2em "Rubik", sans-serif;
+	font: Bold 600 2em "Rubik", sans-serif !important;
 }
 
 #mainContainer {
