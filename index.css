@@ -133,5 +133,5 @@ footer { grid-area: footer; text-align: center; }
 @media screen and (max-width: 9in) { img { display: none; } }
 @media screen and (max-width: 8.6in) { }
 @media screen and (max-width: 6in) { #cards a { padding: 1em 0; } }
-@media screen and (max-width: 5.6in) { #projects { display: flex; flex-direction: column; } #cards a { padding: 2em 0; } }
+@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 2em 0; } }
 @media screen and (max-width: 4.7in) { #mainContainer { width: 80%; } }
