@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
 /*removes the unattractive defaults*/
 input{outline:none;border:none;}/**/button{border:none;}
 
@@ -16,6 +16,7 @@ body {
 	background: var(--bg);
 	line-height: 1.35em;
 	color: #D4BE98;
+	font: Rubik;
 }
 
 h2 {
