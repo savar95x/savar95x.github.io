@@ -9,7 +9,7 @@ input{outline:none;border:none;}/**/button{border:none;}
 }
 
 #myImg {
-	margin: 1em 2em 1em 1em;
+	margin: 1em 0.5em 1em 1em;
 	border-radius: 5%;
 }
 body {
@@ -21,6 +21,7 @@ body {
 
 h2 {
 	color: #FBF1C7;
+	font: Bold 600 2em "Rubik", sans-serif;
 }
 
 #mainContainer {
@@ -40,7 +41,9 @@ h2 {
 
 #identity {
 	margin-top: 0.75em;
+	margin-left: 1em;
 }
+
 
 #top {
 	background: #333;
@@ -82,10 +85,10 @@ h2 {
 	text-align: center;
 	background: #303030;
 	padding: 1.4em 3em 1.4em 3em;
+	font: normal 600 1em "Rubik", sans-serif;
 	border-radius: 0px;
 	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
 	color: #D4BE98;
-	font: normal normal 17px "Rubik", sans-serif;
 	text-decoration: none;
 	transition: all 0.125s ease-in-out 0s;
 }
@@ -95,7 +98,8 @@ h2 {
 	color: #eddfb7;
 }
 
-#intro {
+#identity p {
+	font: normal 600 1em "Rubik", sans-serif;
 }
 html, body {
 	margin: 0;
