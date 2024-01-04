@@ -135,6 +135,11 @@ footer {
 	color: #a1947d;
 }
 
+::selection {
+	color: #222222;
+	background: #a1947d;
+}
+
 @media screen and (min-width: 10in) {
 	#mainContainer {
 		transform: translate(-50%,-58%);
