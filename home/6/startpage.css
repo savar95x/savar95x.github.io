@@ -13,8 +13,6 @@ img {
 body {
 	background-color: #202020;
 	opacity: 1;
-	/*background-image:  url("../imgs/house.jpg");*/
-	background-image:  radial-gradient(#303030 2px, transparent 2px), radial-gradient(#303030 2px, #202020 2px);
 	background-size: 100px 100px;
 	background-position: 0 0,50px 50px;
 	line-height: 1.35em;
@@ -194,14 +192,14 @@ body {
 
 @media screen and (min-width: 10in) {
 	.mainContainer {
-		width: 675px;
+		width: 475px;
 		transform: translate(-50%,-58%);
 	}
 }
 
 @media screen and (max-width: 9.5in) {
 	.mainContainer {
-		width: 75%;
+		width: 65%;
 		transform: translate(-50%,-60%);
 	}
 }
