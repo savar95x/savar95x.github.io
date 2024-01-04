@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css2?family=Rubik");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
 /*removes the unattractive defaults*/
 input{outline:none;border:none;}/**/button{border:none;}
 
@@ -20,7 +22,9 @@ body {
 
 h2 {
 	color: #FBF1C7;
-	font: Bold 1.5em "Rubik", sans-serif;
+	font-family: "Rubik", sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
 }
 
 #mainContainer {
@@ -84,7 +88,7 @@ h2 {
 	text-align: center;
 	background: #303030;
 	padding: 1.4em 3em 1.4em 3em;
-	font: normal 500 1em "Rubik", sans-serif;
+	font: normal 450 1em "Rubik", sans-serif;
 	border-radius: 0px;
 	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
 	color: #D4BE98;
@@ -98,7 +102,7 @@ h2 {
 }
 
 #identity p {
-	font: normal 500 1em "Rubik", sans-serif;
+	font: normal 450 1em "Rubik", sans-serif;
 }
 html, body {
 	margin: 0;
