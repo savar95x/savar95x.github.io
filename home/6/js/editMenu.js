@@ -7,5 +7,5 @@ function sourceCode() {
 function openWebsite() {
 	//window.open("misc/old/movies.html", "_self")
 	//window.open("https://keep.google.com", "_self")
-	window.open("../../index.html", "_self")
+	window.open("/", "_self")
 }
