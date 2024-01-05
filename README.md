@@ -5,7 +5,7 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 ## Homepage
 ![preview](.assets/home_3.png)
 ## My Startpage(s)
-![6_1](.assets/6_1.png)
+![6_2](.assets/6_2.png)
 
 ## Todo
 - homepage needs addition; maybe add some colors, some links on the top (axarva.me, nav.al); a section that shows the recent posts (blogs/vids/projects); optimize better for other devices; add an about page
