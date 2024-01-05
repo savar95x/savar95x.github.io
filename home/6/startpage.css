@@ -22,12 +22,10 @@ body {
 	background: transparent;
 	padding: 4.9em;
 	width: 675px;
-	/*box-shadow: 0px 2px 11px rgba(172, 138, 140, 0.1);
-	 */
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-57%);
+	transform: translate(-50%,-50%);
 	display: flex;
 	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
@@ -193,14 +191,12 @@ body {
 @media screen and (min-width: 10in) {
 	.mainContainer {
 		width: 475px;
-		transform: translate(-50%,-58%);
 	}
 }
 
 @media screen and (max-width: 9.5in) {
 	.mainContainer {
 		width: 65%;
-		transform: translate(-50%,-60%);
 	}
 }
 
