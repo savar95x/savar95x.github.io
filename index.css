@@ -90,13 +90,13 @@ h2 {
 	text-align: center;
 	padding: 2em 0;
 	font: normal 450 1em "Rubik", sans-serif;
-	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 1px 1px  rgba(0,0,0,0.5);
 	color: var(--fg);
 }
 
 #cards a:hover {
 	background: #353535;
-	box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5);
+	box-shadow: 4px 4px 1px 1px  rgba(0,0,0,0.5);
 	color: #eddfb7;
 }
 
