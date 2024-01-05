@@ -4,9 +4,7 @@
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
 
-* {
-	transition: all 0.125s ease-in-out 0s;
-}
+* { transition: all 0.125s ease-in-out 0s; }
 
 :root { --fg: #D4BE98; }
 
@@ -14,6 +12,9 @@ body {
 	background: #202020;
 	line-height: 1.35em;
 	color: var(--fg);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 h2 {
@@ -28,19 +29,15 @@ h2 {
 
 #mainContainer {
 	width: 950px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	display: inline;
+	margin: auto auto;
+	transform: translate(0,10vh);
 }
 
 
 #top {
-	background: #333;
+	background: #333333;
 	padding: 20px;
 	text-align: left;
-	width: calc(100% - 40px);
 	border-radius: 0px;
 	border-width: 1px;
 	display: flex;
@@ -63,6 +60,7 @@ h2 {
 #top div p a {
 	color: #d5a689;
 }
+
 #top div p a:hover {
 	color: #D27873;
 }
@@ -79,7 +77,6 @@ h2 {
 }
 
 #cards {
-	/*thanks https://manas.is-a.dev for this part*/
 	display: grid;
 	margin: auto;
 	gap: 2em;
@@ -96,6 +93,7 @@ h2 {
 	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
 	color: var(--fg);
 }
+
 #cards a:hover {
 	background: #353535;
 	box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5);
@@ -103,12 +101,9 @@ h2 {
 }
 
 #footer {
-	position: fixed;
-	bottom: 0;
-	width: calc(100% - 1em);
 	text-align: center;
-	height: 6vh;
 	display: grid;
+	margin-top: auto;
 }
 
 #footer #phicons {
@@ -119,7 +114,7 @@ h2 {
 #footer #phicons a {
 	color: #57544a;
 	font: normal normal 20px "Rubik", sans-serif;
-	padding: 0.3em;
+	padding: 1.6em 1em;
 	margin: auto;
 }
 
@@ -130,4 +125,4 @@ h2 {
 @media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
 @media screen and (max-width: 7.6in) { img { display: none; } }
 @media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
-@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 2em 0; } }
+@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0; } }
