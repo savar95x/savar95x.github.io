@@ -129,4 +129,4 @@ h2 {
 @media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
 @media screen and (max-width: 7.6in) { img { display: none; } }
 @media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
-@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0; } }
+@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0; box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5); } #cards a:hover { box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5); } }
