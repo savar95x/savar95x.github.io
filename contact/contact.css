@@ -88,6 +88,13 @@ img {
 	margin: auto;
 }
 
+a {color: var(--fg)}
+a:hover {
+	color: #D87873;
+	opacity: 0.95;
+}
+
+
 #header #stuff a:hover { color: #837e6b; }
 
 #footer #phicons a:hover { color: #837e6b; }
