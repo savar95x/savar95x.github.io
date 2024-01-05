@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+/*removes the unattractive defaults*/
+input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
+
+* { transition: all 0.125s ease-in-out 0s; }
+
+:root { --fg: #D4BE98; }
+
+body {
+	background: #202020;
+	color: var(--fg);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#mainContainer {
+	width: 750px;
+	padding: 4em;
+	margin: auto auto;
+	font: normal 400 18px "Rubik", sans-serif;
+	background: #303030;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+	line-height: 1.8em;
+}
+
+h1 {
+	font-family: "Rubik", sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	color: #9EAA62;
+}
+
+img {
+	margin: 1em 0.5em 1em 1em;
+}
+
+#footer {
+	text-align: center;
+	display: grid;
+	margin-top: auto;
+}
+#header {
+	display: flex;
+	margin-bottom: auto;
+}
+
+#footer #phicons {
+	display: flex;
+	margin: auto;
+}
+
+#header #stuff {
+	text-align: right;
+	display: flex;
+	margin-left: auto; 
+	margin-right: 2em;
+}
+
+#header #home {
+	text-align: right;
+	display: flex;
+	margin-right: auto; 
+	margin-left: 2em;
+}
+
+#footer #phicons a {
+	color: #57544a;
+	font: normal normal 20px "Rubik", sans-serif;
+	padding: 1.6em 1em;
+	margin: auto;
+}
+
+#header #stuff a {
+	font: normal normal 17px "Rubik", sans-serif;
+	color: #57544a;
+	padding: 2em 1em;
+	margin: auto;
+}
+
+#header #home a {
+	font: bold normal 17px "Rubik", sans-serif;
+	color: #D87873;
+	padding: 2em 1em;
+	margin: auto;
+}
+
+#header #stuff a:hover { color: #837e6b; }
+
+#footer #phicons a:hover { color: #837e6b; }
+
+::selection { color: #222222; background: #a1947d; }
+
+@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
+@media screen and (max-width: 7.6in) { img { display: none; } }
+@media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
+@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0;} }
