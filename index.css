@@ -30,7 +30,6 @@ h2 {
 #mainContainer {
 	width: 950px;
 	margin: auto auto;
-	transform: translate(0,10vh);
 }
 
 
@@ -105,13 +104,18 @@ h2 {
 	display: grid;
 	margin-top: auto;
 }
+#header {
+	text-align: center;
+	display: grid;
+	margin-bottom: auto;
+}
 
-#footer #phicons {
+#footer #phicons, #header #phicons {
 	display: flex;
 	margin: auto;
 }
 
-#footer #phicons a {
+#footer #phicons a, #header #phicons a {
 	color: #57544a;
 	font: normal normal 20px "Rubik", sans-serif;
 	padding: 1.6em 1em;
