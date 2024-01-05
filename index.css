@@ -2,69 +2,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
 
 /*removes the unattractive defaults*/
-input{outline:none;border:none;}/**/button{border:none;}
+input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
 
-:root {
-	--bg: #202020;
-	--projectbg: #282828;
-	--secondarybg: #222222;
-	--fg: #D4BE98;
+* {
+	transition: all 0.125s ease-in-out 0s;
 }
 
-html, body {
-	margin: 0;
-	height: 100%;
-}
+:root { --fg: #D4BE98; }
 
 body {
-	background: var(--bg);
+	background: #202020;
 	line-height: 1.35em;
 	color: var(--fg);
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: 1fr;
-	grid-template-areas: "main" "footer";
-	grid-template-rows: 1fr 70px;
-}
-
-#top img {
-	margin: 1em 0.5em 1em 1em;
-	border-radius: 5%;
 }
 
 h2 {
-	color: #FBF1C7;
 	font-family: "Rubik", sans-serif;
 	font-size: 1.5em;
 	font-weight: 700;
 }
 
+#middle h2 {
+	color: #e0d6b1;
+}
+
+#top h2 {
+	color: #FBF1C7;;
+}
+
 #mainContainer {
-	background: transparent;
-	text-align: center;
 	width: 950px;
-	border-radius: 0px;
-	padding: 40px;
-	border-width: 1px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	display: inline;
-	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
+
 
 #top {
 	background: #333;
 	padding: 20px;
 	text-align: left;
 	width: calc(100% - 40px);
-	height: calc(120px + 1em);
+	height: calc(105px + 2em);
 	border-radius: 0px;
 	border-width: 1px;
 	display: flex;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
-	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
+}
+
+#top img {
+	margin: 1em 0.5em 1em 1em;
+	border-radius: 5%;
 }
 
 #top div {
@@ -76,16 +66,18 @@ h2 {
 	font: normal 450 1em "Rubik", sans-serif;
 }
 
+#top div p a {
+	color: #d5a689;
+}
+#top div p a:hover {
+	color: #D27873;
+}
+
 #middle {
-	background: transparent;
 	padding: 20px;
 	width: calc(100%-20px);
 	margin-top: 1em;
-	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
-}
-
-#middle h2 {
-	margin: 1em;
+	text-align: center;
 }
 
 #cards {
@@ -94,18 +86,17 @@ h2 {
 	margin: auto;
 	gap: 2em;
 	grid-template-columns: repeat(3, 1fr);
-	/*width: calc(100% - 2em);*/
 	width: 100%;
 }
+
 #cards a {
 	margin: 0;
 	background: #303030;
+	text-align: center;
 	padding: 2em 0;
 	font: normal 450 1em "Rubik", sans-serif;
 	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
 	color: var(--fg);
-	text-decoration: none;
-	transition: all 0.125s ease-in-out 0s;
 }
 #cards a:hover {
 	background: #353535;
@@ -113,25 +104,28 @@ h2 {
 	color: #eddfb7;
 }
 
-footer a {
+#footer {
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	text-align: center;
+	height: 6vh;
+}
+
+#footer a {
 	color: #7E7562;
-	margin: 0.6em;
 	font: normal normal 20px "Rubik", sans-serif;
-	text-decoration: none;
-	transition: color 0.125s ease-in-out 0s;
+	padding: 5px;
 
 }
-footer a:hover {
-	color: #a1947d;
-}
 
-footer { grid-area: footer; text-align: center; }
+#footer a:hover { color: #a1947d; }
 
 ::selection { color: #222222; background: #a1947d; }
 
 @media screen and (max-width: 9.7in) { #mainContainer { width: 85%; } }
 @media screen and (max-width: 9in) { img { display: none; } }
 @media screen and (max-width: 8.6in) { }
-@media screen and (max-width: 6in) { #cards a { padding: 1em 0; } }
+@media screen and (max-width: 6in) { #cards a { padding: 1.5em 0; } #top { height: calc(105px + 3em); } }
 @media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 2em 0; } }
 @media screen and (max-width: 4.7in) { #mainContainer { width: 80%; } }
