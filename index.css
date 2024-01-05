@@ -22,10 +22,6 @@ h2 {
 	font-weight: 700;
 }
 
-#middle h2 {
-	color: #e0d6b1;
-}
-
 #top h2 {
 	color: #FBF1C7;;
 }
@@ -45,7 +41,6 @@ h2 {
 	padding: 20px;
 	text-align: left;
 	width: calc(100% - 40px);
-	height: calc(105px + 2em);
 	border-radius: 0px;
 	border-width: 1px;
 	display: flex;
@@ -54,11 +49,10 @@ h2 {
 
 #top img {
 	margin: 1em 0.5em 1em 1em;
-	border-radius: 5%;
 }
 
 #top div {
-	margin-top: 0.75em;
+	margin: auto;
 	margin-left: 1em;
 }
 
@@ -74,10 +68,14 @@ h2 {
 }
 
 #middle {
-	padding: 20px;
+	padding: 0.5em 0;
 	width: calc(100%-20px);
-	margin-top: 1em;
-	text-align: center;
+	text-align: left;
+}
+
+#middle h2 {
+	color: #e0d6b1;
+	margin: 1.2em;
 }
 
 #cards {
@@ -105,27 +103,31 @@ h2 {
 }
 
 #footer {
-	position:fixed;
-	bottom:0;
-	width: 100%;
+	position: fixed;
+	bottom: 0;
+	width: calc(100% - 1em);
 	text-align: center;
 	height: 6vh;
+	display: grid;
 }
 
-#footer a {
-	color: #7E7562;
+#footer #phicons {
+	display: flex;
+	margin: auto;
+}
+
+#footer #phicons a {
+	color: #57544a;
 	font: normal normal 20px "Rubik", sans-serif;
-	padding: 5px;
-
+	padding: 0.3em;
+	margin: auto;
 }
 
-#footer a:hover { color: #a1947d; }
+#footer #phicons a:hover { color: #837e6b; }
 
 ::selection { color: #222222; background: #a1947d; }
 
-@media screen and (max-width: 9.7in) { #mainContainer { width: 85%; } }
-@media screen and (max-width: 9in) { img { display: none; } }
-@media screen and (max-width: 8.6in) { }
-@media screen and (max-width: 6in) { #cards a { padding: 1.5em 0; } #top { height: calc(105px + 3em); } }
+@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
+@media screen and (max-width: 7.6in) { img { display: none; } }
+@media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
 @media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 2em 0; } }
-@media screen and (max-width: 4.7in) { #mainContainer { width: 80%; } }
