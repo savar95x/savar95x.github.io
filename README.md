@@ -14,7 +14,8 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 - [ ] get an is-a.dev domain
 - [ ] add header and footer in startpage as well
 - [ ] unify style.css and basic html
-- [ ] make header more mobile friendly
+- [ ] make header more mobile friendly, add threeline
+- [ ] learn hugo
 
 ### Ideas
 - [ ] A quote from movies page that returns json on curl
