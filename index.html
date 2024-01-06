@@ -3,6 +3,7 @@
 <head>
 	<title>savar</title>
 	<link rel=stylesheet href=style.css />
+	<link rel=stylesheet href=index.css />
 	<meta charset=UTF-8 />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -44,3 +45,91 @@
 	</section>
 </section>
 </body>
+
+<style>
+body {
+	line-height: 1.35em;
+}
+
+#top h2 {
+	color: #9EAA62;
+}
+
+#mainContainer {
+	width: 950px;
+	margin: auto auto;
+}
+
+
+#top {
+	background: #333333;
+	padding: 20px;
+	text-align: left;
+	border-radius: 0px;
+	border-width: 1px;
+	display: flex;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+#top img {
+	margin: 1em 0.5em 1em 1em;
+}
+
+#top div {
+	margin: auto;
+	margin-left: 1em;
+}
+
+#top div p {
+	font: normal 450 1em "Rubik", sans-serif;
+	line-height: 1.4em;
+}
+
+#top div p a {
+	color: #d5a689;
+}
+
+#top div p a:hover {
+	color: #D27873;
+}
+
+#middle {
+	padding: 0.5em 0;
+	width: calc(100%-20px);
+	text-align: left;
+}
+
+#middle h2 {
+	color: #e0d6b1;
+	margin: 1.2em;
+}
+
+#cards {
+	display: grid;
+	margin: auto;
+	gap: 2em;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+}
+
+#cards a {
+	margin: 0;
+	background: #303030;
+	text-align: center;
+	padding: 2em 0;
+	font: normal 450 1em "Rubik", sans-serif;
+	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
+	color: var(--fg);
+}
+
+#cards a:hover {
+	background: #353535;
+	box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5);
+	color: #eddfb7;
+}
+
+@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
+@media screen and (max-width: 7.6in) { img { display: none; } }
+@media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
+@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0;} }
+</style>

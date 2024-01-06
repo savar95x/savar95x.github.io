@@ -1,103 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
 
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
 
 * { transition: all 0.125s ease-in-out 0s; }
 
-:root { --fg: #D4BE98; }
-
 body {
 	background: #202020;
-	line-height: 1.35em;
-	color: var(--fg);
+	color: #D4BE98;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+}
+
+#content {
+	max-width: 850px;
+	padding: 1em 4em;
+	margin: auto auto;
+	font: normal 400 18px "Rubik", sans-serif;
+	line-height: 1.8em;
+}
+
+h1 {
+	font-family: "Rubik", sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	color: #9EAA62;
 }
 
 h2 {
 	font-family: "Rubik", sans-serif;
 	font-size: 1.5em;
 	font-weight: 700;
+	color: #C7A167;
 }
 
-#top h2 {
-	color: #FBF1C7;;
-}
-
-#mainContainer {
-	width: 950px;
-	margin: auto auto;
-}
-
-
-#top {
-	background: #333333;
-	padding: 20px;
-	text-align: left;
-	border-radius: 0px;
-	border-width: 1px;
-	display: flex;
-	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
-}
-
-#top img {
-	margin: 1em 0.5em 1em 1em;
-}
-
-#top div {
-	margin: auto;
-	margin-left: 1em;
-}
-
-#top div p {
-	font: normal 450 1em "Rubik", sans-serif;
-	line-height: 1.4em;
-}
-
-#top div p a {
-	color: #d5a689;
-}
-
-#top div p a:hover {
-	color: #D27873;
-}
-
-#middle {
-	padding: 0.5em 0;
-	width: calc(100%-20px);
-	text-align: left;
-}
-
-#middle h2 {
-	color: #e0d6b1;
-	margin: 1.2em;
-}
-
-#cards {
-	display: grid;
-	margin: auto;
-	gap: 2em;
-	grid-template-columns: repeat(3, 1fr);
-	width: 100%;
-}
-
-#cards a {
-	margin: 0;
-	background: #303030;
-	text-align: center;
-	padding: 2em 0;
-	font: normal 450 1em "Rubik", sans-serif;
-	box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.5);
-	color: var(--fg);
-}
-
-#cards a:hover {
-	background: #353535;
-	box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5);
-	color: #eddfb7;
+h3 {
+	font-family: "Rubik", sans-serif;
+	font-size: 1.17em;
+	font-weight: 700;
+	color: #D1889C;
 }
 
 #footer {
@@ -105,6 +49,7 @@ h2 {
 	display: grid;
 	margin-top: auto;
 }
+
 #header {
 	display: flex;
 	margin-bottom: auto;
@@ -137,14 +82,14 @@ h2 {
 }
 
 #header #stuff a {
-	font: normal normal 17px "Rubik", sans-serif;
+	font: 450 normal 17px "Rubik", sans-serif;
 	color: #57544a;
 	padding: 2em 1em;
 	margin: auto;
 }
 
 #header #home a {
-	font: bold normal 17px "Rubik", sans-serif;
+	font: 700 normal 17px "Rubik", sans-serif;
 	color: #D87873;
 	padding: 2em 1em;
 	margin: auto;
@@ -156,7 +101,6 @@ h2 {
 
 ::selection { color: #222222; background: #a1947d; }
 
-@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
-@media screen and (max-width: 7.6in) { img { display: none; } }
-@media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
-@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0;} }
+@media screen and (max-width: 9in) { #content { font-size: 17px; } }
+@media screen and (max-width: 8.4in) { #content { padding: 0.5em; width: calc(90% - 1em); } }
+@media screen and (max-width: 5.8in) { #content { line-height: 1.7em;} }
