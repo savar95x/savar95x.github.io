@@ -60,9 +60,11 @@ h3 {
 
 #header {
 	display: flex;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: auto;
 	width: calc(100% - 2em);
+	background: pink;
 }
 
 #footer #phicons {
