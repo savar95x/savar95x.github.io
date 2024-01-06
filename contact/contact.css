@@ -101,7 +101,7 @@ a:hover {
 
 ::selection { color: #222222; background: #a1947d; }
 
-@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
-@media screen and (max-width: 7.6in) { img { display: none; } }
-@media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
-@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0;} }
+@media screen and (max-width: 11in) { #mainContainer { width: calc(80% - 8em); } }
+@media screen and (max-width: 8.6in) { #mainContainer { width: calc(70% - 8em); } }
+@media screen and (max-width: 8.4in) { #mainContainer { padding: 3em; width: calc(90% - 6em); } }
+@media screen and (max-width: 5.8in) { #mainContainer { padding: 1.25em; width: calc(100% - 2.5em); box-shadow: none; margin: none; background: transparent; line-height: 1.7em;} }

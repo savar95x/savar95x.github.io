@@ -19,11 +19,11 @@ body {
 
 #mainContainer {
 	width: 750px;
-	padding: 4em;
+	padding: 1em 4em 2em 4em;
 	margin: auto auto;
 	font: normal 400 18px "Rubik", sans-serif;
-	background: #303030;
-	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+	/*background: #303030;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);*/
 	line-height: 1.8em;
 }
 
@@ -36,6 +36,7 @@ h1 {
 
 img {
 	margin: 1em 0.5em 1em 1em;
+	height: 200px;
 }
 
 #footer {
@@ -69,13 +70,13 @@ img {
 
 #footer #phicons a {
 	color: #57544a;
-	font: normal normal 20px "Rubik", sans-serif;
+	font-size: 20px;
 	padding: 1.6em 1em;
 	margin: auto;
 }
 
 #header #stuff a {
-	font: normal normal 17px "Rubik", sans-serif;
+	font: 450 normal 17px "Rubik", sans-serif;
 	color: #57544a;
 	padding: 2em 1em;
 	margin: auto;
@@ -94,7 +95,7 @@ img {
 
 ::selection { color: #222222; background: #a1947d; }
 
-@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
-@media screen and (max-width: 7.6in) { img { display: none; } }
-@media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
-@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0;} }
+@media screen and (max-width: 11in) { #mainContainer { width: calc(80% - 8em); } }
+@media screen and (max-width: 8.6in) { #mainContainer { width: calc(70% - 8em); } }
+@media screen and (max-width: 8.4in) { #mainContainer { padding: 3em; width: calc(90% - 6em); } }
+@media screen and (max-width: 5.8in) { #mainContainer { padding: 1.25em; width: calc(100% - 2.5em); box-shadow: none; margin: none; background: transparent; line-height: 1.7em;} }
