@@ -1,1 +1,344 @@
-6/index.html
+<html lang=en>
+<head>
+	<title>Start</title>
+	<link rel=stylesheet href=/style.css />
+	<meta charset=utf-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+	<section id=header> 
+	<section id=home>
+		<a href=/>savar</a>
+	</section>
+	<section id=stuff>
+		<a href=/blogs>blogs</a>
+		<a href=/about>about</a>
+		<a href=/contact>contact</a>
+	</section>
+</section>
+
+<section id=content>
+	
+	<div class=noImg>
+	<div class=searchContainer>
+	<input id=searchInput placeholder="Search with SearX" autocomplete=off />
+	<button class="material-icons" id=clearButton onclick="clearInput()">close</button>
+	<button class="material-icons" id=searchButton onclick="search()">search</button>
+	</div>
+	<div class=noSearchbar>
+	<div id=toggleContainer>
+		<span class=buttonWrapper><button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">cached</button></span>
+		<span class=buttonWrapper><button onclick="openWebsite()" title="My Website" id=editButton class="material-icons">notes</button></span>
+		<span class=buttonWrapper><button onclick="sourceCode()" title="Source Code" id=settingsButton class="material-icons-round">code</button></span>
+	</div>
+	<div class=bookmarks>
+		<div class="bookmark">
+		<a class="heading heading1">Web</a><br>
+		<div class=links>
+		<div>
+		<a href=https://fonts.google.com/icons class=link>gicons</a><br>
+		<a href=https://codemyui.com/crt-screen-text-flicker-animation-in-pure-css/ class=link>flickr</a><br>
+		</div>
+		</div>
+		</div>
+		<div class="bookmark">
+		<a class="heading heading2">Notes</a><br>
+		<div class=links>
+		<div>
+		<a href=https://keep.google.com class=link>gkeep</a><br>
+		<a href=https://web.whatsapp.com class=link>whatsapp</a><br>
+		</div>
+		</div>
+		</div>
+		<div class="bookmark">
+		<a class="heading heading3">Learn</a><br>
+		<div class=links>
+		<div>
+		<a href=https://www.youtube.com/@hubermanlab/videos class=link>huberman</a><br>
+		<a href=https://coursera.org class=link>coursera</a><br>
+		<!--a href=https://www.youtube.com/watch?v=5tSTk1083VY class=link>goggins</a><br-->
+		</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<style>
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+#content {
+	background: transparent;
+	width: 675px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
+}
+
+.noImg {
+	width: 100%;
+	margin-left: 1.25em;
+}
+
+.searchContainer {
+	display: flex;
+	box-shadow: 0 0px 5px rgba(0,0,0,0.5);
+	border: 4px solid #333333;
+	width: calc(100%-8px);
+}
+
+#searchInput {
+	width: 100%;
+	font: normal 600 17px "Rubik", sans-serif;
+	padding: 0.7em;
+	/*background: transparent; */
+	background: #202020;
+	color: #D4BE98;
+}
+#searchInput:focus {
+	color: #D4BE98;
+	font: normal 600 17px "Rubik", sans-serif;
+}
+#searchInput::placeholder {
+	color: rgba(240,240,240,0.5);
+	font: normal normal 18px "Readex Pro", sans-serif;
+}
+
+#searchButton, #clearButton {
+	transition: background 0.05s ease-in-out 0s;
+}
+
+#searchButton {
+	padding: 0.375em 0.5em 0.375em 0.6em;
+	margin-left: 4px;
+	color: #606060;
+	background: #333333;
+	font: normal 500 27px "Material Icons", sans-serif;
+}
+
+#clearButton {
+	padding: 0.15em 0.35em 0.15em 0.15em;
+	font: normal normal 24px "Material Icons", sans-serif;
+	background: transparent;
+	color: #454545;
+	transition: color 0.175s ease-in-out 0s;
+	display: none;
+}
+
+#clearButton:hover {
+	color: #606060;
+}
+
+#searchButton:hover {
+	background: #535353;
+	color: #0f0f0f;
+}
+
+.noSearchbar {
+	display: flex;
+	margin-top: 1em;
+	height: 165px;
+}
+
+#toggleContainer {
+	background: #222;
+	height: 100%;
+	margin-top: 0.02em;
+	box-shadow: 0 0px 1px rgba(0,0,0,1);
+	display: grid;
+}
+
+/*this wasn't necessarily needed, but kept for extensibility*/
+.buttonWrapper {
+	display: flex;
+	background: #333333;
+	align-items: center;
+	padding: 0.27em;
+}
+
+#toggleButton, #editButton, #settingsButton {
+	border: 1px solid transparent;
+	padding: 0.35em;
+	background: transparent;
+	/*color: #EFEFEF;*/
+	font: normal normal 21.5px "Material Icons", sans-serif;
+	transition: color 0.125s ease-in-out 0s;
+	/*margin: auto; not needed*/
+}
+
+#toggleButton {
+	color: #89b482;
+}
+
+#editButton {
+	color: #d1889c;
+}
+
+#settingsButton {
+	color: #C7A167;
+}
+
+.heading {
+	font: normal normal 20px "Readex Pro", sans-serif;
+}
+
+.heading1 {
+	color: #9EAA62;
+}
+
+.heading2 {
+	color: #D8776D;
+}
+
+.heading3 {
+	color: #80A9A0;
+}
+
+.links {
+	height: calc(85% - 0.5em);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.link {
+	color: #D4BE98;
+	font: normal normal 17px "Rubik", sans-serif;
+	text-decoration: none;
+	transition: color 0.125s ease-in-out 0s;
+}
+
+.link:hover {
+	cursor: default;
+	color: #FBF1C7;
+}
+
+.bookmarks {
+	width: 100%;
+	display: flex;
+	border: 10px solid #333333;
+	background: #333333;
+	box-shadow: 0 0px 1px rgba(0,0,0,1);
+	margin-left: 1em;
+}
+
+.bookmark {
+	text-align: center;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	width: 33.3%;
+}
+
+::selection {
+	color: #222222;
+	background: #D4BE98;
+}
+
+@media screen and (min-width: 10in) {
+	#content {
+		width: 475px;
+	}
+}
+
+@media screen and (max-width: 9.5in) {
+	#content {
+		width: 65%;
+	}
+}
+
+@media screen and (max-width: 8.2in) {
+	#content {
+		width: 82%;
+		padding: 2.85em;
+	}
+}
+
+@media screen and (max-width: 7.2in) {
+	img {
+		display: none;
+	}
+
+	.noImg {
+		margin-left: 0;
+	}
+
+	#content {
+		width: 65%;
+		padding: 2.5em;
+	}
+
+	#searchInput:focus {
+		color: #D4BE98;
+		font: normal 600 18px "Rubik", sans-serif;
+	}
+	#searchInput {
+		color: #D4BE98;
+		font: normal 600 18px "Rubik", sans-serif;
+	}
+}
+
+@media screen and (max-width: 5.75in) {
+	#content {
+		width: 80%;
+		box-shadow: none;
+		border: 0 solid black;
+		padding: 2.25em;
+	}
+}
+
+@media screen and (max-width: 4.3in) {
+	#content {
+		width: 90%;
+		padding: 0em;
+		margin: none;
+	}
+
+	.noSearchbar {
+		margin-top: 1em;
+	}
+
+	.bookmarks {
+		margin-left: 1em;
+	}
+}
+
+@media screen and (max-width: 3.3in) {
+	.noSearchbar {
+		flex-direction: column;
+	}
+
+	.noSearchbar {
+		margin-top: 0;
+	}
+
+	.bookmarks {
+		margin-left: 0;
+	}
+
+	#toggleContainer {
+		display: flex;
+		flex-direction: row;
+		margin-top: 0.55em;
+		margin-bottom: 0.55em;
+	}
+
+	.buttonWrapper {
+		margin-left: 0.8em;
+		margin-right: 0.8em;
+	}
+}
+</style>
+
+</section>
+	<section id=footer> 
+	<section id=phicons>
+		<a class="ph ph-github-logo" href=https://github.com/savar95x></a>
+		<a class="ph ph-envelope-simple" href=mailto:skaar513@gmail.com></a>
+		<a class="ph ph-instagram-logo" href=https://instagram.com/savar95x></a>
+	</section>
+</section>
+
+</body>
