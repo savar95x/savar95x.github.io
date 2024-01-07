@@ -114,10 +114,10 @@ h3 {
 @media screen and (max-width: 8.4in) {
 	#content {
 		padding: 0.5em;
-		width: calc(90% - 1em);
+		width: calc(95% - 1em);
 	}
 	#header {
-		width: calc(90%)
+		width: calc(95%)
 	}
 	#header #home a, #header #stuff a {
 		padding: 1.5em 0.5em
