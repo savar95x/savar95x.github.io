@@ -114,16 +114,16 @@ h3 {
 @media screen and (max-width: 8.4in) {
 	#content {
 		padding: 0.5em;
-		width: calc(95% - 1em);
+		width: calc(96% - 1em);
 	}
 	#header {
-		width: calc(95%)
+		width: calc(96%)
 	}
 	#header #home a, #header #stuff a {
-		padding: 1.5em 0.5em
+		padding: 1em 0.5em
 	}
 	#footer #phicons a {
-		padding: 1em 0.5em;
+		padding: 0.5em 0.4em;
 	}
 }
 @media screen and (max-width: 5.8in) { #content { line-height: 1.7em;} }
