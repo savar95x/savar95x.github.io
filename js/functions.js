@@ -14,11 +14,11 @@ function toggleEngine() {
 };
 
 function clickShowButton() {
-    if (document.getElementById('search-container').style.display === 'flex') {
-        toggleEngine();
-    } else {
-        showSearchBar();
-    }
+	if (document.getElementById('search-container').style.display === 'flex') {
+		toggleEngine();
+	} else {
+		showSearchBar();
+	}
 }
 
 function showSearchBar() {

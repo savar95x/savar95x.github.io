@@ -50,7 +50,8 @@
 }
 
 #content {
-	width: 100%;
+	max-width: 40em;
+	width: calc(100% - 8em);
 }
 
 #cards {
@@ -134,10 +135,10 @@
 
 
 @media screen and (max-width: 10.6in) { #content { width: calc(100% - 8em); } }
-@media screen and (max-width: 8.4in) { #cards { gap: 1.5em; } }
+@media screen and (max-width: 8.4in) { #content { width: calc(100% - 2em); } #cards { gap: 1.5em; } }
 @media screen and (max-width: 7.5in) { #cards { gap: 1em; } }
 @media screen and (max-width: 6.5in) { #cards { grid-template-columns: repeat(2, 1fr);gap: 1.5em; } }
-@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0;} }
+@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { margin-top: -0.15em; padding: 1.5em 0;} }
 </style>
 
 <script src=/js/allEngines.js></script>
