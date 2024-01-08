@@ -1,6 +1,6 @@
 <html lang=en>
 <head>
-	<title></title>
+	<title>my blogposts</title>
 	<link rel=stylesheet href=/style.css />
 	<meta charset=utf-8 />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +20,10 @@
 </section>
 
 <section id=content>
-	<h1 id="my-blogposts">my blogposts</h1>
-
+	<h1>my blogposts</h1>
 	
-	<section class="block">
+	
+	<a class="block" href="/blogs/1/">
 		<h2>programming my workout split</h2>
 		<p>
 		08 January 2024
@@ -31,10 +31,8 @@
 		My attempt at programming a workout plan for myself as a novice.
 exercise selection According to NH, selecting the lifts should be the first priority because that is what essentially makes the skeleton of the program. he also advices that the lifts: should be work for the individual's anatomy should be already practiced by the individual for atleast 3 months, and seen some growth on should be likeable by the individual, do not include it if you don't like it as a novice, the program should have very less hard variations to avoid wasting time on neurological adaptation, as you don't need many variations at this point to grow.
 		<br>
-		<a href="/blogs/1/" id="read-more">read more...</a>
-		<br>
 		</p>
-	</section>
+	</a>
 	
 </section>
 	<section id=footer> 
@@ -47,26 +45,27 @@ exercise selection According to NH, selecting the lifts should be the first prio
 
 </body>
 <style>
-.block a {
-	color: #9EAA62;
-}
-
 .block {
 	width: 750px;
+	display: flex;
+	flex-direction: column;
+	color: var(--fg);
 	padding: 2em 2.5em;
 	margin: 2em auto;
 	font: normal 400 18px "Rubik", sans-serif;
 	background: #303030;
-	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
 	line-height: 1.8em;
 }
 
 .block:hover {
-	box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.4);
+	color: var(--fg);
+	box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.8);
 }
 
 h2 {
 	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 h1 {
