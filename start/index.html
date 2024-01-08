@@ -1,11 +1,15 @@
 <html lang=en>
-<head>
+	<head>
 	<title>start</title>
 	<link rel=stylesheet href=/style.css />
 	<meta charset=utf-8 />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="savar's webpage" />
-	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"
+    />
 </head>
 
 <body>
@@ -23,319 +27,114 @@
 
 <section id=content>
 	<div class=noImg>
-	<div class=searchContainer>
+	<section id=search-container>
 		<input id=searchInput placeholder="Search with SearX" autocomplete=off />
-		<button class="material-icons" id=clearButton onclick="clearInput()">close</button>
-		<button class="material-icons" id=searchButton onclick="search()">search</button>
-	</div>
-	<div class=noSearchbar>
-		<div id=toggleContainer>
-			<span class=buttonWrapper><button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">cached</button></span>
-			<span class=buttonWrapper><button onclick="openWebsite()" title="My Website" id=editButton class="material-icons">notes</button></span>
-			<span class=buttonWrapper><button onclick="sourceCode()" title="Source Code" id=settingsButton class="material-icons-round">code</button></span>
+		<button class="ph-bold ph-x" id=clearButton onclick="clearInput()"></button>
+		<button class="ph-bold ph-magnifying-glass" id=searchButton onclick="search()"></button>
+	</section>
+	<section id=blocks>
+		<div id=cards>
+			<a class="ph-bold ph-magnifying-glass" id="show-button"  onclick="clickShowButton()"></a>
+			<a class="ph-bold ph-video" href=https://coursera.org></a>
+			<a class="ph-bold ph-phosphor-logo" href=https://phosphoricons.com></a>
+			<a class="ph-bold ph-note" href=https://keep.google.com></a>
+			<a class="ph-bold ph-whatsapp-logo" href=https://web.whatsapp.com></a>
+			<a class="ph-bold ph-spotify-logo" href=https://open.spotify.com></a>
+
 		</div>
-		<div class=bookmarks>
-			<div class="bookmark">
-				<span class="heading heading1">Web</span><br>
-				<div class=links>
-					<div>
-						<a href=https://fonts.google.com/icons class=link>gicons</a><br>
-						<a href=https://codemyui.com/crt-screen-text-flicker-animation-in-pure-css/ class=link>flickr</a><br>
-					</div>
-				</div>
-			</div>
-			<div class="bookmark">
-				<span class="heading heading2">Notes</span><br>
-				<div class=links>
-					<div>
-						<a href=https://keep.google.com class=link>gkeep</a><br>
-						<a href=https://web.whatsapp.com class=link>whatsapp</a><br>
-					</div>
-				</div>
-			</div>
-			<div class="bookmark">
-				<span class="heading heading3">Learn</span><br>
-				<div class=links>
-					<div>
-						<a href=https://www.youtube.com/@hubermanlab/videos class=link>huberman</a><br>
-						<a href=https://coursera.org class=link>coursera</a><br>
-						<!--a href=https://www.youtube.com/watch?v=5tSTk1083VY class=link>goggins</a><br-->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	</section>
 </div>
 <style>
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+* {
+	transition: all 0.125s ease-in-out 0s;
+}
 
 #content {
-	background: transparent;
-	width: 675px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	display: flex;
-	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
-}
-
-.noImg {
 	width: 100%;
-	margin-left: 1.25em;
 }
 
-.searchContainer {
-	display: flex;
-	box-shadow: 0 0px 5px rgba(0,0,0,0.5);
-	border: 4px solid #333333;
-	width: calc(100%-8px);
+#cards {
+	display: grid;
+	margin: 2em auto;
+	gap: 2em;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+}
+
+#cards a {
+	margin: 0;
+	background: #303030;
+	text-align: center;
+	padding: 2em 0;
+	font: normal 450 1em "Rubik", sans-serif;
+	box-shadow: 0px 2px 6px 0px  rgba(0,0,0,0.5);
+	border-radius: 2px;
+	color: var(--fg);
+}
+
+#cards a:hover {
+	background: #9EAA62;
+	color: #222;
+	transform: translate(0%,-3px);
+}
+
+#search-container {
+	display: none;
+	border: 0px solid #60594b;
+	border-width: 0 0 2px 0 ;
+	width: 40em;
+	margin: 0em auto;
 }
 
 #searchInput {
 	width: 100%;
-	font: normal 600 17px "Rubik", sans-serif;
-	padding: 0.7em;
+	font: normal 450 18px "Rubik", sans-serif;
+	padding-left: 1em;
 	/*background: transparent; */
 	background: #202020;
 	color: #D4BE98;
 }
 #searchInput:focus {
 	color: #D4BE98;
-	font: normal 600 17px "Rubik", sans-serif;
-}
-#searchInput::placeholder {
-	color: rgba(240,240,240,0.5);
-	font: normal normal 18px "Readex Pro", sans-serif;
+	font: normal 450 18px "Rubik", sans-serif;
 }
 
-#searchButton, #clearButton {
-	transition: background 0.05s ease-in-out 0s;
+#searchInput::placeholder {
+	color: #60594b;
+	font: normal 450 18px "Rubik", sans-serif;
 }
 
 #searchButton {
-	padding: 0.375em 0.5em 0.375em 0.6em;
+	padding: 0.9em;
 	margin-left: 4px;
-	color: #606060;
-	background: #333333;
-	font: normal 500 27px "Material Icons", sans-serif;
+	color: #60594b;
+	background: transparent;
+	font: normal 500 22px "Material Icons", sans-serif;
 }
 
 #clearButton {
 	padding: 0.15em 0.35em 0.15em 0.15em;
-	font: normal normal 24px "Material Icons", sans-serif;
+	font: normal normal 20px "Material Icons", sans-serif;
 	background: transparent;
-	color: #454545;
-	transition: color 0.175s ease-in-out 0s;
-	display: none;
+	color: #60594b;
+	filter: brightness(80%);
 }
 
 #clearButton:hover {
-	color: #606060;
+	filter: brightness(150%);
 }
 
 #searchButton:hover {
-	background: #535353;
-	color: #0f0f0f;
+	color: #222;
+	background: #9EAA62;
 }
 
-.noSearchbar {
-	display: flex;
-	margin-top: 1em;
-	height: 165px;
-}
 
-#toggleContainer {
-	background: #222;
-	height: 100%;
-	margin-top: 0.02em;
-	box-shadow: 0 0px 1px rgba(0,0,0,1);
-	display: grid;
-}
-
-/*this wasn't necessarily needed, but kept for extensibility*/
-.buttonWrapper {
-	display: flex;
-	background: #333333;
-	align-items: center;
-	padding: 0.27em;
-}
-
-#toggleButton, #editButton, #settingsButton {
-	border: 1px solid transparent;
-	padding: 0.35em;
-	background: transparent;
-	/*color: #EFEFEF;*/
-	font: normal normal 21.5px "Material Icons", sans-serif;
-	transition: color 0.125s ease-in-out 0s;
-	/*margin: auto; not needed*/
-}
-
-#toggleButton {
-	color: #89b482;
-}
-
-#editButton {
-	color: #d1889c;
-}
-
-#settingsButton {
-	color: #C7A167;
-}
-
-.heading {
-	font: normal normal 20px "Readex Pro", sans-serif;
-}
-
-.heading1 {
-	color: #9EAA62;
-}
-
-.heading2 {
-	color: #D8776D;
-}
-
-.heading3 {
-	color: #80A9A0;
-}
-
-.links {
-	height: calc(85% - 0.5em);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.link {
-	color: #D4BE98;
-	font: normal normal 17px "Rubik", sans-serif;
-	text-decoration: none;
-	transition: color 0.125s ease-in-out 0s;
-}
-
-.link:hover {
-	cursor: default;
-	color: #FBF1C7;
-}
-
-.bookmarks {
-	width: 100%;
-	display: flex;
-	border: 10px solid #333333;
-	background: #333333;
-	box-shadow: 0 0px 1px rgba(0,0,0,1);
-	margin-left: 1em;
-}
-
-.bookmark {
-	text-align: center;
-	padding: 0.5em 0.5em 0.5em 0.5em;
-	width: 33.3%;
-}
-
-::selection {
-	color: #222222;
-	background: #D4BE98;
-}
-
-	@media screen and (min-width: 10in) {
-		#content {
-			width: 475px;
-		}
-	}
-
-	@media screen and (max-width: 9.5in) {
-		#content {
-			width: 65%;
-		}
-	}
-
-	@media screen and (max-width: 8.2in) {
-		#content {
-			width: 82%;
-			padding: 2.85em;
-		}
-	}
-
-	@media screen and (max-width: 7.2in) {
-		img {
-			display: none;
-		}
-
-		.noImg {
-			margin-left: 0;
-		}
-
-		#content {
-			width: 65%;
-			padding: 2.5em;
-		}
-
-		#searchInput:focus {
-			color: #D4BE98;
-			font: normal 600 18px "Rubik", sans-serif;
-		}
-		#searchInput {
-			color: #D4BE98;
-			font: normal 600 18px "Rubik", sans-serif;
-		}
-	}
-
-	@media screen and (max-width: 5.75in) {
-		#content {
-			width: 80%;
-			box-shadow: none;
-			border: 0 solid black;
-			padding: 2.25em;
-		}
-	}
-
-	@media screen and (max-width: 4.3in) {
-		#content {
-			width: 90%;
-			padding: 0em;
-			margin: none;
-		}
-
-		.noSearchbar {
-			margin-top: 1em;
-		}
-
-		.bookmarks {
-			margin-left: 1em;
-		}
-	}
-
-	@media screen and (max-width: 3.3in) {
-		.noSearchbar {
-			flex-direction: column;
-		}
-
-		.noSearchbar {
-			margin-top: 0;
-		}
-
-		.bookmarks {
-			margin-left: 0;
-		}
-
-		#toggleContainer {
-			display: flex;
-			flex-direction: row;
-			margin-top: 0.55em;
-			margin-bottom: 0.55em;
-		}
-
-		.buttonWrapper {
-			margin-left: 0.8em;
-			margin-right: 0.8em;
-		}
-	}
 </style>
 
-<script src=js/allEngines.js></script>
-<script src=js/functions.js></script>
-<script src=js/editMenu.js></script>
+<script src=/js/allEngines.js></script>
+<script src=/js/functions.js></script>
+<script src=/js/editMenu.js></script>
 
 <script>
 // created functions : toggleEngine(), search(), clearInput(), hideClearButton()
@@ -353,10 +152,11 @@
 </section>
 	<section id=footer> 
 	<section id=phicons>
-		<a class="ph ph-code" href=https://github.com/savar95x/savar95x.github.io></a>
-		<a class="ph ph-user" href=https://github.com/savar95x></a>
-		<a class="ph ph-envelope-simple" href=mailto:skaar513@gmail.com></a>
+		<a class="ph-bold ph-code" href=https://github.com/savar95x/savar95x.github.io></a>
+		<a class="ph-bold ph-user" href=https://github.com/savar95x></a>
+		<a class="ph-bold ph-envelope-simple" href=mailto:skaar513@gmail.com></a>
 	</section>
 </section>
 
 </body>
+</html>
