@@ -100,7 +100,7 @@ h3 {
 	margin: auto;
 }
 
-#header #stuff a:hover, #footer #phicons a:hover { filter: brightness(150%); }
+#header #stuff a:hover, #footer #phicons a:hover { filter: brightness(200%); }
 
 ::selection { color: #222222; background: #a1947d; }
 
