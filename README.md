@@ -8,12 +8,15 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 ![6_2](.assets/6_2.png)
 
 ## Todo
-- [ ] learn hugo
-- [ ] get an is-a.dev domain
+- [ ] Add workout split and add tags
+- [ ] Complete 'programming my workout split' blog and add blog in homepage
+- [ ] Improve the js of the startpage
+- [x] learn hugo
+- [x] get an is-a.dev domain
 - [x] unify style.css and basic html
 - [x] make header more mobile friendly
 - [x] <s>startpage 6; make a new startpage (eventually) with the same colorscheme but a style like Bento. The current one looks too packed unnecessarily.</s>
-- [ ] Make a new bento inspired homepage, looking at the current layout again and again will make me throw up
+- [x] Make a new bento inspired homepage, looking at the current layout again and again will make me throw up
 
 ### Ideas
 - [ ] A quote from movies page that returns json on curl
