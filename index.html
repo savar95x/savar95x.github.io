@@ -38,10 +38,12 @@
   <div id=middle>
 	  <h2>My Work</h2>
 	  <div id=cards>
-		  <a class="link link1" href=blogs>blog</a>
-		  <a class="link link2" href=start>startpage</a>
-		  <a class="link link3" href=https://github.com/savar95x/dotfiles>dotfiles</a>
+		  <a class="link" href=blogs>blog</a>
+		  <a class="link" href=start>startpage</a>
+		  <a class="link" href=blogs/movies>movies</a>
+		  <a class="link" href=https://github.com/savar95x/dotfiles>dotfiles</a>
 	  </div>
+	  <h2>Recent posts</h2>
   </div>
 </div>
 	<section id=footer> 
@@ -118,7 +120,7 @@ body {
 	display: grid;
 	margin: auto;
 	gap: 2em;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	width: 100%;
 }
 
@@ -133,14 +135,13 @@ body {
 }
 
 #cards a:hover {
-	background: #353535;
+	filter: brightness(110%);
 	box-shadow: 3px 3px 1px 1px  rgba(0,0,0,0.5);
 	transform: translate(-2px, -2px);
-	color: #eddfb7;
 }
 
-@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } }
-@media screen and (max-width: 7.6in) { img { display: none; } }
-@media screen and (max-width: 6in) { #mainContainer { width: calc(90%); } }
-@media screen and (max-width: 5.6in) { #cards { display: flex; flex-direction: column; } #cards a { padding: 1.5em 0;} }
+@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } #cards {gap: 1em;} }
+@media screen and (max-width: 7.6in) { img { display: none; } #mainContainer { width: calc(90%); } #cards { gap: 1.2em; grid-template-columns: repeat(2, 1fr);} }
+ 
+@media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
 </style>
