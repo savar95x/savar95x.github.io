@@ -6,6 +6,12 @@
 input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
 
 * { transition: all 0.125s ease-in-out 0s; }
+a { color: #7ba29a; }
+::selection { color: #222222; background: #a1947d; }
+
+@font-face {
+	font-display: swap;
+}
 
 body {
 	background: #202020;
@@ -13,10 +19,6 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-}
-
-a {
-	color: #7ba29a;
 }
 
 #content {
@@ -48,75 +50,34 @@ h3 {
 	color: #D1889C;
 }
 
-#footer {
-	text-align: center;
-	display: grid;
-	margin-top: auto;
-}
+#footer { text-align: center; display: grid; margin-top: auto; }
+#footer #phicons { display: flex; margin: auto; }
+#footer #phicons a { padding: 1.6em 1em; margin: auto; }
 
-#header {
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
-	width: calc(100% - 2em);
-}
-
-#footer #phicons {
-	display: flex;
-	margin: auto;
-}
-
-#header #stuff {
-	text-align: right;
-	display: flex;
-	margin-left: auto; 
-}
-
-#header #home {
-	text-align: right;
-	display: flex;
-	margin-right: auto; 
-}
-
-#footer #phicons a {
-	color: #96876f;
-	padding: 1.6em 1em;
-	margin: auto;
-}
-
+#header { display: flex; margin: 0 auto auto auto; width: calc(100% - 2em); }
+#header #stuff, #header #home { display: flex; }
+#header #stuff { margin-left: auto; }
+#header #home { margin-right: auto; }
 #header #stuff a {
 	font: 450 normal 17px "Rubik", sans-serif;
 	color: #96876f;
-	padding: 2em 1em;
-	margin: auto;
 }
-
 #header #home a {
 	font: 700 normal 18px "Rubik", sans-serif;
 	color: #D87873;
+}
+#header #home a, #header #stuff a {
 	padding: 2em 1em;
 	margin: auto;
 }
 
 #header #stuff a:hover, #footer #phicons a:hover { filter: brightness(150%); }
 
-::selection { color: #222222; background: #a1947d; }
-
 @media screen and (max-width: 9in) { #content { font-size: 17px; } }
 @media screen and (max-width: 8.4in) {
-	#content {
-		padding: 0.5em;
-		width: calc(96% - 1em);
-	}
-	#header {
-		width: calc(96%)
-	}
-	#header #home a, #header #stuff a {
-		padding: 1em 0.5em
-	}
-	#footer #phicons a {
-		padding: 0.5em 0.5em;
-	}
+	#content { padding: 0.5em; width: calc(96% - 1em); }
+	#header { width: calc(96%); }
+	#header #home a, #header #stuff a { padding: 1em 0.5em; }
+	#footer #phicons a { padding: 0.5em 0.5em; }
 }
-@media screen and (max-width: 5.8in) { #content { line-height: 1.7em;} }
+@media screen and (max-width: 5.8in) { #content { line-height: 1.7em; } }
