@@ -34,7 +34,7 @@
 	</section>
 	<section id=blocks>
 		<div id=cards>
-			<a class="ph-bold ph-magnifying-glass" id="show-button"  onclick="clickShowButton()"></a>
+			<a class="ph-bold ph-arrows-clockwise" id="toggleButton" href="javascript:void(0)" onclick="toggleEngine()"></a>
 			<a class="ph-bold ph-video" href=https://coursera.org></a>
 			<a class="ph-bold ph-phosphor-logo" href=https://phosphoricons.com></a>
 			<a class="ph-bold ph-note" href=https://keep.google.com></a>
@@ -80,9 +80,9 @@
 }
 
 #search-container {
-	display: none;
+	display: flex;
 	border: 0px solid #60594b;
-	border-width: 0 0 2px 0 ;
+	border-width: 0 0 0px 0 ;
 	max-width: 40em;
 	width: 100%;
 	margin: 0em auto;
@@ -91,7 +91,7 @@
 #searchInput {
 	width: 100%;
 	font: normal 450 18px "Rubik", sans-serif;
-	padding-left: 1em;
+	padding-left: 0.5em;
 	/*background: transparent; */
 	background: #202020;
 	color: #D4BE98;
@@ -143,10 +143,10 @@
 
 <script src=/js/allEngines.js></script>
 <script src=/js/functions.js></script>
-<script src=/js/editMenu.js></script>
 
 <script>
 // created functions : toggleEngine(), search(), clearInput(), hideClearButton()
+	toggleEngine();
 
 	document.getElementById("searchInput").addEventListener("keydown", event =>
 			{ if (event.key == "Enter") search(); // keycode 13

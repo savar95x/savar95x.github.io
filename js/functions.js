@@ -1,6 +1,5 @@
 var activeEngine;
 var x = -1;
-var y = 0;
 
 function toggleEngine() {
 	x = (x == allEngines.length - 1) ? -1:x; 
@@ -8,24 +7,7 @@ function toggleEngine() {
 	activeEngine = allEngines[x];
 	document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
 
-	document.getElementById('toggleButton').style.color = activeEngine.color;
-	//document.getElementById('searchButton').style.color = activeEngine.color;
 	document.getElementById('searchInput').focus();
-};
-
-function clickShowButton() {
-	if (document.getElementById('search-container').style.display === 'flex') {
-		toggleEngine();
-	} else {
-		showSearchBar();
-	}
-}
-
-function showSearchBar() {
-	document.getElementById('search-container').style.display = 'flex'
-	document.getElementById('searchInput').focus();
-	document.getElementById('show-button').classList.add("ph-arrows-clockwise");
-	document.getElementById('show-button').classList.remove("ph-magnifying-glass");
 }
 
 function search() {
@@ -33,12 +15,13 @@ function search() {
 	let noSpaceVal = realVal.replace(/\s/g, "");
 	{ if (noSpaceVal == "") {window.location.reload(false);}
 		else {window.open("https://" + activeEngine.url + realVal + activeEngine.urlFilters, "_self");} };
-};
+}
 
-function clearInput() { document.getElementById("searchInput").value = "";
-	document.getElementById('searchInput').focus();
-	hideClearButton(); };
+function clearInput() {
+	document.getElementById("searchInput").value = "";
+	hideClearButton();
+}
 
 function hideClearButton() {
 	document.getElementById("clearButton").style.display = (document.getElementById("searchInput").value == "") ? "none":"inline";
-};
+}
