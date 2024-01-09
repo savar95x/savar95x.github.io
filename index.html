@@ -67,24 +67,24 @@ body {
 }
 
 #mainContainer {
-	width: 950px;
+	width: 915px;
 	margin: auto auto;
 }
 
 
 #top {
 	background: #333333;
-	padding: 20px;
+	padding: 2em 2em;
 	text-align: left;
-	border-radius: 0px;
-	border-width: 1px;
 	display: flex;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
 }
 
 #top img {
-	margin: 1em 0.5em 1em 1em;
+	margin: auto;
+	margin-right: 0.5em;
 	border-radius: 50%;
+	background: pink;
 }
 
 #top div {
@@ -141,7 +141,7 @@ body {
 }
 
 @media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } #cards {gap: 1em;} }
-@media screen and (max-width: 7.6in) { img { display: none; } #mainContainer { width: calc(90%); } #cards { gap: 1.2em; grid-template-columns: repeat(2, 1fr);} }
+@media screen and (max-width: 7.6in) { img { display: none; } #top div { margin-left: 0px; } #mainContainer { width: calc(90%); } #cards { gap: 1.2em; grid-template-columns: repeat(2, 1fr);} }
  
 @media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
 </style>
