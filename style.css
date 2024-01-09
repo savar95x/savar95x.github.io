@@ -81,7 +81,7 @@ h3 {
 
 #footer #phicons a {
 	color: #60594b;
-	font: normal normal 20px "Rubik", sans-serif;
+	font-size: 1.15em;
 	padding: 1.6em 1em;
 	margin: auto;
 }
@@ -117,7 +117,7 @@ h3 {
 		padding: 1em 0.5em
 	}
 	#footer #phicons a {
-		padding: 0.5em 0.4em;
+		padding: 0.5em 0.5em;
 	}
 }
 @media screen and (max-width: 5.8in) { #content { line-height: 1.7em;} }
