@@ -7,6 +7,9 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 ## My Startpage(s)
 ![preview](.assets/start.png)
 
+## Useful links
+- [pagespeed insights](https://pagespeed.web.dev)
+
 ## Todo
 - [ ] Add workout split and add tags
 - [ ] Complete 'programming my workout split' blog and add blog in homepage
