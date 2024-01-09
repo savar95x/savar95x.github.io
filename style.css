@@ -80,7 +80,7 @@ h3 {
 }
 
 #footer #phicons a {
-	color: #60594b;
+	color: #96876f;
 	font-size: 1.15em;
 	padding: 1.6em 1em;
 	margin: auto;
@@ -88,7 +88,7 @@ h3 {
 
 #header #stuff a {
 	font: 450 normal 17px "Rubik", sans-serif;
-	color: #60594b;
+	color: #96876f;
 	padding: 2em 1em;
 	margin: auto;
 }
@@ -100,7 +100,7 @@ h3 {
 	margin: auto;
 }
 
-#header #stuff a:hover, #footer #phicons a:hover { filter: brightness(200%); }
+#header #stuff a:hover, #footer #phicons a:hover { filter: brightness(150%); }
 
 ::selection { color: #222222; background: #a1947d; }
 
