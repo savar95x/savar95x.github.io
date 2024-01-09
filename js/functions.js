@@ -7,6 +7,7 @@ function toggleEngine() {
 	activeEngine = allEngines[x];
 	document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
 
+	document.getElementById('searchButton').style.color = activeEngine.color;
 	document.getElementById('searchInput').focus();
 }
 

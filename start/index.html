@@ -68,7 +68,7 @@
 	text-align: center;
 	padding: 2em 0;
 	font: normal 450 1.2em "Rubik", sans-serif;
-	box-shadow: 0px 2px 6px 0px  rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 6px 0px  rgba(0,0,0,0.35);
 	border-radius: 2px;
 	color: var(--fg);
 }
@@ -76,13 +76,12 @@
 #cards a:hover {
 	background: #9EAA62;
 	color: #222;
-	transform: translate(0%,-3px);
+	box-shadow: 0px 5px 6px 0px  rgba(0,0,0,0.35);
+	transform: translate(0px,-3px);
 }
 
 #search-container {
 	display: flex;
-	border: 0px solid #60594b;
-	border-width: 0 0 0px 0 ;
 	max-width: 40em;
 	width: 100%;
 	margin: 0em auto;
@@ -102,13 +101,14 @@
 }
 
 #searchInput::placeholder {
-	color: #60594b;
+	color: #8D8069;
 	font: normal 450 18px "Rubik", sans-serif;
 }
 
 #searchButton {
 	padding: 0.7em;
-	color: #60594b;
+	color: #8D8069;
+	filter: brightness(50%);
 	background: transparent;
 	font: normal 500 22px "Material Icons", sans-serif;
 }
@@ -118,17 +118,16 @@
 	margin-right: 4px;
 	font: normal normal 18px "Material Icons", sans-serif;
 	background: transparent;
-	color: #60594b;
-	filter: brightness(80%);
+	color: #8D8069;
+	filter: brightness(70%);
 }
 
 #clearButton:hover {
-	filter: brightness(150%);
+	filter: brightness(100%);
 }
 
 #searchButton:hover {
-	color: #222;
-	background: #9EAA62;
+	filter: brightness(70%);
 }
 
 ::selection { color: #222222; background: #a1947d; }
