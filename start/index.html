@@ -27,14 +27,9 @@
 
 <section id=content>
 	<div class=noImg>
-	<section id=search-container>
-		<input id=searchInput placeholder="Search with SearX" autocomplete=off />
-		<button class="ph-bold ph-x" id=clearButton onclick="clearInput()"></button>
-		<button class="ph-bold ph-magnifying-glass" id=searchButton onclick="search()"></button>
-	</section>
 	<section id=blocks>
 		<div id=cards>
-			<a class="ph-bold ph-arrows-clockwise" id="toggleButton" href="javascript:void(0)" onclick="toggleEngine()"></a>
+			<a class="ph-bold ph-magnifying-glass" id="toggleButton" href="../oldstart" onclick="toggleEngine()"></a>
 			<a class="ph-bold ph-video" href=https://coursera.org></a>
 			<a class="ph-bold ph-phosphor-logo" href=https://phosphoricons.com></a>
 			<a class="ph-bold ph-note" href=https://keep.google.com></a>
@@ -68,7 +63,7 @@
 	text-align: center;
 	padding: 2em 0;
 	font: normal 450 1.2em "Rubik", sans-serif;
-	box-shadow: 0px 2px 6px 0px  rgba(0,0,0,0.35);
+	box-shadow: 0px 2px 7px 0px  rgba(0,0,0,0.35);
 	border-radius: 2px;
 	color: var(--fg);
 }
@@ -76,62 +71,11 @@
 #cards a:hover {
 	background: #9EAA62;
 	color: #222;
-	box-shadow: 0px 5px 6px 0px  rgba(0,0,0,0.35);
+	box-shadow: 0px 5px 7px 0px  rgba(0,0,0,0.35);
 	transform: translate(0px,-3px);
 }
 
-#search-container {
-	display: flex;
-	max-width: 40em;
-	width: 100%;
-	margin: 0em auto;
-}
-
-#searchInput {
-	width: 100%;
-	font: normal 450 18px "Rubik", sans-serif;
-	padding-left: 0.5em;
-	/*background: transparent; */
-	background: #202020;
-	color: #D4BE98;
-}
-#searchInput:focus {
-	color: #D4BE98;
-	font: normal 450 18px "Rubik", sans-serif;
-}
-
-#searchInput::placeholder {
-	color: #8D8069;
-	font: normal 450 18px "Rubik", sans-serif;
-}
-
-#searchButton {
-	padding: 0.7em;
-	color: #8D8069;
-	filter: brightness(50%);
-	background: transparent;
-	font: normal 500 22px "Material Icons", sans-serif;
-}
-
-#clearButton {
-	padding: 0.1em;
-	margin-right: 4px;
-	font: normal normal 18px "Material Icons", sans-serif;
-	background: transparent;
-	color: #8D8069;
-	filter: brightness(70%);
-}
-
-#clearButton:hover {
-	filter: brightness(100%);
-}
-
-#searchButton:hover {
-	filter: brightness(70%);
-}
-
 ::selection { color: #222222; background: #a1947d; }
-
 
 @media screen and (max-width: 10.6in) { #content { width: calc(100% - 8em); } }
 @media screen and (max-width: 8.4in) { #content { width: calc(100% - 2em); } #cards { gap: 1.5em; } }
@@ -139,24 +83,6 @@
 @media screen and (max-width: 6.5in) { #cards { grid-template-columns: repeat(2, 1fr);gap: 1.5em; } }
 @media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
 </style>
-
-<script src=/js/allEngines.js></script>
-<script src=/js/functions.js></script>
-
-<script>
-// created functions : toggleEngine(), search(), clearInput(), hideClearButton()
-	toggleEngine();
-	hideClearButton();
-
-	document.getElementById("searchInput").addEventListener("keydown", event =>
-			{ if (event.key == "Enter") search(); // keycode 13
-			else if (event.altKey && event.key == "Tab") toggleEngine(); // keycode 9
-			else if (event.altKey && event.key == "c") clearInput();
-      });
-
-	document.getElementById("searchInput").addEventListener("input", hideClearButton);
-
-</script>
 
 </section>
 	<section id=footer> 
