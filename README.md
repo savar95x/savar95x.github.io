@@ -11,10 +11,11 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 - [pagespeed insights](https://pagespeed.web.dev)
 
 ## Todo
-- [ ] add workout split
-- [ ] add tags
+- [ ] figure out way to remove FOIT (font face and display)
 - [ ] fix old startpage
 - [ ] Complete 'programming my workout split' blog and add date
+- [ ] add workout split
+- [ ] add tags
 - [x] Improve the js of the startpage
 - [x] learn hugo
 - [x] get an is-a.dev domain
