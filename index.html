@@ -67,10 +67,9 @@ body {
 	margin: auto auto;
 }
 
-
 #top {
 	background: #333333;
-	padding: 2em 2em;
+	padding: 2em;
 	text-align: left;
 	display: flex;
 	box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.35);
@@ -138,7 +137,7 @@ body {
 }
 
 @media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } #cards {gap: 1em;} }
-@media screen and (max-width: 7.6in) { #top img { display: none; } #mainContainer { width: calc(90%); } #cards { gap: 1.2em; grid-template-columns: repeat(2, 1fr);} }
+@media screen and (max-width: 7.6in) { #top img { display: none; } #top { padding: 1.65em; } #mainContainer { width: calc(90%); } #cards { gap: 1.2em; grid-template-columns: repeat(2, 1fr);} }
  
-@media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
+@media screen and (max-width: 5.6in) { #cards { gap: 1em; } #top { padding: 1.5em; } }
 </style>
