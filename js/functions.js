@@ -7,7 +7,7 @@ function toggleEngine() {
 	activeEngine = allEngines[x];
 	document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
 
-	document.getElementById('searchButton').style.color = activeEngine.color;
+	document.getElementById('searchInput').style.borderColor = activeEngine.color;
 	document.getElementById('searchInput').focus();
 }
 
@@ -20,7 +20,8 @@ function search() {
 
 function clearInput() {
 	document.getElementById("searchInput").value = "";
-	hideClearButton();
+	//hideClearButton();
+	document.getElementById('searchInput').focus();
 }
 
 function hideClearButton() {
