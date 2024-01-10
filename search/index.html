@@ -22,14 +22,14 @@
 </section>
 
 <section id=content>
-		<div id=search-bar>
-		<input id=searchInput placeholder="Search with SearX" autocomplete=off />
-	</div>
-	<section id=cards>
-		<button aria-label="send search query" onclick="search()" class="ph-bold ph-magnifying-glass" id=searchButton></button>
-		<button aria-label="cycle through the search engine" onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="ph-bold ph-arrow-arc-right"></button>
-		<button aria-label="clear search input" onclick="clearInput()" title="My Website" id=clearButton class="ph-bold ph-backspace"></button>
-	</section>
+	<section id=search-bar>
+	<input id=searchInput placeholder="Search with SearX" autocomplete=off />
+</section>
+<section id=cards>
+	<button aria-label="send search query" onclick="search()" title="Search" class="ph-bold ph-magnifying-glass" id=searchButton></button>
+	<button aria-label="cycle through the search engine" onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="ph-bold ph-arrow-arc-right"></button>
+	<button aria-label="clear search input" onclick="clearInput()" title="Clear Input" id=clearButton class="ph-bold ph-backspace"></button>
+</section>
 <style>
 #content {
 	width: 40%;
@@ -38,35 +38,25 @@
 
 #search-bar {
 	display: flex;
-	width: calc(100%-8px);
+	width: 100%;
 	margin-bottom: 1em;
-}
-
-#cards button, #search-bar button {
-	font-size: 1.4em;
 }
 
 #searchInput {
 	width: 100%;
-	font: normal 400 17px "Rubik", sans-serif;
+	font: normal 450 18px "Rubik", sans-serif;
 	text-align: center;
-	border: 10px solid #444;
+	border-style: solid;
 	border-width: 0 0 1px 0;
 	filter: brightness(40%);
-	padding: 1em;
+	padding: 0.9em;
 	background: transparent;
 	color: #D4BE98;
 }
+
 #searchInput:focus {
-	color: #D4BE98;
-	font: normal 450 17px "Rubik", sans-serif;
 	filter: brightness(70%);
 }
-#searchInput::placeholder {
-	color: rgba(240,240,240,0.5);
-	font: normal 400 18px "Rubik", sans-serif;
-}
-
 
 #cards {
 	display: grid;
@@ -80,52 +70,68 @@
 	text-align: center;
 	padding: 1.1em 0;
 	font: normal 450 1.2em "Rubik", sans-serif;
-	box-shadow: 0px 2px 7px 0px  rgba(0,0,0,0.35);
-	border: 1px solid rgba(0,0,0,0.5);
-	border-radius: 2px;
-	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0.35);
+	/*border-radius: 2px;*/
+	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.35);
 	color: #D4BE98;
 	background: #333333;
 }
 
-#cards button:hover {
-	cursor: pointer;
-	filter: brightness(110%);
-}
-
 #cards button:active {
 	transform: translate(2px, 2px);
-	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-}
-
-#cards {
-	height: 100%;
-	display: grid;
+	box-shadow: none;
 }
 
 @media screen and (max-width: 10.6in) { #content { width: calc(100% - 8em); } }
 @media screen and (max-width: 8.4in) { #content { width: calc(100% - 2em); } }
-
 </style>
-<script src=/js/allEngines.js></script>
-<script src=/js/functions.js></script>
 <script>
-// created functions : toggleEngine(), search(), clearInput(), hideClearButton()
+const allEngines = [
+	{ name:"SearX", preposition:"with", color:"#A9B665", url:"searx.be/search?q=", urlFilters:"" },
+	//{ name:"Google", preposition:"with", color:"hsl(355,75%,76%)", url:"google.com/search?q=", urlFilters:"" },
+	{ name:"ArchWiki", preposition:"over", color:"#80A9A0", url:"wiki.archlinux.org/index.php?search=", urlFilters:"" },
+	{ name:"YouTube", preposition:"over", color:"#D87873", url:"youtube.com/results?search_query=", urlFilters:"" },
+	{ name:"Github", preposition:"over", color:"#D8A657", url:"github.com/search?q=", urlFilters:"&s=stars" },
+];
+
+var activeEngine;
+var x = -1;
+
+function toggleEngine() {
+	x = (x == allEngines.length - 1) ? -1:x; 
+	x = x + 1;
+	activeEngine = allEngines[x];
+	document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
+	document.getElementById('searchInput').style.borderColor = activeEngine.color;
+	document.getElementById('searchInput').focus();
+}
+
+function search() {
+	let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F").replace(/:/g,"%3A");
+	let noSpaceVal = realVal.replace(/\s/g, "");
+	{ if (noSpaceVal == "") {window.location.reload(false);}
+		else {window.open("https://" + activeEngine.url + realVal + activeEngine.urlFilters, "_self");} };
+}
+
+function clearInput() {
+	document.getElementById("searchInput").value = "";
+	document.getElementById('searchInput').focus();
+}
+
 toggleEngine();
 document.getElementById("searchInput").addEventListener("keydown", event =>
 	{ if (event.key == "Enter") search(); // keycode 13
 		else if (event.altKey && event.key == "Tab") toggleEngine(); // keycode 9
 		else if (event.altKey && event.key == "c") clearInput();
 	});
-//document.getElementById("searchInput").addEventListener("input", hideClearButton);
 </script>
 
 </section>
 	<section id=footer> 
 	<section id=phicons>
-		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io><img src=/code-bold.svg aria-label="source code" alt="code" width=18px height=18px /></a>
-		<a aria-label="my github" href=https://github.com/savar95x><img src=/user-bold.svg aria-label="my github" alt="github" width=18px height=18px /></a>
-		<a aria-label="mail me" href=mailto:skaar513@gmail.com><img src=/paper-plane-tilt-bold.svg aria-label="mail me" alt="mail" width=18px height=18px /></a>
+		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io><img src=/svg/code-bold.svg aria-label="source code" alt="code" width=18px height=18px /></a>
+		<a aria-label="my github" href=https://github.com/savar95x><img src=/svg/user-bold.svg aria-label="my github" alt="github" width=18px height=18px /></a>
+		<a aria-label="mail me" href=mailto:skaar513@gmail.com><img src=/svg/paper-plane-tilt-bold.svg aria-label="mail me" alt="mail" width=18px height=18px /></a>
 	</section>
 </section>
 
