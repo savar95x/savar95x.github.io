@@ -78,6 +78,7 @@ h3 {
 	#content { padding: 0.5em; width: calc(96% - 1em); }
 	#header { width: calc(96%); }
 	#header #home a, #header #stuff a { padding: 1em 0.5em; }
+	#header #stuff a { padding-left: 0.6em; }
 	#footer #phicons a { padding: 0.5em 0.5em; }
 }
-@media screen and (max-width: 5.8in) { #content { line-height: 1.7em; } }
+@media screen and (max-width: 5.8in) { #content { line-height: 1.65em; } }
