@@ -26,9 +26,9 @@
 		<input id=searchInput placeholder="Search with SearX" autocomplete=off />
 	</div>
 	<section id=cards>
-		<button onclick="search()" class="ph-bold ph-magnifying-glass" href="javascript:void(0)" id=searchButton></button>
-		<button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="ph-bold ph-arrow-arc-right"></button>
-		<button onclick="clearInput()" title="My Website" id=clearButton class="ph-bold ph-backspace"></button>
+		<button aria-label="send search query" onclick="search()" class="ph-bold ph-magnifying-glass" id=searchButton></button>
+		<button aria-label="cycle through the search engine" onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="ph-bold ph-arrow-arc-right"></button>
+		<button aria-label="clear search input" onclick="clearInput()" title="My Website" id=clearButton class="ph-bold ph-backspace"></button>
 	</section>
 <style>
 #content {
