@@ -14,7 +14,7 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 - [ ] Complete 'programming my workout split' blog and add date(s) of when written
 - [ ] add workout split, once finalized, as a conclusion to the first blog
 - [ ] eventually add tags or categories for better navigation; talking of which eventually add pagination as well
-- [ ] fix css and font loading
+- [ ] fix css and font loadingg
 - [x] fix old startpage
 - [x] make site just working
 - [x] Improve the js of the startpage
