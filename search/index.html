@@ -70,16 +70,19 @@
 	text-align: center;
 	padding: 1.1em 0;
 	font: normal 450 1.2em "Rubik", sans-serif;
-	border: 1px solid rgba(0,0,0,0.35);
 	/*border-radius: 2px;*/
-	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.35);
+	box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.35);
 	color: #D4BE98;
 	background: #333333;
 }
 
+#cards button:hover {
+	filter: brightness(105%);
+}
+
 #cards button:active {
 	transform: translate(2px, 2px);
-	box-shadow: none;
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.35);
 }
 
 @media screen and (max-width: 10.6in) { #content { width: calc(100% - 8em); } }
