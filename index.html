@@ -33,7 +33,7 @@
   <div id=middle>
 	  <h2>My Work</h2>
 	  <div id=cards>
-		  <a class="link" href=blogs>blog</a>
+		  <a class="link" href=blogs>writings</a>
 		  <a class="link" href=start>startpage</a>
 		  <a class="link" href=blogs/movies>movies</a>
 		  
@@ -60,6 +60,7 @@ body {
 
 #top h2 {
 	color: #9EAA62;
+	font-size: 1.6em;
 }
 
 #mainContainer {
@@ -72,7 +73,7 @@ body {
 	padding: 2em;
 	text-align: left;
 	display: flex;
-	box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.35);
+	box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.3);
 }
 
 #top img {
@@ -118,7 +119,7 @@ body {
 
 #cards a {
 	margin: 0;
-	background: #303030;
+	background: #333;
 	text-align: center;
 	padding: 2em 0;
 	font: normal 450 1em "Rubik", sans-serif;
@@ -137,7 +138,7 @@ body {
 }
 
 @media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } #cards {gap: 1em;} }
-@media screen and (max-width: 7.6in) { #top img { display: none; } #top { padding: 1.65em; } #mainContainer { width: calc(90%); } #cards { gap: 1.2em; grid-template-columns: repeat(2, 1fr);} }
- 
-@media screen and (max-width: 5.6in) { #cards { gap: 1em; } #top { padding: 1.5em; } }
+@media screen and (max-width: 7.6in) { #top { padding: 0em; background: transparent; box-shadow: none; } #mainContainer { width: calc(90%); } #cards { gap: 1.2em; grid-template-columns: repeat(2, 1fr);} }
+@media screen and (max-width: 5.6in) { #top img { display: none; } }
+@media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
 </style>
