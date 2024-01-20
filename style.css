@@ -34,7 +34,8 @@ body {
 hr {
 	display: none;
 	width: calc(100% - 10em);
-	color: #333;
+	border: 0px solid #333;
+	border-top: 1px solid #333;
 }
 
 h1 {
