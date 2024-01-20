@@ -30,23 +30,24 @@ body {
 	line-height: 1.8em;
 }
 
+hr {
+	display: none;
+}
+
 h1 {
 	font-family: "Rubik", sans-serif;
-	font-size: 2em;
 	font-weight: 700;
 	color: #9EAA62;
 }
 
 h2 {
 	font-family: "Rubik", sans-serif;
-	font-size: 1.5em;
 	font-weight: 700;
 	color: #C7A167;
 }
 
 h3 {
 	font-family: "Rubik", sans-serif;
-	font-size: 1.17em;
 	font-weight: 700;
 	color: #D1889C;
 }
@@ -77,10 +78,15 @@ h3 {
 
 @media screen and (max-width: 9in) { #content { font-size: 17px; } }
 @media screen and (max-width: 8.4in) {
-	#content { padding: 0.5em; width: calc(96% - 1em); }
-	#header { width: calc(96%); }
-	#header #home a, #header #stuff a { padding: 0.6em 0.5em; }
+	#content { padding: 0.5em; width: calc(100% - 1em); }
+	#header { width: calc(100%); }
+	#header #home a, #header #stuff a { padding: 1.0em 0.5em; }
 	#footer #phicons a { padding: 0.5em 0.5em; }
+	hr {
+		display: inline;
+		width: calc(100% - 2em);
+		color: #303030;
+	}
 }
 @media screen and (max-width: 5.8in) { 
 	#footer #phicons a img { height: 1em; }
