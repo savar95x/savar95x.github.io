@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700;600;450;400&display=swap');
 
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
@@ -52,12 +50,14 @@ h3 {
 	color: #D1889C;
 }
 
+strong {font-weight: 600;}
+
 #footer { text-align: center; display: grid; margin-top: auto; }
 #footer #phicons { display: flex; margin: auto; }
 #footer #phicons a { padding: 1.6em 1em; margin: auto; }
 #footer #phicons a img { height: 1.1em; }
 
-#header { display: flex; margin: 0 auto auto auto; width: calc(100% - 2em); }
+#header { padding: 0 4em;display: flex; margin: 0 auto auto auto; width: calc(100% - 9em); }
 #header #stuff, #header #home { display: flex; }
 #header #stuff { margin-left: auto; }
 #header #home { margin-right: auto; }
@@ -70,25 +70,39 @@ h3 {
 	color: #D87873;
 }
 #header #home a, #header #stuff a {
-	padding: 2em 1em;
+	padding: 2em 0em;
 	margin: auto;
+}
+#header #stuff a {
+	margin-left: 1em;
 }
 
 #header #stuff a:hover, #footer #phicons a:hover { filter: brightness(150%); }
 
-@media screen and (max-width: 9in) { #content { font-size: 17px; } }
 @media screen and (max-width: 8.4in) {
-	#content { padding: 0.5em; width: calc(100% - 1em); }
-	#header { width: calc(100%); }
-	#header #home a, #header #stuff a { padding: 1.0em 0.5em; }
-	#footer #phicons a { padding: 0.5em 0.5em; }
 	hr {
 		display: inline;
-		width: calc(100% - 2em);
-		color: #303030;
+		width: calc(100% - 10em);
+		color: #333;
 	}
 }
 @media screen and (max-width: 5.8in) { 
-	#footer #phicons a img { height: 1em; }
-	#content { line-height: 1.65em; }
+	hr {
+		display: inline;
+		width: calc(100% - 4em);
+		color: #333;
+	}
+	#header {
+		padding: 0 1em;
+		width: calc(100% - 2em);
+	}
+	#content {
+		padding: 1em 1em;
+		font-size: 17px;
+	}
+	#header #home a, #header #stuff a {
+		padding: 1.5em 0em;
+	}
 }
+/*
+ */
