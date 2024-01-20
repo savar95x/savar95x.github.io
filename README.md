@@ -12,7 +12,9 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 
 ## Todo
 - [ ] maybe add a sidemenu for phones
-- [ ] format blog list on mobiles better
+- [ ] fix footer icon size difference
+- [ ] fix first time css and font loading
+- [x] format blog list on mobiles better
 - [x] complete 'programming my workout split' blog and add date(s) of when written
 - [x] add workout split, once finalized, as a conclusion to the first blog
 - [x] fix old startpage
@@ -25,7 +27,6 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 - [x] <s>startpage 6; make a new startpage (eventually) with the same colorscheme but a style like Bento. The current one looks too packed unnecessarily.</s>
 - [x] Make a new bento inspired homepage, looking at the current layout again and again will make me throw up
 - [ ] eventually add tags or categories for better navigation; talking of which eventually add pagination as well
-- [ ] fix css and font loading
 
 ### Ideas
 - [ ] A quote from movies page that returns json on curl
