@@ -87,7 +87,7 @@ strong {font-weight: 600;}
 
 @media screen and (max-width: 8.4in) {
 	hr {
-		display: inline;
+		/*display: inline;*/
 	}
 }
 @media screen and (max-width: 5.8in) { 

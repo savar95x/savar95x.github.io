@@ -58,14 +58,12 @@
 
 .block {
 	max-width: 850px;
-	font: normal 400 18px "Rubik", sans-serif;
 	line-height: 1.8em;
 	display: flex;
 	flex-direction: column;
 	color: var(--fg);
 	padding: 2em 2.25em;
 	margin: 2em auto;
-	font: normal 400 18px "Rubik", sans-serif;
 	background: #303030;
 	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
 	line-height: 1.8em;
@@ -85,9 +83,20 @@ h1 {
 	margin-bottom: 1.3em;
 }
 
-@media screen and (max-width: 11in) { .block { width: calc(100% - 5em); } }
-@media screen and (max-width: 9in) { .block { font-size: 17px; } }
-@media screen and (max-width: 8.6in) { .block { width: calc(100% - 5em); } }
-@media screen and (max-width: 8.4in) { .block { padding: 2em; margin: 1.5em auto; width: calc(100% - 4em); } .block, .block:hover { box-shadow: none; transform: none; } }
-@media screen and (max-width: 5.8in) { h1 { margin-bottom: 0.8em; } .block { padding: 0em; width: calc(100%); margin: 0.5em auto; line-height: 1.65em; background: transparent;} }
+@media screen and (max-width: 5.8in) {
+	.block {
+		padding: 1.5em 1.75em;
+		background: transparent;
+		box-shadow: none;
+		padding: 0px;
+		margin: 0px;
+	}
+	h2 {
+		margin-bottom: -0.25em;
+	}
+	.block:hover {
+		box-shadow: none;
+		transform: none;
+	}
+}
 </style>
