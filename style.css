@@ -54,6 +54,7 @@ h3 {
 #footer { text-align: center; display: grid; margin-top: auto; }
 #footer #phicons { display: flex; margin: auto; }
 #footer #phicons a { padding: 1.6em 1em; margin: auto; }
+#footer #phicons a img { height: 1.1em; }
 
 #header { display: flex; margin: 0 auto auto auto; width: calc(100% - 2em); }
 #header #stuff, #header #home { display: flex; }
@@ -79,7 +80,10 @@ h3 {
 	#content { padding: 0.5em; width: calc(96% - 1em); }
 	#header { width: calc(96%); }
 	#header #home a, #header #stuff a { padding: 1em 0.5em; }
-	#header #stuff a { padding-left: 0.6em; }
+	#header #stuff a { padding-left: 0; margin-left: 0.6em; }
 	#footer #phicons a { padding: 0.5em 0.5em; }
 }
-@media screen and (max-width: 5.8in) { #content { line-height: 1.65em; } }
+@media screen and (max-width: 5.8in) { 
+	#footer #phicons a img { height: 1em; }
+	#content { line-height: 1.65em; }
+}
