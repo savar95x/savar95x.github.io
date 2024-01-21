@@ -15,6 +15,10 @@ a { color: #7ba29a; }
 	font-display: swap;
 }
 
+strong {
+	font-weight: 450 !important;
+}
+
 body {
 	background: #202020;
 	color: #D4BE98;
@@ -40,19 +44,19 @@ hr {
 
 h1 {
 	font-family: "Rubik", sans-serif;
-	font-weight: 700;
+	font-weight: 600;
 	color: #9EAA62;
 }
 
 h2 {
 	font-family: "Rubik", sans-serif;
-	font-weight: 700;
+	font-weight: 450;
 	color: #C7A167;
 }
 
 h3 {
 	font-family: "Rubik", sans-serif;
-	font-weight: 700;
+	font-weight: 450;
 	color: #D1889C;
 }
 
