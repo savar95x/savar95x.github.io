@@ -60,6 +60,12 @@ h3 {
 	color: #D1889C;
 }
 
+h4 {
+	font-family: "Rubik", sans-serif;
+	font-weight: 450;
+	color: #A9B665;
+}
+
 strong {font-weight: 600;}
 
 #footer { text-align: center; display: grid; margin-top: auto; }
