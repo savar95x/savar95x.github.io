@@ -10,6 +10,7 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 ## Useful links
 - [pagespeed insights](https://pagespeed.web.dev)
 
+- **focus on content now, aesthetics can be learnt later on as well, right now it just needs to be presentable**
 ## Todo
 - [ ] maybe add a sidemenu for phones
 - [ ] fix footer icon size difference
