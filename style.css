@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
 
@@ -7,9 +8,14 @@
 input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
 
 * { transition: all 0.125s ease-in-out 0s; }
-a { color: #7ba29a; }
-#content a:hover { text-decoration: underline; }
+a { color: #7ba29a }
+#content a:hover { text-decoration: underline; filter: saturate(100%); }
 ::selection { color: #222222; background: #a1947d; }
+
+:root {
+	--grey: #a69579;
+	--grey-alt: #a29277;
+}
 
 @font-face {
 	font-display: swap;
@@ -29,34 +35,37 @@ body {
 
 #content {
 	max-width: 850px;
-	padding: 1em 4em;
+	padding: 0 4em 1em 4em;
 	margin: auto auto;
+	width: calc(100% - 8em);
 	font: normal 400 18px "Rubik", sans-serif;
 	line-height: 1.8em;
 }
 
 hr {
-	display: none;
-	width: calc(100% - 10em);
-	border: 0px solid #333;
-	border-top: 1px solid #333;
+	width: calc(100%);
+	border: 0px solid #282828;
+	border-top: 1px solid #282828;
 }
 
 h1 {
 	font-family: "Rubik", sans-serif;
-	font-weight: 600;
+	font-weight: 450;
+	font-size: 1.5em;
 	color: #9EAA62;
 }
 
 h2 {
 	font-family: "Rubik", sans-serif;
 	font-weight: 450;
+	font-size: 1.35em;
 	color: #C7A167;
 }
 
 h3 {
 	font-family: "Rubik", sans-serif;
 	font-weight: 450;
+	font-size: 1.2em;
 	color: #D1889C;
 }
 
@@ -68,25 +77,36 @@ h4 {
 
 strong {font-weight: 600;}
 
-#footer { text-align: center; display: grid; margin-top: auto; }
+#footer {
+	text-align: center;
+	display: grid;
+	margin-top: auto;
+	padding: 0.5em 0em;
+}
 #footer #phicons { display: flex; margin: auto; }
-#footer #phicons a { padding: 1.6em 1em; margin: auto; }
-#footer #phicons a img { height: 1.1em; }
+#footer #phicons a { padding: 0em 0.8em; margin: auto; }
+#footer #phicons a img { height: 1.04em; }
 
-#header { padding: 0 4em;display: flex; margin: 0 auto auto auto; width: calc(100% - 9em); }
+#header {
+	max-width: 850px;
+	padding: 0.8em 0em;
+	display: flex;
+	margin: 0 auto auto auto;
+	width: calc(100% - 9em);
+}
+
 #header #stuff, #header #home { display: flex; }
 #header #stuff { margin-left: auto; }
 #header #home { margin-right: auto; }
 #header #stuff a {
-	font: 450 normal 17px "Rubik", sans-serif;
-	color: #96876f;
+	font: 450 normal 1em "Rubik", sans-serif;
+	color: var(--grey-alt);
 }
 #header #home a {
-	font: 700 normal 18px "Rubik", sans-serif;
-	color: #D87873;
+	font: 600 normal 1.15em "Rubik", sans-serif;
+	color: #d87c75;
 }
 #header #home a, #header #stuff a {
-	padding: 2em 0em;
 	margin: auto;
 }
 #header #stuff a {
@@ -95,25 +115,29 @@ strong {font-weight: 600;}
 
 #header #stuff a:hover, #footer #phicons a:hover { filter: brightness(150%); }
 
-@media screen and (max-width: 8.4in) {
-	hr {
-		/*display: inline;*/
+@media screen and (max-width: 7.4in) {
+	#content {
+		font-size: 17px;
+	}
+	h1 {
+	font-size: 1.4em;
+	}
+	h2 {
+	font-size: 1.25em;
+	}
+	h3 {
+	font-size: 1.1em;
 	}
 }
 @media screen and (max-width: 5.8in) { 
-	hr {
-		width: calc(100% - 4em);
-	}
 	#header {
-		padding: 0 1em;
-		width: calc(100% - 2em);
+		padding: 0.8em 0em;
+		width: calc(100% - 1em);
 	}
 	#content {
-		padding: 1em 1em;
-		font-size: 17px;
-	}
-	#header #home a, #header #stuff a {
-		padding: 1.5em 0em;
+		padding-right: 0.5em;
+		padding-left: 0.5em;
+		width: calc(100% - 1em);
 	}
 }
 /*
