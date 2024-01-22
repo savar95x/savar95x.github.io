@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
 
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
@@ -8,8 +13,18 @@ a { color: #7ba29a }
 ::selection { color: #222222; background: #a1947d; }
 
 :root {
+	--fg: #D4BE98;
+	--fg-bright: #FBF1C7;
+	--bg: #202020;
+	--bg-light: #282828;
+	--bg-alt: #333;
 	--grey: #a69579;
 	--grey-alt: #a29277;
+	--red: #d87c75;
+	--yellow: #C7A167;
+	--green: #9EAA62;
+	--magenta: #D1889C;
+	--blue: #80A9A0;
 }
 
 @font-face {
@@ -21,8 +36,8 @@ strong {
 }
 
 body {
-	background: #202020;
-	color: #D4BE98;
+	background: var(--bg);
+	color: var(--fg);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -39,35 +54,35 @@ body {
 
 hr {
 	width: calc(100%);
-	border: 0px solid #282828;
-	border-top: 1px solid #282828;
+	border: 0px solid var(--bg-light);
+	border-top: 1px solid var(--bg-light);
 }
 
 h1 {
 	font-family: "Rubik", sans-serif;
 	font-weight: 450;
 	font-size: 1.5em;
-	color: #9EAA62;
+	color: var(--green);
 }
 
 h2 {
 	font-family: "Rubik", sans-serif;
 	font-weight: 450;
 	font-size: 1.35em;
-	color: #C7A167;
+	color: var(--yellow);
 }
 
 h3 {
 	font-family: "Rubik", sans-serif;
 	font-weight: 450;
 	font-size: 1.2em;
-	color: #D1889C;
+	color: var(--magenta);
 }
 
 h4 {
 	font-family: "Rubik", sans-serif;
 	font-weight: 450;
-	color: #A9B665;
+	color: var(--green);
 }
 
 strong {font-weight: 600;}
@@ -99,7 +114,7 @@ strong {font-weight: 600;}
 }
 #header #home a {
 	font: 600 normal 1.15em "Rubik", sans-serif;
-	color: #d87c75;
+	color: var(--red);
 }
 #header #home a, #header #stuff a {
 	margin: auto;
