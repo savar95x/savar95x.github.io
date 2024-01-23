@@ -10,7 +10,16 @@
 </head>
 
 <body>
-	<section>
+	<script>
+	function toggleBar() {
+		if ( document.getElementById("links").style.display == "none" ) {
+			document.getElementById("links").style.display = "block";
+		} else {
+			document.getElementById("links").style.display = "none";
+		}
+	}
+</script>
+<section>
 <section id=header> 
 	<section id=home>
 		<a href=/>savar</a>
@@ -19,6 +28,15 @@
 		<a href=/blog>blog</a>
 		<a href=/about>about</a>
 		<a href='https://github.com/savar95x?tab=repositories'>projects</a>
+	</section>
+	<section align=center id=mobile>
+		<span class="ph-bold ph-list" onclick="toggleBar()"></span>
+		<br>
+		<section id=links>
+			<a href=/blog>blog</a>
+			<a href=/about>about</a>
+			<a href='https://github.com/savar95x?tab=repositories'>projects</a>
+		</section>
 	</section>
 </section>
 <hr>
@@ -105,7 +123,10 @@ If I had the option to, I would choose antagonistic supersets over training twic
 
 	
 </section>
-	<section>
+	<script>
+	toggleBar();
+</script>
+<section>
 <hr>
 <section id=footer> 
 	<section id=phicons>

@@ -152,3 +152,22 @@ strong {font-weight: 600;}
 }
 /*
  */
+#mobile {
+	display: none;
+}
+#links {
+	display: fixed;
+}
+#mobile {
+	margin-left: auto;
+	font-size: 1.2em;
+}
+
+@media screen and (max-width: 7.4in) {
+	/*#header #stuff {
+		display: none;
+	}
+	#mobile {
+		display: block;
+	}*/
+}
