@@ -3,19 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+/*
+Onest&display=swap');
+Rubik&display=swap');
+Rethink+Sans&display=swap');
+Instrument+Sans&display=swap');
+Golos+Text&display=swap');
+DM+Sans&display=swap');
+Inter+Tight&display=swap');
+Lexend&display=swap');
+Questrial&display=swap');
+Geologica&display=swap');
+Nunito&display=swap');
+Urbanist&display=swap');
+Plus+Jakarta+Sans&display=swap');
 */
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
@@ -40,7 +41,7 @@ strong {
 }
 
 #container {
-	min-height: calc(100vh - 9rem);
+	min-height: calc(100vh - 11rem);
 	display: flex;
 }
 
@@ -74,13 +75,16 @@ h2, h3 {
 body {
 	font: var(--font);
 	max-width: 800px;
-	margin: 2.25rem auto;
+	margin: min(2.25rem,7vw) auto;
 	background: var(--clr-bg);
 	color: var(--clr-fg);
 	padding: 0rem 7vw;
 }
 header, footer {
 	display: flex;
+}
+footer {
+	margin-top: 2rem;
 }
 .stuff {
 	margin-left: auto;
@@ -90,11 +94,4 @@ header, footer {
 }
 #home {
 	margin-right: auto;
-}
-#stretch {
-	display: flex;
-	min-height: calc(100vh - 9rem);
-}
-#stretch > h1 {
-	margin: auto;
 }
