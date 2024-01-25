@@ -3,171 +3,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
-
+/*
+Onest&display=swap');
+Rubik&display=swap');
+Rethink+Sans&display=swap');
+Instrument+Sans&display=swap');
+Golos+Text&display=swap');
+DM+Sans&display=swap');
+Inter+Tight&display=swap');
+Lexend&display=swap');
+Questrial&display=swap');
+Geologica&display=swap');
+Nunito&display=swap');
+Urbanist&display=swap');
+Plus+Jakarta+Sans&display=swap');
+*/
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
 
-* { transition: all 0.125s ease-in-out 0s; }
-a { color: #7ba29a }
-#content a:hover { text-decoration: underline; filter: saturate(100%); }
-::selection { color: #222222; background: #a1947d; }
+::selection { color: var(--clr-bg); background: var(--clr-fg-alt); }
 
 :root {
-	--fg: #D4BE98;
-	--fg-bright: #FBF1C7;
-	--bg: #202020;
-	--bg-light: #2a2a2a;
-	--bg-alt: #333;
-	--grey: #a69579;
-	--grey-alt: #a29277;
-	--red: #d87c75;
-	--yellow: #C7A167;
-	--green: #9EAA62;
-	--magenta: #D1889C;
-	--blue: #80A9A0;
+	--clr-fg: #EAE9E9;
+	--clr-fg-alt: #929090;
+	--clr-bg: #242120;
+	--clr-bg-alt: #343231;
+	--font: normal 400 clamp(1.05rem, 2.5vw, 1.25rem) "rubik", sans-serif;
+	--font-h1: normal 700 clamp(2rem, 8vw, 3rem) "rubik", sans-serif;
 }
 
-@font-face {
-	font-display: swap;
+* {
+	line-height: 1.7rem;
 }
 
 strong {
-	font-weight: 450 !important;
+	font-weight: 600;
 }
 
-body {
-	background: var(--bg);
-	color: var(--fg);
-	min-height: 100vh;
+#container {
+	min-height: calc(100vh - 11rem);
 	display: flex;
-	flex-direction: column;
 }
 
-#content {
-	max-width: 850px;
-	padding: 0 4em 1em 4em;
-	margin: auto auto;
-	width: calc(100% - 8em);
-	font: normal 400 18px "Rubik", sans-serif;
-	line-height: 1.8em;
+#wrapper {
+	width: 100%;
+	margin: auto;
 }
 
 hr {
-	width: calc(100%);
-	border: 0px solid var(--bg-light);
-	border-top: 1px solid var(--bg-light);
+	border: 0px solid var(--clr-bg-alt);
+	border-top: 1px solid var(--clr-bg-alt);
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-fg);
+}
+a:hover {
+	text-decoration: underline;
 }
 
 h1 {
-	font-family: "Rubik", sans-serif;
-	font-weight: 450;
-	font-size: 1.5em;
-	color: var(--green);
+	color: var(--clr-fg);
+	font: var(--font-h1);
 }
 
-h2 {
-	font-family: "Rubik", sans-serif;
-	font-weight: 450;
-	font-size: 1.35em;
-	color: var(--yellow);
+h2, h3 {
+	color: var(--clr-fg-alt);
 }
 
-h3 {
-	font-family: "Rubik", sans-serif;
-	font-weight: 450;
-	font-size: 1.2em;
-	color: var(--magenta);
+body {
+	font: var(--font);
+	max-width: 800px;
+	margin: min(2.25rem,7vw) auto;
+	background: var(--clr-bg);
+	color: var(--clr-fg);
+	padding: 0rem 7vw;
 }
-
-h4 {
-	font-family: "Rubik", sans-serif;
-	font-weight: 450;
-	color: var(--green);
-}
-
-strong {font-weight: 600;}
-
-#footer {
-	text-align: center;
-	display: grid;
-	margin-top: auto;
-	padding: 0.5em 0em;
-}
-#footer #phicons { display: flex; margin: auto; }
-#footer #phicons a { padding: 0em 0.8em; margin: auto; }
-#footer #phicons a img { height: 1.04em; }
-
-#header {
-	max-width: 850px;
-	padding: 0.8em 0em;
+header, footer {
 	display: flex;
-	margin: 0 auto auto auto;
-	width: calc(100% - 9em);
 }
-
-#header #stuff, #header #home { display: flex; }
-#header #stuff { margin-left: auto; }
-#header #home { margin-right: auto; }
-#header #stuff a {
-	font: 450 normal 1em "Rubik", sans-serif;
-	color: var(--grey-alt);
+footer {
+	margin-top: 2rem;
 }
-#header #home a {
-	font: 600 normal 1.15em "Rubik", sans-serif;
-	color: var(--red);
-}
-#header #home a, #header #stuff a {
-	margin: auto;
-}
-#header #stuff a {
-	margin-left: 1em;
-}
-
-#header #stuff a:hover, #footer #phicons a:hover { filter: brightness(150%); }
-
-@media screen and (max-width: 7.4in) {
-	#content {
-		font-size: 17px;
-	}
-	h1 {
-	font-size: 1.4em;
-	}
-	h2 {
-	font-size: 1.25em;
-	}
-	h3 {
-	font-size: 1.1em;
-	}
-}
-@media screen and (max-width: 5.8in) { 
-	#header {
-		padding: 0.8em 0em;
-		width: calc(100% - 1em);
-	}
-	#content {
-		padding-right: 0.5em;
-		padding-left: 0.5em;
-		width: calc(100% - 1em);
-	}
-}
-/*
- */
-#mobile {
-	display: none;
-}
-#links {
-	display: fixed;
-}
-#mobile {
+.stuff {
 	margin-left: auto;
-	font-size: 1.2em;
 }
-
-@media screen and (max-width: 7.4in) {
-	/*#header #stuff {
-		display: none;
-	}
-	#mobile {
-		display: block;
-	}*/
+.stuff>a{
+	margin-left: 2rem;
+}
+#home {
+	margin-right: auto;
 }

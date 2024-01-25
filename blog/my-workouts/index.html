@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html lang=en>
-	<head>
+	<!DOCTYPE html>
+<html lang=en>
+<head>
 	<title>My Workouts</title>
-	<link rel=stylesheet href=/style.css />
 	<meta charset=utf-8 />
+	<link rel=stylesheet href=/style.css />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="savar&#39;s webpage" />
 	
 	
 </head>
 
 <body>
-	<section>
-<section id=header> 
+	<header> 
 	<section id=home>
-		<a href=/>savar</a>
+		<a href=/>Home</a>
 	</section>
-	<section id=stuff>
-		<a href=/blog>blog</a>
-		<a href=/about>about</a>
-		<a href='https://github.com/savar95x?tab=repositories'>projects</a>
+	<section class="stuff">
+		<a href=/blog>Blog</a>
+		<a href=/>About</a>
+		<a href=/tools>Tools</a>
 	</section>
-	<section align=center id=mobile>
-		<span class="ph-bold ph-list" onclick="toggleBar()"></span>
-		<br>
-		<section id=links>
-			<a href=/blog>blog</a>
-			<a href=/about>about</a>
-			<a href='https://github.com/savar95x?tab=repositories'>projects</a>
-		</section>
-	</section>
-</section>
-<hr>
-</section>
+</header>
 
-<section id=content>
-	<h1>My Workouts</h1>
+<section id=container>
+<section id=wrapper>
+	<h1>My Workouts<br><span> 11 January 2024</span></h1>
 	<p>This is a collection of all the workout routines I have followed, both the current one and the older ones.</p>
 <h2 id="current">Current</h2>
 <p>As of <strong>20 Jan 2024</strong></p>
@@ -112,21 +104,24 @@ If I had the option to, I would choose antagonistic supersets over training twic
 <h2 id="older">Older</h2>
 <p>I used to follow a PPLPPLR, with insane amounts of volume, probably doing more harm than good. Not recommended for anyone.</p>
 
-	
 </section>
-	<script>
-	toggleBar();
-</script>
-<section>
-<hr>
-<section id=footer> 
-	<section id=phicons>
-		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io><img src=/svg/code-bold.svg aria-label="source code" alt="code" width=18px height=18px /></a>
-		<a aria-label="my github" href=https://github.com/savar95x><img src=/svg/user-bold.svg aria-label="my github" alt="github" width=18px height=18px /></a>
-		<a aria-label="mail me" href=mailto:skaar513@gmail.com><img src=/svg/paper-plane-tilt-bold.svg aria-label="mail me" alt="mail" width=18px height=18px /></a>
+</section>
+	<footer> 
+	<section>
+		<span>&copy; 2024</span>
 	</section>
-</section>
-</section>
+	<section class="stuff">
+		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io>Source</a>
+		<a aria-label="my github" href=https://github.com/savar95x>Github</a>
+		<a aria-label="mail me" href=mailto:skaar513@gmail.com>Mail</a>
+	</section>
+</footer>
+</html>
 
 </body>
 </html>
+<style>
+#wrapper h1 span {
+	color: var(--clr-fg-alt);
+}
+</style>
