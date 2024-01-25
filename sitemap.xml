@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://example.org/blog/</loc>
+    <lastmod>2024-01-11T01:06:06+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
+    <lastmod>2024-01-11T01:06:06+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/blog/my-workouts/</loc>
+    <lastmod>2024-01-11T01:06:06+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/blog/movies/</loc>
+    <lastmod>2024-01-08T23:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tools/</loc>
+    <lastmod>2024-01-08T02:38:28+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tools/search/</loc>
+    <lastmod>2024-01-08T02:38:28+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tools/start/</loc>
+    <lastmod>2024-01-08T02:38:28+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/blog/programming-my-workout-split/</loc>
+    <lastmod>2024-01-08T02:06:43+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/categories/</loc>
+  </url><url>
+    <loc>https://example.org/tags/</loc>
+  </url>
+</urlset>

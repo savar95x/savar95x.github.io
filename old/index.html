@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+	<meta name="generator" content="Hugo 0.121.2">
+	<title>savar</title>
+	<link rel=stylesheet href=/style.css />
+	<meta charset=utf-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="savar&#39;s webpage" />
+	
+</head>
+
+<body>
+	<script>
+	function toggleBar() {
+		if ( document.getElementById("links").style.display == "none" ) {
+			document.getElementById("links").style.display = "block";
+		} else {
+			document.getElementById("links").style.display = "none";
+		}
+	}
+</script>
+<section>
+<section id=header> 
+	<section id=home>
+		<a href=/>savar</a>
+	</section>
+	<section id=stuff>
+		<a href=/blog>blog</a>
+		<a href=/about>about</a>
+		<a href='https://github.com/savar95x?tab=repositories'>projects</a>
+	</section>
+	<section align=center id=mobile>
+		<span class="ph-bold ph-list" onclick="toggleBar()"></span>
+		<br>
+		<section id=links>
+			<a href=/blog>blog</a>
+			<a href=/about>about</a>
+			<a href='https://github.com/savar95x?tab=repositories'>projects</a>
+		</section>
+	</section>
+</section>
+<hr>
+</section>
+
+<div id=content>
+  <div id=top>
+	  <img src=https://github.com/savar95x.png aria-label="my picture" height=105px width=105px />
+	  <div>
+		  <h1>Savar Verma</h1>
+		  <p id=intro>Hi! I'm savar, and this is my webpage. There's not much to look at yet, so thanks for stopping by!</p>
+	  </div>
+  </div>
+  <div id=middle>
+	  <h2>My Work</h2>
+	  <div id=cards>
+		  <a class="link" href=blog>writings</a>
+		  <a class="link" href=start>startpage</a>
+		  <a class="link" href=blog/movies>movies</a>
+		  <a class="link" href=search>search</a>
+		  <a class="link" href=blog/my-workouts>workout</a>
+		  <a class="link" href=https://github.com/savar95x/dotfiles>dotfiles</a>
+	  </div>
+	  
+  </div>
+</div>
+	<script>
+	toggleBar();
+</script>
+<section>
+<hr>
+<section id=footer> 
+	<section id=phicons>
+		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io><img src=/svg/code-bold.svg aria-label="source code" alt="code" width=18px height=18px /></a>
+		<a aria-label="my github" href=https://github.com/savar95x><img src=/svg/user-bold.svg aria-label="my github" alt="github" width=18px height=18px /></a>
+		<a aria-label="mail me" href=mailto:skaar513@gmail.com><img src=/svg/paper-plane-tilt-bold.svg aria-label="mail me" alt="mail" width=18px height=18px /></a>
+	</section>
+</section>
+</section>
+
+</body>
+</html>
+
+<style>
+body {
+	line-height: 1.35em;
+}
+
+#top h1 {
+	font-size: 1.5em;
+}
+
+#content {
+	font: normal 450 1em "Rubik", sans-serif;
+}
+
+#top {
+	background: var(--bg-alt);
+	padding: 2em;
+	text-align: left;
+	display: flex;
+	box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.3);
+}
+
+#top img {
+	margin: auto;
+	margin-right: 1.5em;
+	border-radius: 50%;
+}
+
+#top div {
+	margin: auto;
+}
+
+#top div p {
+	font: normal 450 1em "Rubik", sans-serif;
+	line-height: 1.4em;
+}
+
+#middle {
+	padding: 0.5em 0;
+	width: calc(100%-20px);
+	text-align: left;
+}
+
+#middle h2 {
+	margin: 1.2em;
+}
+
+#cards {
+	display: grid;
+	margin: auto;
+	gap: 1.5em;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+}
+
+#cards a {
+	margin: 0;
+	background: var(--bg-alt);
+	text-align: center;
+	padding: 2em 0;
+	font: normal 450 1em "Rubik", sans-serif;
+	box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.35);
+	color: var(--fg);
+}
+
+#cards a:hover {
+	filter: brightness(105%);
+	text-decoration: none;
+}
+
+#cards a:active {
+	filter: brightness(110%);
+	box-shadow: 0px 0px 1px 1px  rgba(0,0,0,0.5);
+	transform: translate(2px, 2px);
+}
+
+@media screen and (max-width: 10.6in) { #mainContainer { width: 85%; } #cards {gap: 1em;} }
+@media screen and (max-width: 7.6in) { #middle h2 { margin-left: 0.2em; } #top { padding: 0em; background: transparent; box-shadow: none; } #mainContainer { width: calc(90%); } #cards { gap: 1.2em; grid-template-columns: repeat(2, 1fr);} }
+@media screen and (max-width: 5.6in) { #middle h2 { margin-top: 0.7em; } #top img { display: none; } }
+@media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
+</style>

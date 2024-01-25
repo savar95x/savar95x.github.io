@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang=en>
-	<!DOCTYPE html>
-<html lang=en>
-<head>
+	<head>
 	<title>Movies</title>
-	<meta charset=utf-8 />
 	<link rel=stylesheet href=/style.css />
+	<meta charset=utf-8 />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="savar&#39;s webpage" />
-	
 	<meta name="description" content="a list of movies close to my heart" />
+	
 </head>
 
 <body>
-	<header> 
+	<script>
+	function toggleBar() {
+		if ( document.getElementById("links").style.display == "none" ) {
+			document.getElementById("links").style.display = "block";
+		} else {
+			document.getElementById("links").style.display = "none";
+		}
+	}
+</script>
+<section>
+<section id=header> 
 	<section id=home>
-		<a href=/>Home</a>
+		<a href=/>savar</a>
 	</section>
-	<section class="stuff">
-		<a href=/blog>Blog</a>
-		<a href=/>About</a>
-		<a href=/tools>Tools</a>
+	<section id=stuff>
+		<a href=/blog>blog</a>
+		<a href=/about>about</a>
+		<a href='https://github.com/savar95x?tab=repositories'>projects</a>
 	</section>
-</header>
+	<section align=center id=mobile>
+		<span class="ph-bold ph-list" onclick="toggleBar()"></span>
+		<br>
+		<section id=links>
+			<a href=/blog>blog</a>
+			<a href=/about>about</a>
+			<a href='https://github.com/savar95x?tab=repositories'>projects</a>
+		</section>
+	</section>
+</section>
+<hr>
+</section>
 
-<section id=container>
-<section id=wrapper>
-	<h1>Movies<br><span> 08 January 2024</span></h1>
+<section id=content>
+	<h1>Movies</h1>
 	<p>
 This is a list of movies dear to my heart, and I'd recommend everyone to watch these atleast once in their lifetimes.<br>
 </p>
@@ -40,24 +57,21 @@ It also touches a bit on politics, on how some poeple in power don't like others
 All that being said, we know we don't watch movies to learn moral values. We watch them to appreciate art, and this piece of work is an excellent example of how a movie with a story line as simple as this one, can still make an impact.
 </p>
 
+	
+</section>
+	<script>
+	toggleBar();
+</script>
+<section>
+<hr>
+<section id=footer> 
+	<section id=phicons>
+		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io><img src=/svg/code-bold.svg aria-label="source code" alt="code" width=18px height=18px /></a>
+		<a aria-label="my github" href=https://github.com/savar95x><img src=/svg/user-bold.svg aria-label="my github" alt="github" width=18px height=18px /></a>
+		<a aria-label="mail me" href=mailto:skaar513@gmail.com><img src=/svg/paper-plane-tilt-bold.svg aria-label="mail me" alt="mail" width=18px height=18px /></a>
+	</section>
 </section>
 </section>
-	<footer> 
-	<section>
-		<span>&copy; 2024</span>
-	</section>
-	<section class="stuff">
-		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io>Source</a>
-		<a aria-label="my github" href=https://github.com/savar95x>Github</a>
-		<a aria-label="mail me" href=mailto:skaar513@gmail.com>Mail</a>
-	</section>
-</footer>
-</html>
 
 </body>
 </html>
-<style>
-#wrapper h1 span {
-	color: var(--clr-fg-alt);
-}
-</style>

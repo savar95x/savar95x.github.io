@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang=en>
-	<!DOCTYPE html>
-<html lang=en>
-<head>
+	<head>
 	<title>Programming a Workout Split</title>
-	<meta charset=utf-8 />
 	<link rel=stylesheet href=/style.css />
+	<meta charset=utf-8 />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="savar&#39;s webpage" />
-	
 	<meta name="description" content="my attempt at programming a workout split for myself as a novice" />
+	
 </head>
 
 <body>
-	<header> 
+	<script>
+	function toggleBar() {
+		if ( document.getElementById("links").style.display == "none" ) {
+			document.getElementById("links").style.display = "block";
+		} else {
+			document.getElementById("links").style.display = "none";
+		}
+	}
+</script>
+<section>
+<section id=header> 
 	<section id=home>
-		<a href=/>Home</a>
+		<a href=/>savar</a>
 	</section>
-	<section class="stuff">
-		<a href=/blog>Blog</a>
-		<a href=/>About</a>
-		<a href=/tools>Tools</a>
+	<section id=stuff>
+		<a href=/blog>blog</a>
+		<a href=/about>about</a>
+		<a href='https://github.com/savar95x?tab=repositories'>projects</a>
 	</section>
-</header>
+	<section align=center id=mobile>
+		<span class="ph-bold ph-list" onclick="toggleBar()"></span>
+		<br>
+		<section id=links>
+			<a href=/blog>blog</a>
+			<a href=/about>about</a>
+			<a href='https://github.com/savar95x?tab=repositories'>projects</a>
+		</section>
+	</section>
+</section>
+<hr>
+</section>
 
-<section id=container>
-<section id=wrapper>
-	<h1>Programming a Workout Split<br><span> 08 January 2024</span></h1>
+<section id=content>
+	<h1>Programming a Workout Split</h1>
 	<p>
 My attempt at programming a workout plan for myself as a novice.<br>
 This is written based on the information from the following videos by natural hypertrophy.
@@ -138,24 +155,21 @@ I just realised this became very philosophical very quickly. But honestly, I don
 So, to conclude this discussion, I'll say that I'm not experience enough to make a program for myself, and expect it to work well. The next few weeks, I will experiment with what works for me, what I perosanally like, and also learn the various methodologies and philosophies people have about training, as natural bodybuilders. I've spent a lot of time watching NH, but that all is in bits and pieces. Heck man I dont't even know what to answer if someone asks me what actually builds muscle. What I really should be doing is watching long lectures on natural bodybuilding instead of short form videos. <a href=https://www.youtube.com/watch?v=pwXDP1PfvIM>This</a> video from bald omni man is in my radar for now. I'll write a good article on the same topic, some time form now, weeks, months, years, I don't know, whenever I feel like I am knowledgable enough to comment on the topic and give advice to novices. Till then, I'll keep updating what I actually do in my workouts over <a href=/blog/my-workouts/>here</a>.
 </p>
 
+	
+</section>
+	<script>
+	toggleBar();
+</script>
+<section>
+<hr>
+<section id=footer> 
+	<section id=phicons>
+		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io><img src=/svg/code-bold.svg aria-label="source code" alt="code" width=18px height=18px /></a>
+		<a aria-label="my github" href=https://github.com/savar95x><img src=/svg/user-bold.svg aria-label="my github" alt="github" width=18px height=18px /></a>
+		<a aria-label="mail me" href=mailto:skaar513@gmail.com><img src=/svg/paper-plane-tilt-bold.svg aria-label="mail me" alt="mail" width=18px height=18px /></a>
+	</section>
 </section>
 </section>
-	<footer> 
-	<section>
-		<span>&copy; 2024</span>
-	</section>
-	<section class="stuff">
-		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io>Source</a>
-		<a aria-label="my github" href=https://github.com/savar95x>Github</a>
-		<a aria-label="mail me" href=mailto:skaar513@gmail.com>Mail</a>
-	</section>
-</footer>
-</html>
 
 </body>
 </html>
-<style>
-#wrapper h1 span {
-	color: var(--clr-fg-alt);
-}
-</style>
