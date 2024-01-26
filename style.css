@@ -75,10 +75,10 @@ h2, h3 {
 body {
 	font: var(--font);
 	max-width: 800px;
-	margin: min(2.25rem,7vw) auto;
+	margin: min(2.25rem,5vw) auto;
 	background: var(--clr-bg);
 	color: var(--clr-fg);
-	padding: 0rem 7vw;
+	padding: 0rem 4vw;
 }
 header, footer {
 	display: flex;
