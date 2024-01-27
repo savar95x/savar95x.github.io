@@ -16,9 +16,9 @@
 		<a href=/>Home</a>
 	</section>
 	<section class="stuff">
-		<a href=/blog>Blog</a>
-		<a href=/>About</a>
-		<a href=/tools>Tools</a>
+		<a class="fg-alt" href=/blog>Blog</a>
+		<a  href=/>About</a>
+		<a  href=/tools>Tools</a>
 	</section>
 </header>
 
@@ -58,6 +58,12 @@
 	width: 100%;
 	display: flex;
 	padding: 0.5rem 0;
+}
+.line a {
+	text-decoration: none;
+}
+.line a:hover {
+	text-decoration: underline;
 }
 .line > span {
 	margin-left: auto;

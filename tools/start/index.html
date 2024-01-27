@@ -13,20 +13,10 @@
 </head>
 
 <body>
-	<header> 
-	<section id=home>
-		<a href=/>Home</a>
-	</section>
-	<section class="stuff">
-		<a href=/blog>Blog</a>
-		<a href=/>About</a>
-		<a href=/tools>Tools</a>
-	</section>
-</header>
-
-<section id=content>
-	<section id=container>
+<section id=container>
 <section id=wrapper>
+	<h1>Start<br><span class="fg-alt"> 08 January 2024</span></h1>
+	<!--section id=container-->
 <div id=cards>
 	<a class="ph-bold ph-magnifying-glass" aria-label="search over search engines like github and archwiki" href="../search"></a>
 	<a class="ph-bold ph-video" aria-label="coursera" href=https://coursera.org></a>
@@ -36,11 +26,16 @@
 	<a class="ph-bold ph-spotify-logo" aria-label="spotify web" href=https://open.spotify.com></a>
 
 </div>
-</section>
-</section>
+<!--/section-->
 <style>
 * {
 	transition: all 0.125s ease-in-out 0s;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 
 #cards {
@@ -72,19 +67,20 @@
 @media screen and (max-width: 6.5in) { #cards { grid-template-columns: repeat(2, 1fr); gap: 1.5em; } }
 @media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
 </style>
+<script>
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+// This arrangement can be altered based on how we want the date's format to appear.
+let currentDate = `${day}-${month}-${year}`;
+document.getElementById("date").value = currentDate;
+console.log(currentDate); // "17-6-2022"
+</script>
 
 </section>
-	<footer> 
-	<section>
-		<span>&copy; 2024</span>
-	</section>
-	<section class="stuff">
-		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io>Source</a>
-		<a aria-label="my github" href=https://github.com/savar95x>Github</a>
-		<a aria-label="mail me" href=mailto:skaar513@gmail.com>Mail</a>
-	</section>
-</footer>
-</html>
-
+</section>
 </body>
 </html>

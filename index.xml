@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>https://example.org/</link>
+    <link>https://savar95x.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jan 2024 01:06:06 +0530</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://savar95x.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Workouts</title>
-      <link>https://example.org/blog/my-workouts/</link>
+      <link>https://savar95x.github.io/blog/my-workouts/</link>
       <pubDate>Thu, 11 Jan 2024 01:06:06 +0530</pubDate>
-      <guid>https://example.org/blog/my-workouts/</guid>
+      <guid>https://savar95x.github.io/blog/my-workouts/</guid>
       <description>This is a collection of all the workout routines I have followed, both the current one and the older ones.&#xA;Current Priority A lot of arms - 2 good sessions&#xA;A lot of shoulders - 2 good sessions&#xA;Good torso and legs - 2 good sessions but not necessary to be fresh&#xA;Exercise Selection Chest - Incline Bench Press Back - T Bar Row, Wide Pronated Pulldown, Cable Pullovers Triceps - Skull Crushers Overhead Biceps - EZ Bar / Barbell Bicep Curl Front Delt - Smith Machine Overhead Press Side Delt - Upright Egyptian Lateral Raise Rear Delt - Reverse Pec Deck Quads - High Bar Squat Hamstring - Romanian Deadlift, Seated Leg Curl Others - Standing Calf Raises, Decline Sit Ups Not a lot of variation as I feel I don&amp;rsquo;t personally need it yet.</description>
     </item>
     <item>
       <title>Movies</title>
-      <link>https://example.org/blog/movies/</link>
+      <link>https://savar95x.github.io/blog/movies/</link>
       <pubDate>Mon, 08 Jan 2024 23:46:25 +0530</pubDate>
-      <guid>https://example.org/blog/movies/</guid>
+      <guid>https://savar95x.github.io/blog/movies/</guid>
       <description>This is a list of movies dear to my heart, and I&#39;d recommend everyone to watch these atleast once in their lifetimes.&#xA;Dead Poets Society (1989)&#xA;08 January 2024 I love this movie, and it feels good to watch it every single time. It teaches a lot about life. Having thoughts of your own, having an identity in this world of rat race. Not to lose yourself in the crowd, but to take stand for yourself and figure out what we really want.</description>
     </item>
     <item>
       <title>Search</title>
-      <link>https://example.org/tools/search/</link>
+      <link>https://savar95x.github.io/tools/search/</link>
       <pubDate>Mon, 08 Jan 2024 02:38:28 +0530</pubDate>
-      <guid>https://example.org/tools/search/</guid>
+      <guid>https://savar95x.github.io/tools/search/</guid>
       <description> </description>
     </item>
     <item>
       <title>Start</title>
-      <link>https://example.org/tools/start/</link>
+      <link>https://savar95x.github.io/tools/start/</link>
       <pubDate>Mon, 08 Jan 2024 02:38:28 +0530</pubDate>
-      <guid>https://example.org/tools/start/</guid>
+      <guid>https://savar95x.github.io/tools/start/</guid>
       <description> </description>
     </item>
     <item>
       <title>Programming a Workout Split</title>
-      <link>https://example.org/blog/programming-my-workout-split/</link>
+      <link>https://savar95x.github.io/blog/programming-my-workout-split/</link>
       <pubDate>Mon, 08 Jan 2024 02:06:43 +0530</pubDate>
-      <guid>https://example.org/blog/programming-my-workout-split/</guid>
+      <guid>https://savar95x.github.io/blog/programming-my-workout-split/</guid>
       <description>My attempt at programming a workout plan for myself as a novice.&#xA;This is written based on the information from the following videos by natural hypertrophy. How to never have to buy a training program again in your life How to program your training yourself Exercise Selection According to NH, selecting the lifts should be the first priority because that is what essentially makes the skeleton of the program. He also advices that the lifts: should work for the individual&#39;s anatomy should be already practiced by the individual for atleast 3 months, and seen some growth on should be likeable by the individual, do not include it if you don&#39;t like it as a novice, the program should have very less hard variations to avoid wasting time on neurological adaptation, as you don&#39;t need many variations at this point to grow.</description>
     </item>
   </channel>

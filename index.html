@@ -17,9 +17,9 @@
 		<a href=/>Home</a>
 	</section>
 	<section class="stuff">
-		<a href=/blog>Blog</a>
-		<a href=/>About</a>
-		<a href=/tools>Tools</a>
+		<a  href=/blog>Blog</a>
+		<a  href=/>About</a>
+		<a  href=/tools>Tools</a>
 	</section>
 </header>
 
@@ -61,13 +61,19 @@
 </html>
 
 <br>
-	<span class="fg-alt footer-text">The design credits go to <a class="fg-alt" href="https://andersnoren.se">andersnoren</a></span>
+	<span class="fg-alt footer-text">The design credits go to <a class="fg-alt" href="https://andersnoren.se">andersnoren.se</a></span>
 </body>
 </html>
 <style>
 .scroll {
 	position: absolute;
 	bottom: 4vh;
+}
+.scroll a {
+	text-decoration: none;
+}
+.scroll a:hover, #contact>section a:hover {
+	text-decoration: underline;
 }
 
 .scroll>span {
@@ -78,10 +84,9 @@
 #about {
 	margin: 5rem 0rem 3rem 0;
 }
-#contact>section {
-}
 #contact>section a {
 	margin-right: min(4vw, 2rem);
+	text-decoration: none;
 }
 #stretch {
 	display: flex;
@@ -89,8 +94,5 @@
 }
 #stretch > h1 {
 	margin: auto;
-}
-h1 {
-	animation: fade-up .5s .25s both ease-out;
 }
 </style>

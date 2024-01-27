@@ -16,7 +16,7 @@ Urbanist&display=swap');
 Plus+Jakarta+Sans&display=swap');
 */
 /*removes the unattractive defaults*/
-input{outline:none;border:none;} button{border:none;} a {text-decoration: none;}
+input{outline:none;border:none;} button{border:none;}
 
 ::selection { color: var(--clr-bg); background: var(--clr-fg-alt); }
 
@@ -46,8 +46,11 @@ strong {
 }
 
 #container {
-	min-height: calc(100vh - 11rem);
+	min-height: calc(100vh - 9.9rem);
 	display: flex;
+}
+
+a {
 }
 
 #wrapper {
@@ -61,10 +64,16 @@ hr {
 }
 
 a {
-	text-decoration: none;
 	color: var(--clr-fg);
+	text-decoration: underline;
 }
 a:hover {
+	text-decoration: none;
+}
+header a, footer a {
+	text-decoration: none;
+}
+header a:hover, footer a:hover {
 	text-decoration: underline;
 }
 
