@@ -15,7 +15,7 @@
 <body>
 <section id=container>
 <section id=wrapper>
-	<h1>Start<br><span class="fg-alt"> 08 January 2024</span></h1>
+	<h1>Start<br><span id="date" class="fg-alt"> 08 January 2024</span></h1>
 	<!--section id=container-->
 <div id=cards>
 	<a class="ph-bold ph-magnifying-glass" aria-label="search over search engines like github and archwiki" href="../search"></a>
@@ -67,18 +67,7 @@ a:hover {
 @media screen and (max-width: 6.5in) { #cards { grid-template-columns: repeat(2, 1fr); gap: 1.5em; } }
 @media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
 </style>
-<script>
-const date = new Date();
-
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
-
-// This arrangement can be altered based on how we want the date's format to appear.
-let currentDate = `${day}-${month}-${year}`;
-document.getElementById("date").value = currentDate;
-console.log(currentDate); // "17-6-2022"
-</script>
+<script src=/js/date.js></script>
 
 </section>
 </section>

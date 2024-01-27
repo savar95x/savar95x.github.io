@@ -15,7 +15,7 @@
 <body>
 <section id=container>
 <section id=wrapper>
-	<h1>Search<br><span class="fg-alt"> 08 January 2024</span></h1>
+	<h1>Search<br><span id="date" class="fg-alt"> 08 January 2024</span></h1>
 	<section id=search-bar>
 	<input id=searchInput placeholder="Search with SearX" autocomplete=off />
 </section>
@@ -118,6 +118,7 @@ document.getElementById("searchInput").addEventListener("keydown", event =>
 		else if (event.altKey && event.key == "c") clearInput();
 	});
 </script>
+<script src=/js/date.js></script>
 
 </section>
 </section>
