@@ -46,8 +46,9 @@ strong {
 }
 
 #container {
-	min-height: calc(100vh - 9.9rem);
+	min-height: calc(100vh - 12rem);
 	display: flex;
+	margin: 2rem 0;
 }
 
 a {
@@ -98,7 +99,6 @@ header, footer {
 	display: flex;
 }
 footer {
-	margin-top: 2rem;
 }
 .footer-text {
 	font-size: 1rem;
