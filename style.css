@@ -39,6 +39,7 @@ html {
 
 * {
 	line-height: 1.7rem;
+	transition: all 0.125s ease-in-out 0s;
 }
 
 strong {
@@ -46,12 +47,9 @@ strong {
 }
 
 #container {
-	min-height: calc(100vh - 12rem);
+	min-height: calc(100vh - 14rem);
 	display: flex;
 	margin: 2rem 0;
-}
-
-a {
 }
 
 #wrapper {
@@ -68,12 +66,15 @@ a {
 	color: var(--clr-fg);
 	text-decoration: underline;
 }
+
 a:hover {
 	text-decoration: none;
 }
+
 header a, footer a {
 	text-decoration: none;
 }
+
 header a:hover, footer a:hover {
 	text-decoration: underline;
 }
