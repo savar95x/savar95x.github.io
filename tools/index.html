@@ -27,17 +27,10 @@
 	<section id=wrapper>
 	
 	
-		<hr>
-		<section class="block">
-			<a class="heading" href="/tools/search/">Search</a>
-		</section>
+	<a class="heading" href="/tools/search/">Search</a>
 	
-		<hr>
-		<section class="block">
-			<a class="heading" href="/tools/start/">Start</a>
-		</section>
+	<a class="heading" href="/tools/start/">Start</a>
 	
-		<hr>
 	</section>
 </section>
 	<footer> 
@@ -46,8 +39,6 @@
 	</section>
 	<section class="stuff">
 		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io>Source</a>
-		<a aria-label="my github" href=https://github.com/savar95x>Github</a>
-		<a aria-label="mail me" href=mailto:skaar513@gmail.com>Mail</a>
 	</section>
 </footer>
 </html>
@@ -55,25 +46,26 @@
 </body>
 </html>
 <style>
-.block a {
-	text-decoration: none;
-}
-.block a:hover {
-	text-decoration: underline;
-}
-.block {
+#wrapper {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(2, 1fr);
 	width: 100%;
-	display: flex;
-	padding: 0.5rem 0;
-}
-.block > a {
-	margin: auto;
-}
-.date {
-	color: var(--clr-fg-alt);
 }
 
-.heading {
-	color: var(--yellow);
+#wrapper a {
+	text-decoration: none;
+	margin: 0;
+	background: var(--clr-bg-alt);
+	text-align: center;
+	padding: 2rem 0;
+	box-shadow: 0px 2px 4px 0px  rgba(0,0,0,0.35);
+}
+
+#wrapper a:hover {
+	box-shadow: 0px 5px 4px 0px  rgba(0,0,0,0.35);
+	transform: translate(0px,-3px);
+	text-decoration: none;
+	filter: brightness(110%);
 }
 </style>
