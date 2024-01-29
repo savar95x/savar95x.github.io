@@ -47,7 +47,6 @@ strong {
 
 #container {
 	min-height: calc(100vh - 9.9rem);
-	margin: 4rem 0;
 	display: flex;
 }
 
