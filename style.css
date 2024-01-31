@@ -13,10 +13,10 @@ html {
 }
 
 :root {
-	--clr-fg: #EAE9E9;
-	--clr-fg-alt: #929090;
-	--clr-bg: #242120;
-	--clr-bg-alt: #343231;
+	--clr-fg: #eee;
+	--clr-fg-alt: #888;
+	--clr-bg: #161616;
+	--clr-bg-alt: #272727;
 	--font: normal 400 clamp(1.05rem, 4vw, 1.25rem) "Archivo", sans-serif;
 	--font-h1: normal 700 clamp(2rem, 8vw, 3rem) "Archivo", sans-serif;
 }
@@ -33,6 +33,7 @@ strong {
 #container {
 	min-height: calc(100vh - 14rem);
 	display: flex;
+	margin: 2rem 0;
 }
 
 #wrapper {
@@ -68,7 +69,6 @@ h1 {
 }
 
 h2, h3 {
-	color: var(--clr-fg-alt);
 }
 
 body {
