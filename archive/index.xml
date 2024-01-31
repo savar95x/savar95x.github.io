@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archives on My New Hugo Site</title>
+    <link>https://savar95x.github.io/archive/</link>
+    <description>Recent content in Archives on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Jan 2024 01:06:06 +0530</lastBuildDate>
+    <atom:link href="https://savar95x.github.io/archive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current Workout</title>
+      <link>https://savar95x.github.io/archive/myworkouts/current/</link>
+      <pubDate>Wed, 31 Jan 2024 01:06:06 +0530</pubDate>
+      <guid>https://savar95x.github.io/archive/myworkouts/current/</guid>
+      <description>Priority Back Shoulders Arms Lower Body Fat Exercise Selection Back Cable Pullover 10-15&#xA;Pullups&#xA;Barbell Bent Over Rows 6-10&#xA;Shoulders Standing Lateral Raise 15-20&#xA;Seated Smith Machine Overhead Press 6-10 / Dumbbell Overhead Press 8-12&#xA;Reverse Pec Deck 15+&#xA;Arms Standing Cable Overhead Extension 8-12&#xA;JM Press 6-10&#xA;Dumbbell Preacher Curl 8-12&#xA;Hammer Curl 6-10&#xA;Kitana Extensions (Left Tricep) 8-12&#xA;Chest Dips 6-10&#xA;Quads High Bar Barbell Squats 5-8&#xA;Hamstrings Romanian Deadlift 5-8 / Seated Leg Curl 8-12</description>
+    </item>
+  </channel>
+</rss>

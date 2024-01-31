@@ -1,20 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&display=swap');
-/*
- * arimo, dm sans, karla, archivo, outfit, space grotesk, figtree, chivo
-Onest&display=swap');
-Rubik&display=swap');
-Rethink+Sans&display=swap');
-Instrument+Sans&display=swap');
-Golos+Text&display=swap');
-DM+Sans&display=swap');
-Inter+Tight&display=swap');
-Lexend&display=swap');
-Questrial&display=swap');
-Geologica&display=swap');
-Nunito&display=swap');
-Urbanist&display=swap');
-Plus+Jakarta+Sans&display=swap');
-*/
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;}
 
@@ -49,7 +33,6 @@ strong {
 #container {
 	min-height: calc(100vh - 14rem);
 	display: flex;
-	margin: 2rem 0;
 }
 
 #wrapper {
