@@ -27,7 +27,7 @@
 <section id=container> 
 	<section>
 	<div id=stretch><h1>My name is Savar. This is my little corner on the web.</h1></div>
-	<span class="scroll"><span>&darr;</span> <a href="#about">Scroll for more</a></span>
+	<span class="scroll"><span id=darr>&darr;</span> <a href="#about">Scroll for more</a></span>
 	<div id=about>
 	<h2>About</h2>
 	<img align=right src=https://github.com/savar95x.png aria-label="my picture" height=105px width=105px style="margin-left: 1rem; margin-bottom: 1rem; border-radius: 50%" />
@@ -67,18 +67,21 @@
 .scroll {
 	position: absolute;
 	bottom: 4vh;
+	display: inline;
 }
 .scroll a {
 	text-decoration: none;
+	margin-left: 1.9rem;
 }
 .scroll a:hover, #contact>section a:hover {
 	text-decoration: underline;
 }
 
-.scroll>span {
-	margin-right: 1rem;
+#darr {
 	font-size: 1.3rem;
 	font-weight: 700;
+	position: absolute;
+	animation: up-and-down linear 2s infinite;
 }
 #about {
 	margin: 8rem 0rem 3rem 0;
@@ -93,5 +96,13 @@
 }
 #stretch > h1 {
 	margin: auto;
+}
+@keyframes up-and-down {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(5px);
+	}
 }
 </style>
