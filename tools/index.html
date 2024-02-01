@@ -27,18 +27,19 @@
 
 <section id=container>
 	<section id=wrapper>
+		<section class=description>
 	
+		</section>
 	
-	<section class=block>
-	<a class="heading" href="/tools/search/">Search</a>
-	<span class=desc>Originally part of the startpage, this is a searchbar with some handy preset search engines</span>
-	</section>
+		<hr>
+		<section class="line"><a class="heading" href="/tools/search/">Search</a><span class="date">Jan 2024</span></section>
+		<span class="tool-desc">Originally part of the startpage, this is a searchbar with some handy preset search engines</span>
 	
-	<section class=block>
-	<a class="heading" href="/tools/start/">Start</a>
-	<span class=desc>A startpage that I made for personal use, to be used as a home page of a browser</span>
-	</section>
+		<hr>
+		<section class="line"><a class="heading" href="/tools/start/">Start</a><span class="date">Jan 2024</span></section>
+		<span class="tool-desc">A startpage that I made for personal use, to be used as a home page of a browser</span>
 	
+		<hr>
 	</section>
 </section>
 	<footer> 
@@ -54,13 +55,32 @@
 </body>
 </html>
 <style>
-.block {
-	margin: clamp(1rem, 6vw, 3rem) 0;
-	display: flex;
-	flex-direction: column;
+.description {
+	margin-bottom: 4rem;
 }
+.line {
+	width: 100%;
+	display: flex;
+	padding: 0.5rem 0;
+}
+.line a {
+	text-decoration: none;
+}
+.line a:hover {
+	text-decoration: underline;
+}
+.line > span {
+	margin-left: auto;
+}
+.date {
+	color: var(--clr-fg-alt);
+}
+
+.tool-desc {
+	display: none;
+}
+
 .heading {
-	font-size: clamp(1.25rem, 6vw, 1.6rem);
-	margin-bottom: 1rem;
+	color: var(--yellow);
 }
 </style>

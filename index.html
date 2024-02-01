@@ -26,13 +26,14 @@
 	</section>
 </header>
 
+<main>
 <section id=container> 
 	<section>
 	<div id=stretch><h1>My name is Savar. This is my little corner on the web.</h1></div>
 	<span class="scroll"><span id=darr>&darr;</span> <a href="#about">Scroll for more</a></span>
 	<div id=about>
 	<h2>About</h2>
-	<img align=right src=https://github.com/savar95x.png aria-label="my picture" height=105px width=105px style="margin-left: 1rem; margin-bottom: 1rem; border-radius: 50%" />
+	<img align=right src=https://github.com/savar95x.png aria-label="my picture" style="margin-left: 1rem; margin-bottom: 1rem; border-radius: 50%" />
 		<p>I am a second year undergrad doing Electrical Engineering from IIT Madras. Passionately, I'm a natural hypertrophy training lover, a free software and linux enthusiast, and a cinephile.</p>
 		<p>In my free time, I often find myself working on this website, or learning about css, and learning about programming as a natural bodybuilder.</p>
 		<p>I've started this blog to vent my thoughts out and articulate my thinking and writing, hopefully giving me some peace.</p>
@@ -51,6 +52,7 @@
 	</div>
 	</section>
 </section>
+</main>
 <footer> 
 	<section>
 		<span>&copy; 2024</span>
@@ -66,6 +68,9 @@
 </body>
 </html>
 <style>
+img {
+	width: 110px;
+}
 .scroll {
 	position: absolute;
 	bottom: 4vh;
@@ -99,12 +104,18 @@
 #stretch > h1 {
 	margin: auto;
 }
+
+.footer-text {
+	font-size: 1rem;
+	margin-left: auto;
+}
+
 @keyframes up-and-down {
 	0%, 100% {
 		transform: translateY(0);
 	}
 	50% {
-		transform: translateY(5px);
+		transform: translateY(15%);
 	}
 }
 </style>
