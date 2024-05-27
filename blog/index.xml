@@ -2,25 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog Posts on My New Hugo Site</title>
-    <link>https://savar95x.github.io/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blog Posts on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jan 2024 01:06:06 +0530</lastBuildDate>
-    <atom:link href="https://savar95x.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Old Workouts</title>
-      <link>https://savar95x.github.io/blog/workouts/</link>
-      <pubDate>Thu, 11 Jan 2024 01:06:06 +0530</pubDate>
-      <guid>https://savar95x.github.io/blog/workouts/</guid>
-      <description>This is a collection of all the workout routines I previous have followed. To check what I currently run, click here.&#xA;11 Jan 2024 Priority A lot of arms - 2 good sessions&#xA;A lot of shoulders - 2 good sessions&#xA;Good torso and legs - 2 good sessions but not necessary to be fresh&#xA;Exercise Selection Chest - Incline Bench Press Back - T Bar Row, Wide Pronated Pulldown, Cable Pullovers Triceps - Skull Crushers Overhead Biceps - EZ Bar / Barbell Bicep Curl Front Delt - Smith Machine Overhead Press Side Delt - Upright Egyptian Lateral Raise Rear Delt - Reverse Pec Deck Quads - High Bar Squat Hamstring - Romanian Deadlift, Seated Leg Curl Others - Standing Calf Raises, Decline Sit Ups Not a lot of variation as I feel I don&amp;rsquo;t personally need it yet.</description>
-    </item>
-    <item>
-      <title>Programming a Workout Split</title>
-      <link>https://savar95x.github.io/blog/programming-my-workout-split/</link>
-      <pubDate>Mon, 08 Jan 2024 02:06:43 +0530</pubDate>
-      <guid>https://savar95x.github.io/blog/programming-my-workout-split/</guid>
-      <description>My attempt at programming a workout plan for myself as a novice.&#xA;This is written based on the information from the following videos by Natural Hypertrophy (NH). How to never have to buy a training program again in your life How to program your training yourself Exercise Selection According to NH, selecting the lifts should be the first priority because that is what essentially makes the skeleton of the program.</description>
-    </item>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

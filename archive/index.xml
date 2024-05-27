@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>https://savar95x.github.io/archive/</link>
+    <link>http://localhost:1313/archive/</link>
     <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 31 Jan 2024 01:06:06 +0530</lastBuildDate>
-    <atom:link href="https://savar95x.github.io/archive/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/archive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workout</title>
-      <link>https://savar95x.github.io/archive/workout/</link>
+      <link>http://localhost:1313/archive/workout/</link>
       <pubDate>Wed, 31 Jan 2024 01:06:06 +0530</pubDate>
-      <guid>https://savar95x.github.io/archive/workout/</guid>
+      <guid>http://localhost:1313/archive/workout/</guid>
       <description>This is my workout routine I am currently running. To check out my older plans, click here.&#xA;Priority Back Shoulders Arms Exercise Selection Exercise rep-range set-range&#xA;Back Pulldown Overhand 6-12 2-5&#xA;Barbell Bent Over Rows 6-10 2-4&#xA;DB Pullover 8-15 2-4&#xA;Shoulders Standing Lateral Raise 15-20 3-5&#xA;Seated Smith Machine Overhead Press 6-10 2-4&#xA;Reverse Pec Deck 15+ 2-3&#xA;Arms Cable Pushdown Straight Bar 8-12 2-4 DB Overhead Extension Standing 6-12 2-4 Incline Curl 6-10 2-4 Pinwheel Curl 8-12 2-4</description>
     </item>
     <item>
       <title>Movies</title>
-      <link>https://savar95x.github.io/archive/movies/</link>
+      <link>http://localhost:1313/archive/movies/</link>
       <pubDate>Mon, 08 Jan 2024 23:46:25 +0530</pubDate>
-      <guid>https://savar95x.github.io/archive/movies/</guid>
+      <guid>http://localhost:1313/archive/movies/</guid>
       <description>This is a list of movies dear to my heart, and I&#39;d recommend everyone to watch these atleast once in their lifetimes.&#xA;Dead Poets Society (1989)&#xA;08 January 2024 I love this movie, and it feels good to watch it every single time. It teaches a lot about life. Having thoughts of your own, having an identity in this world of rat race. Not to lose yourself in the crowd, but to take stand for yourself and figure out what we really want.</description>
     </item>
   </channel>

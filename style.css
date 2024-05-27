@@ -8,10 +8,10 @@ img, svg, video {
 }
 
 :root {
-	--clr-fg: #eee;
+	--clr-fg: #d7c5a7;
 	--clr-fg-alt: #888;
-	--clr-bg: #161616;
-	--clr-bg-alt: #272727;
+	--clr-bg: #202020;
+	--clr-bg-alt: #333;
 	--font: normal 400 clamp(1.05rem, 4vw, 1.25rem) "Archivo", sans-serif;
 	--font-h1: normal 700 clamp(2rem, 8vw, 3rem) "Archivo", sans-serif;
 }
@@ -30,8 +30,8 @@ strong { font-weight: 600; }
 
 * {
 	line-height: 2rem;
-	transition: all 0.125s ease-in-out 0s;
 	scroll-behavior: smooth;
+	transition: all 0.1s ease-in-out 0s;
 	color-scheme: light dark;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 #container {
-	min-height: calc(100vh - 14rem);
+	min-height: calc(100vh - 5rem);
 	display: flex;
 	margin: 2rem 0;
 }

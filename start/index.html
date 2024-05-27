@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang=en>
-	<head>
+	<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><!DOCTYPE html>
+<html lang=en>
+<head>
 	<title>Start</title>
-	<link rel=stylesheet href=/style.css />
 	<meta charset=utf-8 />
+	<link rel=stylesheet href=/style.css />
+	<link rel="icon" href="/favicon3.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="savar&#39;s startpage" />
+	<link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+	<meta name="description" content="savar&#39;s webpage" />
+	
 	<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+	<meta name="description" content="A startpage that I made for personal use, to be used as a home page of a browser" />
 </head>
 
 <body>
-	<section>
-<section id=header> 
+	<header> 
 	<section id=home>
-		<a href=/>savar</a>
+		<a class="ph-bold ph-scribble-loop" href=/></a>
 	</section>
-	<section id=stuff>
-		<a href=/blog>blog</a>
-		<a href=/about>about</a>
-		<a href='https://github.com/savar95x?tab=repositories'>projects</a>
+	<section class="stuff">
+		<a  href=/blog>Blog</a>
+		<a  href=/archive>Archive</a>
+		<a  href=/tools>Tools</a>
 	</section>
-	<section align=center id=mobile>
-		<span class="ph-bold ph-list" onclick="toggleBar()"></span>
-		<br>
-		<section id=links>
-			<a href=/blog>blog</a>
-			<a href=/about>about</a>
-			<a href='https://github.com/savar95x?tab=repositories'>projects</a>
-		</section>
-	</section>
-</section>
-<hr>
-</section>
+</header>
 
 <section id=content>
-	<div id=cards>
-	<a class="ph-bold ph-magnifying-glass" aria-label="search over search engines like github and archwiki" href="../search"></a>
+	<!--section id=container-->
+<div id=cards>
+	<a class="ph-bold ph-scribble-loop" aria-label="search over search engines like github and archwiki" href="/"></a>
 	<a class="ph-bold ph-video" aria-label="coursera" href=https://coursera.org></a>
 	<a class="ph-bold ph-phosphor-logo" aria-label="phosphor icons" href=https://phosphoricons.com></a>
 	<a class="ph-bold ph-note" aria-label="google keep notes" href=https://keep.google.com></a>
@@ -43,57 +38,45 @@
 	<a class="ph-bold ph-spotify-logo" aria-label="spotify web" href=https://open.spotify.com></a>
 
 </div>
+<!--/section-->
 <style>
-* {
-	transition: all 0.125s ease-in-out 0s;
+a {
+	text-decoration: none;
 }
-
 #cards {
 	display: grid;
-	margin: 2em auto;
-	gap: 2em;
+	gap: min(1.5rem,3vw);
 	grid-template-columns: repeat(3, 1fr);
-	width: 100%;
 }
 
 #cards a {
-	margin: 0;
-	background: var(--bg-alt);
+	background: var(--clr-bg-alt);
 	text-align: center;
-	padding: 2em 0;
-	font: normal 450 1.2em "Rubik", sans-serif;
-	box-shadow: 0px 2px 7px 0px  rgba(0,0,0,0.35);
-	border-radius: 2px;
-	color: var(--fg);
+	padding: clamp(2.5rem, 8vw, 3rem) 0;
+	font-size: clamp(1.25rem, 5vw, 1.5rem) ;
+	box-shadow: 0px 2px 4px 0px  rgba(0,0,0,0.35);
 }
 
 #cards a:hover {
-	background: var(--blue);
-	color: var(--bg-alt);
-	box-shadow: 0px 5px 7px 0px  rgba(0,0,0,0.35);
+	box-shadow: 0px 5px 4px 0px  rgba(0,0,0,0.35);
 	transform: translate(0px,-3px);
-	text-decoration: none;
+	filter: brightness(110%);
 }
 
-@media screen and (max-width: 8.4in) { #cards { gap: 1em; } }
-@media screen and (max-width: 6.5in) { #cards { grid-template-columns: repeat(2, 1fr); gap: 1.5em; } }
-@media screen and (max-width: 5.6in) { #cards { gap: 1em; } }
+@media screen and (max-width: 5in) { #cards { grid-template-columns: repeat(2, 1fr); } }
 </style>
+<script src=/js/date.js></script>
 
 </section>
-	<script>
-	toggleBar();
-</script>
-<section>
-<hr>
-<section id=footer> 
-	<section id=phicons>
-		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io><img src=/svg/code-bold.svg aria-label="source code" alt="code" width=18px height=18px /></a>
-		<a aria-label="my github" href=https://github.com/savar95x><img src=/svg/user-bold.svg aria-label="my github" alt="github" width=18px height=18px /></a>
-		<a aria-label="mail me" href=mailto:skaar513@gmail.com><img src=/svg/paper-plane-tilt-bold.svg aria-label="mail me" alt="mail" width=18px height=18px /></a>
+	<footer> 
+	<section>
+		<span>&copy; 2024</span>
 	</section>
-</section>
-</section>
+	<section class="stuff">
+		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io>Source</a>
+	</section>
+</footer>
+</html>
 
 </body>
 </html>
