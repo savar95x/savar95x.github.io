@@ -21,10 +21,10 @@ img, svg, video {
 strong { font-weight: 600; }
 .fg-alt { color: var(--clr-fg-alt); }
 
-.ph-bold {
-	font-size: clamp(1.5rem, 4vw, 2.2rem); 
+.ph-bold, .ph-light {
+	font-size: clamp(1.2rem, 4vw, 2rem); 
 }
-.ph-bold:hover, .ph:hover {
+.ph-bold:hover, .ph-light:hover, .ph:hover {
 	text-decoration: none;
 }
 
