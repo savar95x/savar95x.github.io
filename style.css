@@ -12,8 +12,8 @@ img, svg, video {
 	--clr-fg-alt: #888;
 	--clr-bg: #202020;
 	--clr-bg-alt: #333;
-	--font: normal 400 clamp(1.05rem, 4vw, 1.25rem) "Archivo", sans-serif;
-	--font-h1: normal 700 clamp(2rem, 8vw, 3rem) "Archivo", sans-serif;
+	--font: normal 400 clamp(1.05rem, 4vw, 1.18rem) "Archivo", sans-serif;
+	--font-h1: normal 700 clamp(2rem, 8vw, 2.8rem) "Archivo", sans-serif;
 }
 
 ::selection { color: var(--clr-bg); background: var(--clr-fg-alt); }
@@ -29,7 +29,7 @@ strong { font-weight: 600; }
 }
 
 * {
-	line-height: 2rem;
+	line-height: 1.65rem;
 	scroll-behavior: smooth;
 	transition: all 0.1s ease-in-out 0s;
 	color-scheme: light dark;
@@ -46,7 +46,7 @@ body {
 }
 
 #container {
-	min-height: calc(100vh - 5rem);
+	min-height: calc(100vh - 13rem);
 	display: flex;
 	margin: 2rem 0;
 }
@@ -84,6 +84,9 @@ h1 {
 
 header, footer {
 	display: flex;
+}
+footer, footer a {
+	color: var(--clr-fg-alt);
 }
 .stuff {
 	margin-left: auto;

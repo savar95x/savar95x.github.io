@@ -1,49 +1,75 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang=en>
-	<head>
-	<title>contact</title>
-	<link rel=stylesheet href=/style.css />
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>Contact</title>
 	<meta charset=utf-8 />
+	<link rel=stylesheet href=/style.css />
+	<link rel="icon" href="/favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="contact savar" />
+	<link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+	<meta name="description" content="savar&#39;s webpage" />
 	
+	
+	<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+	<meta name="description" content="Contact me" />
 </head>
 
 <body>
-	<section id=header> 
+	<header> 
 	<section id=home>
-		<a href=/>savar</a>
+		<a class="ph-light ph-scribble-loop" href=/></a>
 	</section>
-	<section id=stuff>
-		<a href=/blogs>blogs</a>
-		<a href=/about>about</a>
-		<a href=/contact>contact</a>
+	<section class="stuff">
+		<a  href=/tools>Tools</a>
 	</section>
-</section>
+</header>
 
-<section id=content>
-	<h1>contact</h1>
-<p>These are my links, in order of decreasing preference:</p>
-<ul>
-	<li><a href=https://github.com/savar95x>github</a></li>
-	<li><a href=mailto:skaar513@gmail.com>mail</a></li>
-	<li><a href=https://instagram.com/savar95x>instagram</a></li>
-	<li><a href=https://open.spotify.com/user/313jbxjc2wnaedsbj3odyumuduim>spotify</a></li>
-	<li><a href=https://www.youtube.com/channel/UCRgVAAxS8lsaf_WcDQYY5-Q>youtube</a></li>
-	<li><a href=https://reddit.com/user/SkAAR513>reddit</a></li>
-	<li><a href=https://discord.com/users/savar95x>discord</a></li>
-</ul>
-<p>Note that I don't use much of the sites above mentioned. The best way to contact me would be either instagram, mail, or github.</p>
-<p>If you're here to donate to me, well, first of all I'm grateful my work proves useful to you. As for the donation, you can donate me in the following links, once I add them.</p>
+<section id=container>
+	<section id=wrapper>
+		<section class=description>
+	<p><a href="https://github.com/savar95x">github</a></p>
 
-</section>
-	<section id=footer> 
-	<section id=phicons>
-		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io><img src=/svg/code-bold.svg aria-label="source code" alt="code" width=18px height=18px /></a>
-		<a aria-label="my github" href=https://github.com/savar95x><img src=/svg/user-bold.svg aria-label="my github" alt="github" width=18px height=18px /></a>
-		<a aria-label="mail me" href=mailto:skaar513@gmail.com><img src=/svg/paper-plane-tilt-bold.svg aria-label="mail me" alt="mail" width=18px height=18px /></a>
+		</section>
+	
+		<hr>
 	</section>
 </section>
+	<footer> 
+	<section>
+		<span>&copy; 2025</span>
+	</section>
+	<section class="stuff">
+		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io>Source</a>
+		<a aria-label="instagram" href=https://instagram.com/savar95x>Instagram</a>
+	</section>
+</footer>
+</html>
 
 </body>
 </html>
+<style>
+.description {
+	margin-bottom: 4rem;
+}
+.line {
+	width: 100%;
+	display: flex;
+	padding: 0.5rem 0;
+}
+.line a {
+	text-decoration: none;
+}
+.line a:hover {
+	text-decoration: underline;
+}
+.line > span {
+	margin-left: auto;
+}
+.date {
+	color: var(--clr-fg-alt);
+}
+
+.heading {
+	color: var(--yellow);
+}
+</style>
