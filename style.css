@@ -46,7 +46,7 @@ body {
 }
 
 #container {
-	min-height: calc(100vh - 13rem);
+	min-height: calc(100vh - 5rem);
 	display: flex;
 	margin: 2rem 0;
 }
