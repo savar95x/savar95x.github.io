@@ -1,12 +1,12 @@
-# My Webpages
-This is a collection of my webpages.  
-There are a total of 6 startpages that I've made (for personal use). Feel free to check them out.
+Source for my website.  
+Still in works, but below are some previews.  
 
-## Homepage
-![preview](.assets/home_5.png)
-## My Startpage(s)
-![preview](.assets/start.png)
+## [Homepage](https://savar.is-a.dev/tools/home)
+![](.assets/home_5.png)
+## [Old Homepage](https://savar.is-a.dev/tools/old-home)
+![](.assets/start.png)
 
+<!--
 ## Useful links
 - [pagespeed insights](https://pagespeed.web.dev)
 
@@ -37,3 +37,4 @@ There are a total of 6 startpages that I've made (for personal use). Feel free t
 - [ ] Chapter reviews like jbp, for ex study a chap throughout a week and put out a detailed analysis. To teach is to learn twice.
 - [ ] Courses (like from coursera), Lectures (like JBP), and videos (like NH) notes
 - [ ] Just random rants or discussions about topics
+-->
