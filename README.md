@@ -2,9 +2,9 @@ Source for my website.
 Still in works, but below are some previews.  
 
 ## [Homepage](https://savar.is-a.dev/tools/home)
-![](.assets/home_5.png)
+![](.assets/home.png)
 ## [Old Homepage](https://savar.is-a.dev/tools/old-home)
-![](.assets/start.png)
+![](.assets/old-home.png)
 
 <!--
 ## Useful links
