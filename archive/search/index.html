@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang=en>
+	<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><!DOCTYPE html>
+<html lang=en>
+<head>
+	<title>search</title>
+	<meta charset=utf-8 />
+	<link rel=stylesheet href=/style.css />
+	<link rel="icon" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+	<meta name="description" content="savar&#39;s webpage" />
+	
+	
+	<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+	<meta name="description" content="Originally part of the startpage, this is a searchbar with some handy preset search engines" />
+</head>
+
+<body>
+	<header> 
+	<section id=home>
+		<a class="ph-light ph-scribble-loop" href=/></a>
+	</section>
+	<section class="stuff">
+		<a  href=/blog>Blog</a>
+		<a  href=/archive>Archive</a>
+		<a  href=/tools>Tools</a>
+	</section>
+</header>
+
+<section id=container>
+<section id=wrapper>
+	<h1>search<br><span> 08 January 2024</span></h1>
+	<section id=search-bar>
+	<input id=searchInput placeholder="Search with SearX" autocomplete=off />
+</section>
+<section id=cards>
+	<button aria-label="send search query" onclick="search()" title="Search" class="ph-bold ph-magnifying-glass" id=searchButton></button>
+	<button aria-label="cycle through the search engine" onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="ph-bold ph-arrow-arc-right"></button>
+	<button aria-label="clear search input" onclick="clearInput()" title="Clear Input" id=clearButton class="ph-bold ph-backspace"></button>
+</section>
+<style>
+#content {
+	width: 40%;
+	max-width: 400px;
+	margin: auto;
+}
+
+#search-bar {
+	display: flex;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+#searchInput {
+	width: 100%;
+	font: normal 450 1.2rem "Archivo", sans-serif;
+	text-align: center;
+	border-style: solid;
+	border-width: 0 0 2px 0;
+	filter: brightness(40%);
+	padding: 0.9em;
+	background: transparent;
+	color: var(--clr-fg);
+}
+
+#searchInput:focus {
+	filter: brightness(85%);
+}
+
+#cards {
+	display: grid;
+	margin: 1.5em auto;
+	gap: 1em;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+}
+
+#cards button {
+	text-align: center;
+	padding: 1.1em 0;
+	font-size: 1.1em;
+	color: var(--fg);
+	background: var(--clr-bg-alt);
+}
+
+#cards button:hover {
+	filter: brightness(105%);
+}
+
+#cards button:active {
+}
+
+@media screen and (max-width: 10.6in) { #content { width: calc(100%); } }
+</style>
+<script>
+const allEngines = [
+	//{ name:"Google", preposition:"with", color:"hsl(355,75%,76%)", url:"google.com/search?q=", urlFilters:"" },
+	{ name:"ArchWiki", preposition:"over", color:"#80A9A0", url:"wiki.archlinux.org/index.php?search=", urlFilters:"" },
+	{ name:"SearX", preposition:"with", color:"#A9B665", url:"searx.be/search?q=", urlFilters:"" },
+	{ name:"YouTube", preposition:"over", color:"#D87873", url:"youtube.com/results?search_query=", urlFilters:"" },
+	{ name:"Github", preposition:"over", color:"#D8A657", url:"github.com/search?q=", urlFilters:"&s=stars" },
+];
+
+var activeEngine;
+var x = -1;
+
+function toggleEngine() {
+	x = (x == allEngines.length - 1) ? -1:x; 
+	x = x + 1;
+	activeEngine = allEngines[x];
+	document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
+	document.getElementById('searchInput').style.borderColor = activeEngine.color;
+	document.getElementById('searchInput').focus();
+}
+
+function search() {
+	let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F").replace(/:/g,"%3A");
+	let noSpaceVal = realVal.replace(/\s/g, "");
+	{ if (noSpaceVal == "") {window.location.reload(false);}
+		else {window.open("https://" + activeEngine.url + realVal + activeEngine.urlFilters, "_self");} };
+}
+
+function clearInput() {
+	document.getElementById("searchInput").value = "";
+	document.getElementById('searchInput').focus();
+}
+
+toggleEngine();
+document.getElementById("searchInput").addEventListener("keydown", event =>
+	{ if (event.key == "Enter") search(); // keycode 13
+		else if (event.altKey && event.key == "Tab") toggleEngine(); // keycode 9
+		else if (event.altKey && event.key == "c") clearInput();
+	});
+</script>
+<script src=/js/date.js></script>
+
+</section>
+</section>
+	<footer> 
+	<section>
+		<span>&copy; 2025</span>
+	</section>
+	<section class="stuff">
+		<a aria-label="source code" href=https://github.com/savar95x/savar95x.github.io>Source</a>
+	</section>
+</footer>
+</html>
+
+</body>
+</html>
+<style>
+#wrapper h1 span {
+	color: var(--clr-fg-alt);
+}
+</style>
