@@ -128,9 +128,9 @@ footer, footer a {
 	padding-top: 80px;
 }
 header {
-	padding: 14px 0;
 	max-width: 750px;
 	margin: auto;
+	padding: 0.9rem 4vw;
 }
 #header-wrapper hr {
 	margin: 0;
