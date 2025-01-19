@@ -5,6 +5,9 @@
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;}
 
+section {
+}
+
 img, svg, video {
 	max-width: 100%;
 	display: block;
