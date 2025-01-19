@@ -6,6 +6,12 @@ Still in works, but below are some previews.
 ## [Old Homepage](https://savar.is-a.dev/tools/old-home)
 ![](.assets/old-home.png)
 
+### Todo
+- [ ] footer hr (better center alignment way)
+- [ ] next and previous articles once a lot of articles are there
+- [ ] image previews in list pages, instead of text lines
+- [ ] better andersnoren inspired blog single page
+
 <!--
 ## Useful links
 - [pagespeed insights](https://pagespeed.web.dev)
