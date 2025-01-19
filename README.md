@@ -7,6 +7,7 @@ Still in works, but below are some previews.
 ![](.assets/old-home.png)
 
 ### Todo
+- [ ] more padding between different elements
 - [ ] footer hr (better center alignment way)
 - [ ] next and previous articles once a lot of articles are there
 - [ ] image previews in list pages, instead of text lines
