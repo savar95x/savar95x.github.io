@@ -57,10 +57,15 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 body {
 	/* font-family: system-ui;*/
 	font: var(--font);
-	max-width: 750px;
-	margin: min(2.25rem,5vw) auto;
+	max-width: 100%;
 	background: var(--clr-bg);
 	color: var(--clr-fg);
+}
+main, footer {
+	/* font-family: system-ui;*/
+	font: var(--font);
+	max-width: 750px;
+	margin: min(2.25rem,5vw) auto;
 	padding: 0rem 4vw;
 }
 
@@ -108,7 +113,7 @@ h1 {
 	font: var(--font-h1);
 }
 
-header, footer {
+header, footer section {
 	display: flex;
 }
 footer, footer a {
@@ -123,6 +128,11 @@ footer, footer a {
 #home a {
 	font-size: clamp(1.8rem, 4vw, 2.2rem);
 	margin-right: auto;
+}
+
+footer {
+	padding: 0;
+	margin: 1rem auto;
 }
 
 /* fixed header */
