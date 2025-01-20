@@ -5,15 +5,12 @@
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;}
 
-section {
-}
-
 img, svg, video {
 	max-width: 100%;
 	display: block;
 }
 
-.rounded-img {
+.rounded-img, #container img {
 	border-radius: 5px; /* Rounds the corners */
 	height: auto; /* Maintain aspect ratio */
 }
@@ -23,7 +20,7 @@ img, svg, video {
 	--clr-fg-alt: #888;
 	--clr-bg: #191919;
 	--clr-bg-alt: #333;
-	--font: normal 400 clamp(1.05rem, 4vw, 1.18rem) "Inter", sans-serif;
+	--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;
 	--font-h1: normal 700 clamp(2rem, 8vw, 2.8rem) "Archivo", sans-serif;
 }
 
@@ -31,7 +28,6 @@ img, svg, video {
 
 strong { font-weight: 600; }
 h1, h2, h3, h4, h5, h6 { font-weight: 600; }
-.fg-alt { color: var(--clr-fg-alt); }
 
 .ph-bold, .ph-light {
 	font-size: clamp(1.2rem, 4vw, 2rem); 
@@ -41,7 +37,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 }
 
 * {
-	line-height: clamp(1.8rem, 5vw, 2.4rem);
+	line-height: clamp(1.7rem, 5vw, 2.4rem);
 	scroll-behavior: smooth;
 	transition: all 0.1s ease-in-out 0s;
 }
@@ -124,7 +120,7 @@ footer, footer a {
 	left: 0;
 	width: 100%;
 	z-index: 1000;
-	background: rgba(25, 25, 25, 0.9); /* Black with 80% opacity */
+	background: rgba(25, 25, 25, 0.85);
 	backdrop-filter: blur(10px);
 }
 #container {
