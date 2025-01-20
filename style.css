@@ -10,7 +10,13 @@ img, svg, video {
 	display: block;
 }
 
-.rounded-img, #container img {
+#larr {
+	font-size: 1.1rem;
+	font-weight: 500;
+	position: absolute;
+}
+
+#container img {
 	border-radius: 5px; /* Rounds the corners */
 	height: auto; /* Maintain aspect ratio */
 }
@@ -34,6 +40,12 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 }
 .ph-bold:hover, .ph-light:hover, .ph:hover {
 	text-decoration: none;
+}
+.invert-underline {
+	text-decoration: none;
+}
+.invert-underline:hover {
+	text-decoration: underline;
 }
 
 * {
@@ -124,7 +136,7 @@ footer, footer a {
 	backdrop-filter: blur(10px);
 }
 #container {
-	padding-top: 80px;
+	padding-top: 75px;
 }
 header {
 	max-width: 750px;
