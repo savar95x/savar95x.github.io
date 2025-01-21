@@ -58,6 +58,7 @@ body {
 	/* font-family: system-ui;*/
 	font: var(--font);
 	max-width: 100%;
+	margin: 0;
 	background: var(--clr-bg);
 	color: var(--clr-fg);
 }
