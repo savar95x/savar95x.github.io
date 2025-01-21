@@ -24,7 +24,7 @@
 		
 		<a style="color: var(--clr-fg-alt);" href=/blog>blog</a>
 		<a  href=/archive>archive</a>
-		<a  href=/tools>tools</a>
+		<a  href=/tools>work</a>
 	</section>
 </header>
 <hr>
@@ -39,9 +39,14 @@
 <p><a href="index.xml">Subscribe</a></p>
 
 		</section>
-	
-		<section class="line"><a class="heading" href="/blog/attentionspan/">Fix your attention span</a><span class="date">Jan 2025</span></section>
-	
+		<div id=cards>
+			
+			<a class=card href="/blog/attentionspan/">
+				<img src="/imgs/attentionspan.jpg">
+				<section class=title-date><span class="heading">Fix your attention span</span><span class="date">06 Jan 2025</span></section>
+			</a>
+			
+		</div>
 	</section>
 </section>
 </main>
@@ -63,16 +68,35 @@
 </body>
 </html>
 <style>
-.description { margin-bottom: 4rem; }
-.line {
-	display: flex;
-	padding: 0.3rem 0;
+#cards img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-.line a { text-decoration: none; }
-.line a:hover { text-decoration: underline; }
-.line > span { margin-left: auto; }
-.date { color: var(--clr-fg-alt); }
-.heading { font-weight: 500; }
+#cards a {
+	text-decoration: none;
+}
+#cards {
+	display: grid;
+	gap: 1.6rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+.description { margin-bottom: 4rem; }
+.title-date {
+	display: flex;
+	flex-direction: column;  
+	align-items: flex-start;  
+}
+.date {
+	color: var(--clr-fg-alt);
+}
+.heading {
+	font-weight: 500; 
+	padding-top: clamp(0.2rem, 4vw, 1.4rem);
+	line-height: 1rem;
+}
+.heading:hover { text-decoration: underline; }
+@media screen and (max-width: 6in) { #cards { grid-template-columns: repeat(1, 1fr); } #cards img { height: 250px; } }
 </style>
-
-

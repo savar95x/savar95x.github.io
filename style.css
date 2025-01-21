@@ -17,8 +17,11 @@ img, svg, video {
 }
 
 #container img {
-	border-radius: 5px; /* Rounds the corners */
-	height: auto; /* Maintain aspect ratio */
+	width: 100%; /* Ensures the image takes the full width of the card */
+	height: clamp(200px, 10vw + 200px, 300px);
+	object-fit: cover; /* Maintains aspect ratio and fills the space */
+	border-radius: 8px; /* Optional: Adds rounded corners */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for styling */
 }
 
 :root {

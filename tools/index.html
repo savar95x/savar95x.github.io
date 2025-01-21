@@ -24,7 +24,7 @@
 		
 		<a  href=/blog>blog</a>
 		<a  href=/archive>archive</a>
-		<a style="color: var(--clr-fg-alt);" href=/tools>tools</a>
+		<a style="color: var(--clr-fg-alt);" href=/tools>work</a>
 	</section>
 </header>
 <hr>
@@ -35,16 +35,32 @@
 <section id=container>
 	<section id=wrapper>
 		<section class=description>
-	<p>Tools I created mostly for personal use.</p>
+	<p>Projects and tools I worked on mostly for personal use.</p>
 
 		</section>
-	
-		<section class="line"><a class="heading" href="/tools/home/">~/</a><span class="date">Jan 2024</span></section>
-	
-		<section class="line"><a class="heading" href="/tools/old-home/">home</a><span class="date">Jan 2024</span></section>
-	
-		<section class="line"><a class="heading" href="/tools/search/">search</a><span class="date">Jan 2024</span></section>
-	
+		<div id=cards>
+			
+			<a class=card href="https://github.com/savar95x/dotfiles">
+				<img src="/imgs/dotfiles.png">
+				<section class=title-date><span class="heading">dotfiles</span><span class="date">21 Jan 2025</span></section>
+			</a>
+			
+			<a class=card href="/tools/home/">
+				<img src="/imgs/home.png">
+				<section class=title-date><span class="heading">~/</span><span class="date">08 Jan 2024</span></section>
+			</a>
+			
+			<a class=card href="/tools/old-home/">
+				<img src="/imgs/old-home.png">
+				<section class=title-date><span class="heading">home</span><span class="date">08 Jan 2024</span></section>
+			</a>
+			
+			<a class=card href="/tools/search/">
+				<img src="/imgs/search.png">
+				<section class=title-date><span class="heading">search</span><span class="date">08 Jan 2024</span></section>
+			</a>
+			
+		</div>
 	</section>
 </section>
 </main>
@@ -66,16 +82,35 @@
 </body>
 </html>
 <style>
-.description { margin-bottom: 4rem; }
-.line {
-	display: flex;
-	padding: 0.3rem 0;
+#cards img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-.line a { text-decoration: none; }
-.line a:hover { text-decoration: underline; }
-.line > span { margin-left: auto; }
-.date { color: var(--clr-fg-alt); }
-.heading { font-weight: 500; }
+#cards a {
+	text-decoration: none;
+}
+#cards {
+	display: grid;
+	gap: 1.6rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+.description { margin-bottom: 4rem; }
+.title-date {
+	display: flex;
+	flex-direction: column;  
+	align-items: flex-start;  
+}
+.date {
+	color: var(--clr-fg-alt);
+}
+.heading {
+	font-weight: 500; 
+	padding-top: clamp(0.2rem, 4vw, 1.4rem);
+	line-height: 1rem;
+}
+.heading:hover { text-decoration: underline; }
+@media screen and (max-width: 6in) { #cards { grid-template-columns: repeat(1, 1fr); } #cards img { height: 250px; } }
 </style>
-
-
