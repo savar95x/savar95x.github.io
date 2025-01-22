@@ -65,7 +65,7 @@ body {
 	background: var(--clr-bg);
 	color: var(--clr-fg);
 }
-main, footer {
+main, footer, .footer-text {
 	/* font-family: system-ui;*/
 	font: var(--font);
 	max-width: 750px;
