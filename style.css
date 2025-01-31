@@ -20,7 +20,7 @@ img, svg, video {
 	width: 100%; /* Ensures the image takes the full width of the card */
 	height: clamp(200px, 10vw + 200px, 300px);
 	object-fit: cover; /* Maintains aspect ratio and fills the space */
-	border-radius: 8px; /* Optional: Adds rounded corners */
+	border-radius: 4px; /* Optional: Adds rounded corners */
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for styling */
 }
 
@@ -33,7 +33,7 @@ img, svg, video {
 	--font-h1: normal 700 clamp(2rem, 8vw, 2.8rem) "Archivo", sans-serif;
 }
 
-::selection { color: var(--clr-bg); background: var(--clr-fg-alt); }
+::selection { background: var(--clr-bg-alt); }
 
 strong { font-weight: 600; }
 h1, h2, h3, h4, h5, h6 { font-weight: 600; }
@@ -130,13 +130,13 @@ footer, footer a {
 	margin-left: clamp(1rem, 4vw, 2rem);
 }
 #home a {
-	font-size: clamp(1.8rem, 4vw, 2.2rem);
+	font-size: clamp(1.8rem, 4vw, 2rem);
 	margin-right: auto;
 }
 
 footer {
 	padding: 0 4vw;
-	margin: 1rem auto;
+	margin: 0.9rem auto;
 }
 
 /* fixed header */
