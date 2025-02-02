@@ -46,7 +46,7 @@ iframe {
 	--clr-fg-dark: #666;
 	--clr-bg-bright: #444;
 	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;*/
-	--font: normal 400 clamp(0.9rem, 1vw, 1rem) "Inter", sans-serif;
+	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;
 	--font-h1: normal 600 1.8em "Archivo", sans-serif;
 }
 
@@ -117,6 +117,7 @@ a {
 	color: var(--clr-fg);
 	text-decoration: underline;
 	text-decoration-color: var(--clr-fg-dark);
+	/*text-decoration-thickness: 2px;*/
 }
 a:hover {
 	text-decoration: none;
