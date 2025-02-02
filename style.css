@@ -5,6 +5,10 @@
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;}
 
+html {
+	scroll-padding-top: 80px; /* for the header */
+}
+
 img, svg, video {
 	max-width: 100%;
 	display: block;
