@@ -1,9 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
 /*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&display=swap');*/
 /*removes the unattractive defaults*/
 input{outline:none;border:none;} button{border:none;}
+
+:root {
+	--clr-fg: #eee;
+	--clr-fg-alt: #888;
+	--clr-bg: #191919;
+	--clr-bg-alt: #333;
+	--clr-fg-dark: #909090;
+	--clr-bg-bright: #444;
+	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;*/
+	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;
+	--font-h1: normal 600 1.8em "Inter", sans-serif;
+}
+
+::selection { background: var(--clr-bg-bright); }
 
 html {
 	scroll-padding-top: 80px; /* for the header */
@@ -41,20 +55,6 @@ iframe {
 	border-radius: 4px; /* Optional: Adds rounded corners */
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for styling */
 }
-
-:root {
-	--clr-fg: #eee;
-	--clr-fg-alt: #888;
-	--clr-bg: #191919;
-	--clr-bg-alt: #333;
-	--clr-fg-dark: #808080;
-	--clr-bg-bright: #444;
-	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;*/
-	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;
-	--font-h1: normal 600 1.8em "Archivo", sans-serif;
-}
-
-::selection { background: var(--clr-bg-bright); }
 
 strong { font-weight: 550; }
 h1, h2, h3, h4, h5, h6 { font-weight: 600; }
