@@ -12,9 +12,13 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-bg-alt: #333;
 	--clr-fg-dark: #909090;
 	--clr-bg-bright: #444;
-	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;*/
-	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;
-	--font-h1: normal 600 1.8em "Inter", sans-serif;
+	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;
+	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;*/
+	--font-size-default: 1rem;
+	--font-size-h1: 1.5rem;
+	--font-size-h2: 1.3rem;
+	--font-size-h3: 1.1rem;
+	--font-family: "Inter";
 }
 
 ::selection { background: var(--clr-bg-bright); }
@@ -57,7 +61,13 @@ iframe {
 }
 
 strong { font-weight: 550; }
-h1, h2, h3, h4, h5, h6 { font-weight: 600; }
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h1, h2, h3, h4, h5 {font-weight: 550;}
+h1, h2, h3 {
+	padding-top: 1rem;
+}
 
 /*.ph, .ph-bold, .ph-light {
 	font-size: clamp(1.2rem, 4vw, 2rem); 
@@ -80,7 +90,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 
 body {
 	/* font-family: system-ui;*/
-	font: var(--font);
+	font-family: var(--font-family), sans-serif;
+	font-size: var(--font-size-default);
 	max-width: 100%;
 	margin: 0;
 	background: var(--clr-bg);
@@ -88,7 +99,7 @@ body {
 }
 main, footer, .footer-text {
 	/* font-family: system-ui;*/
-	font: var(--font);
+	font-size: var(--font-default);
 	max-width: 750px;
 	margin: min(2.25rem,5vw) auto;
 	padding: 0rem 4vw;
@@ -134,11 +145,6 @@ header a, footer a {
 
 header a:hover, footer a:hover {
 	text-decoration: underline;
-}
-
-h1 {
-	color: var(--clr-fg);
-	font: var(--font-h1);
 }
 
 header, footer section {
