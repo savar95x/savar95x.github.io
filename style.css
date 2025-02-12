@@ -19,6 +19,7 @@ input{outline:none;border:none;} button{border:none;}
 	--font-size-h2: 1.3rem;
 	--font-size-h3: 1.1rem;
 	--font-family: "Inter";
+	--font-family-heading: "Archivo";
 }
 
 ::selection { background: var(--clr-bg-bright); }
@@ -65,6 +66,7 @@ h1 { font-size: var(--font-size-h1); }
 h2 { font-size: var(--font-size-h2); }
 h3 { font-size: var(--font-size-h3); }
 h1, h2, h3, h4, h5 {font-weight: 550;}
+h1, h2, h3, h4, h5, h6 {font-family: var(--font-family-heading);}
 h1, h2, h3 {
 	padding-top: 1rem;
 }
