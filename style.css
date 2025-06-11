@@ -230,7 +230,7 @@ header {
 @media screen and (max-width: 900px) {
 #header-wrapper {
 	top: 0px; width: 100%;
-	border: 1px solid var(--clr-bg-bright);
+	border-bottom: 1px solid var(--clr-bg-bright);
 	background: var(--clr-trans); backdrop-filter: blur(3px);
 }
 header {
