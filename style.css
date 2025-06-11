@@ -11,8 +11,7 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-highlight1: #95CBF9;
 	--clr-highlight2: #78D391;
 	--clr-highlight3: #D8DFED;
-	/*--clr-highlight3: #F28FAD;
-	 */
+	--clr-highlight3: #F28FAD;
 	--clr-bg: #151515;
 	--clr-bg-alt: #333;
 	--clr-trans: rgba(25, 25, 25, 0.9);
@@ -103,7 +102,7 @@ h1, h2, h3 {
 }
 
 .ph, .ph-bold, .ph-light, .ph-fill {
-	font-size: clamp(1.3rem, 4vw, 1.5rem); 
+	font-size: clamp(1.2rem, 2vw, 1.4rem); 
 	position: relative;
 	top: 4px;
 	transition: all 0.1s ease-in-out 0s;
@@ -197,7 +196,7 @@ footer, footer a {
 }
 #home a {
 	margin-right: auto;
-	font-size: clamp(1.2rem, 1vw, 1.4rem); 
+	font-size: clamp(1.4rem, 4vw, 1.6rem); 
 }
 
 footer {
@@ -236,7 +235,7 @@ header {
 }
 header {
 	background: none;
-	padding: 1rem 1.5vw;
+	padding: 0.85rem 4vw;
 	border: 0px;
 }
 .cover-image img { height: calc(var(--height-cover-image) + 100px); width: 100% !important; left: 0% !important; top: 0 !important; }
