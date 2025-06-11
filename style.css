@@ -197,6 +197,7 @@ footer, footer a {
 }
 #home a {
 	margin-right: auto;
+	font-size: clamp(1.2rem, 1vw, 1.4rem); 
 }
 
 footer {
