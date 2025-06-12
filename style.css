@@ -36,13 +36,13 @@ input{outline:none;border:none;} button{border:none;}
 }
 
 .highlight1 {
-	text-decoration: underline double var(--clr-highlight2);
+	text-decoration: underline solid var(--clr-highlight2);
 	padding: 0 0.1rem;
 }
 .highlight2, .highlight3 {
 	/*text-decoration: underline double var(--clr-highlight2);
 	 */
-	background: color-mix(in srgb, white 10%, var(--clr-highlight2));
+	background: color-mix(in srgb, black 10%, var(--clr-highlight2));
 	color: var(--clr-bg);
 	padding: 0 0.1rem;
 }
@@ -132,7 +132,7 @@ h1, h2, h3 {
 }
 
 * {
-	line-height: clamp(1.5rem, 5vw, 2rem);
+	line-height: clamp(1.75rem, 5vw, 2rem);
 	scroll-behavior: smooth;
 }
 
