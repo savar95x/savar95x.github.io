@@ -252,6 +252,7 @@ header {
 	padding: 0.85rem 4vw;
 	border: 0px;
 }
-.cover-image img { height: calc(var(--height-cover-image) + 100px); width: 100% !important; left: 0% !important; top: 0 !important; }
+.cover-image img { height: calc(var(--height-cover-image) + 50px); width: 100% !important; left: 0% !important; top: 0 !important; }
+.cover-image { height: calc(var(--height-cover-image) - 50px) ; }
 .wide-image img { width: 96%; left: 2%; }
 }
