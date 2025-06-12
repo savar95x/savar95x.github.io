@@ -7,7 +7,7 @@ input{outline:none;border:none;} button{border:none;}
 
 :root {
 	--clr-fg: #D8DFED;
-	--clr-fg-alt: #888;
+	--clr-fg-alt: #c3c8c8;
 	--clr-highlight1: #95CBF9;
 	--clr-highlight2: #78D391;
 	--clr-highlight3: #D8DFED;
@@ -20,7 +20,7 @@ input{outline:none;border:none;} button{border:none;}
 	--height-wide-image: clamp(100px, 40vw, 300px);
 	--height-cover-image: clamp(100px, 40vw, 300px);
 	--height-round-image: clamp(150px, 40vw, 300px);
-	--margin-round-image: clamp(1rem, 5vw, 1.5rem);
+	--margin-round-image: clamp(2rem, 5vw, 3rem);
 	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;
 	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;*/
 	--font-size-default: 1rem;
@@ -28,7 +28,7 @@ input{outline:none;border:none;} button{border:none;}
 	--font-size-h2: 1.3rem;
 	--font-size-h3: 1.1rem;
 	--font-family: "Inter";
-	--font-family-heading: "Archivo";
+	--font-family-heading: "Inter";
 }
 
 ::selection { background: var(--clr-bg-bright); }
