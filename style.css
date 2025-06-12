@@ -40,8 +40,6 @@ input{outline:none;border:none;} button{border:none;}
 	padding: 0 0.1rem;
 }
 .highlight2, .highlight3 {
-	/*text-decoration: underline double var(--clr-highlight2);
-	 */
 	background: color-mix(in srgb, black 10%, var(--clr-highlight2));
 	color: var(--clr-bg);
 	padding: 0 0.1rem;
