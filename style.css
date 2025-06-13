@@ -252,5 +252,5 @@ header {
 }
 .cover-image img { height: calc(var(--height-cover-image) + 50px); width: 100% !important; left: 0% !important; top: 0 !important; }
 .cover-image { height: calc(var(--height-cover-image) - 50px) ; }
-.wide-image img { width: 96%; left: 2%; }
+.wide-image img {padding: 0rem 3vw; left: 0; width: calc(100% - 6vw);}
 }
