@@ -258,5 +258,4 @@ header {
 .cover-image { height: calc(var(--height-cover-image) - 50px) ; }
 .wide-image img {padding: 0rem 3vw; left: 0; width: calc(100% - 6vw);}
 #tool-container {width: calc(100% - 6vw);}
-#wrapper {padding: 3rem !important;}
 }
