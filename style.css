@@ -162,10 +162,13 @@ footer {
 	padding-top: 75px;
 }
 
-#container-tool {
-	min-height: calc(100vh - 5rem);
+#tool-container {
 	display: flex;
-	margin: 2rem 0;
+	margin: auto;
+	width: 700px;
+	justify-content: center; /* horizontal centering */
+	align-items: center;     /* vertical centering */
+	height: 100vh;          /* full viewport height */
 }
 
 .big-text { font-size: 1.2rem; }
@@ -177,6 +180,7 @@ hr {
 }
 
 a {
+	transition: all 0.1s ease-in-out 0s;
 	color: var(--clr-highlight1);
 	text-decoration: none;
 	/*text-decoration-thickness: 2px;*/
