@@ -6,7 +6,7 @@
 input{outline:none;border:none;} button{border:none;}
 
 :root {
-	--clr-fg: hsl(40,10%,86.7%);
+	--clr-fg: hsl(40,0%,86.7%);
 	--clr-fg-alt: hsl(0,0%,80%);
 	--clr-highlight1: hsl(207.6,89.3%,78%);
 	--clr-highlight2: hsl(136.5,50.8%,64.9%);
