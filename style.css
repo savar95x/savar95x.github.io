@@ -13,7 +13,7 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-highlight3: #F28FAD;
 	--clr-bg: #000000;
 	--clr-bg-alt: #101010;
-	--clr-trans: rgba(25, 25, 25, 0.9);
+	--clr-trans: rgba(0, 0, 0, 0.9);
 	--clr-fg-dark: #909090;
 	--clr-bg-bright: #444;
 	--height-wide-image: clamp(100px, 40vw, 300px);
