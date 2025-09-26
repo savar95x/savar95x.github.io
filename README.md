@@ -1,7 +1,9 @@
 Source for my website.  
-Still in works, but below are some previews.  
+Still in works.  
 
+Have a look at [savar.is-a.dev](https://savar.is-a.dev).  
 
+<!--
 ## [Homepage](https://savar.is-a.dev/tools/home)
 ![](.assets/home.png)
 ## [Old Homepage](https://savar.is-a.dev/tools/old-home)
@@ -13,6 +15,7 @@ Still in works, but below are some previews.
 - [ ] next and previous articles once a lot of articles are there
 - [x] image previews in list pages, instead of text lines
 - [ ] better andersnoren inspired blog single page
+-->
 
 <!--
 ## Useful links
