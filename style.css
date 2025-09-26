@@ -6,16 +6,16 @@
 input{outline:none;border:none;} button{border:none;}
 
 :root {
-	--clr-fg: #D8DFED;
-	--clr-fg-alt: #c3c8c8;
-	--clr-highlight1: #95CBF9;
-	--clr-highlight2: #78D391;
-	--clr-highlight3: #F28FAD;
-	--clr-bg: #000000;
-	--clr-bg-alt: #101010;
+	--clr-fg: hsl(40,10%,86.7%);
+	--clr-fg-alt: hsl(0,0%,80%);
+	--clr-highlight1: hsl(207.6,89.3%,78%);
+	--clr-highlight2: hsl(136.5,50.8%,64.9%);
+	--clr-highlight3: hsl(341.8,79.2%,75.5%);
+	--clr-bg: hsl(0,0%,0%);
+	--clr-bg-alt: hsl(0,0%,9.8%);
 	--clr-trans: rgba(0, 0, 0, 0.9);
-	--clr-fg-dark: #909090;
-	--clr-bg-bright: #333;
+	--clr-fg-dark: hsl(0,0%,56.5%);
+	--clr-bg-bright: hsl(0,0%,20%);
 	--height-wide-image: clamp(100px, 40vw, 300px);
 	--height-cover-image: clamp(100px, 40vw, 300px);
 	--height-round-image: clamp(150px, 40vw, 300px);
