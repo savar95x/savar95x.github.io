@@ -15,7 +15,7 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-bg-alt: #101010;
 	--clr-trans: rgba(0, 0, 0, 0.9);
 	--clr-fg-dark: #909090;
-	--clr-bg-bright: #444;
+	--clr-bg-bright: #333;
 	--height-wide-image: clamp(100px, 40vw, 300px);
 	--height-cover-image: clamp(100px, 40vw, 300px);
 	--height-round-image: clamp(150px, 40vw, 300px);
