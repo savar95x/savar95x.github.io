@@ -29,7 +29,7 @@ input{outline:none;border:none;} button{border:none;}
 	--margin-round-image: clamp(2rem, 5vw, 3rem);
 
 	--font-size-default: 14px;
-	--font-size-h1: 1.5rem;
+	--font-size-h1: 1.75rem;
 	--font-size-h2: 1.25rem;
 	--font-size-h3: 1.125rem;
 
@@ -120,9 +120,6 @@ h3 { font-size: var(--font-size-h3); }
 h1, h2, h3, h4, h5 {font-weight: 550;}
 */
 h1, h2, h3, h4, h5, h6 {font-family: var(--font-family-heading);}
-h1, h2, h3 {
-	padding-top: 1rem;
-}
 
 .ph, .ph-bold, .ph-light, .ph-fill {
 	font-size: clamp(1.2rem, 2vw, 1.4rem); 
