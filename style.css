@@ -21,7 +21,7 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-bg4: hsl(0,0%,15%);
 	--clr-bg5: hsl(0,0%,20%);
 
-	--clr-trans: rgba(0, 0, 0, 0.9);
+	--clr-trans: rgba(0, 0, 0, 0.5);
 
 	--height-wide-image: clamp(100px, 40vw, 300px);
 	--height-cover-image: clamp(100px, 40vw, 300px);
@@ -270,9 +270,9 @@ header {
 	margin: auto;
 	padding: 0.65rem 1.5vw;
 	background: var(--clr-trans);
-	backdrop-filter: blur(3px);
+	backdrop-filter: blur(10px);
 	border: 0px solid var(--clr-bg-bright);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 
@@ -292,7 +292,7 @@ header {
   display: flex;
   padding: 1.25rem;
   border: 1px solid var(--clr-bg4);
-  border-radius: 2px;
+  border-radius: 3px;
   color: var(--clr-fg);
 }
 .card:hover {
@@ -321,7 +321,7 @@ header {
 @media screen and (max-width: 1000px) {
 #header-wrapper {
 	top: 0px; width: 100%;
-	background: var(--clr-trans); backdrop-filter: blur(3px);
+	background: var(--clr-trans);
 }
 header {
 	background: none;
