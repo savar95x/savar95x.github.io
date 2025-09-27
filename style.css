@@ -28,7 +28,7 @@ input{outline:none;border:none;} button{border:none;}
 
 	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;
 	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;*/
-	--font-size-default: 16px;
+	--font-size-default: 14px;
 	--font-size-h1: 2rem;
 	--font-size-h2: 1.5rem;
 	--font-size-h3: 1.1rem;
@@ -77,8 +77,8 @@ img {
 	object-fit: cover;
 }
 .round-image {
-  width: 300px; /* Adjust size as needed */
-  height: 300px; /* Must be same as width for perfect circle */
+  width: var(--height-round-image); /* Adjust size as needed */
+  height: var(--height-round-image); /* Adjust size as needed */
   border-radius: 50%; /* This makes it circular */
   object-fit: cover; /* Ensures image covers the circle properly */
   border: 1px solid var(--clr-bg-bright);
@@ -261,7 +261,7 @@ header {
 }
 
 /*media query to change header*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 #header-wrapper {
 	top: 0px; width: 100%;
 	border-bottom: 1px solid var(--clr-bg-bright);
