@@ -6,8 +6,15 @@
     <description>Recent content on savar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2025 17:21:28 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 21 Sep 2025 16:43:28 +0530</lastBuildDate>
     <atom:link href="https://savar.is-a.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dwm</title>
+      <link>https://savar.is-a.dev/tools/dwm/</link>
+      <pubDate>Sun, 21 Sep 2025 16:43:28 +0530</pubDate>
+      <guid>https://savar.is-a.dev/tools/dwm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>1.1 Terminology for Dummies</title>
       <link>https://savar.is-a.dev/blog/workout-sections/1/1/</link>
@@ -121,13 +128,6 @@
       <description></description>
     </item>
     <item>
-      <title>dwm</title>
-      <link>https://savar.is-a.dev/tools/dwm/</link>
-      <pubDate>Tue, 21 Jan 2025 16:43:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/tools/dwm/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Workout</title>
       <link>https://savar.is-a.dev/blog/workout/</link>
       <pubDate>Sat, 18 Jan 2025 16:35:28 +0530</pubDate>
@@ -167,7 +167,7 @@
       <link>https://savar.is-a.dev/tools/old-home/</link>
       <pubDate>Mon, 08 Jan 2024 02:38:28 +0530</pubDate>
       <guid>https://savar.is-a.dev/tools/old-home/</guid>
-      <description>&lt;!--section id=container--&gt;&#xA;&lt;div id=cards&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-magnifying-glass&#34; aria-label=&#34;search over search engines like github and archwiki&#34; href=&#34;https://savar.is-a.dev/tools/search&#34;&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-check-circle&#34; aria-label=&#34;google tasks&#34; href=https://tasks.google.com&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-lightbulb&#34; aria-label=&#34;google keep notes&#34; href=https://keep.google.com&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-scribble-loop&#34; aria-label=&#34;home&#34; href=https://savar.is-a.dev/&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-phosphor-logo&#34; aria-label=&#34;phosphor icons&#34; href=https://phosphoricons.com&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-music-note-simple&#34; aria-label=&#34;spotify web&#34; href=https://open.spotify.com&gt;&lt;/a&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;!--/section--&gt;&#xA;&lt;style&gt;&#xA;a {&#xA;&#x9;text-decoration: none;&#xA;}&#xA;#cards {&#xA;&#x9;display: grid;&#xA;&#x9;gap: min(1.5rem,3vw);&#xA;&#x9;grid-template-columns: repeat(3, 1fr);&#xA;}&#xA;&#xA;#cards a {&#xA;&#x9;background: var(--clr-bg-alt);&#xA;&#x9;color: var(--clr-fg);&#xA;&#x9;text-align: center;&#xA;&#x9;padding: 3rem;&#xA;&#x9;font-size: clamp(1.25rem, 5vw, 1.5rem) ;&#xA;&#x9;box-shadow: 0px 2px 4px 0px  rgba(0,0,0,0.2);&#xA;}&#xA;&#xA;#cards a:hover {&#xA;&#x9;box-shadow: 0px 5px 4px 0px  rgba(0,0,0,0.2);&#xA;&#x9;color: #222;&#xA;&#x9;background-color: #6A7660;&#xA;&#x9;/*background: color-mix(in srgb, black 20%, var(--clr-highlight2));&#xA;&#x9;  */&#xA;&#x9;transform: translate(0px,-3px);&#xA;&#x9;filter: brightness(110%);&#xA;}&#xA;&#xA;@media screen and (max-width: 5in) { #cards { grid-template-columns: repeat(2, 1fr); } }&#xA;&lt;/style&gt;</description>
+      <description>&lt;!--section id=container--&gt;&#xA;&lt;div id=cards&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-magnifying-glass&#34; aria-label=&#34;search over search engines like github and archwiki&#34; href=&#34;https://savar.is-a.dev/tools/search&#34;&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-check-circle&#34; aria-label=&#34;google tasks&#34; href=https://tasks.google.com&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-lightbulb&#34; aria-label=&#34;google keep notes&#34; href=https://keep.google.com&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-scribble-loop&#34; aria-label=&#34;home&#34; href=https://savar.is-a.dev/&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-phosphor-logo&#34; aria-label=&#34;phosphor icons&#34; href=https://phosphoricons.com&gt;&lt;/a&gt;&#xA;&#x9;&lt;a class=&#34;ph-bold ph-music-note-simple&#34; aria-label=&#34;spotify web&#34; href=https://open.spotify.com&gt;&lt;/a&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;!--/section--&gt;&#xA;&lt;style&gt;&#xA;a {&#xA;&#x9;text-decoration: none;&#xA;}&#xA;#cards {&#xA;&#x9;display: grid;&#xA;&#x9;gap: min(1.5rem,3vw);&#xA;&#x9;grid-template-columns: repeat(3, 1fr);&#xA;}&#xA;&#xA;#cards a {&#xA;&#x9;background: var(--clr-bg-alt);&#xA;&#x9;color: var(--clr-fg);&#xA;&#x9;text-align: center;&#xA;&#x9;padding: 3rem;&#xA;&#x9;font-size: clamp(1.25rem, 5vw, 1.5rem) ;&#xA;&#x9;box-shadow: 0px 2px 4px 0px  rgba(0,0,0,0.2);&#xA;}&#xA;&#xA;#cards a:hover {&#xA;&#x9;box-shadow: 0px 5px 4px 0px  rgba(0,0,0,0.2);&#xA;&#x9;color: #222;&#xA;&#x9;background-color: var(--clr-accent);&#xA;&#x9;/*background: color-mix(in srgb, black 20%, var(--clr-highlight2));&#xA;&#x9;  */&#xA;&#x9;transform: translate(0px,-3px);&#xA;&#x9;filter: brightness(110%);&#xA;}&#xA;&#xA;@media screen and (max-width: 5in) { #cards { grid-template-columns: repeat(2, 1fr); } }&#xA;&lt;/style&gt;</description>
     </item>
     <item>
       <title>Movies &amp; Shows</title>

@@ -6,28 +6,35 @@
 input{outline:none;border:none;} button{border:none;}
 
 :root {
+	--clr-accent: hsl(213, 94%, 68%);
+	--clr-accent-bg: hsl(213, 30%, 20%);
+	--clr-white: hsl(213, 94%, 100%);
+	--clr-accent-alt: hsl(213, 30%, 70%);
 	--clr-fg: hsl(40,0%,86.7%);
-	--clr-fg-alt: hsl(0,0%,80%);
-	--clr-highlight1: hsl(207.6,89.3%,78%);
-	--clr-highlight2: hsl(136.5,50.8%,64.9%);
-	--clr-highlight3: hsl(341.8,79.2%,75.5%);
+	--clr-fg-alt: hsl(0,0%,70%);
 	--clr-bg: hsl(0,0%,0%);
-	--clr-bg-alt: hsl(0,0%,9.8%);
+	--clr-bg1: hsl(0,0%,0%);
+	--clr-bg2: hsl(0,0%,5%);
+	--clr-bg3: hsl(0,0%,10%);
+	--clr-bg-alt: hsl(0,0%,10%);
 	--clr-trans: rgba(0, 0, 0, 0.9);
-	--clr-fg-dark: hsl(0,0%,56.5%);
+	--clr-fg-dark: hsl(0,0%,50%);
 	--clr-bg-bright: hsl(0,0%,20%);
+
 	--height-wide-image: clamp(100px, 40vw, 300px);
 	--height-cover-image: clamp(100px, 40vw, 300px);
 	--height-round-image: clamp(150px, 40vw, 300px);
 	--margin-round-image: clamp(2rem, 5vw, 3rem);
+
 	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;
 	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;*/
 	--font-size-default: 1rem;
-	--font-size-h1: 1.5rem;
-	--font-size-h2: 1.3rem;
+	--font-size-h1: 2rem;
+	--font-size-h2: 1.5rem;
 	--font-size-h3: 1.1rem;
-	--font-family: "Inter";
-	--font-family-heading: "Inter";
+
+	--font-family: "Geist";
+	--font-family-heading: "Geist";
 }
 
 ::selection {
@@ -36,13 +43,11 @@ input{outline:none;border:none;} button{border:none;}
 }
 
 .highlight1 {
-	text-decoration: underline solid var(--clr-highlight2);
-	padding: 0 0.1rem;
+  color: var(--clr-accent);
 }
 .highlight2, .highlight3 {
-	background: color-mix(in srgb, black 10%, var(--clr-highlight2));
-	color: var(--clr-bg);
-	padding: 0 0.1rem;
+  color: var(--clr-white);
+	font-style: italic;
 }
 
 html {
@@ -72,12 +77,11 @@ img {
 	object-fit: cover;
 }
 .round-image {
-	width: var(--height-round-image);
-	height: var(--height-round-image);
-	margin: auto;
-	object-fit: cover;
-	margin-bottom: var(--margin-round-image);
-	border-radius: 50%;
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Must be same as width for perfect circle */
+  border-radius: 50%; /* This makes it circular */
+  object-fit: cover; /* Ensures image covers the circle properly */
+  border: 1px solid var(--clr-bg-bright);
 }
 .wide-image, .wide-image img {
 	height: var(--height-wide-image);
@@ -183,7 +187,7 @@ hr {
 
 a {
 	transition: all 0.1s ease-in-out 0s;
-	color: var(--clr-highlight1);
+	color: var(--clr-accent);
 	text-decoration: none;
 	/*text-decoration-thickness: 2px;*/
 }
@@ -206,15 +210,26 @@ header a {
 footer, footer a {
 	color: var(--clr-fg-alt);
 }
-.stuff {
+.nav-links {
 	margin-left: auto;
 }
-.stuff>a{
+.nav-links>a{
 	margin-left: clamp(1rem, 4vw, 1rem);
+	font-weight: 500;
 }
-#home a {
+.nav-links>a:hover {
+  color: var(--clr-white);
+}
+.nav-link-active {
+  text-decoration: underline;
+  text-decoration-color: var(--clr-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.home-link a {
 	margin-right: auto;
 	font-size: clamp(1.4rem, 4vw, 1.6rem); 
+	font-weight: 800;
 }
 
 footer {
@@ -236,12 +251,13 @@ footer a {
 	z-index: 1000;
 }
 header {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: auto;
 	padding: 0.65rem 1.5vw;
 	background: var(--clr-trans);
 	backdrop-filter: blur(3px);
-	border: 1px solid var(--clr-bg-bright);
+	border: 0px solid var(--clr-bg-bright);
+  border-radius: 2px;
 }
 
 /*media query to change header*/
@@ -257,7 +273,7 @@ header {
 	border: 0px;
 }
 .cover-image img { height: calc(var(--height-cover-image) + 50px); width: 100% !important; left: 0% !important; top: 0 !important; }
-.cover-image { height: calc(var(--height-cover-image) - 50px) ; }
-.wide-image img {padding: 0rem 3vw; left: 0; width: calc(100% - 6vw);}
-#tool-container {width: calc(100% - 6vw);}
+.cover-image { height: calc(var(--height-cover-image) - 50px); }
+.wide-image img { padding: 0rem 3vw; left: 0; width: calc(100% - 6vw); }
+#tool-container { width: calc(100% - 6vw); }
 }
