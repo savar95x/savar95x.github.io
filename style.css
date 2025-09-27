@@ -8,33 +8,38 @@ input{outline:none;border:none;} button{border:none;}
 :root {
 	--clr-accent: hsl(213, 94%, 68%);
 	--clr-accent-bg: hsl(213, 30%, 20%);
-	--clr-white: hsl(213, 94%, 100%);
 	--clr-accent-alt: hsl(213, 30%, 70%);
-	--clr-fg: hsl(40,0%,86.7%);
-	--clr-fg-alt: hsl(0,0%,70%);
+
+	--clr-white: hsl(213, 94%, 100%);
+	--clr-fg: hsl(0,0%,95%);
+	--clr-fg2: hsl(0,0%,70%);
+	--clr-fg3: hsl(0,0%,60%);
+
 	--clr-bg: hsl(0,0%,0%);
-	--clr-bg1: hsl(0,0%,0%);
 	--clr-bg2: hsl(0,0%,5%);
 	--clr-bg3: hsl(0,0%,10%);
-	--clr-bg-alt: hsl(0,0%,10%);
+	--clr-bg4: hsl(0,0%,15%);
+	--clr-bg5: hsl(0,0%,20%);
+
 	--clr-trans: rgba(0, 0, 0, 0.9);
-	--clr-fg-dark: hsl(0,0%,50%);
-	--clr-bg-bright: hsl(0,0%,20%);
 
 	--height-wide-image: clamp(100px, 40vw, 300px);
 	--height-cover-image: clamp(100px, 40vw, 300px);
 	--height-round-image: clamp(150px, 40vw, 300px);
 	--margin-round-image: clamp(2rem, 5vw, 3rem);
 
-	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;
-	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;*/
 	--font-size-default: 14px;
-	--font-size-h1: 2rem;
-	--font-size-h2: 1.5rem;
-	--font-size-h3: 1.1rem;
+	--font-size-h1: 1.5rem;
+	--font-size-h2: 1.25rem;
+	--font-size-h3: 1.125rem;
 
 	--font-family: "Geist";
 	--font-family-heading: "Geist";
+
+	--clr-fg-alt: var(--clr-fg2);
+	--clr-bg-alt: var(--clr-bg2);
+	--clr-bg-bright: var(--clr-bg5);
+	--clr-fg-dark: hsl(0,0%,50%);
 }
 
 ::selection {
@@ -135,10 +140,7 @@ h1, h2, h3 {
 	text-decoration: underline;
 }
 
-* {
-	line-height: clamp(1.75rem, 5vw, 2rem);
-	scroll-behavior: smooth;
-}
+* { scroll-behavior: smooth; }
 
 body {
 	/* font-family: system-ui;*/
@@ -212,6 +214,8 @@ footer, footer a {
 }
 .nav-links {
 	margin-left: auto;
+  display: flex;
+  align-items: center; /* Vertical centering */
 }
 .nav-links>a{
 	margin-left: clamp(1rem, 4vw, 1rem);
