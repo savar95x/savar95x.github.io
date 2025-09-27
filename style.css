@@ -28,7 +28,7 @@ input{outline:none;border:none;} button{border:none;}
 
 	/*--font: normal 400 clamp(1rem, 4vw, 1.13rem) "Inter", sans-serif;
 	--font: normal 400 clamp(0.95rem, 2vw, 1rem) "Inter", sans-serif;*/
-	--font-size-default: 1rem;
+	--font-size-default: 16px;
 	--font-size-h1: 2rem;
 	--font-size-h2: 1.5rem;
 	--font-size-h3: 1.1rem;
@@ -152,7 +152,7 @@ body {
 #container, footer, .footer-text {
 	/* font-family: system-ui;*/
 	font-size: var(--font-default);
-	max-width: 800px;
+	max-width: 900px;
 	margin: min(2.25rem,5vw) auto;
 	padding: 0rem 4vw;
 }
