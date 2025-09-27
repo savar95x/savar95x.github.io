@@ -47,6 +47,10 @@ input{outline:none;border:none;} button{border:none;}
 	color: var(--clr-bg);
 }
 
+* {
+  font-variant-numeric: tabular-nums;
+}
+
 .highlight1 {
   color: var(--clr-accent);
 }
