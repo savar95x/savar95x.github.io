@@ -112,11 +112,11 @@ iframe {
 img {
 	object-fit: cover;
 }
-.image-container>img {
+.image-container>img, .video {
   width: 500px;
   border-radius: 2px;
 }
-.image-container {
+.image-container, .video {
 	margin: min(2.25rem,5vw) auto;
   display: flex;
   justify-content: center;
