@@ -14,7 +14,7 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-accent-alt2: oklch(0.9 0.1 253.83);
 
 	--clr-white: hsl(0, 0%, 100%);
-	--clr-gray: hsl(0, 0%, 55%);
+	--clr-gray: hsl(0, 0%, 65%);
 
 	--clr-fg: hsl(0,0%,95%);
 	--clr-fg2: hsl(0,0%,80%);
@@ -150,9 +150,9 @@ img {
 }
 
 .big-text { margin-top: 1rem; color: var(--clr-fg); display: inline-flex; align-items: center; gap: 0.5rem; }
-.big-text .larrow, .big-text .rarrow { transition: transform 0.4s ease; }
+.big-text .larrow, .big-text .rarrow { transition: transform 0.3s ease; }
 .big-text:hover .larrow { transform: translateX(-5px); }
-.big-text:hover .rarrow { transform: translateX(8px); }
+.big-text:hover .rarrow { transform: translateX(5px); }
 
 strong { font-weight: 550; }
 h1 { font-size: var(--font-size-h1); }
@@ -341,9 +341,10 @@ header {
   border-radius: 3px;
   color: var(--clr-fg);
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: var(--clr-accent);
 }
 .heading {
@@ -378,7 +379,6 @@ blockquote {
 	backdrop-filter: blur(10px);
 }
 header {
-	max-width: 100%;
 	background: none;
 	padding: 0.85rem 4vw;
 	border: 0px;
