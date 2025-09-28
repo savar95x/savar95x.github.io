@@ -11,8 +11,11 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-accent-bg2: hsl(213, 30%, 15%);
 	/*--clr-accent-bg2: oklch(0.25 0.0357 253.83);*/
 	--clr-accent-alt: hsl(213, 30%, 70%);
+	--clr-accent-alt2: oklch(0.9 0.1 253.83);
 
-	--clr-white: hsl(213, 94%, 100%);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-gray: hsl(0, 0%, 55%);
+
 	--clr-fg: hsl(0,0%,95%);
 	--clr-fg2: hsl(0,0%,80%);
 	--clr-fg3: hsl(0,0%,65%);
@@ -216,10 +219,10 @@ hr {
 
 a {
   text-decoration: underline;
-  text-decoration-color: var(--clr-fg3);
+  text-decoration-color: var(--clr-gray);
   text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-	color: var(--clr-accent-fg);
+  text-underline-offset: 1px;
+	color: var(--clr-fg);
 	transition: all 0.1s ease-in-out 0s;
 }
 a:hover {
