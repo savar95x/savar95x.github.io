@@ -31,6 +31,7 @@ input{outline:none;border:none;} button{border:none;}
 	--margin-round-image: clamp(2rem, 5vw, 3rem);
 
 	--font-size-default: clamp(14px, 1vw, 16px);
+	--font-big-text-size: clamp(0.875rem, 2vw, 1rem);
 	--font-size-h1: 1.75rem;
 	--font-size-h2: 1.25rem;
 	--font-size-h3: 1.125rem;
@@ -203,7 +204,8 @@ footer {
 }
 
 .big-text {
-  font-size: 1.125rem;
+  font-size: var(--font-big-text-size);
+  text-decoration: none;
 }
 
 hr {
@@ -214,12 +216,12 @@ hr {
 
 a {
 	transition: all 0.1s ease-in-out 0s;
-	color: var(--clr-accent);
-	text-decoration: none;
+	color: var(--clr-accent-fg);
+	text-decoration: underline;
 	/*text-decoration-thickness: 2px;*/
 }
 a:hover {
-	color: var(--clr-fg);
+  color: var(--clr-fg);
 }
 
 header a, footer a {
@@ -235,7 +237,7 @@ header a {
 	color: var(--clr-fg);
 }
 footer, footer a {
-	color: var(--clr-fg-alt);
+	color: var(--clr-fg3);
 }
 .nav-links {
 	margin-left: auto;
@@ -249,11 +251,10 @@ footer, footer a {
 .nav-links>a:hover {
   color: var(--clr-white);
 }
-.nav-link-active {
-  text-decoration: underline;
-  text-decoration-color: var(--clr-accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+.nav-link-active, .nav-link-active:hover {
+  background: var(--clr-accent-alt);
+  color: var(--clr-bg) !important;
+  padding: 1px 5px;
 }
 .home-link a {
 	margin-right: auto;
@@ -263,11 +264,11 @@ footer, footer a {
 
 footer {
 	padding: 0 4vw;
-	margin: 0.9rem auto;
+	margin: 1.9rem auto;
 }
 
 footer a {
-	font-size: clamp(1rem, 4vw, 1.5rem);
+	font-size: var(--font-size-default);
 	margin: auto 0.5rem;
 }
 
@@ -308,6 +309,7 @@ header {
   border: 1px solid var(--clr-bg4);
   border-radius: 3px;
   color: var(--clr-fg);
+  text-decoration: none;
 }
 .card:hover {
   transform: translateY(-3px);
