@@ -8,6 +8,8 @@ input{outline:none;border:none;} button{border:none;}
 :root {
 	--clr-accent: hsl(213, 94%, 68%);
 	--clr-accent-bg: hsl(213, 30%, 20%);
+	--clr-accent-bg2: hsl(213, 30%, 15%);
+	/*--clr-accent-bg2: oklch(0.25 0.0357 253.83);*/
 	--clr-accent-alt: hsl(213, 30%, 70%);
 
 	--clr-white: hsl(213, 94%, 100%);
@@ -28,7 +30,7 @@ input{outline:none;border:none;} button{border:none;}
 	--height-round-image: clamp(150px, 40vw, 300px);
 	--margin-round-image: clamp(2rem, 5vw, 3rem);
 
-	--font-size-default: 14px;
+	--font-size-default: clamp(14px, 1vw, 16px);
 	--font-size-h1: 1.75rem;
 	--font-size-h2: 1.25rem;
 	--font-size-h3: 1.125rem;
@@ -54,11 +56,21 @@ h2,h3,h4,h5,h6 {
   line-height: 1.3;
 }
 body, p, div {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 * {
   font-variant-numeric: tabular-nums;
+}
+
+.highlight {
+  background: var(--clr-accent-bg2);
+  padding: 0.125rem 0.25rem;
+  line-height: 2;
+  transition: background 0.2s ease;
+}
+.highlight:hover {
+  background: var(--clr-accent-bg);
 }
 
 .highlight1 {
@@ -190,7 +202,9 @@ footer {
 	height: 100vh;          /* full viewport height */
 }
 
-.big-text { font-size: 1.2rem; }
+.big-text {
+  font-size: 1.125rem;
+}
 
 hr {
 	margin: 0.4rem 0;
@@ -315,6 +329,12 @@ header {
 	position: relative;
 	margin: auto 0;
 	display: flex; flex-direction: column;
+}
+
+blockquote {
+  border-left: 3px solid var(--clr-accent);
+  padding: 1px 0 1px 1.125rem;
+  margin: 1.5rem;
 }
 
 /*media query to change header*/
