@@ -215,10 +215,12 @@ hr {
 }
 
 a {
-	transition: all 0.1s ease-in-out 0s;
+  text-decoration: underline;
+  text-decoration-color: var(--clr-fg3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 	color: var(--clr-accent-fg);
-	text-decoration: underline;
-	/*text-decoration-thickness: 2px;*/
+	transition: all 0.1s ease-in-out 0s;
 }
 a:hover {
   color: var(--clr-fg);
@@ -252,9 +254,10 @@ footer, footer a {
   color: var(--clr-white);
 }
 .nav-link-active, .nav-link-active:hover {
-  background: var(--clr-accent-alt);
-  color: var(--clr-bg) !important;
-  padding: 1px 5px;
+  text-decoration: underline;
+  text-decoration-color: var(--clr-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 .home-link a {
 	margin-right: auto;
