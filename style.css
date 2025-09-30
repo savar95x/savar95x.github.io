@@ -35,8 +35,8 @@ input{outline:none;border:none;} button{border:none;}
 
 	--font-size-default: clamp(14px, 1vw, 16px);
 	--font-big-text-size: clamp(0.875rem, 2vw, 1rem);
-	--font-size-h1: 1.75rem;
-	--font-size-h2: 1.5rem;
+	--font-size-h1: 1.875rem;
+	--font-size-h2: 1.625rem;
 	--font-size-h3: 1.25rem;
 	--font-size-h4: 1.125rem;
 
