@@ -26,7 +26,7 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-bg4: hsl(0,0%,15%);
 	--clr-bg5: hsl(0,0%,20%);
 
-	--clr-trans: rgba(0, 0, 0, 0.5);
+	--clr-trans: rgba(16, 16, 16, 0.9);
 
 	--height-wide-image: clamp(100px, 40vw, 300px);
 	--height-cover-image: clamp(100px, 40vw, 300px);
@@ -191,6 +191,7 @@ body {
 	font-size: var(--font-size-default);
 	max-width: 100%;
 	margin: 0;
+	padding: 0;
 	background: var(--clr-bg);
 	color: var(--clr-fg);
 }
@@ -206,11 +207,20 @@ footer {
 	text-align: center;
 }
 
-#container {
-	min-height: calc(100vh - 17rem);
+#grid-canvas {
+  position: fixed; /* Critical: Keeps it out of flow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Layer 2: Middle (above blobs, below content) */
+  pointer-events: none;
 }
+
 #container {
-	padding-top: 75px;
+  min-height: calc(100vh - 17rem);
+  padding-top: 75px;
+  z-index: 1; /* Layer 3: Top (Content) */
 }
 
 .big-text {
@@ -260,7 +270,7 @@ footer, footer a {
 }
 
 .nav-links>a {
-	margin-left: 1rem;
+	margin-left: 1.75rem;
 	font-weight: 500;
   position: relative;
   text-decoration: none;
@@ -306,21 +316,22 @@ footer a {
 /* fixed header */
 #header-wrapper {
 	position: fixed;
-	top: 10px;
+	top: 0px;
 	margin: auto;
 	width: 100%;
 	z-index: 1000;
-}
-header {
-	max-width: 600px;
-	margin: auto;
-	padding: 0.65rem 1.5vw;
 	background: var(--clr-trans);
 	backdrop-filter: blur(10px);
+}
+header {
+	max-width: 900px;
+	margin: auto;
+	padding: 0.65rem 1.5vw;
+	padding: 1rem 4vw;
+	background: none;
 	border: 0px solid var(--clr-bg-bright);
   border-radius: 3px;
 }
-
 
 #cards img {
 	position: relative;
