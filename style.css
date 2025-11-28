@@ -16,9 +16,9 @@ input{outline:none;border:none;} button{border:none;}
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-gray: hsl(0, 0%, 65%);
 
-	--clr-fg: hsl(0,0%,95%);
-	--clr-fg2: hsl(0,0%,80%);
-	--clr-fg3: hsl(0,0%,65%);
+	--clr-fg: hsl(0,0%,90%);
+	--clr-fg2: hsl(0,0%,70%);
+	--clr-fg3: hsl(0,0%,60%);
 
 	--clr-bg: hsl(0,0%,0%);
 	--clr-bg2: hsl(0,0%,5%);
@@ -83,7 +83,7 @@ body, p, div {
 }
 .highlight2, .highlight3 {
   color: var(--clr-white);
-	font-style: italic;
+	font-weight: 500;
 }
 
 html {
@@ -149,7 +149,7 @@ img {
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.big-text { margin-top: 1rem; color: var(--clr-fg); display: inline-flex; align-items: center; gap: 0.5rem; }
+.big-text { margin: 2rem 0rem; color: var(--clr-fg); display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500; }
 .big-text .larrow, .big-text .rarrow { transition: transform 0.3s ease; }
 .big-text:hover .larrow { transform: translateX(-5px); }
 .big-text:hover .rarrow { transform: translateX(5px); }
@@ -252,17 +252,20 @@ header a, footer a {
 
 footer a:hover { color: var(--clr-fg); }
 
-header, footer section {
+header, footer {
 	display: flex;
 }
 header a {
 	color: var(--clr-fg);
 }
+footer {
+  margin: auto;
+}
 footer, footer a {
 	color: var(--clr-fg3);
 }
 
-.nav-links {
+.nav-links, .footer-links {
 	margin-left: auto;
   display: flex;
   align-items: center;
@@ -333,47 +336,98 @@ header {
   border-radius: 3px;
 }
 
-#cards img {
+.line-heading {
+  display: flex;           /* Enables flexbox */
+  align-items: center;     /* Vertically centers the line with the text */
+  white-space: nowrap;     /* Prevents text from wrapping awkwardly */
+  margin-bottom: 2rem;
+}
+
+.line-heading::after {
+  content: '';             /* Required for pseudo-elements to render */
+  flex: 1;                 /* Tells the line to take up all remaining space */
+  border-bottom: 1px solid #222; /* Sets the line thickness and color */
+  margin-left: 2rem;       /* Adds space between the text and the line */
+}
+#cards-article img {
 	position: relative;
 	width: 100px; height: 100px; object-fit: cover;
-	border-radius: 50%;
-	margin-right: 1rem;
+	border-radius: 5px;
+}
+#cards-article {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px; /* Space between items */
+}
+
+.card-article {
+  display: flex;
+  border-radius: 10px;
+  color: var(--clr-fg);
+  text-decoration: none;
+  background: var(--clr-bg);
+  padding: 1rem;
+}
+.card-article:hover {
+  background: var(--clr-bg-alt);
+  color: var(--clr-accent);
+  transition: background 0.3s ease;
+}
+.card-article .description {
+  color: var(--clr-fg2);
+  margin-left: 1rem;
+}
+.heading-article {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+#cards img {
+	position: relative;
+	width: 100%; height: 250px; object-fit: cover;
+	border-radius: 5px 5px 0 0 ;
 }
 #cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Space between items */
+  gap: 30px; /* Space between items */
 }
 
 .card {
-  display: flex;
-  padding: 1.25rem;
   border: 1px solid var(--clr-bg4);
-  border-radius: 3px;
+  border-radius: 10px;
   color: var(--clr-fg);
   text-decoration: none;
   transition: transform 0.3s ease;
+  background: var(--clr-bg);
+  padding: 1rem;
 }
 .card:hover {
-  transform: translateY(-3px);
   border-color: var(--clr-accent);
+}
+.card .description {
+  color: var(--clr-fg2);
+  font-size: 0.975rem;
 }
 .heading {
   font-weight: 600;
   font-size: 1rem;
-}
-.card .description {
-  color: var(--clr-fg2);
+  margin: 1.5rem 0 0 0rem;
 }
 .date {
   color: var(--clr-fg3);
-  margin-top: 0.5rem;
+  margin-left: auto;
 }
 
 .title-date {
 	position: relative;
 	margin: auto 0;
 	display: flex; flex-direction: column;
+  width: 100%;
+}
+.title-date>span {
+  display: flex;
 }
 
 blockquote {
@@ -398,4 +452,10 @@ header {
 }
 .cover-image img {  width: 100% !important; left: 0% !important; }
 .wide-image img { padding: 0rem 3vw; left: 0; width: calc(100% - 6vw); }
+}
+
+@media screen and (max-width: 800px) {
+  #cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

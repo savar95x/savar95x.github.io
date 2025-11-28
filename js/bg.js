@@ -2,82 +2,113 @@ const canvas = document.getElementById('grid-canvas');
 const ctx = canvas.getContext('2d');
 
 let width, height;
-let points = [];
-const spacing = 40; // Space between points
+let particles = [];
+
+// Configuration
+const particleCount = 100; // More particles for texture
+const mouseDistance = 150;
+
+// Mouse State
+const mouse = { x: null, y: null };
+
+window.addEventListener('mousemove', (e) => {
+	mouse.x = e.x;
+	mouse.y = e.y;
+});
+
+window.addEventListener('mouseout', () => {
+	mouse.x = null;
+	mouse.y = null;
+});
+
+class Particle {
+	constructor() {
+		this.x = Math.random() * width;
+		this.y = Math.random() * height;
+		// Much slower, organic movement
+		this.vx = (Math.random() - 0.5) * 0.5; 
+		this.vy = (Math.random() - 0.5) * 0.5;
+
+		// Varied size and opacity for depth
+		this.size = Math.random() * 2 + 0.5;
+		// Base alpha is lower for background feel
+		this.baseAlpha = Math.random() * 0.3 + 0.05; 
+		this.alpha = this.baseAlpha;
+	}
+
+	update() {
+		this.x += this.vx;
+		this.y += this.vy;
+
+		// Wrap around screen seamlessly
+		if (this.x < 0) this.x = width;
+		if (this.x > width) this.x = 0;
+		if (this.y < 0) this.y = height;
+		if (this.y > height) this.y = 0;
+
+		// Subtle Mouse Interaction: gentle push away
+		if (mouse.x != null) {
+			const dx = mouse.x - this.x;
+			const dy = mouse.y - this.y;
+			const distance = Math.sqrt(dx * dx + dy * dy);
+
+			if (distance < mouseDistance) {
+				const forceDirectionX = dx / distance;
+				const forceDirectionY = dy / distance;
+				const force = (mouseDistance - distance) / mouseDistance;
+
+				// Push harder the closer it is
+				const repulsion = force * 2; 
+
+				this.x -= forceDirectionX * repulsion;
+				this.y -= forceDirectionY * repulsion;
+
+				// Slightly brighten particles near mouse
+				this.alpha = Math.min(this.baseAlpha + 0.2, 0.8);
+			} else {
+				// Return to normal opacity slowly
+				if (this.alpha > this.baseAlpha) {
+					this.alpha -= 0.01;
+				}
+			}
+		}
+	}
+
+	draw() {
+		ctx.beginPath();
+		ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+		ctx.fillStyle = `rgba(150, 150, 150, ${this.alpha})`;
+		ctx.fill();
+	}
+}
 
 function resize() {
 	width = window.innerWidth;
 	height = window.innerHeight;
 	canvas.width = width;
 	canvas.height = height;
-	initPoints();
+	initParticles();
 }
 
-function initPoints() {
-	points = [];
-	// Create a grid of points covering the screen
-	for (let x = 0; x < width + spacing; x += spacing) {
-		for (let y = 0; y < height + spacing; y += spacing) {
-			points.push({
-				originX: x,
-				originY: y,
-				x: x,
-				y: y,
-				// Blink/Fade state properties
-				alpha: 0.1,    
-				targetAlpha: 0.1, 
-				isFading: false,
-				fadeProgress: 0,
-				fadeSpeed: 0.02 + Math.random() * 0.02 
-			});
-		}
+function initParticles() {
+	particles = [];
+	const count = width < 768 ? particleCount / 2 : particleCount;
+	for (let i = 0; i < count; i++) {
+		particles.push(new Particle());
 	}
 }
 
-function animate(time) {
+function animate() {
 	ctx.clearRect(0, 0, width, height);
 
-	// Dot Color: Light Grey for visibility on dark background
-	ctx.fillStyle = '#666666'; 
-
-	const t = time * 0.001; // Scale time
-
-	points.forEach(p => {
-		// 1. Calculate Wave Movement
-		// Sine waves based on position create the "breathing" grid effect
-		const moveX = Math.sin(t + p.originY * 0.005) * 8; 
-		const moveY = Math.cos(t + p.originX * 0.005) * 8;
-
-		// 2. Handle Random Twinkle/Fading
-		if (!p.isFading) {
-			// Small chance to start fading a dot
-			if (Math.random() < 0.001) { 
-				p.isFading = true;
-				p.fadeProgress = 0;
-			}
-			p.alpha = 0.1; // Base faint opacity
-		} else {
-			// Animate the fade cycle
-			p.fadeProgress += p.fadeSpeed;
-			if (p.fadeProgress >= Math.PI) {
-				p.isFading = false;
-				p.alpha = 0.1;
-			} else {
-				// Calculate opacity based on sine wave of progress
-				const sineVal = Math.sin(p.fadeProgress);
-				p.alpha = 0.1 + (sineVal * 0.5); // Max opacity ~0.6
-			}
-		}
-
-		// 3. Draw the Point
-		ctx.globalAlpha = p.alpha;
-		ctx.beginPath();
-		ctx.fillRect(p.originX + moveX, p.originY + moveY, 2, 2); 
-	});
+	for (let i = 0; i < particles.length; i++) {
+		particles[i].update();
+		particles[i].draw();
+	}
 
 	requestAnimationFrame(animate);
 }
 
 window.addEventListener('resize', resize);
 resize();
-requestAnimationFrame(animate);
+animate();
