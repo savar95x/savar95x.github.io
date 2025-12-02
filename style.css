@@ -36,7 +36,7 @@ input{outline:none;border:none;} button{border:none;}
 	--font-size-default: clamp(14px, 1vw, 16px);
 	--font-big-text-size: clamp(0.875rem, 2vw, 1rem);
 	--font-size-h1: 1.875rem;
-	--font-size-h2: 1.625rem;
+	--font-size-h2: 1.375rem;
 	--font-size-h3: 1.25rem;
 	--font-size-h4: 1.125rem;
 
@@ -50,18 +50,13 @@ input{outline:none;border:none;} button{border:none;}
 }
 
 ::selection {
-	background: color-mix(in srgb, black 10%, var(--clr-fg));
+	/*background: color-mix(in srgb, black 10%, var(--clr-accent));
+   */
+	background: var(--clr-accent-alt);
 	color: var(--clr-bg);
 }
-
-h1 {
-  line-height: 1.2;
-}
-h2,h3,h4,h5,h6 {
-  line-height: 1.3;
-}
 body, p, div {
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 * {
@@ -231,7 +226,7 @@ footer {
 hr {
 	margin: 0.4rem 0;
 	border: 0px solid var(--clr-bg-alt);
-	border-top: 1px solid var(--clr-bg-alt);
+	border-top: 1px solid var(--clr-bg4);
 }
 
 a {
@@ -347,11 +342,11 @@ header {
   content: '';             /* Required for pseudo-elements to render */
   flex: 1;                 /* Tells the line to take up all remaining space */
   border-bottom: 1px solid #222; /* Sets the line thickness and color */
-  margin-left: 2rem;       /* Adds space between the text and the line */
+  margin-left: 1.5rem;       /* Adds space between the text and the line */
 }
 #cards-article img {
 	position: relative;
-	width: 100px; height: 100px; object-fit: cover;
+	width: 80px; height: 80px; object-fit: cover;
 	border-radius: 5px;
 }
 #cards-article {
@@ -367,6 +362,7 @@ header {
   text-decoration: none;
   background: var(--clr-bg);
   padding: 1rem;
+  margin: 0 -1rem;
 }
 .card-article:hover {
   background: var(--clr-bg-alt);
@@ -375,18 +371,16 @@ header {
 }
 .card-article .description {
   color: var(--clr-fg2);
-  margin-left: 1rem;
 }
 .heading-article {
   font-weight: 600;
   font-size: 1rem;
-  margin-left: 1rem;
 }
 
 #cards img {
 	position: relative;
 	width: 100%; height: 250px; object-fit: cover;
-	border-radius: 5px 5px 0 0 ;
+	border-radius: 10px 10px 0 0 ;
 }
 #cards {
   display: grid;
@@ -401,7 +395,7 @@ header {
   text-decoration: none;
   transition: transform 0.3s ease;
   background: var(--clr-bg);
-  padding: 1rem;
+  padding: 0rem;
 }
 .card:hover {
   border-color: var(--clr-accent);
@@ -413,7 +407,7 @@ header {
 .heading {
   font-weight: 600;
   font-size: 1rem;
-  margin: 1.5rem 0 0 0rem;
+  margin: 0rem 0 0 0rem;
 }
 .date {
   color: var(--clr-fg3);
@@ -426,9 +420,53 @@ header {
 	display: flex; flex-direction: column;
   width: 100%;
 }
+.card-article>.title-date {
+	margin: auto 0 auto 1rem;
+}
+.card>.title-date {
+	margin: 1rem 0 1rem 1rem;
+  width: calc(100% - 2rem);
+}
 .title-date>span {
   display: flex;
 }
+
+/* 1. The Container (Card) */
+.card {
+  position: relative; /* Essential: creates the boundary for the absolute icon */
+  display: block;
+}
+
+/* 2. The Hidden Icon */
+.arrow-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  
+  /* Circle Styling */
+  width: 40px;
+  height: 40px;
+  background-color: var(--clr-bg);
+  color: var(--clr-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Hiding Strategy */
+  opacity: 0; 
+  transform: translate(-10px, 10px); /* Start slightly offset for animation */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* Smooth easing */
+}
+
+/* 3. The Trigger */
+/* When link-card is hovered, change arrow-icon styles */
+.card:hover .arrow-icon {
+  opacity: 1;
+  transform: translate(0, 0); /* Move to final position */
+}
+
+
 
 blockquote {
   border-left: 3px solid var(--clr-accent);
