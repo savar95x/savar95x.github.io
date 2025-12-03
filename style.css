@@ -33,7 +33,7 @@ input{outline:none;border:none;} button{border:none;}
 	--height-round-image: clamp(150px, 40vw, 300px);
 	--margin-round-image: clamp(2rem, 5vw, 3rem);
 
-	--font-size-default: clamp(14px, 1vw, 16px);
+	--font-size-default: clamp(16px, 1vw, 16px);
 	--font-big-text-size: clamp(0.875rem, 2vw, 1rem);
 	--font-size-h1: 1.875rem;
 	--font-size-h2: 1.375rem;
@@ -371,6 +371,7 @@ header {
 }
 .card-article .description {
   color: var(--clr-fg2);
+  font-size: 0.9rem;
 }
 .heading-article {
   font-weight: 600;
@@ -402,7 +403,7 @@ header {
 }
 .card .description {
   color: var(--clr-fg2);
-  font-size: 0.975rem;
+  font-size: 0.9rem;
 }
 .heading {
   font-weight: 600;
@@ -412,6 +413,7 @@ header {
 .date {
   color: var(--clr-fg3);
   margin-left: auto;
+  font-size: 0.9rem;
 }
 
 .title-date {
@@ -429,6 +431,19 @@ header {
 }
 .title-date>span {
   display: flex;
+}
+
+.tags {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+}
+.tag {
+  border: 1px solid var(--clr-bg5);
+  background: var(--clr-bg3);
+  border-radius: 3px;
+  padding: 0.125rem 0.375rem;
+  margin-right: 0.5rem;
 }
 
 /* 1. The Container (Card) */
