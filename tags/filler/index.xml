@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filler on savar</title>
+    <link>https://savar.is-a.dev/tags/filler/</link>
+    <description>Recent content in Filler on savar</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jan 2025 17:21:28 +0530</lastBuildDate>
+    <atom:link href="https://savar.is-a.dev/tags/filler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Deepseek is better than ChatGPT</title>
+      <link>https://savar.is-a.dev/blog/deepseek/</link>
+      <pubDate>Tue, 01 Feb 2000 14:32:22 +0530</pubDate>
+      <guid>https://savar.is-a.dev/blog/deepseek/</guid>
+      <description>&lt;h2 id=&#34;why-deepseek-is-better-than-chatgpt-a-comprehensive-analysis&#34;&gt;Why DeepSeek Is Better Than ChatGPT: A Comprehensive Analysis&lt;/h2&gt;&#xA;&lt;p&gt;In the rapidly evolving world of artificial intelligence, language models like ChatGPT have made significant strides in natural language processing, enabling machines to generate human-like text and engage in meaningful conversations. However, as a more advanced iteration of AI, DeepSeek brings several key advantages that set it apart from ChatGPT. Here’s why DeepSeek is better:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1-enhanced-contextual-understanding&#34;&gt;1. &lt;strong&gt;Enhanced Contextual Understanding&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;While ChatGPT is impressive in its ability to generate coherent responses, DeepSeek is designed with a deeper understanding of context. It can maintain longer and more complex conversations without losing track of the topic. This allows DeepSeek to provide more accurate and relevant responses, especially in nuanced or multi-layered discussions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>https://savar.is-a.dev/blog/loremipsum/</link>
+      <pubDate>Fri, 21 Jan 2000 17:26:28 +0530</pubDate>
+      <guid>https://savar.is-a.dev/blog/loremipsum/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;&#xA;&lt;p&gt;Mauris dapibus volutpat libero, eu malesuada nulla. Aenean at tincidunt mi. Fusce eget enim et orci facilisis efficitur. Quisque sit amet orci non ipsum interdum congue vel ac neque. Etiam suscipit nulla at turpis venenatis, non sollicitudin justo sollicitudin.&lt;/p&gt;&#xA;&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;&#xA;&lt;p&gt;Sed sit amet ligula placerat, interdum mi eget, blandit sem. Donec eget metus ac eros scelerisque rhoncus. Fusce eget justo eu ante vulputate sodales. Nulla et orci et elit fringilla ullamcorper sed vel purus.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
