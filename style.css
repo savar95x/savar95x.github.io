@@ -41,7 +41,7 @@ li::marker {
 
 	--font-size-default: clamp(14px, calc(8px + 1vw), 16px);
 	--font-big-text-size: clamp(0.875rem, 2vw, 1rem);
-	--font-small-text-size: clamp(0.875rem, 2vw, 0.95rem);
+	--font-small-text-size: clamp(0.85rem, 2vw, 0.9rem);
 	--font-size-h1: clamp(1.875rem, calc(16px + 2vw), 2.5rem);
 	--font-size-h2: clamp(1.375rem, 5vw, 1.5rem);
 	--font-size-h3: clamp(1.25rem, 4vw, 1.375rem);
@@ -143,9 +143,9 @@ figcaption {
   text-align: center;
   display: block;
   color: var(--clr-gray);
-  font-size: 0.9rem;
+  font-size: var(--font-small-text-size);
   font-style: italic;
-  margin: 0.75rem 0 -0.75rem 0;
+  margin: -0.25rem 0 -0.75rem 0;
 }
 img {
 	object-fit: cover;
@@ -200,9 +200,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .share {
   color: inherit;
-  border-radius: 50px;
+  border-radius: 50%;
   padding: 0.5rem;
   margin: -0.5rem;
+  width: 1.5rem;
   transition: all 0.1s ease;
 }
 .share:hover {
@@ -210,7 +211,8 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--clr-accent-bg);
 }
 .share>.ph {
-  top: 0px;
+  top: 2px;
+  left: 2px;
 }
 
 .ph, .ph-bold, .ph-light, .ph-fill {
@@ -421,28 +423,32 @@ header {
 }
 #cards-article img {
 	position: relative;
-	width: 80px; height: 80px; object-fit: cover;
-	border-radius: 5px;
+	width: 100%; height: 150px; object-fit: cover;
+	border-radius: 8px 8px 0 0;
 }
 #cards-article {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 10px; /* Space between items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Space between items */
 }
 
 .card-article {
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
   color: var(--clr-fg);
   text-decoration: none;
   background: var(--clr-bg);
-  padding: 1rem;
-  margin: 0 -1rem;
+  border: 1px solid var(--clr-bg3);
+  /*
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+  */
 }
 .card-article:hover {
   background: var(--clr-bg-alt);
   color: var(--clr-accent);
-  transition: background 0.1s ease;
+  border: 1px solid var(--clr-bg);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card-article .description {
   color: var(--clr-fg3);
@@ -453,12 +459,10 @@ header {
   color: var(--clr-fg3);
   font-size: 0.9rem;
 }
-.card-article:hover .description {
-  color: var(--clr-fg2);
-}
 .heading-article {
-  font-weight: 600;
-  font-size: 1rem;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 1.125rem;
 }
 
 #cards img {
@@ -500,10 +504,24 @@ header {
 	position: relative;
 	margin: auto 0;
 	display: flex; flex-direction: column;
-  width: 100%;
+}
+.read-article {
+  color: var(--clr-fg) !important;
+  font-weight: 600 !important;
 }
 .card-article>.title-date {
-	margin: auto 0 auto 1rem;
+  padding: 1.5rem 1.25rem;
+  gap: 10px;
+  margin: 0;
+}
+.card-article .time, .card-article .date {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--clr-gray);
+}
+.tag-article {
+  font-size: 0.8rem;
+  color: var(--clr-gray);
 }
 .card>.title-date {
 	margin: 1rem 0 1rem 1rem;
@@ -607,5 +625,8 @@ header {
 @media screen and (max-width: 800px) {
   #cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+  #cards-article {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
