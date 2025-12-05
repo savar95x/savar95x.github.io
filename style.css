@@ -630,3 +630,8 @@ header {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 600px) {
+  #cards-article {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
