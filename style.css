@@ -357,8 +357,8 @@ footer, footer a {
   content: '';
   position: absolute;
   width: 0;
-  height: 1px;
-  bottom: 0;
+  height: 2px;
+  bottom: -2px;
   left: 0;
   background-color: var(--clr-accent);
   transition: width 0.3s cubic-bezier(0.2, 1, 0.3, 1);
