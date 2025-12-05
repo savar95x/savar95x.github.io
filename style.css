@@ -439,7 +439,7 @@ header {
   color: var(--clr-fg);
   text-decoration: none;
   background: var(--clr-bg);
-  border: 1px solid var(--clr-bg3);
+  border: 1px solid var(--clr-bg4);
   /*
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
   */
