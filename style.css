@@ -39,7 +39,7 @@ li::marker {
 	--height-round-image: clamp(150px, 40vw, 300px);
 	--margin-round-image: clamp(2rem, 5vw, 3rem);
 
-	--font-size-default: clamp(14px, calc(8px + 1vw), 16px);
+	--font-size-default: clamp(16px, calc(8px + 1vw), 16px);
 	--font-big-text-size: clamp(0.875rem, 2vw, 1rem);
 	--font-small-text-size: clamp(0.85rem, 2vw, 0.9rem);
 	--font-size-h1: clamp(1.875rem, calc(16px + 2vw), 2.5rem);

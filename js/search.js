@@ -1,9 +1,9 @@
 const allEngines = [
-	{ name:"Google", logo:"ph ph-google-logo", preposition:"with", color:"#80A9A0", url:"google.com/search?q=", urlFilters:"" },
-	{ name:"ArchWiki", logo:"ph ph-linux-logo", preposition:"over", color:"var(--clr-highlight1)", url:"wiki.archlinux.org/index.php?search=", urlFilters:"" },
-	{ name:"SearX", logo:"ph ph-magnifying-glass", preposition:"with", color:"#A9B665", url:"searx.be/search?q=", urlFilters:"" },
-	{ name:"YouTube", logo:"ph ph-youtube-logo", preposition:"over", color:"#D87873", url:"youtube.com/results?search_query=", urlFilters:"" },
-	{ name:"Github", logo:"ph ph-github-logo", preposition:"over", color:"#D8A657", url:"github.com/search?q=", urlFilters:"&s=stars" },
+	{ name:"Google", logo:"ph-bold ph-google-logo", preposition:"with", color:"#80A9A0", url:"google.com/search?q=", urlFilters:"" },
+	{ name:"ArchWiki", logo:"ph-fill ph-notebook", preposition:"over", color:"var(--clr-highlight1)", url:"wiki.archlinux.org/index.php?search=", urlFilters:"" },
+	//{ name:"SearX", logo:"ph ph-magnifying-glass", preposition:"with", color:"#A9B665", url:"searx.be/search?q=", urlFilters:"" },
+	{ name:"YouTube", logo:"ph-fill ph-play", preposition:"over", color:"#D87873", url:"youtube.com/results?search_query=", urlFilters:"" },
+	{ name:"Github", logo:"ph-fill ph-github-logo", preposition:"over", color:"#D8A657", url:"github.com/search?q=", urlFilters:"&s=stars" },
 ];
 
 var activeEngine;
@@ -13,19 +13,17 @@ function toggleEngine() {
 	x = (x == allEngines.length - 1) ? -1:x; 
 	x = x + 1;
 	activeEngine = allEngines[x];
-	//document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
-	document.getElementById('name').textContent = activeEngine.name;
-	document.getElementById('logo').style.color = activeEngine.color;
-	document.getElementById('logo').className = activeEngine.logo;
+	document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name + " ...";
+	document.getElementById('search-icon').className = activeEngine.logo;
 	//document.getElementById('search-icon').style.borderColor = activeEngine.color;
 	document.getElementById('searchInput').focus();
 }
 
 function toggleClearButton() {
 	if (searchInput.value.trim() !== "") {
-		clearButton.style.visibility = "visible"; // Show if input has text
+		clearButton.style.display = "flex"; // Show if input has text
 	} else {
-		clearButton.style.visibility = "hidden"; // Hide if input is empty
+		clearButton.style.display = "none"; // Hide if input is empty
 	}
 }
 
@@ -48,6 +46,8 @@ function clearInput() {
 toggleEngine();
 document.getElementById("searchInput").addEventListener("keydown", event =>
 	{ if (event.key == "Enter") search(); // keycode 13
-		else if (event.altKey && event.key == "Tab") toggleEngine(); // keycode 9
-		else if (event.altKey && event.key == "c") clearInput();
+		else if (event.key == "Tab") {
+			event.preventDefault(); // <--- This stops the focus change
+			toggleEngine(); // keycode 9
+		} else if (event.altKey && event.key == "c") clearInput();
 	});
