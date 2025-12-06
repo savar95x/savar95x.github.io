@@ -378,8 +378,8 @@ footer, footer a {
 	font-size: clamp(1.125rem, 4vw, 1.25rem); 
 	font-weight: 800;
 }
-.nav-links, footer a {
-  font-size: clamp(0.8rem, calc(8px + 1vw), 0.9rem);
+.nav-links, footer a, .footer-links, .copyright {
+  font-size: clamp(0.8rem, calc(8px + 1vw), 0.9rem) !important;
 }
 
 footer {
