@@ -341,9 +341,8 @@ footer, footer a {
 .nav-links, .footer-links {
 	margin-left: auto;
   display: flex;
-  gap: 1.5rem;
+  gap: 30px;
   align-items: center;
-  margin-top: 1px;
 }
 
 .nav-links>a {
@@ -389,7 +388,7 @@ footer {
 
 footer a {
 	font-size: var(--font-size-default);
-	margin: auto 0.5rem;
+	margin: auto 0;
 }
 
 /* fixed header */
