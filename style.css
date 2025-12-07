@@ -15,9 +15,12 @@ li::marker {
 	--clr-accent-bg: hsl(213, 30%, 20%);
 	--clr-accent-bg2: hsl(213, 30%, 15%);
 	--clr-accent-bg3: hsl(213, 30%, 5%);
+  --clr-accent-bg1: color-mix(in srgb, var(--clr-accent) 25%, var(--clr-accent-bg) 75%);
 	/*--clr-accent-bg2: oklch(0.25 0.0357 253.83);*/
 	--clr-accent-alt: hsl(213, 30%, 70%);
 	--clr-accent-alt2: oklch(0.9 0.1 253.83);
+
+	--clr-accent2-bg: #302B0F;
 
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-gray: hsl(0, 0%, 50%);
@@ -88,9 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .highlight {
-  background-image: linear-gradient(120deg, rgba(59, 130, 246, 0.25) 0%, rgba(59, 130, 246, 0.15) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background: var(--clr-accent2-bg);
   padding: 2px 4px;
   margin: 0 -2px;
   border-radius: 3px;
@@ -296,26 +297,15 @@ li a, p a {
   position: relative;
   cursor: pointer;
 
-  background-image:
-    linear-gradient(to top, var(--clr-accent), var(--clr-accent)),
-    radial-gradient(circle, var(--clr-gray) 1px, transparent 1px);
-  background-size: 100% 0%, 4px 3px;
-  background-position: 0 100%, 0 100%;
-  background-repeat: no-repeat, repeat-x;
-
-  transition: background-size 0.3s cubic-bezier(0.2, 1, 0.3, 1), color 0.3s ease;
-
-  padding: 1px 2px;
-  margin: 0 -2px;
-
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  text-decoration: none;
+  border-bottom: 2px solid var(--clr-bg5); 
+  padding-bottom: 0px;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 li a:hover, p a:hover {
-  background-size: 100% 100%, 6px 4px;
-  color: var(--clr-bg);
-  border-radius: 2px;
+  color: var(--clr-accent);
+  border-bottom-color: var(--clr-accent);
 }
 
 
@@ -374,8 +364,10 @@ footer, footer a {
 }
 .home-link a {
 	margin-right: auto;
-	font-size: clamp(1.125rem, 4vw, 1.25rem); 
-	font-weight: 800;
+	font-size: clamp(1.175rem, 4vw, 1.325rem); 
+	font-weight: 600;
+	font-family: "Playfair Display";
+	font-style: italic;
 }
 .nav-links, footer a, .footer-links, .copyright {
   font-size: clamp(0.8rem, calc(8px + 1vw), 0.9rem) !important;
@@ -431,7 +423,7 @@ header {
 #cards-article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Space between items */
+  gap: 30px;
 }
 
 .card-article {
@@ -604,7 +596,6 @@ blockquote .quote {
   font-weight: 500;
 }
 blockquote .by {
-
 }
 
 /*media query to change header*/
