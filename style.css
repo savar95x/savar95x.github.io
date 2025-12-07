@@ -21,12 +21,13 @@ li::marker {
 	--clr-accent-alt2: oklch(0.9 0.1 253.83);
 
 	--clr-accent2-bg: #302B0F;
+	--clr-accent2: #F3D948;
 
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-gray: hsl(0, 0%, 50%);
 
 	--clr-fg: hsl(0,0%,90%);
-	--clr-fg1: hsl(0,0%,85%);
+	--clr-fg1: hsl(0,0%,80%);
 	--clr-fg2: hsl(0,0%,70%);
 	--clr-fg3: hsl(0,0%,60%);
 
@@ -94,12 +95,9 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--clr-accent2-bg);
   padding: 2px 4px;
   margin: 0 -2px;
-  border-radius: 3px;
+  border-radius: 2px;
   color: var(--clr-fg);
   font-weight: 500;
-
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
 }
 .highlight1 {
   color: var(--clr-accent);
@@ -492,6 +490,13 @@ header {
   color: var(--clr-fg3);
   margin-left: auto;
   font-size: 0.9rem;
+}
+.card .date {
+  color: var(--clr-gray);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+	margin: 0.5rem 0;
 }
 
 .title-date {
