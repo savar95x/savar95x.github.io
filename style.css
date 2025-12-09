@@ -24,12 +24,12 @@ li::marker {
 	--clr-accent2: #F3D948;
 
 	--clr-white: hsl(0, 0%, 100%);
-	--clr-gray: hsl(0, 0%, 50%);
+	--clr-gray: hsl(0, 0%, 40%);
 
 	--clr-fg: hsl(0,0%,90%);
-	--clr-fg1: hsl(0,0%,80%);
-	--clr-fg2: hsl(0,0%,70%);
-	--clr-fg3: hsl(0,0%,60%);
+	--clr-fg1: hsl(0,0%,75%);
+	--clr-fg2: hsl(0,0%,65%);
+	--clr-fg3: hsl(0,0%,55%);
 
 	--clr-bg: hsl(0,0%,0%);
 	--clr-bg2: hsl(0,0%,5%);
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 .highlight2, .highlight3 {
-  color: var(--clr-white);
+  color: var(--clr-fg);
 	font-weight: 500;
 }
 
@@ -177,7 +177,7 @@ img {
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.small-caps-text { text-transform: uppercase; color: var(--clr-gray); font-size: 0.85rem; font-weight: 600; }
+.small-caps-text { text-transform: uppercase; color: var(--clr-gray); font-size: 0.85rem; font-weight: 550; }
 
 .big-text { margin: 2rem 0rem; color: var(--clr-fg); display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500; }
 .big-text .larrow, .big-text .rarrow { transition: transform 0.3s ease; }
@@ -421,7 +421,7 @@ header {
 #cards-article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .card-article {
@@ -473,13 +473,14 @@ header {
   border-radius: 10px;
   color: var(--clr-fg);
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   background: var(--clr-bg);
   padding: 0rem;
 }
 .card:hover {
-  border-color: var(--clr-accent);
   color: var(--clr-accent);
+  background: var(--clr-bg2);
+  border-color: var(--clr-bg2);
 }
 .heading {
   font-weight: 600;
@@ -509,7 +510,7 @@ header {
   font-weight: 600 !important;
 }
 .card-article>.title-date {
-  padding: 1.5rem 1.25rem;
+  padding: 1.75rem;
   gap: 10px;
   margin: 0;
 }
@@ -523,7 +524,7 @@ header {
   color: var(--clr-gray);
 }
 .card>.title-date {
-	margin: 1rem 0 1rem 1rem;
+  padding: 1.75rem;
   width: calc(100% - 2rem);
 }
 .title-date>span {
@@ -537,7 +538,7 @@ header {
   color: var(--clr-fg2);
 }
 .tag {
-  border: 1px solid var(--clr-bg5);
+  border: 1px solid var(--clr-bg4);
   background: var(--clr-bg3);
   border-radius: 3px;
   padding: 0.125rem 0.375rem;
@@ -576,7 +577,6 @@ header {
   
   /* Hiding Strategy */
   opacity: 0; 
-  transform: translate(-10px, 10px); /* Start slightly offset for animation */
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* Smooth easing */
 }
 
@@ -628,5 +628,6 @@ header {
 @media screen and (max-width: 600px) {
   #cards-article {
     grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
   }
 }
