@@ -31,13 +31,13 @@ li::marker {
 	--clr-fg2: hsl(0,0%,65%);
 	--clr-fg3: hsl(0,0%,55%);
 
-	--clr-bg: hsl(0,0%,0%);
-	--clr-bg2: hsl(0,0%,5%);
+	--clr-bg: hsl(0,0%,2%);
+	--clr-bg2: hsl(0,0%,6%);
 	--clr-bg3: hsl(0,0%,10%);
-	--clr-bg4: hsl(0,0%,15%);
-	--clr-bg5: hsl(0,0%,20%);
+	--clr-bg4: hsl(0,0%,14%);
+	--clr-bg5: hsl(0,0%,18%);
 
-	--clr-trans: rgba(16, 16, 16, 0.9);
+	--clr-trans: rgba(20, 20, 20, 0.9);
 
 	--height-cover-image: clamp(100px, 40vw, 300px);
 	--height-round-image: clamp(150px, 40vw, 300px);
@@ -55,9 +55,18 @@ li::marker {
 	--font-family-heading: "Playfair Display";
 
 	--clr-fg-alt: var(--clr-fg2);
-	--clr-bg-alt: var(--clr-bg2);
+	--clr-bg-alt: #0d0d0d;
+	--clr-bg-alt2: hsl(0,0%,6%);
 	--clr-bg-bright: var(--clr-bg5);
 	--clr-fg-dark: hsl(0,0%,50%);
+}
+.scrolled {
+	background: var(--clr-trans) !important;
+}
+.scrolled header {
+	padding: 1rem 4vw;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 ::selection {
@@ -78,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 * {
   font-variant-numeric: tabular-nums;
   -webkit-tap-highlight-color: transparent;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 #container > p:first-of-type::first-letter {
@@ -384,21 +394,21 @@ footer a {
 
 /* fixed header */
 #header-wrapper {
+	background: var(--clr-bg);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 	position: fixed;
 	top: 0px;
 	margin: auto;
 	width: 100%;
 	z-index: 1000;
-	background: var(--clr-trans);
 	backdrop-filter: blur(10px);
 }
 header {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 	max-width: 900px;
 	margin: auto;
-	padding: 0.65rem 1.5vw;
-	padding: 1rem 4vw;
+	padding: 1.75rem 4vw;
 	background: none;
-	border: 0px solid var(--clr-bg-bright);
   border-radius: 3px;
 }
 
@@ -431,24 +441,17 @@ header {
   border-radius: 10px;
   color: var(--clr-fg);
   text-decoration: none;
-  background: var(--clr-bg);
-  border: 1px solid var(--clr-bg4);
-  /*
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
-  */
+  background: var(--clr-bg-alt2);
+  border: 1px solid var(--clr-bg3);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
 }
 .card-article:hover {
-  background: var(--clr-bg-alt);
   color: var(--clr-accent);
-  border: 1px solid var(--clr-bg);
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--clr-bg5);
+  background: var(--clr-bg2);
 }
-.card-article .description {
-  color: var(--clr-fg3);
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-.card .description {
+.card-article .description, .card .description {
   color: var(--clr-fg3);
   font-size: 0.9rem;
 }
@@ -466,22 +469,23 @@ header {
 #cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px; /* Space between items */
+  gap: 30px;
 }
 
 .card {
-  border: 1px solid var(--clr-bg4);
+  border: 1px solid var(--clr-bg3);
   border-radius: 10px;
   color: var(--clr-fg);
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  background: var(--clr-bg);
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  background: var(--clr-bg2);
   padding: 0rem;
 }
 .card:hover {
   color: var(--clr-accent);
   background: var(--clr-bg2);
-  border-color: var(--clr-bg2);
+  border-color: var(--clr-accent-bg);
 }
 .heading {
   font-weight: 600;
@@ -513,7 +517,6 @@ header {
 .card-article>.title-date {
   padding: 1.75rem;
   gap: 10px;
-  margin: 0;
 }
 .card-article .time, .card-article .date {
   font-weight: 400;
@@ -526,7 +529,6 @@ header {
 }
 .card>.title-date {
   padding: 1.75rem;
-  width: calc(100% - 2rem);
 }
 .title-date>span {
   display: flex;
@@ -547,7 +549,7 @@ header {
 }
 
 .card img, .card-article img, img {
-  filter: grayscale(50%);
+  filter: grayscale(75%);
   transition: filter 0.3s ease;
 }
 .card:hover img, .card-article:hover img, img:hover {
@@ -602,23 +604,6 @@ blockquote .quote {
   font-weight: 500;
 }
 blockquote .by {
-}
-
-/*media query to change header*/
-@media screen and (max-width: 1000px) {
-#header-wrapper {
-	top: 0px; width: 100%;
-	background: var(--clr-trans);
-	backdrop-filter: blur(10px);
-}
-header {
-	max-width: 100%;
-	background: none;
-	padding: 0.85rem 4vw;
-	border: 0px;
-	backdrop-filter: blur(0px);
-}
-.cover-image img {  width: 100% !important; left: 0% !important; }
 }
 
 @media screen and (max-width: 800px) {
