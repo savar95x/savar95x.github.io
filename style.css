@@ -133,7 +133,7 @@ img, svg, video {
 	border-radius: 4px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	position: relative;
-	height: clamp(150px, 10vw + 200px, 250px);
+  max-height: 400px;
 	overflow: hidden;
 }
 iframe {
@@ -334,7 +334,7 @@ footer {
   margin: auto;
 }
 footer, footer a {
-	color: var(--clr-fg3);
+	color: var(--clr-gray);
 }
 
 .nav-links, .footer-links {
