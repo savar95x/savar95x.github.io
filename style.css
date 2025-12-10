@@ -77,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 * {
   font-variant-numeric: tabular-nums;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #container > p:first-of-type::first-letter {
