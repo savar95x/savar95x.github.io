@@ -377,6 +377,8 @@ footer, footer a {
 	font-weight: 600;
 	font-family: "Playfair Display";
 	font-style: italic;
+  position: relative;
+  bottom: 2px;
 }
 .nav-links, footer a, .footer-links, .copyright {
   font-size: clamp(0.8rem, calc(8px + 1vw), 0.9rem) !important;
