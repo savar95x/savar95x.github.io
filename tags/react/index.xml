@@ -6,13 +6,20 @@
     <description>Recent content in React on savar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Dec 2025 10:41:05 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 10:34:25 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Breathe</title>
+      <link>http://localhost:1313/work/breathe/</link>
+      <pubDate>Fri, 12 Dec 2025 10:34:25 +0530</pubDate>
+      <guid>http://localhost:1313/work/breathe/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Pss Website</title>
-      <link>http://localhost:1313/tools/pss-website/</link>
+      <link>http://localhost:1313/work/pss-website/</link>
       <pubDate>Sun, 07 Dec 2025 10:41:05 +0530</pubDate>
-      <guid>http://localhost:1313/tools/pss-website/</guid>
+      <guid>http://localhost:1313/work/pss-website/</guid>
       <description></description>
     </item>
   </channel>

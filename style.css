@@ -191,7 +191,7 @@ img {
 .small-caps-text { text-transform: uppercase; color: var(--clr-gray); font-size: 0.85rem; font-weight: 550; }
 
 .big-text { margin: 2rem 0rem; color: var(--clr-fg); display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500; }
-.big-text .larrow, .big-text .rarrow { transition: transform 0.3s ease; }
+.big-text .larrow, .big-text .rarrow { transition: all 0.2s ease; }
 .big-text:hover .larrow { transform: translateX(-5px); }
 .big-text:hover .rarrow { transform: translateX(5px); }
 
@@ -309,7 +309,7 @@ li a, p a {
   text-decoration: none;
   border-bottom: 2px solid var(--clr-bg5); 
   padding-bottom: 0px;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 li a:hover, p a:hover {
@@ -457,10 +457,19 @@ header {
   color: var(--clr-fg3);
   font-size: 0.9rem;
 }
+.card .description {
+  margin-bottom: 1rem;
+}
 .heading-article {
   font-family: "Playfair Display";
   font-weight: 500;
   font-size: 1.125rem;
+}
+.heading {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0rem 0 0 0rem;
+  text-transform: lowercase;
 }
 
 #cards img {
@@ -471,7 +480,7 @@ header {
 #cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .card {
@@ -482,17 +491,10 @@ header {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
   background: var(--clr-bg2);
-  padding: 0rem;
 }
 .card:hover {
   color: var(--clr-accent);
-  background: var(--clr-bg2);
-  border-color: var(--clr-accent-bg);
-}
-.heading {
-  font-weight: 600;
-  font-size: 1rem;
-  margin: 0rem 0 0 0rem;
+  border-color: var(--clr-bg5);
 }
 .date {
   color: var(--clr-fg3);
@@ -504,16 +506,17 @@ header {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.8rem;
-	margin: 0.5rem 0;
+	margin: 0 0 1rem 0;
 }
 
 .title-date {
 	position: relative;
 	margin: auto 0;
+  gap: 5px;
 	display: flex; flex-direction: column;
 }
 .read-article {
-  color: var(--clr-fg) !important;
+  color: var(--clr-fg1) !important;
   font-weight: 600 !important;
 }
 .card-article>.title-date {
@@ -550,7 +553,7 @@ header {
   margin-right: 0.5rem;
 }
 
-.card img, .card-article img, img {
+.card-article img, img {
   filter: grayscale(75%);
   transition: filter 0.3s ease;
 }
@@ -567,27 +570,25 @@ header {
 /* 2. The Hidden Icon */
 .arrow-icon {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  
-  /* Circle Styling */
-  width: 40px;
-  height: 40px;
-  background-color: var(--clr-bg);
-  color: var(--clr-accent);
-  border-radius: 50%;
+  top: 1.75rem;
+  right: 1.75rem;
+  color: var(--clr-gray);
+
   display: flex;
   align-items: center;
   justify-content: center;
   
-  /* Hiding Strategy */
-  opacity: 0; 
+  opacity: 0.5; 
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* Smooth easing */
+}
+.arrow-icon span {
+  font-size: 18px;
 }
 
 /* 3. The Trigger */
 /* When link-card is hovered, change arrow-icon styles */
 .card:hover .arrow-icon {
+  color: var(--clr-accent);
   opacity: 1;
   transform: translate(0, 0); /* Move to final position */
 }
