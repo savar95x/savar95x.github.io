@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on savar</title>
-    <link>http://localhost:1313/tags/react/</link>
+    <link>https://savar.is-a.dev/tags/react/</link>
     <description>Recent content in React on savar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2025 10:34:25 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://savar.is-a.dev/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Breathe</title>
-      <link>http://localhost:1313/work/breathe/</link>
+      <link>https://savar.is-a.dev/work/breathe/</link>
       <pubDate>Fri, 12 Dec 2025 10:34:25 +0530</pubDate>
-      <guid>http://localhost:1313/work/breathe/</guid>
+      <guid>https://savar.is-a.dev/work/breathe/</guid>
       <description></description>
     </item>
     <item>
       <title>Pss Website</title>
-      <link>http://localhost:1313/work/pss-website/</link>
+      <link>https://savar.is-a.dev/work/pss-website/</link>
       <pubDate>Sun, 07 Dec 2025 10:41:05 +0530</pubDate>
-      <guid>http://localhost:1313/work/pss-website/</guid>
+      <guid>https://savar.is-a.dev/work/pss-website/</guid>
       <description></description>
     </item>
   </channel>
