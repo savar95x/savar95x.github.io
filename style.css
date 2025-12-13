@@ -458,8 +458,9 @@ header {
   font-size: 0.9rem;
 }
 .card .description {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
+
 .heading-article {
   font-family: "Playfair Display";
   font-weight: 500;
@@ -491,6 +492,10 @@ header {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
   background: var(--clr-bg2);
+  position: relative; /* Essential: creates the boundary for the absolute icon */
+  display: flex;             /* Changed from block */
+  flex-direction: column;    /* Stack children vertically */
+  height: 100%;             /* Ensure it fills the grid cell */
 }
 .card:hover {
   color: var(--clr-accent);
@@ -506,10 +511,11 @@ header {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.8rem;
-	margin: 0 0 1rem 0;
+	margin: 0 0 0.5rem 0;
 }
 
 .title-date {
+  flex-grow: 1;
 	position: relative;
 	margin: auto 0;
   gap: 5px;
@@ -520,7 +526,7 @@ header {
   font-weight: 600 !important;
 }
 .card-article>.title-date {
-  padding: 1.75rem;
+  padding: 2rem 1.75rem;
   gap: 10px;
 }
 .card-article .time, .card-article .date {
@@ -533,15 +539,14 @@ header {
   color: var(--clr-gray);
 }
 .card>.title-date {
-  padding: 1.75rem;
+  padding: 2rem 1.75rem;
 }
 .title-date>span {
   display: flex;
 }
 
 .tags {
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
+  margin-top: auto;
   font-size: 0.8rem;
   color: var(--clr-fg2);
 }
@@ -559,12 +564,6 @@ header {
 }
 .card:hover img, .card-article:hover img, img:hover {
   filter: grayscale(0%);
-}
-
-/* 1. The Container (Card) */
-.card {
-  position: relative; /* Essential: creates the boundary for the absolute icon */
-  display: block;
 }
 
 /* 2. The Hidden Icon */
