@@ -1,14 +1,18 @@
-/* 1. Hide the page content initially */
-/*
+/* 1. Paint the canvas immediately so it's never white */
 html {
-    visibility: hidden;
-    opacity: 0;
+    background-color: var(--clr-bg); /* YOUR DARK HEX CODE HERE */
+    /* Do NOT set opacity here */
 }
 
-/* 2. The state when everything is ready */
-/*
-html.wf-active {
-    visibility: visible;
+/* 2. Hide the content, not the background */
+body {
+    opacity: 0;
+    visibility: hidden; /* prevents clicking hidden links */
+    transition: opacity 0.3s ease-in;
+}
+
+/* 3. The class JS will add to reveal content */
+body.wf-active {
     opacity: 1;
-    transition: opacity 0.3s ease-in; /* Smooth fade-in */
+    visibility: visible;
 }
