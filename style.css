@@ -87,7 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 * {
   font-variant-numeric: tabular-nums;
   -webkit-tap-highlight-color: transparent;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 #container > p:first-of-type::first-letter {
@@ -95,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   /*
   float: left;
   */
-  padding-right: 4px;
+  padding-right: 2px;
   padding-top: 4px;
   line-height: 0.8;
   font-size: 2.5rem;
@@ -126,21 +125,9 @@ html {
 img, svg, video {
 	max-width: 100%;
 	display: block;
+  transition: all 0.3s ease;
 }
 
-.video {
-	object-fit: cover;
-	border-radius: 4px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	position: relative;
-  max-height: 400px;
-	overflow: hidden;
-}
-iframe {
-	width: 100%;
-	height: 100%;
-	border: 0;
-}
 /*images*/
 figure { margin: 2.5rem 0; }
 figure img {
@@ -195,17 +182,22 @@ img {
 .big-text:hover .larrow { transform: translateX(-5px); }
 .big-text:hover .rarrow { transform: translateX(5px); }
 
-strong { font-weight: 550; }
+strong { font-weight: 650; }
 h1 { font-size: var(--font-size-h1) !important; }
 h2 { font-size: var(--font-size-h2); }
 h3 { font-size: var(--font-size-h3); }
 h3 { font-size: var(--font-size-h4); }
-/*
-h1, h2, h3, h4, h5 {font-weight: 550;}
-*/
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: var(--font-family-heading);
   margin: 1.5rem 0;
+}
+h3, h4, h5, h6 {
+  font-family: var(--font-family);
+  color: var(--clr-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 3rem;
 }
 
 .share {
@@ -245,7 +237,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: var(--clr-bg);
-	color: var(--clr-fg);
+	color: var(--clr-fg1);
 }
 #container, footer, .footer-text {
 	/* font-family: system-ui;*/
@@ -595,15 +587,15 @@ header {
 blockquote {
   border-left: 3px solid var(--clr-accent);
   padding: 1px 0 1px 1.125rem;
-  margin: 2rem 1rem;
-  padding: 1.5rem 1rem;
-  background: var(--clr-accent-bg3);
+  margin: 2rem 0rem;
+  padding: 1rem 2rem;
 }
 blockquote .quote {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-style: italic;
   color: var(--clr-fg);
   font-weight: 500;
+  font-family: var(--font-family-heading);
 }
 blockquote .by {
 }

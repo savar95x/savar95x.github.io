@@ -1,0 +1,337 @@
+.tag:first-child {
+  color: var(--clr-accent);
+  background: var(--clr-accent-bg2);
+  border-color: var(--clr-accent-bg);
+}
+.tags {
+  margin-top: 1rem;
+}
+.card-content .tags {
+  margin-top: 0rem;
+}
+.tag {
+}
+.read-next-articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.read-next-article {
+  background: var(--clr-bg2);
+  border: 1px solid var(--clr-bg4);
+  padding: 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s cubic-bezier(0.2, 1, 0.3, 1), color 0.3s ease;
+}
+.read-next-article:hover {
+  background: var(--clr-bg3);
+}
+.read-next-article:hover .heading-article {
+  color: var(--clr-accent);
+}
+.big-text:hover {
+  transition: color 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+  color: var(--clr-accent) !important;
+}
+
+.subscribe {
+  background: var(--clr-bg3);
+  display: flex;
+  gap: 20px;
+  border: 1px solid var(--clr-bg4);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: background 0.3s cubic-bezier(0.2, 1, 0.3, 1), color 0.3s ease;
+}
+.subscribe .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subscribe .heading-article {
+  font-size: 1.25rem;
+  font-family: var(--font-family-heading);
+}
+.subscribe .text {
+}
+.subscribe .button {
+  background: var(--clr-accent);
+  color: var(--clr-bg);
+  border-radius: 4px;
+  margin: auto 0 auto auto;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: filter 0.3s cubic-bezier(0.2, 1, 0.3, 1), color 0.3s ease;
+}
+.subscribe .button:hover {
+  filter: brightness(110%);
+}
+
+.share {
+  cursor: pointer;
+}
+
+.copy-wrapper {
+  margin: 0 0rem 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #bbb;
+  width: 36px;
+  height: 36px;
+  margin: -0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
+  outline: none;
+}
+
+.copy-btn:hover {
+  background: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+/* SVG Icon Animations */
+.copy-btn svg {
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncy spring effect */
+}
+
+.icon-check {
+  opacity: 0;
+  transform: scale(0.5) rotate(-45deg);
+  color: var(--clr-accent);
+}
+
+/* ACTIVE STATE (When copied) */
+.copy-wrapper.active .copy-btn {
+  border-color: var(--clr-accent);
+  background: var(--clr-accent-bg);
+}
+
+.copy-wrapper.active .icon-link {
+  opacity: 0;
+  transform: scale(0.5) rotate(45deg);
+}
+
+.copy-wrapper.active .icon-check {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+}
+
+/* The "Magazine Margin Note" Text */
+.copy-feedback {
+  position: absolute;
+  bottom: 1px;
+  right: 40px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--clr-accent);
+  font-size: 0.8rem;
+  opacity: 0;
+  transform: translateX(10px); /* Slides in from right */
+  transition: all 0.4s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.copy-wrapper.active .copy-feedback {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+  .read-next-articles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  table span {
+    display: none;
+  }
+}
+
+.note-box {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid var(--clr-accent-bg);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  background: var(--clr-accent-bg3);
+}
+.note-box .ph {
+  margin: auto 0;
+  color: var(--clr-accent) !important;
+  top: 0 !important;
+}
+.card-content .tag:first-child {
+  color: var(--clr-fg2);
+  border: 1px solid var(--clr-bg4);
+  background: var(--clr-bg3);
+}
+.card-content video {
+  width: 300px !important;
+}
+#cards-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  border: 1px solid var(--clr-bg3);
+  background: var(--clr-bg2);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+img {
+  transition: all 0.3s ease !important;
+}
+.card-content:hover {
+  border-color: var(--clr-bg4);
+}
+.card-content:hover img  {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  gap: 10px;
+}
+.desc-content {
+  color: var(--clr-fg3);
+  font-size: 0.9rem;
+}
+.card-text .heading-content {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: var(--font-family-heading);
+  color: var(--clr-fg);
+}
+
+table span {
+  margin-right: 8px;
+  font-size: 1rem !important;
+  top: 3px !important;
+}
+table {
+  width: 100%;
+  font-size: 0.9rem;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th {
+  border: 1px solid var(--clr-bg4);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--clr-gray);
+  padding: 12px 0;
+}
+
+table td {
+  border: 1px solid var(--clr-bg3);
+  padding: 0.75rem;
+}
+
+.youtube-lite {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    /* Aspect Ratio Magic */
+    height: 150px;
+    aspect-ratio: 16 / 9; 
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px 4px 0 0;
+}
+
+/* Fallback for older browsers without aspect-ratio support */
+@supports not (aspect-ratio: 16 / 9) {
+    .youtube-lite {
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+}
+
+.youtube-lite img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.youtube-lite:hover img {
+    opacity: 1;
+}
+
+/* The Play Button */
+.youtube-lite .play-btn {
+    /* Positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Glass Style */
+    width: 55px;
+    height: 55px;
+    background: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50%;
+    
+    /* Flex to center the triangle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.youtube-lite .play-btn svg {
+    width: 30px;
+    height: 30px;
+}
+
+.youtube-lite .play-btn .icon {
+    fill: var(--clr-fg);
+}
+
+/* Hide the circle outline from the SVG since the div handles the shape */
+.youtube-lite .play-btn .bg {
+    display: none; 
+}
+
+.youtube-lite:hover .play-btn {
+}
+
+/* The iFrame (once loaded) */
+.youtube-lite iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
