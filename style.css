@@ -9,6 +9,17 @@ li::marker {
   color: var(--clr-accent); /* Reddish color */
   font-weight: bold; /* You can also change font properties */
 }
+/* 1. The container state when the page is normal */
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+/* 2. The container state when Swup is leaving (clicked a link) */
+html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateY(10px); /* Optional: slide down effect */
+}
 
 :root {
 	--clr-accent: hsl(213, 94%, 68%);

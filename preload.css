@@ -7,7 +7,9 @@ html {
 /* 2. Hide the content, not the background */
 body {
     opacity: 0;
-    visibility: hidden; /* prevents clicking hidden links */
+    /*
+    visibility: hidden;
+    */
     transition: opacity 0.3s ease-in;
 }
 
