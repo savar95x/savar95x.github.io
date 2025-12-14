@@ -185,7 +185,7 @@
 #cards-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 .card-content {
   display: flex;
@@ -264,6 +264,9 @@ table td {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 4px 4px 0 0;
+    /*
+    opacity: 0.75;
+    */
 }
 
 /* Fallback for older browsers without aspect-ratio support */
@@ -334,4 +337,17 @@ table td {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  #cards-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #cards-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
 }

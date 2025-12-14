@@ -1,10 +1,12 @@
 /* 1. Hide the page content initially */
+/*
 html {
     visibility: hidden;
     opacity: 0;
 }
 
 /* 2. The state when everything is ready */
+/*
 html.wf-active {
     visibility: visible;
     opacity: 1;
