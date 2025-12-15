@@ -10,7 +10,7 @@ body {
     /*
     visibility: hidden;
     */
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.2s ease-in;
 }
 
 /* 3. The class JS will add to reveal content */

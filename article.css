@@ -97,9 +97,8 @@
 }
 
 .copy-btn:hover {
-  background: #333;
-  color: #fff;
-  border-color: #555;
+  background: var(--clr-bg3);
+  border-color: var(--clr-bg4);
 }
 
 /* SVG Icon Animations */
@@ -116,8 +115,8 @@
 
 /* ACTIVE STATE (When copied) */
 .copy-wrapper.active .copy-btn {
-  border-color: var(--clr-accent);
-  background: var(--clr-accent-bg);
+  border-color: var(--clr-accent-bg);
+  background: var(--clr-accent-bg2);
 }
 
 .copy-wrapper.active .icon-link {
@@ -155,7 +154,7 @@
   .read-next-articles {
     grid-template-columns: repeat(1, 1fr);
   }
-  table span {
+  table span, table td::before {
     display: none;
   }
 }
@@ -164,16 +163,25 @@
   display: flex;
   gap: 1rem;
   border: 1px solid var(--clr-accent-bg);
-  padding: 1rem;
   margin: 1rem 0;
   border-radius: 5px;
   background: var(--clr-accent-bg3);
+  padding: 1rem;
+  align-items: center;
+}
+.note-box::before {
+  content: "\e2ce";
+  font-family: "Phosphor";
+  margin: auto 0;
+  color: var(--clr-accent);
+	font-size: 1.25rem; 
 }
 .note-box .ph {
   margin: auto 0;
   color: var(--clr-accent) !important;
   top: 0 !important;
 }
+
 .card-content .tag:first-child {
   color: var(--clr-fg2);
   border: 1px solid var(--clr-bg4);
@@ -223,12 +231,8 @@ img {
   color: var(--clr-fg);
 }
 
-table span {
-  margin-right: 8px;
-  font-size: 1rem !important;
-  top: 3px !important;
-}
 table {
+  table-layout: fixed;
   width: 100%;
   font-size: 0.9rem;
   border-collapse: collapse;
@@ -243,6 +247,16 @@ table th {
   letter-spacing: 1px;
   color: var(--clr-gray);
   padding: 12px 0;
+}
+table td:not(:empty)::before {
+  content: "\e0b6"; 
+  font-family: "Phosphor-Fill", sans-serif; 
+  text-decoration: inherit;
+  margin-right: 8px;
+  font-size: 1rem !important;
+  top: 2px !important;
+  position: relative;
+  color: var(--clr-gray);
 }
 
 table td {
