@@ -144,7 +144,6 @@ figure { margin: 2.5rem 0; }
 figure img {
   border: 1px solid var(--clr-bg4);
   border-radius: 10px;
-  max-height: 400px;
 	width: 100%;
 }
 figcaption {
