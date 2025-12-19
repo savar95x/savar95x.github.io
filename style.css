@@ -607,7 +607,8 @@ blockquote .quote {
   font-weight: 500;
   font-family: var(--font-family-heading);
 }
-blockquote .by {
+blockquote .by::before {
+  content: "\2014  ";
 }
 
 @media screen and (max-width: 800px) {
