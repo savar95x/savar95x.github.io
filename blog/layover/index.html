@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>For My Love</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jura:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        love: '#dfa3a3', // Your custom pink
+                        love_soft: '#f5f5f5', // Changed to neutral gray as requested
+                        dark_bg: '#0a0a0a',
+                        card_bg: '#121212',
+                        wa_dark: '#111',
+                        wa_bubble_in: '#222',
+                        wa_bubble_out: '#dfa3a3' 
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        mono: ['"Jura"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+* {
+  backface-visibility: hidden;
+}
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Photo Frame Style */
+        .photo-frame {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            background: #1a1a1a;
+            box-shadow: 0 10px 30px -5px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+            border: 4px solid #f5f5f5;
+        }
+        .photo-frame:hover {
+            transform: scale(1.02) rotate(1deg);
+            z-index: 10;
+        }
+        
+        /* The "Tape" look for photos */
+        .tape {
+            background-color: rgba(223, 163, 163, 0.4); /* Pinkish tape */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            backdrop-filter: blur(5px);
+            position: absolute;
+            height: 30px;
+            width: 80px;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            z-index: 10;
+        }
+
+        .text-highlight {
+            color: #dfa3a3;
+            font-style: italic;
+        }
+        
+        /* WhatsApp Styles */
+        .wa-bg {
+            background-color: #111;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 15h10v10H15zM65 65h10v10H65zM35 85h10v10H35zM85 35h10v10H85z' fill='%23131c21' fill-opacity='0.4'/%3E%3C/svg%3E");
+        }
+
+        .chat-bubble-her {
+            background-color: #222;
+            color: #e9edef;
+            border-radius: 0 12px 12px 12px;
+            position: relative;
+            box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+        }
+        .chat-bubble-her::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -8px;
+            width: 0;
+            height: 0;
+            border-top: 0px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #222; 
+        }
+        
+        .chat-bubble-me {
+            background-color: #dfa3a3; /* Love Primary */
+            color: #2a0a0a;
+            border-radius: 12px 0 12px 12px;
+            position: relative;
+            box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+        }
+        .chat-bubble-me::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -8px;
+            width: 0;
+            height: 0;
+            border-top: 0px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #dfa3a3;
+        }
+
+        .wa-time {
+            font-size: 0.60rem;
+            margin-top: 2px;
+            margin-left: 6px;
+            float: right;
+            opacity: 0.7;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        /* Real Ticket Styles */
+        .ticket-container {
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+        }
+        .ticket-main {
+            background: #f5f5f5; /* Using neutral bg */
+            mask: radial-gradient(circle at right, transparent 10px, black 10px);
+            -webkit-mask: radial-gradient(circle at right, transparent 10px, black 10px);
+            mask-size: 100% 100%;
+            mask-position: 0 0;
+            mask-repeat: no-repeat;
+        }
+        .ticket-stub {
+            background: #f5f5f5; /* Using neutral bg */
+            mask: radial-gradient(circle at left, transparent 10px, black 10px);
+            -webkit-mask: radial-gradient(circle at left, transparent 10px, black 10px);
+            border-left: 2px dashed #ccc;
+        }
+        .barcode {
+            background-image: linear-gradient(#000 0%, #000 100%);
+            background-size: 2px 100%;
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-love selection:text-black">
+
+    <!-- The Container: Narrow & Personal (Like a Letter) -->
+    <main class="max-w-3xl mx-auto px-6 py-12 md:py-24 space-y-24">
+
+        <!-- 1. The Opening -->
+        <header class="text-center space-y-6">
+            <div class="inline-block p-4 rounded-full bg-white/5 mb-4 border border-white/10">
+                <i data-lucide="heart" class="w-6 h-6 text-love fill-love/20"></i>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-medium leading-tight text-white">
+                The Layover That<br> <span class="italic text-love">Never Ended</span>
+            </h1>
+            <p class="text-gray-500 text-xs tracking-[0.2em] uppercase mt-4">June 4, 2025 — Forever</p>
+        </header>
+
+        <!-- 2. The Letter Start -->
+        <article class="space-y-6 text-lg leading-relaxed text-gray-300 max-w-2xl mx-auto">
+            <p class="serif text-2xl text-white">Dear Jiya,</p>
+            <p>
+                I was looking through my phone the other day, realizing how crazy this story actually is. Most people meet at a bar, or a party, or through friends.
+            </p>
+            
+            <!-- Smaller Quote Section -->
+            <div class="py-6 border-l-2 border-love/30 pl-6 my-6">
+                <p class="serif text-xl md:text-2xl text-gray-200 leading-snug italic">
+                    "We found each other in a place where people usually <span class="text-love">lose things</span>, and met in a place where people usually <span class="text-love">leave</span>."
+                </p>
+            </div>
+
+            <p class="text-gray-500 text-base uppercase font-bold">
+                But here is the proof that we stayed.
+            </p>
+        </article>
+
+        <!-- 4. The Timeline (Trip Section) -->
+        <section class="space-y-16 relative py-8">
+            <!-- Center Line -->
+            <div class="absolute left-6 md:left-1/2 h-full w-px bg-white/10 -z-10 top-0"></div>
+            
+            <h2 class="text-3xl serif text-center bg-dark_bg py-4 z-20 relative max-w-xs mx-auto">Every Mile Worth It</h2>
+
+            <!-- Timeline Item 1: Airport (Image Left on Desktop, Text First on Mobile) -->
+            <div class="relative grid md:grid-cols-2 gap-8 items-center pl-16 md:pl-0">
+                <!-- Dot -->
+                <div class="absolute left-6 md:left-1/2 w-3 h-3 bg-love rounded-full -translate-x-1.5 shadow-[0_0_10px_rgba(223,163,163,0.5)]"></div>
+
+                <!-- Left Side (Image) -->
+                <div class="order-2 md:order-1 pr-0 md:pr-12">
+                    <div class="photo-frame aspect-[2/3] bg-gray-800 rotate-[-2deg] w-full">
+                        <img src="assets/chn1.jpg" alt="Airport Photo" class="w-full h-full object-cover opacity-80">
+                    </div>
+                </div>
+
+                <!-- Right Side (Text) -->
+                <div class="order-1 md:order-2 md:pl-12 text-left">
+                    <span class="text-love text-xs font-bold uppercase tracking-wider">June 28, 2025</span>
+                    <h3 class="text-xl font-medium text-white mt-1">The Prologue</h3>
+                    <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                        3-4 hours. A bucket of KFC. Not a candlelit dinner, but it was the start of everything. I couldn't ignore you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2: The First Stay (Text Left, Image Right) -->
+            <div class="relative grid md:grid-cols-2 gap-8 items-center pl-16 md:pl-0">
+                <!-- Dot -->
+                <div class="absolute left-6 md:left-1/2 w-3 h-3 bg-gray-700 rounded-full -translate-x-1.5 border border-gray-500"></div>
+
+                <!-- Left Side (Text) -->
+                <div class="md:text-right md:pr-12">
+                    <span class="text-love text-xs font-bold uppercase tracking-wider">August 2025</span>
+                    <h3 class="text-xl font-medium text-white mt-1">The First Real Stay</h3>
+                    <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                        I remember I was so eager, I barely let us get through the door. You still joke about how "enthusiastic" I was. Maybe not the smoothest first time, but the company was perfect.
+                    </p>
+                </div>
+
+                <!-- Right Side (Image) -->
+                <div class="pl-0 md:pl-12">
+                    <div class="photo-frame bg-gray-800 rotate-[1deg] w-full">
+                        <img src="assets/blr1.jpg" alt="Trip 2 Photo" class="w-full h-full object-cover opacity-80">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3: The Outskirts (Image Left on Desktop) -->
+            <div class="relative grid md:grid-cols-2 gap-8 items-center pl-16 md:pl-0">
+                <!-- Dot -->
+                <div class="absolute left-6 md:left-1/2 w-3 h-3 bg-gray-700 rounded-full -translate-x-1.5 border border-gray-500"></div>
+
+                <!-- Left Side (Image) -->
+                <div class="order-2 md:order-1 pr-0 md:pr-12">
+                     <div class="photo-frame bg-gray-800 rotate-[-1deg] w-full">
+                        <img src="assets/blr2.jpg" alt="Trip 3 Photo" class="w-full h-full object-cover opacity-80">
+                    </div>
+                </div>
+
+                <!-- Right Side (Text) -->
+                <div class="order-1 md:order-2 md:pl-12 text-left">
+                    <span class="text-love text-xs font-bold uppercase tracking-wider">October 2025</span>
+                    <h3 class="text-xl font-medium text-white mt-1">Locked In</h3>
+                    <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                        The outskirts of Bangalore. Just us. We cooked, we fought (a lot), and we made up. But mostly, I remember holding you when you cried. Taking care of you felt euphoric.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 4: Chennai (Text Left, Image Right) -->
+            <div class="relative grid md:grid-cols-2 gap-8 items-center pl-16 md:pl-0">
+                <!-- Dot -->
+                <div class="absolute left-6 md:left-1/2 w-3 h-3 bg-gray-700 rounded-full -translate-x-1.5 border border-gray-500"></div>
+
+                <!-- Left Side (Text) -->
+                <div class="md:text-right md:pr-12">
+                    <span class="text-love text-xs font-bold uppercase tracking-wider">Chennai</span>
+                    <h3 class="text-xl font-medium text-white mt-1">The Test</h3>
+                    <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                        Plans didn't work. We spent too much. We almost broke. But here is the thing: <span class="text-white">we survived it.</span> And that matters more than a perfect trip.
+                    </p>
+                </div>
+
+                <!-- Right Side (Image) -->
+                <div class="pl-0 md:pl-12">
+                     <div class="photo-frame aspect-video bg-gray-800 rotate-[2deg] w-full">
+                        <img src="https://placehold.co/600x400/1a1a1a/666666?text=Chennai+Photo" alt="Chennai Photo" class="w-full h-full object-cover opacity-80">
+                    </div>
+                </div>
+            </div>
+
+             <!-- Timeline Item 5: The Promise (Centered) -->
+             <div class="relative pl-16 md:pl-0 text-left md:text-center pt-0">
+                <!-- Dot -->
+                <div class="absolute left-6 md:left-1/2 w-4 h-4 bg-love rounded-full -translate-x-2 top-9 shadow-[0_0_15px_rgba(223,163,163,0.4)] z-10"></div>
+                
+                <!-- Line Blocker (Hides line after the dot) -->
+                <div class="absolute left-6 md:left-1/2 w-4 bg-dark_bg -translate-x-2 top-12 -bottom-10 z-0"></div>
+
+                <!-- Added relative and z-10 to bring content above the blocker -->
+                <div class="max-w-md mx-auto pt-[100px] relative z-10">
+                    <span class="text-love text-xs font-bold uppercase tracking-wider">Today</span>
+                    <h3 class="text-xl font-medium text-white mt-1">The Birthday</h3>
+                    <div class="bg-white/5 border border-love/20 p-4 rounded-lg mt-3 inline-block w-full text-left md:text-center">
+                        <p class="text-love text-sm font-medium">The Promise:</p>
+                        <p class="text-gray-300 text-sm">No fights. Just us. I'm going to make this perfect.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Ticket Section (Horizontal Boarding Pass) -->
+        <section class="py-12">
+            <h2 class="text-3xl serif text-center mb-10 text-white">Your Boarding Pass</h2>
+            
+            <!-- Ticket Container -->
+            <div class="ticket-container flex flex-col md:flex-row max-w-2xl mx-auto rounded-lg overflow-hidden">
+                
+                <!-- Main Ticket Part -->
+                <div class="ticket-main flex-grow bg-love_soft text-gray-800 p-6 md:p-8 relative">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-xs font-mono font-bold text-gray-400 uppercase tracking-widest">AIRLINE</p>
+                            <p class="font-serif font-bold text-xl tracking-wide">LOVE AIR</p>
+                        </div>
+                        <div class="text-right">
+                             <p class="text-xs font-mono font-bold text-gray-400 uppercase tracking-widest">CLASS</p>
+                             <p class="font-bold">FIRST</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <div>
+                            <p class="text-[10px] font-mono font-bold text-gray-400 uppercase">PASSENGER</p>
+                            <p class="font-bold text-lg leading-tight">Priyanchi Boruah</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-[10px] font-mono font-bold text-gray-400 uppercase">DATE</p>
+                            <p class="font-bold text-lg leading-tight">FOREVER</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between mt-8 pt-6 border-t border-dashed border-gray-300">
+                        <div class="flex items-center gap-4">
+                            <i data-lucide="plane" class="w-6 h-6 text-love rotate-90"></i>
+                            <div>
+                                <p class="text-xs font-bold text-gray-500 uppercase">From</p>
+                                <p class="font-bold text-xl">HINGE</p>
+                            </div>
+                            <div class="w-8 h-px bg-gray-400"></div>
+                            <div>
+                                <p class="text-xs font-bold text-gray-500 uppercase">To</p>
+                                <p class="font-bold text-xl text-love">HEART</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticket Stub (Right Side) -->
+                <div class="ticket-stub w-full md:w-48 bg-love_soft p-6 flex flex-col items-center justify-center relative">
+                    
+                    <!-- Minimal QR Code Container -->
+                    <div class="bg-white p-2 rounded-sm mb-2 shadow-sm mt-10"> <!-- Increased margin to push it further down -->
+                        <!-- Using a real QR code API to generate a code for a spotify playlist, but styling it minimally -->
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M" alt="QR" class="w-20 h-20 opacity-90 mix-blend-multiply">
+                    </div>
+
+                    <p class="text-[10px] font-mono font-bold text-gray-400 uppercase tracking-widest mt-2">SCAN ME</p>
+                    <p class="text-xs font-bold font-serif text-center mt-1">Our Playlist</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- 3. The Conversations (Staggered Layout) -->
+        <section class="py-8">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+            
+                <!-- Block 1: The Beginning (Slightly tilted left) -->
+                <div class=" md:mt-24 space-y-6 transform md:-rotate-1 hover:rotate-0 transition-transform duration-500">
+                    <h3 class="serif text-2xl text-center text-white">The Beginning</h3>
+                    
+                    <div class="wa-bg border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <!-- Header -->
+                        <div class="bg-[#222] p-3 flex items-center gap-3 border-b border-gray-700/50">
+                            <img src="assets/dp.png" class="w-8 h-8 rounded-full bg-gray-500 flex-shrink-0" />
+                            <div>
+                                <p class="text-white text-sm font-medium">Jiya ❤️</p>
+                            </div>
+                        </div>
+
+                        <!-- Chat Body -->
+                        <div class="p-4 space-y-3 min-h-[250px]">
+                            <!-- Date -->
+                            <div class="flex justify-center mb-4">
+                                <span class="bg-[#252525] text-[#bbb] text-[10px] px-2 py-1 rounded shadow-sm uppercase tracking-wide">4 June 2025</span>
+                            </div>
+
+                            <!-- Me: Hi -->
+                            <div class="flex justify-end">
+                                <div class="chat-bubble-me px-3 py-1.5 max-w-[80%] min-w-[80px]">
+                                    <p class="text-sm">Hi 👋</p>
+                                    <span class="wa-time text-black/60">10:05 PM <i data-lucide="check-check" class="w-3 h-3 text-blue-600"></i></span>
+                                </div>
+                            </div>
+
+                            <!-- Her: Hey -->
+                            <div class="flex justify-start">
+                                <div class="chat-bubble-her px-3 py-1.5 max-w-[80%]">
+                                    <p class="text-sm">Hey! Nice to match with you :)</p>
+                                    <span class="wa-time text-gray-400">10:08 PM</span>
+                                </div>
+                            </div>
+
+                            <!-- Me: Reply (With Quote Context) -->
+                            <div class="flex justify-end">
+                                <div class="chat-bubble-me p-1.5 max-w-[80%]">
+                                    <!-- The Replied Message Context -->
+                                    <div class="bg-black/10 rounded-[4px] border-l-[3px] border-purple-800 p-1 mb-1 overflow-hidden relative">
+                                        <div class="bg-black/10 absolute inset-0 mix-blend-overlay"></div>
+                                        <p class="text-[10px] font-bold text-purple-900 mb-0.5 opacity-80">Jiya ❤️</p>
+                                        <p class="text-[10px] text-black/70 line-clamp-1">Hey! Nice to match with you :)</p>
+                                    </div>
+                                    
+                                    <!-- My Message -->
+                                    <div class="px-1.5 pb-1">
+                                        <p class="text-sm">Glad we did. You have a really cool vibe, couldn't ignore it.</p>
+                                        <span class="wa-time text-black/60">10:09 PM <i data-lucide="check-check" class="w-3 h-3 text-blue-600"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 2: The Duality (Staggered lower & slightly tilted right) -->
+                <div class="space-y-6 transform md:rotate-1 hover:rotate-0 transition-transform duration-500">
+                    <h3 class="serif text-2xl text-center text-white">The Duality</h3>
+                    
+                    <div class="wa-bg border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <!-- Header -->
+                        <div class="bg-[#222] p-3 flex items-center gap-3 border-b border-gray-700/50">
+                            <img src="assets/dp.png" class="w-8 h-8 rounded-full bg-gray-500 flex-shrink-0" />
+                            <div>
+                                <p class="text-white text-sm font-medium">Jiya ❤️</p>
+                            </div>
+                        </div>
+
+                        <!-- Chat Body -->
+                        <div class="p-4 space-y-3 min-h-[250px]">
+                            <!-- Date -->
+                            <div class="flex justify-center mb-4">
+                                <span class="bg-[#252525] text-[#bbb] text-[10px] px-2 py-1 rounded shadow-sm uppercase tracking-wide">Today</span>
+                            </div>
+
+                            <!-- Her: Hot Pic (Placeholder) -->
+                            <div class="flex justify-start">
+                                <div class="chat-bubble-her p-1 max-w-[70%]">
+                                    <div class="bg-gray-800 rounded-lg overflow-hidden aspect-[3/4] mb-1 relative">
+                                        <img src="assets/hot.jpg" alt="Hot Pic" class="w-full h-full object-cover">
+                                    </div>
+                                    <span class="wa-time text-gray-400 mr-1 mb-1">11:23 PM</span>
+                                </div>
+                            </div>
+
+                            <!-- Me: Oh damn -->
+                            <div class="flex justify-end">
+                                <div class="chat-bubble-me px-3 py-1.5 max-w-[80%]">
+                                    <p class="text-sm">Oh damn 🥵</p>
+                                    <span class="wa-time text-black/60">11:24 PM <i data-lucide="check-check" class="w-3 h-3 text-blue-600"></i></span>
+                                </div>
+                            </div>
+
+                            <!-- Me: Cute/Goofy Pic + Caption -->
+                            <div class="flex justify-end">
+                                <div class="chat-bubble-me p-1 max-w-[70%]">
+                                    <div class="bg-gray-800 rounded-lg overflow-hidden aspect-[3/4] mb-1 relative">
+                                        <img src="assets/cute.png" alt="Funny Pic" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="px-1 pb-1">
+                                        <p class="text-sm pt-1">but i love this version just as much ❤️</p>
+                                        <span class="wa-time text-black/60">11:25 PM <i data-lucide="check-check" class="w-3 h-3 text-blue-600"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="text-center text-xs text-gray-600 uppercase tracking-widest mt-16">Hinge &rarr; Forever</p>
+        </section>
+
+        <!-- New Plan Timeline Section -->
+        <section class="relative py-16 max-w-4xl mx-auto">
+            <h2 class="text-3xl serif text-center bg-dark_bg py-4 z-20 relative max-w-xs mx-auto mb-16 text-white">The Itinerary</h2>
+            
+            <!-- Central Line -->
+            <div class="absolute left-6 md:left-1/2 h-full w-px bg-white/10 -z-10 top-0"></div>
+
+            <!-- Dec 26 -->
+            <div class="relative grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Dot -->
+                <div class="absolute left-6 md:left-1/2 w-3 h-3 bg-gray-700 rounded-full -translate-x-1.5 border border-gray-500 mt-6"></div>
+                
+                <!-- Date/Title (Left on Desktop) -->
+                <div class="pl-16 md:pl-0 md:text-right md:pr-12">
+                    <span class="text-love text-xs font-bold uppercase tracking-wider">December 26</span>
+                    <h3 class="text-xl text-white font-medium mt-1">The Prelude</h3>
+                    <p class="text-gray-500 text-xs italic mt-1">"Comfort in the familiar."</p>
+                </div>
+
+                <!-- Details (Right on Desktop) -->
+                <div class="pl-16 md:pl-12 space-y-6">
+                    <!-- Item -->
+                    <div class="relative pl-6 border-l border-white/10">
+                        <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-gray-600 rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-gray-500 uppercase block mb-1">Morning</span>Breaking fast with tradition. Steaming Idlis & Dosas.</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="relative pl-6 border-l border-white/10">
+                        <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-gray-600 rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-gray-500 uppercase block mb-1">Afternoon</span>Quiet home comfort. Chicken, rice, and peace.</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="relative pl-6 border-l border-white/10">
+                        <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-gray-600 rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-gray-500 uppercase block mb-1">6:00 PM — 10:00 PM</span>Lost in cinema. The world fades away.</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="relative pl-6 border-l border-white/10">
+                        <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-gray-600 rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-gray-500 uppercase block mb-1">The Midnight Ritual</span>Cake, beer, and Momos. A toast to you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dec 27 (Birthday) -->
+            <div class="relative grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Dot -->
+                <div class="absolute left-6 md:left-1/2 w-4 h-4 bg-love rounded-full -translate-x-2 shadow-[0_0_15px_rgba(223,163,163,0.6)] mt-6 z-10"></div>
+                
+                <!-- Date/Title (Right on Desktop) -->
+                <div class="pl-16 md:pl-12 order-1 md:order-2">
+                    <span class="text-love text-xs font-bold uppercase tracking-wider">December 27</span>
+                    <h3 class="text-xl text-white font-medium mt-1">The Day You Happened</h3>
+                    <p class="text-gray-500 text-xs italic mt-1">"The universe conspired for this."</p>
+                </div>
+
+                <!-- Details (Left on Desktop) -->
+                <div class="pl-16 md:pl-0 md:pr-12 order-2 md:order-1 md:text-right space-y-6">
+                    <!-- Item -->
+                    <div class="relative pl-6 md:pl-0 md:pr-6 md:border-l-0 md:border-r border-l border-white/10 md:border-white/10">
+                        <span class="absolute -left-1.5 md:left-auto md:-right-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-love rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-love/70 uppercase block mb-1">10:00 AM — 2:00 PM</span>Adorning the Queen. Shopping therapy.</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="relative pl-6 md:pl-0 md:pr-6 md:border-l-0 md:border-r border-l border-white/10 md:border-white/10">
+                        <span class="absolute -left-1.5 md:left-auto md:-right-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-love rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-love/70 uppercase block mb-1">Noon</span>Sweetness for the sweet. French Toast & Chicken Rice.</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="relative pl-6 md:pl-0 md:pr-6 md:border-l-0 md:border-r border-l border-white/10 md:border-white/10">
+                        <span class="absolute -left-1.5 md:left-auto md:-right-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-love rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-love/70 uppercase block mb-1">Nightfall</span>The Birthday Dinner. Under the lights, celebrating existence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dec 28 -->
+            <div class="relative grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Dot -->
+                <div class="absolute left-6 md:left-1/2 w-3 h-3 bg-gray-700 rounded-full -translate-x-1.5 border border-gray-500 mt-6"></div>
+                
+                <!-- Date/Title (Left on Desktop) -->
+                <div class="pl-16 md:pl-0 md:text-right md:pr-12">
+                    <span class="text-love text-xs font-bold uppercase tracking-wider">December 28</span>
+                    <h3 class="text-xl text-white font-medium mt-1">The Afterglow</h3>
+                    <p class="text-gray-500 text-xs italic mt-1">"Slow mornings, deep space."</p>
+                </div>
+
+                <!-- Details (Right on Desktop) -->
+                <div class="pl-16 md:pl-12 space-y-6">
+                    <!-- Item -->
+                    <div class="relative pl-6 border-l border-white/10">
+                        <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-gray-600 rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-gray-500 uppercase block mb-1">Morning</span>Sunlight and Omelettes.</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="relative pl-6 border-l border-white/10">
+                        <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-gray-600 rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-gray-500 uppercase block mb-1">Afternoon</span>Transcending time and dimensions with <em class="text-white">Interstellar</em>.</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="relative pl-6 border-l border-white/10">
+                        <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-dark_bg border border-gray-600 rounded-full"></span>
+                        <p class="text-sm text-gray-300"><span class="text-xs text-gray-500 uppercase block mb-1">The Grand Finale</span>The richness of Biryani to close the chapter.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-center text-xs text-gray-500 mt-8 italic max-w-sm mx-auto bg-dark_bg relative z-10 p-2">
+                + With French fries and toast scattered everywhere in between, like little moments of joy.
+            </p>
+
+        </section>
+
+
+        <!-- 6. Distance & Trust Quote -->
+        <section class="py-8">
+            <div class="border-y border-white/10 py-12 text-center px-4">
+                <i data-lucide="lock" class="w-6 h-6 text-love mx-auto mb-4"></i>
+                <p class="serif text-xl md:text-2xl text-gray-300 leading-relaxed italic max-w-2xl mx-auto">
+                    "Distance is hard, but trusting you isn't. I know you are mine, and I know I am yours. That certainty makes everything easy."
+                </p>
+            </div>
+        </section>
+
+        <!-- 7. Memories I Replay (RESTORED & SPACED OUT) -->
+        <section class="space-y-16 py-16 max-w-2xl mx-auto">
+            <h2 class="text-3xl serif text-center mb-10">Memories I Replay</h2>
+
+            <!-- The Star -->
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                <div class="w-full md:w-5/12 photo-frame bg-gray-800 mt-2">
+                    <div class="tape"></div>
+                    <img src="assets/stage.jpg" alt="Jiya on Stage" class="w-full h-full object-cover opacity-80">
+                </div>
+                <div class="w-full m-auto md:w-7/12 text-center md:text-left space-y-3">
+                    <div class="inline-flex items-center gap-2">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                        <h3 class="text-xl text-white font-medium">The Star</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        Watching you on stage leaves me in awe. Your confidence is magnetic. You were born to be seen, and I’m just lucky to have a front-row seat.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Assamese / Language -->
+            <div class="flex flex-col md:flex-row-reverse gap-8 items-center md:items-start">
+                <div class="w-full md:w-5/12 photo-frame bg-gray-800 mt-2">
+                     <div class="tape"></div>
+                     <img src="assets/gray.jpg" alt="Selfie" class="w-full h-full object-cover opacity-80">
+                </div>
+                <div class="w-full md:w-7/12 m-auto text-center md:text-right space-y-3">
+                    <div class="inline-flex items-center gap-2 flex-row-reverse md:flex-row">
+                        <h3 class="text-xl text-white font-medium">"Hantona"</h3>
+                        <i data-lucide="languages" class="w-4 h-4 text-love"></i>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        Me butchering the pronunciation of "hantona" will always be a core memory. I love trying to understand your world, one funny word at a time.
+                    </p>
+                </div>
+            </div>
+
+            <!-- The Mall / Simple Things -->
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                <div class="w-full md:w-5/12 photo-frame bg-gray-800 mt-2">
+                    <div class="tape"></div>
+                    <img src="assets/hands.jpg" alt="Holding Hands" class="w-full h-full object-cover opacity-80">
+                </div>
+                <div class="w-full md:w-7/12 text-center m-auto md:text-left space-y-3">
+                    <div class="inline-flex items-center gap-2">
+                        <i data-lucide="hand" class="w-4 h-4 text-blue-400"></i>
+                        <h3 class="text-xl text-white font-medium">Just Walking</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        It wasn't a fancy date. It was just us, walking in the mall, holding hands. In those quiet moments, I realized I don't need big events. I just need you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- The Patch Up / Pictures -->
+            <div class="flex flex-col md:flex-row-reverse gap-8 items-center md:items-start">
+                 <div class="w-full md:w-5/12 photo-frame bg-gray-800 mt-2">
+                     <div class="tape"></div>
+                     <img src="assets/comeback.jpg" alt="Solo Photo" class="w-full h-full object-cover opacity-80">
+                </div>
+                <div class="w-full md:w-7/12 m-auto text-center md:text-right space-y-3">
+                    <div class="inline-flex items-center gap-2 flex-row-reverse md:flex-row">
+                        <h3 class="text-xl text-white font-medium">The Comeback</h3>
+                        <i data-lucide="refresh-cw" class="w-4 h-4 text-green-400"></i>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        Every time we fix things after a fight, I realize you are worth it. (Also, I just really love clicking photos of you, even when you're annoyed).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Because of You (Gratitude) - Simplified -->
+        <section class="py-16 max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl serif mb-3">What you mean to me ❤️</h2>
+            <br>
+            <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                Placements, mental health, gym, self-care, haircuts, going out with friends, valuing human connections, even inspired me to finally buy a pair of specs specs again!<br>
+                <span class="text-gray-200">You changed everything.</span>
+            </p>
+            <p class="text-gray-600 text-xs mt-4">
+                I don't know where I would be if you hadn't stayed.
+            </p>
+        </section>
+
+        <!-- 9. Gallery Section -->
+        <section class="space-y-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl serif mb-3">The Gallery</h2>
+                <p class="text-xs text-gray-600 max-w-md mx-auto leading-relaxed">
+                    It's 12:00 AM. I’m imagining you reading this right now. I wanted to freeze these tiny moments, not just because they look good, but because they feel like home.
+                </p>
+            </div>
+            
+            <!-- Removed rotation classes for straight images -->
+            <div class="columns-2 md:columns-3 gap-8 space-y-8 px-4">
+                <!-- Image 1: Us -->
+                <div class="photo-frame break-inside-avoid">
+                    <div class="bg-gray-800 aspect-[3/4] flex items-center justify-center text-gray-600 text-xs text-center overflow-hidden">
+                        <img src="assets/tog.jpg" alt="Us" class="w-full h-full object-cover opacity-80">
+                    </div>
+                </div>
+                <!-- Image 2: Her (Pretty/Vibe) -->
+                <div class="photo-frame break-inside-avoid">
+                    <div class="bg-gray-800 aspect-square flex items-center justify-center text-gray-600 text-xs text-center overflow-hidden">
+                        <img src="assets/gal1.jpg" alt="Jiya" class="w-full h-full object-cover opacity-80">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-2 text-center">
+                        <p class="text-[10px] text-white">Your energy ✨</p>
+                    </div>
+                </div>
+                <!-- Image 3: Funny -->
+                <div class="photo-frame break-inside-avoid">
+                    <div class="bg-gray-800 aspect-[9/14] flex items-center justify-center text-gray-600 text-xs text-center overflow-hidden">
+                         <!--img src="assets/funny.jpg" alt="Funny Face" class="w-full h-full object-cover opacity-80"-->
+                         <img src="assets/hot2.jpg" alt="Funny Face" class="w-full h-full object-cover opacity-80">
+                    </div>
+                </div>
+                <!-- Image 4: Her (Candid) -->
+                <div class="photo-frame break-inside-avoid">
+                    <div class="bg-gray-800 aspect-[3/4] flex items-center justify-center text-gray-600 text-xs text-center overflow-hidden">
+                        <img src="assets/us.jpg" alt="Candid" class="w-full h-full object-cover opacity-80">
+                    </div>
+                    <!--div class="absolute bottom-0 left-0 right-0 bg-black/60 p-2 text-center">
+                        <p class="text-[10px] text-white">My favorite view</p>
+                    </div-->
+                </div>
+                <!-- Image 5: Us -->
+                <div class="photo-frame break-inside-avoid">
+                    <div class="bg-gray-800 aspect-square flex items-center justify-center text-gray-600 text-xs text-center overflow-hidden">
+                        <img src="assets/mirror.jpg" alt="Mirror Selfie" class="w-full h-full object-cover opacity-80">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Final Footer -->
+        <footer class="text-center pt-12 pb-24 space-y-8">
+            <div class="w-12 h-1 bg-love mx-auto opacity-50"></div>
+            
+            <div class="space-y-4">
+                <p class="serif text-xl text-gray-300">
+                    I know I'm not always the jolly type.<br>
+                    But you are the one good thing I never want to ignore.
+                </p>
+                
+                <h2 class="text-4xl md:text-5xl serif text-white pt-4">Happy Birthday Priya.</h2>
+            </div>
+
+            <div class="pt-8">
+                <p class="text-xs text-gray-500 uppercase tracking-widest mb-2">Yours,</p>
+                <p class="font-serif text-3xl text-love italic">Savar</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
