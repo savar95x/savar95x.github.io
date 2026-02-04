@@ -34,16 +34,16 @@ html.is-leaving .transition-fade {
 	--clr-accent2-bg: #302B0F;
 	--clr-accent2: #F3D948;
 
-	--clr-white: hsl(0, 0%, 100%);
+	--clr-white: hsl(0, 0%, 90%);
 	--clr-gray: hsl(0, 0%, 40%);
 
-	--clr-fg: hsl(0,0%,90%);
+	--clr-fg: var(--clr-white);
 	--clr-fg1: hsl(0,0%,75%);
 	--clr-fg2: hsl(0,0%,65%);
 	--clr-fg3: hsl(0,0%,55%);
 
-	--clr-bg: hsl(0,0%,2%);
-	--clr-bg2: hsl(0,0%,6%);
+	--clr-bg: hsl(0,0%,4%);
+	--clr-bg2: hsl(0,0%,7%);
 	--clr-bg3: hsl(0,0%,10%);
 	--clr-bg4: hsl(0,0%,14%);
 	--clr-bg5: hsl(0,0%,18%);
