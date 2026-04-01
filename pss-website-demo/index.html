@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSS 2026 — Physics Merch Drop</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --cream: #ddd6c8;
+  --amber: #e07030;
+  --teal:  #2eb8a4;
+  --blue:  #4a82d4;
+  --fh: 'Bebas Neue', 'Arial Black', sans-serif;
+  --fb: 'DM Sans', 'Helvetica Neue', sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width:100%; font-family:var(--fb);
+  background:#080808; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ══════════════════════════ NAV ══════════════════════════ */
+nav {
+  position:fixed; top:0; z-index:200; width:100%;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:20px 72px;
+  background:rgba(8,8,8,0.85); backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.nav-logo { font-family:var(--fh); font-size:20px; color:var(--cream); letter-spacing:4px; }
+.nav-links { display:flex; gap:40px; }
+.nav-links a {
+  color:rgba(221,214,200,0.4); font-size:11px; text-decoration:none;
+  letter-spacing:2.5px; text-transform:uppercase;
+  transition:color 0.25s;
+}
+.nav-links a:hover { color:var(--cream); }
+
+/* ── GLOW BLOBS — the highlight effect ── */
+.glow-amber {
+  position:absolute; z-index:1;
+  width:700px; height:700px; border-radius:50%;
+  background:radial-gradient(circle, rgba(224,112,48,0.22) 0%, rgba(224,112,48,0.06) 40%, transparent 70%);
+  top:-10%; right:20%; pointer-events:none;
+  animation: floatA 8s ease-in-out infinite;
+}
+.glow-amber-2 {
+  position:absolute; z-index:1;
+  width:400px; height:400px; border-radius:50%;
+  background:radial-gradient(circle, rgba(224,112,48,0.12) 0%, transparent 70%);
+  bottom:10%; right:50%; pointer-events:none;
+  animation: floatA 10s ease-in-out infinite reverse;
+}
+@keyframes floatA {
+  0%,100% { transform:translate(0,0) scale(1); }
+  50%      { transform:translate(20px,-30px) scale(1.06); }
+}
+
+.btn {
+  display:inline-block; padding:16px 38px;
+  background:var(--cream); color:#000;
+  font-family:var(--fb); font-size:11px; font-weight:500;
+  text-decoration:none; letter-spacing:3px; text-transform:uppercase;
+  cursor:pointer; width:fit-content; margin-top:6px;
+  transition:all 0.25s;
+}
+.btn:hover { background:transparent; color:var(--cream); outline:1.5px solid var(--cream); }
+
+/* ══════════════════════════ INTRO STRIP ══════════════════════════ */
+.intro {
+  width:100%; padding:90px 72px; text-align:center;
+  position:relative; overflow:hidden;
+  background:linear-gradient(180deg, #080604 0%, #04080a 100%);
+}
+.intro::before {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse 60% 100% at 50% 0%, rgba(46,184,164,0.1) 0%, transparent 70%);
+  pointer-events:none;
+}
+.intro-label {
+  font-size:11px; color:rgba(221,214,200,0.4);
+  letter-spacing:5px; text-transform:uppercase; margin-bottom:22px;
+}
+.intro-title {
+  font-family:var(--fh); font-size:clamp(32px,5vw,72px);
+  color:rgba(221,214,200,0.75); letter-spacing:3px; line-height:1.1;
+}
+.intro-rule { width:36px; height:1px; background:var(--cream); opacity:0.2; margin:28px auto 0; }
+
+
+/* ══════════════════════════ SECTION PANELS ══════════════════════════ */
+.panel {
+  position:relative; width:100%; height:100vh; min-height:640px;
+  display:flex; overflow:hidden;
+}
+
+/* CHAOS THEORY panel */
+.p-chaos {
+  background: radial-gradient(ellipse 80% 90% at 70% 50%, #1e0f06 0%, #120a04 40%, #080604 100%);
+}
+/* STRING THEORY panel */
+.p-string {
+  background:radial-gradient(ellipse 90% 90% at 30% 60%, #041410 0%, #020c0a 50%, #050808 100%);
+}
+/* BLACK HOLE panel */
+.p-hole {
+  background:radial-gradient(ellipse 90% 90% at 70% 40%, #050812 0%, #020408 50%, #060608 100%);
+}
+
+/* glow blobs for each panel */
+.glow-teal {
+  position:absolute; z-index:1;
+  width:600px; height:600px; border-radius:50%;
+  background:radial-gradient(circle, rgba(46,184,164,0.18) 0%, rgba(46,184,164,0.05) 40%, transparent 70%);
+  bottom:-15%; left:10%; pointer-events:none;
+  animation:floatB 9s ease-in-out infinite;
+}
+.glow-blue {
+  position:absolute; z-index:1;
+  width:650px; height:650px; border-radius:50%;
+  background:radial-gradient(circle, rgba(74,130,212,0.18) 0%, rgba(74,130,212,0.05) 40%, transparent 70%);
+  top:-10%; right:5%; pointer-events:none;
+  animation:floatB 11s ease-in-out infinite reverse;
+}
+@keyframes floatB {
+  0%,100% { transform:translate(0,0) scale(1); }
+  50%      { transform:translate(-25px,25px) scale(1.08); }
+}
+
+/* physics svg per panel */
+.panel-svg {
+  position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:2;
+}
+
+/* watermark for chaos */
+.panel-wm {
+  position:absolute; z-index:2; top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  font-family:var(--fh); font-size:clamp(100px,22vw,340px);
+  color:var(--amber); opacity:0.055; letter-spacing:10px;
+  white-space:nowrap; pointer-events:none; user-select:none; line-height:1;
+}
+
+/* image side */
+.p-img {
+  position:relative; z-index:3; width:55%; height:100%; overflow:hidden; flex-shrink:0;
+}
+/* gradient fade on inner edge */
+.p-img::after {
+  content:''; position:absolute; inset:0; z-index:4; pointer-events:none;
+}
+.p-chaos .p-img-right::after { background:linear-gradient(to left, transparent 70%, #0f0804 100%); }
+.p-string .p-img-left::after  { background:linear-gradient(to right, transparent 70%, #041410 100%); }
+.p-hole .p-img-right::after   { background:linear-gradient(to left,  transparent 70%, #050812 100%); }
+
+.p-img img, .p-img .ph {
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; object-position:center;
+}
+.ph {
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px;
+  font-family:var(--fb); font-size:11px; letter-spacing:2px; text-transform:uppercase;
+}
+.ph-c { background:#100c08; }
+.ph-t { background:#040e0c; }
+.ph-b { background:#050811; }
+.ph svg { opacity:0.25; }
+
+/* word overlays */
+.pw-top, .pw-bot {
+  position:absolute; z-index:6;
+  font-family:var(--fh); font-size:clamp(55px,12vw,185px);
+  line-height:1; letter-spacing:5px; white-space:nowrap; pointer-events:none;
+}
+.pw-top { top:28px; }
+.pw-bot { bottom:28px; }
+.pw-l { left:-16px; }
+.pw-r { right:-16px; }
+
+.c-amber  { color:var(--amber); opacity:0.7;  text-shadow:0 0 60px rgba(224,112,48,0.4); }
+.c-teal   { color:var(--teal);  opacity:0.72; text-shadow:0 0 60px rgba(46,184,164,0.35); }
+.c-blue   { color:var(--blue);  opacity:0.72; text-shadow:0 0 60px rgba(74,130,212,0.35); }
+
+/* copy side */
+.p-copy, .p-copy-r {
+  position:relative; z-index:5; width:45%; height:100%;
+  display:flex; flex-direction:column; justify-content:center;
+  gap:22px;
+}
+.p-copy   { padding:0 6vw 0 8vw; }
+.p-copy-r { padding:0 8vw 0 6vw; }
+
+.p-ey { font-size:11px; letter-spacing:4px; text-transform:uppercase; color:rgba(221,214,200,0.35); }
+.p-ey.amber-ey { color:rgba(224,112,48,0.6); }
+
+.p-h  {
+  font-family:var(--fh);
+  font-size:clamp(48px,8vw,120px);
+  color:var(--cream); line-height:0.9; letter-spacing:3px;
+}
+.p-h.amber-glow { text-shadow:0 0 80px rgba(224,112,48,0.2); }
+.p-h.teal-glow { text-shadow:0 0 80px rgba(46,184,164,0.18); }
+.p-h.blue-glow { text-shadow:0 0 80px rgba(74,130,212,0.18); }
+.p-sub { font-size:15px; color:rgba(221,214,200,0.6); font-weight:300; line-height:1.75; max-width:340px; }
+
+/* divider line */
+.p-divider { width:32px; height:1.5px; }
+.p-divider.amber { background:var(--amber); opacity:0.5; }
+.p-divider.teal { background:var(--teal); opacity:0.5; }
+.p-divider.blue { background:var(--blue); opacity:0.5; }
+
+
+/* ══════════════════════════ CTA ══════════════════════════ */
+.cta {
+  width:100%; padding:130px 72px; text-align:center;
+  position:relative; overflow:hidden;
+  background:radial-gradient(ellipse 100% 120% at 50% 50%, #120a18 0%, #080608 60%, #060606 100%);
+}
+.cta::before {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse 60% 80% at 50% 50%, rgba(200,80,40,0.1) 0%, transparent 65%);
+  pointer-events:none; z-index:1;
+}
+.cta-glow {
+  position:absolute; z-index:1;
+  width:800px; height:800px; border-radius:50%;
+  background:radial-gradient(circle, rgba(224,112,48,0.12) 0%, transparent 65%);
+  top:50%; left:50%; transform:translate(-50%,-50%);
+  pointer-events:none;
+  animation:pulse 6s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { transform:translate(-50%,-50%) scale(1); opacity:1; }
+  50%      { transform:translate(-50%,-50%) scale(1.12); opacity:0.7; }
+}
+.cta-svg { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:2; opacity:0.14; }
+.cta-inner { position:relative; z-index:5; }
+.cta-ey {
+  font-size:11px; letter-spacing:5px; color:rgba(224,112,48,0.55);
+  text-transform:uppercase; margin-bottom:24px;
+}
+.cta-h {
+  font-family:var(--fh); font-size:clamp(48px,9vw,128px);
+  color:var(--cream); line-height:0.9; letter-spacing:4px; margin-bottom:20px;
+  text-shadow:0 0 100px rgba(224,112,48,0.18);
+}
+.cta-sub {
+  font-size:16px; color:rgba(221,214,200,0.45); font-weight:300; margin-bottom:50px;
+}
+.cta-btn {
+  display:inline-block; padding:18px 62px;
+  background:var(--cream); color:#000;
+  font-family:var(--fb); font-size:12px; font-weight:500;
+  text-decoration:none; letter-spacing:3.5px; text-transform:uppercase;
+  cursor:pointer; transition:all 0.25s;
+  box-shadow:0 0 40px rgba(221,214,200,0.12);
+}
+.cta-btn:hover { background:transparent; color:var(--cream); outline:1.5px solid var(--cream); box-shadow:none; }
+
+
+/* ══════════════════════════ FOOTER ══════════════════════════ */
+footer {
+  width:100%; padding:28px 72px;
+  background:#040404;
+  border-top:1px solid rgba(255,255,255,0.05);
+  display:flex; justify-content:space-between; align-items:center;
+}
+.f-l { font-family:var(--fh); font-size:15px; color:rgba(221,214,200,0.2); letter-spacing:4px; }
+.f-r { font-size:10px; color:rgba(221,214,200,0.15); letter-spacing:2.5px; text-transform:uppercase; }
+
+
+/* ══════════════════════════ ANIMATED CANVAS PARTICLES ══════════════════════════ */
+canvas.particles {
+  position:absolute; inset:0; z-index:3; pointer-events:none;
+}
+
+
+/* ══════════════════════════ MOBILE OPTIMIZATION (NEW) ══════════════════════════ */
+@media screen and (max-width: 900px) {
+  /* Smaller glow blobs to prevent layout issues */
+  .glow-amber { width:400px; height:400px; }
+  .glow-amber-2 { width:250px; height:250px; }
+  .glow-teal, .glow-blue { width:400px; height:400px; }
+  .cta-glow { width: 500px; height: 500px; }
+
+  /* Navigation */
+  nav { padding: 18px 24px; justify-content: center; } /* Centers logo if no links exist */
+  .nav-logo { font-size: 18px; }
+
+  /* General Padding Adjustments */
+  .intro { padding: 70px 24px; }
+  .cta { padding: 90px 24px; }
+
+  /* Stack Panels Vertically */
+  .panel { 
+    flex-direction: column; 
+    height: auto; 
+    min-height: 100vh; 
+  }
+  
+  /* Text and Image Ordering on Mobile */
+  .p-chaos { flex-direction: column; } /* Keep text on top */
+  .p-hole { flex-direction: column-reverse; } /* Image on top */
+  .p-string { flex-direction: column; } /* String panel already has image first in DOM */
+
+  /* Make halves take full width */
+  .p-img, .p-copy, .p-copy-r { width: 100%; height: auto; }
+  .p-img { height: 55vh; min-height: 400px; }
+  
+  /* Adjust copy padding and sizing */
+  .p-copy, .p-copy-r { padding: 50px 24px 70px 24px; align-items: flex-start; }
+  .p-h { font-size: clamp(42px, 15vw, 120px); }
+  
+  /* Adjust Background Gradient Blends for Mobile (Vertical Fade) */
+  .p-chaos .p-img-right::after { background: linear-gradient(to top, #080604 0%, transparent 40%); }
+  .p-string .p-img-left::after { background: linear-gradient(to top, #020c0a 0%, transparent 40%); }
+  .p-hole .p-img-right::after  { background: linear-gradient(to top, #020408 0%, transparent 40%); }
+  
+  /* Background Word Overlays */
+  .pw-top, .pw-bot { font-size: clamp(65px, 20vw, 185px); }
+  .pw-top { top: 16px; }
+  .pw-bot { bottom: 16px; }
+  .pw-l { left: -10px; }
+  .pw-r { right: -10px; }
+}
+
+@media screen and (max-width: 600px) {
+  /* Footer stacking */
+  footer { 
+    flex-direction: column; 
+    gap: 16px; 
+    padding: 30px 24px; 
+    text-align: center; 
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">PHYSICS STUDENTS SOCIETY</div>
+</nav>
+
+
+<!-- ══════ HERO — CHAOS THEORY ══════ -->
+<section class="panel p-chaos" id="hero">
+
+  <!-- Ambient glow blobs -->
+  <div class="glow-amber"></div>
+  <div class="glow-amber-2"></div>
+
+  <!-- Chaos attractor lines — added preserveAspectRatio -->
+  <svg class="panel-svg" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="xMidYMid slice">
+    <!-- Main butterfly curves — thick and bright -->
+    <path d="M-60 450 C220 80 480 820 720 450 C960 80 1220 820 1500 450"
+          stroke="#e07030" stroke-width="1.8" opacity="0.45"/>
+    <path d="M-60 380 C220 10 480 750 720 380 C960 10 1220 750 1500 380"
+          stroke="#e07030" stroke-width="1.0" opacity="0.28"/>
+    <path d="M-60 520 C220 150 480 890 720 520 C960 150 1220 890 1500 520"
+          stroke="#e07030" stroke-width="1.0" opacity="0.28"/>
+    <path d="M-60 310 C220 -50 480 680 720 310 C960 -50 1220 680 1500 310"
+          stroke="#e07030" stroke-width="0.6" opacity="0.15"/>
+    <path d="M-60 590 C220 220 480 960 720 590 C960 220 1220 960 1500 590"
+          stroke="#e07030" stroke-width="0.6" opacity="0.15"/>
+    <!-- Centre attractor node with glow ring -->
+    <circle cx="720" cy="450" r="5" fill="rgba(224,112,48,0.6)"/>
+    <circle cx="720" cy="450" r="18" stroke="#e07030" stroke-width="0.8" opacity="0.3"/>
+    <circle cx="720" cy="450" r="38" stroke="#e07030" stroke-width="0.5" opacity="0.15"/>
+    <!-- Axis dashes -->
+    <line x1="720" y1="0" x2="720" y2="900" stroke="#e07030" stroke-width="0.5" stroke-dasharray="6 16" opacity="0.2"/>
+    <line x1="0" y1="450" x2="1440" y2="450" stroke="#e07030" stroke-width="0.5" stroke-dasharray="6 16" opacity="0.2"/>
+    <!-- Scattered data points -->
+    <circle cx="300" cy="280" r="2" fill="#e07030" opacity="0.4"/>
+    <circle cx="500" cy="620" r="1.5" fill="#e07030" opacity="0.3"/>
+    <circle cx="900" cy="200" r="2" fill="#e07030" opacity="0.4"/>
+    <circle cx="1100" cy="660" r="1.5" fill="#e07030" opacity="0.3"/>
+    <circle cx="180" cy="500" r="1.5" fill="#e07030" opacity="0.25"/>
+    <circle cx="1300" cy="380" r="2" fill="#e07030" opacity="0.35"/>
+  </svg>
+
+  <div class="panel-wm">PSS 2026</div>
+
+  <!-- copy LEFT -->
+  <div class="p-copy">
+    <div class="p-divider amber"></div>
+    <div class="p-ey amber-ey">PSS × IIT Madras × 2026</div>
+    <div class="p-h amber-glow">HELLO<br>INSTI<br>JUNTA.</div>
+    <div class="p-sub">Your exclusive physics merch awaits. Three designs. One drop. Limited edition.</div>
+    <a href="#vote" class="btn">Buy Now</a>
+  </div>
+
+  <!-- image RIGHT -->
+  <div class="p-img p-img-right">
+    <div class="ph ph-c" style="width:100%; height:100%;">
+      <div>
+          <img class="ph" src="assets/horizon-nobg.png" alt="Chaos Theory" onerror="this.style.display='none'"/>
+      </div>
+    </div>
+    <div class="pw-top pw-r c-amber">BLACK</div>
+    <div class="pw-bot pw-r c-amber">HOLE</div>
+  </div>
+
+</section>
+
+
+<!-- ══════ INTRO ══════ -->
+<div class="intro">
+  <div class="intro-label">The PSS Physics Drop 2026</div>
+  <div class="intro-title">STRING THEORY. CHAOS THEORY. GRAVITY.<br>THREE DESIGNS. ONE DROP.</div>
+  <div class="intro-rule"></div>
+</div>
+
+
+<!-- ══════ STRING THEORY — image LEFT, copy RIGHT ══════ -->
+<section class="panel p-string" id="string">
+
+  <div class="glow-teal"></div>
+
+  <!-- String theory grid — added preserveAspectRatio -->
+  <svg class="panel-svg" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="xMidYMid slice">
+    <!-- Horizontal ruled lines -->
+    <line x1="0" y1="112" x2="1440" y2="112" stroke="#2eb8a4" stroke-width="0.7" opacity="0.3"/>
+    <line x1="0" y1="225" x2="1440" y2="225" stroke="#2eb8a4" stroke-width="0.7" opacity="0.3"/>
+    <line x1="0" y1="337" x2="1440" y2="337" stroke="#2eb8a4" stroke-width="0.7" opacity="0.3"/>
+    <line x1="0" y1="450" x2="1440" y2="450" stroke="#2eb8a4" stroke-width="0.9" opacity="0.35"/>
+    <line x1="0" y1="562" x2="1440" y2="562" stroke="#2eb8a4" stroke-width="0.7" opacity="0.3"/>
+    <line x1="0" y1="675" x2="1440" y2="675" stroke="#2eb8a4" stroke-width="0.7" opacity="0.3"/>
+    <line x1="0" y1="787" x2="1440" y2="787" stroke="#2eb8a4" stroke-width="0.7" opacity="0.3"/>
+    <!-- Vertical lines -->
+    <line x1="240" y1="0" x2="240" y2="900" stroke="#2eb8a4" stroke-width="0.5" opacity="0.2"/>
+    <line x1="480" y1="0" x2="480" y2="900" stroke="#2eb8a4" stroke-width="0.5" opacity="0.2"/>
+    <line x1="720" y1="0" x2="720" y2="900" stroke="#2eb8a4" stroke-width="0.5" opacity="0.2"/>
+    <line x1="960" y1="0" x2="960" y2="900" stroke="#2eb8a4" stroke-width="0.5" opacity="0.2"/>
+    <line x1="1200" y1="0" x2="1200" y2="900" stroke="#2eb8a4" stroke-width="0.5" opacity="0.2"/>
+    <!-- Two crossing string ribbons — BRIGHT -->
+    <path d="M0 450 Q360 110 720 450 Q1080 790 1440 450" stroke="#2eb8a4" stroke-width="2.4" opacity="0.55"/>
+    <path d="M0 450 Q360 790 720 450 Q1080 110 1440 450" stroke="#2eb8a4" stroke-width="2.4" opacity="0.55"/>
+    <!-- Crossing glow at intersections -->
+    <circle cx="720" cy="450" r="6" fill="rgba(46,184,164,0.5)"/>
+    <circle cx="720" cy="450" r="20" stroke="#2eb8a4" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="360" cy="610" r="3" fill="rgba(46,184,164,0.35)"/>
+    <circle cx="1080" cy="290" r="3" fill="rgba(46,184,164,0.35)"/>
+    <!-- Thinner outer ribbons -->
+    <path d="M0 450 Q360 20 720 450 Q1080 880 1440 450"  stroke="#2eb8a4" stroke-width="0.9" opacity="0.25"/>
+    <path d="M0 450 Q360 880 720 450 Q1080 20 1440 450"  stroke="#2eb8a4" stroke-width="0.9" opacity="0.25"/>
+  </svg>
+
+  <!-- image LEFT -->
+  <div class="p-img p-img-left">
+    <div class="ph ph-t" style="width:100%; height:100%;">
+      <div>
+          <img class="ph" src="assets/dimensions-nobg.png" alt="String Theory" onerror="this.style.display='none'"/>
+      </div>
+      </div>
+    <div class="pw-top pw-l c-teal">STRING</div>
+    <div class="pw-bot pw-l c-teal">THEORY</div>
+  </div>
+
+  <!-- copy RIGHT -->
+  <div class="p-copy-r">
+    <div class="p-divider teal"></div>
+    <div class="p-ey">Design 02</div>
+    <div class="p-h teal-glow">11<br>DIMENSIONS<br>CLUB.</div>
+    <div class="p-sub">Beyond what the eye can see. String Theory mapped onto fabric — 11 dimensions of drip.</div>
+  </div>
+
+</section>
+
+
+<!-- ══════ BLACK HOLE — copy LEFT, image RIGHT ══════ -->
+<section class="panel p-hole" id="blackhole">
+
+  <div class="glow-blue"></div>
+
+  <!-- Concentric ellipses — added preserveAspectRatio -->
+  <svg class="panel-svg" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="xMidYMid slice">
+    <!-- Accretion rings — layered, glowing -->
+    <ellipse cx="720" cy="450" rx="690" ry="245" stroke="#4a82d4" stroke-width="0.7" opacity="0.25"/>
+    <ellipse cx="720" cy="450" rx="580" ry="200" stroke="#4a82d4" stroke-width="0.8" opacity="0.3"/>
+    <ellipse cx="720" cy="450" rx="470" ry="158" stroke="#4a82d4" stroke-width="0.9" opacity="0.35"/>
+    <ellipse cx="720" cy="450" rx="364" ry="120" stroke="#4a82d4" stroke-width="1.0" opacity="0.4"/>
+    <ellipse cx="720" cy="450" rx="262" ry="86" stroke="#4a82d4" stroke-width="1.1" opacity="0.45"/>
+    <ellipse cx="720" cy="450" rx="168" ry="55" stroke="#4a82d4" stroke-width="1.2" opacity="0.5"/>
+    <ellipse cx="720" cy="450" rx="90"  ry="30" stroke="#4a82d4" stroke-width="1.3" opacity="0.55"/>
+    <ellipse cx="720" cy="450" rx="36"  ry="12" stroke="#4a82d4" stroke-width="1.5" opacity="0.6"/>
+    <!-- Event horizon glow -->
+    <ellipse cx="720" cy="450" rx="14" ry="5" fill="rgba(74,130,212,0.4)"/>
+    <!-- Outer dashed ring -->
+    <ellipse cx="720" cy="450" rx="720" ry="265" stroke="#4a82d4" stroke-width="0.6" stroke-dasharray="6 14" opacity="0.2"/>
+    <!-- Equatorial plane -->
+    <line x1="0" y1="450" x2="1440" y2="450" stroke="#4a82d4" stroke-width="0.6" stroke-dasharray="8 20" opacity="0.2"/>
+    <!-- Scattered star dots -->
+    <circle cx="150"  cy="120" r="1.5" fill="#4a82d4" opacity="0.4"/>
+    <circle cx="380"  cy="80"  r="1"   fill="#4a82d4" opacity="0.3"/>
+    <circle cx="650"  cy="200" r="1.5" fill="#4a82d4" opacity="0.35"/>
+    <circle cx="900"  cy="100" r="1"   fill="#4a82d4" opacity="0.3"/>
+    <circle cx="1100" cy="170" r="1.5" fill="#4a82d4" opacity="0.4"/>
+    <circle cx="1350" cy="90"  r="1"   fill="#4a82d4" opacity="0.3"/>
+    <circle cx="200"  cy="750" r="1.5" fill="#4a82d4" opacity="0.35"/>
+    <circle cx="500"  cy="800" r="1"   fill="#4a82d4" opacity="0.3"/>
+    <circle cx="1200" cy="720" r="1.5" fill="#4a82d4" opacity="0.4"/>
+  </svg>
+
+  <!-- copy LEFT -->
+  <div class="p-copy">
+    <div class="p-divider blue"></div>
+    <div class="p-ey">Design 03</div>
+    <div class="p-h blue-glow">CHAOS<br>THEORY.</div>
+    <div class="p-sub">Tiny fluctuations shape the universe.<br>This fit is one of them.</div>
+    <a href="#vote" class="btn" style="margin-top:8px;">Order Now</a>
+  </div>
+
+  <!-- image RIGHT -->
+  <div class="p-img p-img-right">
+    <div class="ph ph-b" style="width:100%; height:100%;">
+      <div>
+          <img class="ph" src="assets/butterfly-nobg.png" alt="Black Hole" onerror="this.style.display='none'"/>
+      </div>
+    </div>
+    <div class="pw-top pw-r c-blue">CHAOS</div>
+    <div class="pw-bot pw-r c-blue">THEORY</div>
+  </div>
+
+</section>
+
+
+<!-- ══════ CTA ══════ -->
+<section class="cta" id="vote">
+  <div class="cta-glow"></div>
+  <svg class="cta-svg" viewBox="0 0 1440 600" fill="none" preserveAspectRatio="xMidYMid slice">
+    <path d="M0 300 Q360 100 720 300 Q1080 500 1440 300" stroke="#e07030" stroke-width="1.5" opacity="0.6"/>
+    <path d="M0 300 Q360 500 720 300 Q1080 100 1440 300" stroke="#e07030" stroke-width="1.5" opacity="0.6"/>
+    <ellipse cx="720" cy="300" rx="630" ry="185" stroke="#2eb8a4" stroke-width="0.8" opacity="0.4"/>
+    <ellipse cx="720" cy="300" rx="370" ry="105" stroke="#4a82d4" stroke-width="0.7" opacity="0.4"/>
+    <ellipse cx="720" cy="300" rx="140" ry="40" stroke="#e07030" stroke-width="0.6" opacity="0.4"/>
+    <circle cx="720" cy="300" r="6" fill="rgba(224,112,48,0.5)"/>
+  </svg>
+  <div class="cta-inner">
+    <div class="cta-ey">Physics Students Society · IIT Madras · 2026</div>
+    <div class="cta-h">CHOOSE YOUR<br>FAVOURITE.</div>
+    <div class="cta-sub">Cast your vote. The most wanted design drops first.</div>
+    <a href="https://tally.so/r/EkLoOA" class="cta-btn" target="_blank">Vote Your Design</a>
+  </div>
+</section>
+
+
+<!-- ══════ FOOTER ══════ -->
+<footer>
+  <div class="f-l">PHYSICS STUDENTS SOCIETY</div>
+  <div class="f-r">PSS · IIT Madras · 2026</div>
+</footer>
+
+</body>
+</html>
