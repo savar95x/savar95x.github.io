@@ -236,7 +236,7 @@ table {
   width: 100%;
   font-size: 0.9rem;
   border-collapse: collapse;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 table th {
@@ -257,6 +257,10 @@ table td:not(:empty)::before {
   top: 2px !important;
   position: relative;
   color: var(--clr-gray);
+}
+
+.table-wrapper table td:not(:empty)::before {
+  content: ""; 
 }
 
 table td {
