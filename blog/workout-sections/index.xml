@@ -1,117 +1,129 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>savar</title>
-    <link>https://savar.is-a.dev/blog/workout-sections/</link>
-    <description>Recent content on savar</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 01 Feb 2025 14:35:02 +0530</lastBuildDate>
-    <atom:link href="https://savar.is-a.dev/blog/workout-sections/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>1.1 Terminology for Dummies</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/1/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/1/1/</guid>
-      <description>&lt;p&gt;Really common vocabulary that gym goers use.&lt;/p&gt;&#xA;&lt;h2 id=&#34;gym&#34;&gt;Gym&lt;/h2&gt;&#xA;&lt;p&gt;A place of physical wellbeing. One could use this to pursue various goals such as more muscle mass or strength, cardiovascular strength, plyometrics, sports like crossfit, or health in general to name a few. In this article, we&amp;rsquo;ll only be discussing the size and strength aspect of it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reps--repetitions&#34;&gt;Reps / Repetitions&lt;/h2&gt;&#xA;&lt;p&gt;The number of times you perform a movement at once. For example, 10 reps of bicep curl.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>1.2 Terminology</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/1/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/1/2/</guid>
-      <description>&lt;p&gt;Techincal but common words gym goers use.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hypertrophy&#34;&gt;Hypertrophy&lt;/h2&gt;&#xA;&lt;p&gt;A fancy word for muscle bulding.&lt;/p&gt;&#xA;&lt;h2 id=&#34;compound-movement&#34;&gt;Compound Movement&lt;/h2&gt;&#xA;&lt;p&gt;Any lift that involves two or more joints. Typically accompanied with two or more muscle groups being involved. Example, dips (chest, tricep, and front delt).&lt;/p&gt;&#xA;&lt;h2 id=&#34;isolation-movement&#34;&gt;Isolation Movement&lt;/h2&gt;&#xA;&lt;p&gt;Only one joint is involved in the movement, usually accompanied with just one muscle. Example, tricep pushdown (tricep)&lt;/p&gt;&#xA;&lt;h2 id=&#34;progressive-overload&#34;&gt;Progressive Overload&lt;/h2&gt;&#xA;&lt;p&gt;Increase in weights over time, to get the same stimulus for growth.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>1.3 Why Workout?</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/1/3/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/1/3/</guid>
-      <description>&lt;p&gt;Before we even begin to dive into the article, we gotta ask ourselves&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-should-we-even-workout-to-begin-with&#34;&gt;&lt;em&gt;Why&lt;/em&gt; should we even workout to begin with?&lt;/h2&gt;&#xA;&lt;p&gt;Here are a few generic but solid reasons why you could consider working out.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll feel stronger and more capable and empowered.&lt;br&gt;&#xA;You&amp;rsquo;ll age slower.&lt;br&gt;&#xA;You&amp;rsquo;ll think better.&lt;br&gt;&#xA;Not to mention you will also become more attractive.&lt;br&gt;&#xA;And it is an indication that you&amp;rsquo;re a dedicated and commited person.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>1.4 Quickstart</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/1/4/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/1/4/</guid>
-      <description>&lt;p&gt;As a newcomer to lifting weights, the first goal should be to learn and get good at the basic movement patterns.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pulling&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Vertical Pull (like Pullups)&lt;/li&gt;&#xA;&lt;li&gt;A Horizontal Pull or a Row (like Barbell Rows)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Pushing&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Horizontal Push (like Pushups)&lt;/li&gt;&#xA;&lt;li&gt;An Overhead Press (like standing barbell overhead press).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Legs&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Squat Pattern&lt;/li&gt;&#xA;&lt;li&gt;A Hip-Hinge (like Deadlifts)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Most people just wanna look good and feel strong, just getting stronger at the basics along with some isolation work should do that.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2.1 Basic Muscle Science</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/2/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/2/1/</guid>
-      <description>&lt;p&gt;This section dives into the various big muscles we need to focus on. To make it easier to follow, I&amp;rsquo;ll categorise muscles and movement patterns into three simple buckets: Push, Pull, and Legs.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#the-pushing-musculature&#34;&gt;Push&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chest&#34;&gt;Chest&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#anteriorfront-delt&#34;&gt;Front Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#triceps&#34;&gt;Tricep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#the-pulling-musculature&#34;&gt;Pull&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#back&#34;&gt;Back&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#biceps&#34;&gt;Bicep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#rear-delt&#34;&gt;Rear Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#legs&#34;&gt;Legs&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#quadriceps&#34;&gt;Quads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hamstrings&#34;&gt;Hams&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;glutes-maximus&#34;&gt;Glutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#calves&#34;&gt;Calves&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-pushing-musculature&#34;&gt;The Pushing Musculature&lt;/h2&gt;&#xA;&lt;p&gt;The system of muscles that allow us to push stuff &lt;span class=highlight&gt;away from our body&lt;/span&gt;. For Example, in Bench Press, you&amp;rsquo;re pressing/pushing the barbell away from yourself.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2.2 Functions of different Musculatures</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/2/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/2/2/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This section explores how to train a muscle group based on its functions.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Push&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chest&#34;&gt;Chest&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#anterior-delt&#34;&gt;Front Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#tricep&#34;&gt;Tricep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pull&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#back&#34;&gt;Back&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#bicep&#34;&gt;Bicep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#rear-delt&#34;&gt;Rear Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Legs&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#quadriceps&#34;&gt;Quads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hamstrings&#34;&gt;Hams&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;glutes-maximus&#34;&gt;Glutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#calves&#34;&gt;Calves&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;chest&#34;&gt;Chest&lt;/h1&gt;&#xA;&lt;p&gt;The Main function of the chest is to press.&lt;/p&gt;&#xA;&lt;h2 id=&#34;chest-press&#34;&gt;Chest Press&lt;/h2&gt;&#xA;&lt;p&gt;Movements like the barbell bench press, dips etc come over here, where we&amp;rsquo;re pressing the weight using our chest muscles.&lt;br&gt;&#xA;Getting stronger at these builds the majority of the chest.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2.3 What builds muscle?</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/2/3/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/2/3/</guid>
-      <description>&lt;p&gt;Now that I&amp;rsquo;ve familiarized you with most of the basics concepts of training for hypertrophy, it&amp;rsquo;s time to realize what actually builds muscle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-actually-build-muscle&#34;&gt;What &lt;em&gt;actually&lt;/em&gt; build muscle?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;span class=highlight&gt;Training a muscle for it&amp;rsquo;s function under mechanical load and tension till muscular failure gives a stimulus for growth.&lt;/span&gt;&lt;br&gt;&#xA;The protein and calories we consume is used to synthesize muscle, aided with with good sleep and recovery.&lt;/p&gt;&#xA;&lt;p&gt;Essentially, we are breaking down the muscle fibres when we work out, and building it back when we eat and sleep, to slightly bigger size than before.&lt;br&gt;&#xA;This repeated again and again over a period of months/years is what gives significant visible change in one&amp;rsquo;s physique.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3.0 Nutritions 101</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/3/0/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/3/0/</guid>
-      <description>&lt;p&gt;What constituents good food?&lt;br&gt;&#xA;I wanna eat tasty food i look forward to enjoying while watching a series, that is healthy for the gut and nutritious as well.&lt;/p&gt;&#xA;&lt;p&gt;My options right now:&lt;br&gt;&#xA;Boiled Eggs&lt;br&gt;&#xA;Bread&lt;br&gt;&#xA;Rice&lt;br&gt;&#xA;Chapati&lt;br&gt;&#xA;Fruits (Orange, Blueberries, Banana)&lt;br&gt;&#xA;Paneer&lt;/p&gt;&#xA;&lt;p&gt;To watch:&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=GAvW6xBZjSk&amp;amp;list=PLYdkxp9hJ4i58l583rJV7r2LMAiYFJ9gm&#34;&gt;3dmj nutrition pyramid for strength&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3.1 Daily Recommendations</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/3/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/3/1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;In Works&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Consume &amp;gt; 1.6 x (Bodyweight in KGs) protein&#xA;For example, I am 70 kg, so I should consume 1.6 x 70 ~ 112 g protein.&lt;/p&gt;&#xA;&lt;p&gt;For calories, calculate your maintenance &lt;a href=&#34;https://www.calculator.net/calorie-calculator.html&#34;&gt;here&lt;/a&gt; and eat in a slight surplus (100~200 cal). Never be in a deficit as a beginner. But always fill your calories with clean food.&lt;br&gt;&#xA;No need to track carbs and fat also, just make you&amp;rsquo;re well fed and energized before a workout.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3.2 How to complete protein</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/3/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/3/2/</guid>
-      <description>&lt;p&gt;How to complete protein as a student on a budget.&lt;/p&gt;&#xA;&lt;h2 id=&#34;some-affordable-protein-sources&#34;&gt;Some Affordable Protein Sources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Eggs:&lt;/strong&gt; A complete source with a lot of micronutirents&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chicken:&lt;/strong&gt; Pretty good and cost efficient&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Soya Chunks:&lt;/strong&gt; Great protein per 100g, but lacks some essential aminos. Fine for bumping up the protein, but not as primary source&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Protein Powder:&lt;/strong&gt; The cheapest and most complete source&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Low Fat Paneer:&lt;/strong&gt; Fine but on the costlier side&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;plan-of-action&#34;&gt;Plan of Action&lt;/h2&gt;&#xA;&lt;p&gt;Cost and calories for 100g protein:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>4.1 Sleep</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/4/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/4/1/</guid>
-      <description>&lt;p&gt;Still &lt;strong&gt;In Works&lt;/strong&gt;, but&lt;/p&gt;&#xA;&lt;p&gt;7+ hours sleep preferable before 12 am and at the same time everyday.&lt;/p&gt;&#xA;&lt;p&gt;TODO: huberman lab optimise sleep and condense it here.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>4.2 Stress Management</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/4/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/4/2/</guid>
-      <description>&lt;p&gt;Still &lt;strong&gt;In Works&lt;/strong&gt;, but&lt;/p&gt;&#xA;&lt;p&gt;Meditate I guess?&lt;/p&gt;&#xA;&lt;p&gt;TODO: huberman lab stress and condense it here.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>5.1 Mindset</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/5/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/5/1/</guid>
-      <description>&lt;p&gt;The following blog sums it up quite well.&lt;br&gt;&#xA;&lt;a href=&#34;https://savar.is-a.dev/blog/workout-sections/1/3/&#34;&gt;Here&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>5.2 Points to Ponder</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/5/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/5/2/</guid>
-      <description>&lt;p&gt;This is &lt;strong&gt;In Works&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>5.3 Resources</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/5/3/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/5/3/</guid>
-      <description>&lt;p&gt;A list of resources I think are good.&lt;/p&gt;&#xA;&lt;h2 id=&#34;youtube-channels&#34;&gt;Youtube Channels&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@JeffNippard&#34;&gt;Jeff Nipard&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@MaxEuceda7&#34;&gt;Max Euceda&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@NaturalHypertrophy&#34;&gt;Natural Hypertrophy&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@GVS&#34;&gt;Geoffery Verity Schofield&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@BasementBodybuilding&#34;&gt;Basement Bodybuilding&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@BrainsandGainsPodcast&#34;&gt;Brains and Gains&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@hubermanlab&#34;&gt;Huberman Lab&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;apps&#34;&gt;Apps&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.boostcamp.app/&#34;&gt;Boostcamp&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>savar</title>
+		<link>http://localhost:1313/blog/workout-sections/</link>
+		<description>Recent content on savar</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 14 Dec 2025 21:33:38 +0530</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/blog/workout-sections/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>2.4 Frequncy, Volume, and Progression</title>
+				<link>http://localhost:1313/blog/workout-sections/2/4/</link>
+				<pubDate>Sun, 14 Dec 2025 21:33:38 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/2/4/</guid>
+				<description>&lt;h2 id=&#34;getting-stronger-at-the-basics&#34;&gt;Getting stronger at the Basics&lt;/h2&gt;&#xA;&lt;p&gt;Once proper technique is learnt, focus on progressive overload. This is what&amp;rsquo;ll allow you to build muscle now, the previous step was a foundation or a precursor to this.&lt;/p&gt;&#xA;&lt;p&gt;But before I tell you the progression I recommend, you should first know what progressive overload actually mean.&lt;br&gt;&#xA;Progressive Overload means you either increase the reps and sets at the same weight, or you increase the weight. In the long run, your weights increase.&lt;br&gt;&#xA;If you don&amp;rsquo;t progressively overload, you simply won&amp;rsquo;t keep growing as the muscles need more stimulus to grow more.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>1.1 Terminology for Dummies</title>
+				<link>http://localhost:1313/blog/workout-sections/1/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/1/1/</guid>
+				<description>&lt;p&gt;Really common vocabulary that gym goers use.&lt;/p&gt;&#xA;&lt;h2 id=&#34;gym&#34;&gt;Gym&lt;/h2&gt;&#xA;&lt;p&gt;A place of physical wellbeing. One could use this to pursue various goals such as more muscle mass or strength, cardiovascular strength, plyometrics, sports like crossfit, or health in general to name a few. In this article, we&amp;rsquo;ll only be discussing the size and strength aspect of it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reps--repetitions&#34;&gt;Reps / Repetitions&lt;/h2&gt;&#xA;&lt;p&gt;The number of times you perform a movement at once. For example, 10 reps of bicep curl.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>1.2 Terminology</title>
+				<link>http://localhost:1313/blog/workout-sections/1/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/1/2/</guid>
+				<description>&lt;p&gt;Techincal but common words gym goers use.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hypertrophy&#34;&gt;Hypertrophy&lt;/h2&gt;&#xA;&lt;p&gt;A fancy word for muscle bulding.&lt;/p&gt;&#xA;&lt;h2 id=&#34;compound-movement&#34;&gt;Compound Movement&lt;/h2&gt;&#xA;&lt;p&gt;Any lift that involves two or more joints. Typically accompanied with two or more muscle groups being involved. Example, dips (chest, tricep, and front delt).&lt;/p&gt;&#xA;&lt;h2 id=&#34;isolation-movement&#34;&gt;Isolation Movement&lt;/h2&gt;&#xA;&lt;p&gt;Only one joint is involved in the movement, usually accompanied with just one muscle. Example, tricep pushdown (tricep)&lt;/p&gt;&#xA;&lt;h2 id=&#34;progressive-overload&#34;&gt;Progressive Overload&lt;/h2&gt;&#xA;&lt;p&gt;Increase in weights over time, to get the same stimulus for growth.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>1.3 Why Workout?</title>
+				<link>http://localhost:1313/blog/workout-sections/1/3/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/1/3/</guid>
+				<description>&lt;p&gt;Before we even begin to dive into the article, we gotta ask ourselves&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-should-we-even-workout-to-begin-with&#34;&gt;&lt;em&gt;Why&lt;/em&gt; should we even workout to begin with?&lt;/h2&gt;&#xA;&lt;p&gt;Here are a few generic but solid reasons why you could consider working out.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll feel stronger and more capable and empowered.&lt;br&gt;&#xA;You&amp;rsquo;ll age slower.&lt;br&gt;&#xA;You&amp;rsquo;ll think better.&lt;br&gt;&#xA;Not to mention you will also become more attractive.&lt;br&gt;&#xA;And it is an indication that you&amp;rsquo;re a dedicated and commited person.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>1.4 Quickstart</title>
+				<link>http://localhost:1313/blog/workout-sections/1/4/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/1/4/</guid>
+				<description>&lt;p&gt;As a newcomer to lifting weights, the first goal should be to learn and get good at the basic movement patterns.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pulling&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Vertical Pull (like Pullups)&lt;/li&gt;&#xA;&lt;li&gt;A Horizontal Pull or a Row (like Barbell Rows)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Pushing&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Horizontal Push (like Pushups)&lt;/li&gt;&#xA;&lt;li&gt;An Overhead Press (like standing barbell overhead press).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Legs&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Squat Pattern&lt;/li&gt;&#xA;&lt;li&gt;A Hip-Hinge (like Deadlifts)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Most people just wanna look good and feel strong, just getting stronger at the basics along with some isolation work should do that.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2.1 Basic Muscle Science</title>
+				<link>http://localhost:1313/blog/workout-sections/2/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/2/1/</guid>
+				<description>&lt;p&gt;This section dives into the various big muscles we need to focus on. To make it easier to follow, I&amp;rsquo;ll categorise muscles and movement patterns into three simple buckets: Push, Pull, and Legs.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#the-pushing-musculature&#34;&gt;Push&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chest&#34;&gt;Chest&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#anteriorfront-delt&#34;&gt;Front Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#triceps&#34;&gt;Tricep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#the-pulling-musculature&#34;&gt;Pull&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#back&#34;&gt;Back&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#biceps&#34;&gt;Bicep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#rear-delt&#34;&gt;Rear Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#legs&#34;&gt;Legs&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#quadriceps&#34;&gt;Quads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hamstrings&#34;&gt;Hams&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;glutes-maximus&#34;&gt;Glutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#calves&#34;&gt;Calves&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-pushing-musculature&#34;&gt;The Pushing Musculature&lt;/h2&gt;&#xA;&lt;p&gt;The system of muscles that allow us to push stuff &lt;span class=highlight&gt;away from our body&lt;/span&gt;. For Example, in Bench Press, you&amp;rsquo;re pressing/pushing the barbell away from yourself.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2.2 Functions of different Musculatures</title>
+				<link>http://localhost:1313/blog/workout-sections/2/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/2/2/</guid>
+				<description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This section explores how to train a muscle group based on its functions.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Push&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chest&#34;&gt;Chest&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#anterior-delt&#34;&gt;Front Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#tricep&#34;&gt;Tricep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pull&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#back&#34;&gt;Back&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#bicep&#34;&gt;Bicep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#rear-delt&#34;&gt;Rear Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Legs&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#quadriceps&#34;&gt;Quads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hamstrings&#34;&gt;Hams&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;glutes-maximus&#34;&gt;Glutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#calves&#34;&gt;Calves&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;chest&#34;&gt;Chest&lt;/h1&gt;&#xA;&lt;p&gt;The Main function of the chest is to press.&lt;/p&gt;&#xA;&lt;h2 id=&#34;chest-press&#34;&gt;Chest Press&lt;/h2&gt;&#xA;&lt;p&gt;Movements like the barbell bench press, dips etc come over here, where we&amp;rsquo;re pressing the weight using our chest muscles.&lt;br&gt;&#xA;Getting stronger at these builds the majority of the chest.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2.3 What builds muscle?</title>
+				<link>http://localhost:1313/blog/workout-sections/2/3/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/2/3/</guid>
+				<description>&lt;p&gt;Now that I&amp;rsquo;ve familiarized you with most of the basics concepts of training for hypertrophy, it&amp;rsquo;s time to realize what actually builds muscle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-actually-build-muscle&#34;&gt;What &lt;em&gt;actually&lt;/em&gt; build muscle?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;span class=highlight&gt;Training a muscle for it&amp;rsquo;s function under mechanical load and tension till muscular failure gives a stimulus for growth.&lt;/span&gt;&lt;br&gt;&#xA;The protein and calories we consume is used to synthesize muscle, aided with with good sleep and recovery.&lt;/p&gt;&#xA;&lt;p&gt;Essentially, we are breaking down the muscle fibres when we work out, and building it back when we eat and sleep, to slightly bigger size than before.&lt;br&gt;&#xA;This repeated again and again over a period of months/years is what gives significant visible change in one&amp;rsquo;s physique.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3.0 Nutritions 101</title>
+				<link>http://localhost:1313/blog/workout-sections/3/0/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/3/0/</guid>
+				<description>&lt;p&gt;What constituents good food?&lt;br&gt;&#xA;I wanna eat tasty food i look forward to enjoying while watching a series, that is healthy for the gut and nutritious as well.&lt;/p&gt;&#xA;&lt;p&gt;My options right now:&lt;br&gt;&#xA;Boiled Eggs&lt;br&gt;&#xA;Bread&lt;br&gt;&#xA;Rice&lt;br&gt;&#xA;Chapati&lt;br&gt;&#xA;Fruits (Orange, Blueberries, Banana)&lt;br&gt;&#xA;Paneer&lt;/p&gt;&#xA;&lt;p&gt;To watch:&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=GAvW6xBZjSk&amp;amp;list=PLYdkxp9hJ4i58l583rJV7r2LMAiYFJ9gm&#34;&gt;3dmj nutrition pyramid for strength&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3.1 Daily Recommendations</title>
+				<link>http://localhost:1313/blog/workout-sections/3/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/3/1/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;In Works&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Consume &amp;gt; 1.6 x (Bodyweight in KGs) protein&#xA;For example, I am 70 kg, so I should consume 1.6 x 70 ~ 112 g protein.&lt;/p&gt;&#xA;&lt;p&gt;For calories, calculate your maintenance &lt;a href=&#34;https://www.calculator.net/calorie-calculator.html&#34;&gt;here&lt;/a&gt; and eat in a slight surplus (100~200 cal). Never be in a deficit as a beginner. But always fill your calories with clean food.&lt;br&gt;&#xA;No need to track carbs and fat also, just make you&amp;rsquo;re well fed and energized before a workout.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3.2 How to complete protein</title>
+				<link>http://localhost:1313/blog/workout-sections/3/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/3/2/</guid>
+				<description>&lt;p&gt;How to complete protein as a student on a budget.&lt;/p&gt;&#xA;&lt;h2 id=&#34;some-affordable-protein-sources&#34;&gt;Some Affordable Protein Sources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Eggs:&lt;/strong&gt; A complete source with a lot of micronutirents&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chicken:&lt;/strong&gt; Pretty good and cost efficient&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Soya Chunks:&lt;/strong&gt; Great protein per 100g, but lacks some essential aminos. Fine for bumping up the protein, but not as primary source&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Protein Powder:&lt;/strong&gt; The cheapest and most complete source&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Low Fat Paneer:&lt;/strong&gt; Fine but on the costlier side&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;plan-of-action&#34;&gt;Plan of Action&lt;/h2&gt;&#xA;&lt;p&gt;Cost and calories for 100g protein:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>4.1 Sleep</title>
+				<link>http://localhost:1313/blog/workout-sections/4/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/4/1/</guid>
+				<description>&lt;p&gt;Still &lt;strong&gt;In Works&lt;/strong&gt;, but&lt;/p&gt;&#xA;&lt;p&gt;7+ hours sleep preferable before 12 am and at the same time everyday.&lt;/p&gt;&#xA;&lt;p&gt;TODO: huberman lab optimise sleep and condense it here.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>4.2 Stress Management</title>
+				<link>http://localhost:1313/blog/workout-sections/4/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/4/2/</guid>
+				<description>&lt;p&gt;Still &lt;strong&gt;In Works&lt;/strong&gt;, but&lt;/p&gt;&#xA;&lt;p&gt;Meditate I guess?&lt;/p&gt;&#xA;&lt;p&gt;TODO: huberman lab stress and condense it here.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>5.1 Mindset</title>
+				<link>http://localhost:1313/blog/workout-sections/5/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/5/1/</guid>
+				<description>&lt;p&gt;The following blog sums it up quite well.&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/blog/workout-sections/1/3/&#34;&gt;Here&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>5.2 Points to Ponder</title>
+				<link>http://localhost:1313/blog/workout-sections/5/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/5/2/</guid>
+				<description>&lt;p&gt;This is &lt;strong&gt;In Works&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>5.3 Resources</title>
+				<link>http://localhost:1313/blog/workout-sections/5/3/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/5/3/</guid>
+				<description>&lt;p&gt;A list of resources I think are good.&lt;/p&gt;&#xA;&lt;h2 id=&#34;youtube-channels&#34;&gt;Youtube Channels&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@JeffNippard&#34;&gt;Jeff Nipard&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@MaxEuceda7&#34;&gt;Max Euceda&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@NaturalHypertrophy&#34;&gt;Natural Hypertrophy&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@GVS&#34;&gt;Geoffery Verity Schofield&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@BasementBodybuilding&#34;&gt;Basement Bodybuilding&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@BrainsandGainsPodcast&#34;&gt;Brains and Gains&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@hubermanlab&#34;&gt;Huberman Lab&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;apps&#34;&gt;Apps&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.boostcamp.app/&#34;&gt;Boostcamp&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

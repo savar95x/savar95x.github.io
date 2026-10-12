@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Personal on savar</title>
-    <link>https://savar.is-a.dev/tags/personal/</link>
-    <description>Recent content in Personal on savar</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jan 2025 16:35:28 +0530</lastBuildDate>
-    <atom:link href="https://savar.is-a.dev/tags/personal/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Current Workout Split</title>
-      <link>https://savar.is-a.dev/blog/workout/</link>
-      <pubDate>Sat, 18 Jan 2025 16:35:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout/</guid>
-      <description>&lt;p&gt;I follow a Push, Pull, Leg split.&lt;br&gt;&#xA;If you&amp;rsquo;re here to learn as a beginner, I&amp;rsquo;d redirect you to &lt;a href=&#34;https://savar.is-a.dev/blog/workout-beginners/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;push&#34;&gt;Push&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chest:&lt;/strong&gt; Barbell Bench Press&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Side Delts:&lt;/strong&gt; Lateral Raises (Cable/Dumbbell)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tricep:&lt;/strong&gt; Pushdown, Overhead Extensions (both Cable)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;pull&#34;&gt;Pull&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Back:&lt;/strong&gt; Wide grip Pulldown, Barbell Bent Over Row&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bicep:&lt;/strong&gt; Curls, Hammer Curls (both Cable)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rear Delts:&lt;/strong&gt; Reverse Pec Deck&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;legs&#34;&gt;Legs&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quads:&lt;/strong&gt; Squats&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hammies:&lt;/strong&gt; Leg Curl&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The way I structure my week is;&lt;br&gt;&#xA;Push, Pull, Leg, Rest.&lt;br&gt;&#xA;And then I repeat.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Personal on savar</title>
+		<link>http://localhost:1313/tags/personal/</link>
+		<description>Recent content in Personal on savar</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 18 Jan 2025 16:35:28 +0530</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>My Current Workout Split</title>
+				<link>http://localhost:1313/blog/workout/</link>
+				<pubDate>Sat, 18 Jan 2025 16:35:28 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout/</guid>
+				<description>&lt;p&gt;I follow a Push, Pull, Leg split.&lt;br&gt;&#xA;If you&amp;rsquo;re here to learn as a beginner, I&amp;rsquo;d redirect you to &lt;a href=&#34;http://localhost:1313/blog/workout-beginners/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;push&#34;&gt;Push&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chest:&lt;/strong&gt; Barbell Bench Press&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Side Delts:&lt;/strong&gt; Lateral Raises (Cable/Dumbbell)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tricep:&lt;/strong&gt; Pushdown, Overhead Extensions (both Cable)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;pull&#34;&gt;Pull&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Back:&lt;/strong&gt; Wide grip Pulldown, Barbell Bent Over Row&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bicep:&lt;/strong&gt; Curls, Hammer Curls (both Cable)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rear Delts:&lt;/strong&gt; Reverse Pec Deck&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;legs&#34;&gt;Legs&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quads:&lt;/strong&gt; Squats&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hammies:&lt;/strong&gt; Leg Curl&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The way I structure my week is;&lt;br&gt;&#xA;Push, Pull, Leg, Rest.&lt;br&gt;&#xA;And then I repeat.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,194 +1,227 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>savar</title>
-    <link>https://savar.is-a.dev/</link>
-    <description>Recent content on savar</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 18 Dec 2025 11:45:33 +0530</lastBuildDate>
-    <atom:link href="https://savar.is-a.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Url Shortner</title>
-      <link>https://savar.is-a.dev/work/url-shortner/</link>
-      <pubDate>Thu, 18 Dec 2025 11:45:33 +0530</pubDate>
-      <guid>https://savar.is-a.dev/work/url-shortner/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>dwm</title>
-      <link>https://savar.is-a.dev/work/dwm/</link>
-      <pubDate>Sun, 21 Sep 2025 16:43:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/work/dwm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>imgedit</title>
-      <link>https://savar.is-a.dev/work/imgedit/</link>
-      <pubDate>Sat, 21 Jun 2025 16:43:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/work/imgedit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>1.1 Terminology for Dummies</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/1/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/1/1/</guid>
-      <description>&lt;p&gt;Really common vocabulary that gym goers use.&lt;/p&gt;&#xA;&lt;h2 id=&#34;gym&#34;&gt;Gym&lt;/h2&gt;&#xA;&lt;p&gt;A place of physical wellbeing. One could use this to pursue various goals such as more muscle mass or strength, cardiovascular strength, plyometrics, sports like crossfit, or health in general to name a few. In this article, we&amp;rsquo;ll only be discussing the size and strength aspect of it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reps--repetitions&#34;&gt;Reps / Repetitions&lt;/h2&gt;&#xA;&lt;p&gt;The number of times you perform a movement at once. For example, 10 reps of bicep curl.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>1.2 Terminology</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/1/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/1/2/</guid>
-      <description>&lt;p&gt;Techincal but common words gym goers use.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hypertrophy&#34;&gt;Hypertrophy&lt;/h2&gt;&#xA;&lt;p&gt;A fancy word for muscle bulding.&lt;/p&gt;&#xA;&lt;h2 id=&#34;compound-movement&#34;&gt;Compound Movement&lt;/h2&gt;&#xA;&lt;p&gt;Any lift that involves two or more joints. Typically accompanied with two or more muscle groups being involved. Example, dips (chest, tricep, and front delt).&lt;/p&gt;&#xA;&lt;h2 id=&#34;isolation-movement&#34;&gt;Isolation Movement&lt;/h2&gt;&#xA;&lt;p&gt;Only one joint is involved in the movement, usually accompanied with just one muscle. Example, tricep pushdown (tricep)&lt;/p&gt;&#xA;&lt;h2 id=&#34;progressive-overload&#34;&gt;Progressive Overload&lt;/h2&gt;&#xA;&lt;p&gt;Increase in weights over time, to get the same stimulus for growth.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>1.3 Why Workout?</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/1/3/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/1/3/</guid>
-      <description>&lt;p&gt;Before we even begin to dive into the article, we gotta ask ourselves&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-should-we-even-workout-to-begin-with&#34;&gt;&lt;em&gt;Why&lt;/em&gt; should we even workout to begin with?&lt;/h2&gt;&#xA;&lt;p&gt;Here are a few generic but solid reasons why you could consider working out.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll feel stronger and more capable and empowered.&lt;br&gt;&#xA;You&amp;rsquo;ll age slower.&lt;br&gt;&#xA;You&amp;rsquo;ll think better.&lt;br&gt;&#xA;Not to mention you will also become more attractive.&lt;br&gt;&#xA;And it is an indication that you&amp;rsquo;re a dedicated and commited person.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>1.4 Quickstart</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/1/4/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/1/4/</guid>
-      <description>&lt;p&gt;As a newcomer to lifting weights, the first goal should be to learn and get good at the basic movement patterns.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pulling&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Vertical Pull (like Pullups)&lt;/li&gt;&#xA;&lt;li&gt;A Horizontal Pull or a Row (like Barbell Rows)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Pushing&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Horizontal Push (like Pushups)&lt;/li&gt;&#xA;&lt;li&gt;An Overhead Press (like standing barbell overhead press).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Legs&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Squat Pattern&lt;/li&gt;&#xA;&lt;li&gt;A Hip-Hinge (like Deadlifts)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Most people just wanna look good and feel strong, just getting stronger at the basics along with some isolation work should do that.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2.1 Basic Muscle Science</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/2/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/2/1/</guid>
-      <description>&lt;p&gt;This section dives into the various big muscles we need to focus on. To make it easier to follow, I&amp;rsquo;ll categorise muscles and movement patterns into three simple buckets: Push, Pull, and Legs.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#the-pushing-musculature&#34;&gt;Push&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chest&#34;&gt;Chest&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#anteriorfront-delt&#34;&gt;Front Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#triceps&#34;&gt;Tricep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#the-pulling-musculature&#34;&gt;Pull&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#back&#34;&gt;Back&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#biceps&#34;&gt;Bicep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#rear-delt&#34;&gt;Rear Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#legs&#34;&gt;Legs&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#quadriceps&#34;&gt;Quads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hamstrings&#34;&gt;Hams&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;glutes-maximus&#34;&gt;Glutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#calves&#34;&gt;Calves&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-pushing-musculature&#34;&gt;The Pushing Musculature&lt;/h2&gt;&#xA;&lt;p&gt;The system of muscles that allow us to push stuff &lt;span class=highlight&gt;away from our body&lt;/span&gt;. For Example, in Bench Press, you&amp;rsquo;re pressing/pushing the barbell away from yourself.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2.2 Functions of different Musculatures</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/2/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/2/2/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This section explores how to train a muscle group based on its functions.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Push&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chest&#34;&gt;Chest&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#anterior-delt&#34;&gt;Front Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#tricep&#34;&gt;Tricep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pull&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#back&#34;&gt;Back&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#bicep&#34;&gt;Bicep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#rear-delt&#34;&gt;Rear Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Legs&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#quadriceps&#34;&gt;Quads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hamstrings&#34;&gt;Hams&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;glutes-maximus&#34;&gt;Glutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#calves&#34;&gt;Calves&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;chest&#34;&gt;Chest&lt;/h1&gt;&#xA;&lt;p&gt;The Main function of the chest is to press.&lt;/p&gt;&#xA;&lt;h2 id=&#34;chest-press&#34;&gt;Chest Press&lt;/h2&gt;&#xA;&lt;p&gt;Movements like the barbell bench press, dips etc come over here, where we&amp;rsquo;re pressing the weight using our chest muscles.&lt;br&gt;&#xA;Getting stronger at these builds the majority of the chest.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2.3 What builds muscle?</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/2/3/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/2/3/</guid>
-      <description>&lt;p&gt;Now that I&amp;rsquo;ve familiarized you with most of the basics concepts of training for hypertrophy, it&amp;rsquo;s time to realize what actually builds muscle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-actually-build-muscle&#34;&gt;What &lt;em&gt;actually&lt;/em&gt; build muscle?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;span class=highlight&gt;Training a muscle for it&amp;rsquo;s function under mechanical load and tension till muscular failure gives a stimulus for growth.&lt;/span&gt;&lt;br&gt;&#xA;The protein and calories we consume is used to synthesize muscle, aided with with good sleep and recovery.&lt;/p&gt;&#xA;&lt;p&gt;Essentially, we are breaking down the muscle fibres when we work out, and building it back when we eat and sleep, to slightly bigger size than before.&lt;br&gt;&#xA;This repeated again and again over a period of months/years is what gives significant visible change in one&amp;rsquo;s physique.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3.0 Nutritions 101</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/3/0/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/3/0/</guid>
-      <description>&lt;p&gt;What constituents good food?&lt;br&gt;&#xA;I wanna eat tasty food i look forward to enjoying while watching a series, that is healthy for the gut and nutritious as well.&lt;/p&gt;&#xA;&lt;p&gt;My options right now:&lt;br&gt;&#xA;Boiled Eggs&lt;br&gt;&#xA;Bread&lt;br&gt;&#xA;Rice&lt;br&gt;&#xA;Chapati&lt;br&gt;&#xA;Fruits (Orange, Blueberries, Banana)&lt;br&gt;&#xA;Paneer&lt;/p&gt;&#xA;&lt;p&gt;To watch:&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=GAvW6xBZjSk&amp;amp;list=PLYdkxp9hJ4i58l583rJV7r2LMAiYFJ9gm&#34;&gt;3dmj nutrition pyramid for strength&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3.1 Daily Recommendations</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/3/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/3/1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;In Works&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Consume &amp;gt; 1.6 x (Bodyweight in KGs) protein&#xA;For example, I am 70 kg, so I should consume 1.6 x 70 ~ 112 g protein.&lt;/p&gt;&#xA;&lt;p&gt;For calories, calculate your maintenance &lt;a href=&#34;https://www.calculator.net/calorie-calculator.html&#34;&gt;here&lt;/a&gt; and eat in a slight surplus (100~200 cal). Never be in a deficit as a beginner. But always fill your calories with clean food.&lt;br&gt;&#xA;No need to track carbs and fat also, just make you&amp;rsquo;re well fed and energized before a workout.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3.2 How to complete protein</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/3/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/3/2/</guid>
-      <description>&lt;p&gt;How to complete protein as a student on a budget.&lt;/p&gt;&#xA;&lt;h2 id=&#34;some-affordable-protein-sources&#34;&gt;Some Affordable Protein Sources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Eggs:&lt;/strong&gt; A complete source with a lot of micronutirents&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chicken:&lt;/strong&gt; Pretty good and cost efficient&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Soya Chunks:&lt;/strong&gt; Great protein per 100g, but lacks some essential aminos. Fine for bumping up the protein, but not as primary source&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Protein Powder:&lt;/strong&gt; The cheapest and most complete source&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Low Fat Paneer:&lt;/strong&gt; Fine but on the costlier side&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;plan-of-action&#34;&gt;Plan of Action&lt;/h2&gt;&#xA;&lt;p&gt;Cost and calories for 100g protein:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>4.1 Sleep</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/4/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/4/1/</guid>
-      <description>&lt;p&gt;Still &lt;strong&gt;In Works&lt;/strong&gt;, but&lt;/p&gt;&#xA;&lt;p&gt;7+ hours sleep preferable before 12 am and at the same time everyday.&lt;/p&gt;&#xA;&lt;p&gt;TODO: huberman lab optimise sleep and condense it here.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>4.2 Stress Management</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/4/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/4/2/</guid>
-      <description>&lt;p&gt;Still &lt;strong&gt;In Works&lt;/strong&gt;, but&lt;/p&gt;&#xA;&lt;p&gt;Meditate I guess?&lt;/p&gt;&#xA;&lt;p&gt;TODO: huberman lab stress and condense it here.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>5.1 Mindset</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/5/1/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/5/1/</guid>
-      <description>&lt;p&gt;The following blog sums it up quite well.&lt;br&gt;&#xA;&lt;a href=&#34;https://savar.is-a.dev/blog/workout-sections/1/3/&#34;&gt;Here&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>5.2 Points to Ponder</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/5/2/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/5/2/</guid>
-      <description>&lt;p&gt;This is &lt;strong&gt;In Works&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>5.3 Resources</title>
-      <link>https://savar.is-a.dev/blog/workout-sections/5/3/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-sections/5/3/</guid>
-      <description>&lt;p&gt;A list of resources I think are good.&lt;/p&gt;&#xA;&lt;h2 id=&#34;youtube-channels&#34;&gt;Youtube Channels&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@JeffNippard&#34;&gt;Jeff Nipard&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@MaxEuceda7&#34;&gt;Max Euceda&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@NaturalHypertrophy&#34;&gt;Natural Hypertrophy&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@GVS&#34;&gt;Geoffery Verity Schofield&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@BasementBodybuilding&#34;&gt;Basement Bodybuilding&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@BrainsandGainsPodcast&#34;&gt;Brains and Gains&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@hubermanlab&#34;&gt;Huberman Lab&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;apps&#34;&gt;Apps&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.boostcamp.app/&#34;&gt;Boostcamp&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lifting for Beginners</title>
-      <link>https://savar.is-a.dev/blog/workout-beginners/</link>
-      <pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout-beginners/</guid>
-      <description>&lt;!--Everything he did had a purpose--&gt;&#xA;&lt;p&gt;A lot of my friends keep asking me the same basic questions again and again, hence this article.&lt;br&gt;&#xA;&lt;a href=&#34;https://savar.is-a.dev/blog/workout&#34;&gt;Here&lt;/a&gt;&amp;rsquo;s my updated workout split, if you&amp;rsquo;re here for just that.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this article is to impart basic knowledge and a roadmap for beginners who wish to get bigger and stronger but don&amp;rsquo;t know where to start.&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&#34;color: var(--clr-fg-dark);&#34; class=&#34;ph ph-file-text&#34;&gt;&lt;/span&gt; &lt;strong&gt;1.1&lt;/strong&gt; &lt;a href=&#34;https://savar.is-a.dev/blog/workout-sections/1/1/&#34;&gt;Terminology for Dummies&lt;/a&gt;&lt;br&gt;&#xA;&lt;span style=&#34;color: var(--clr-fg-dark);&#34; class=&#34;ph ph-file-text&#34;&gt;&lt;/span&gt; &lt;strong&gt;1.2&lt;/strong&gt; &lt;a href=&#34;https://savar.is-a.dev/blog/workout-sections/1/2/&#34;&gt;Terminology&lt;/a&gt;&lt;br&gt;&#xA;&lt;span style=&#34;color: var(--clr-fg-dark);&#34; class=&#34;ph ph-file-text&#34;&gt;&lt;/span&gt; &lt;strong&gt;1.3&lt;/strong&gt; &lt;a href=&#34;https://savar.is-a.dev/blog/workout-sections/1/3/&#34;&gt;Why Workout?&lt;/a&gt;&lt;br&gt;&#xA;&lt;span style=&#34;color: var(--clr-fg-dark);&#34; class=&#34;ph ph-file-text&#34;&gt;&lt;/span&gt; &lt;strong&gt;1.4&lt;/strong&gt; &lt;a href=&#34;https://savar.is-a.dev/blog/workout-sections/1/4/&#34;&gt;Quickstart&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>dotfiles</title>
-      <link>https://savar.is-a.dev/work/dotfiles/</link>
-      <pubDate>Tue, 21 Jan 2025 16:43:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/work/dotfiles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>My Current Workout Split</title>
-      <link>https://savar.is-a.dev/blog/workout/</link>
-      <pubDate>Sat, 18 Jan 2025 16:35:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/workout/</guid>
-      <description>&lt;p&gt;I follow a Push, Pull, Leg split.&lt;br&gt;&#xA;If you&amp;rsquo;re here to learn as a beginner, I&amp;rsquo;d redirect you to &lt;a href=&#34;https://savar.is-a.dev/blog/workout-beginners/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;push&#34;&gt;Push&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chest:&lt;/strong&gt; Barbell Bench Press&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Side Delts:&lt;/strong&gt; Lateral Raises (Cable/Dumbbell)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tricep:&lt;/strong&gt; Pushdown, Overhead Extensions (both Cable)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;pull&#34;&gt;Pull&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Back:&lt;/strong&gt; Wide grip Pulldown, Barbell Bent Over Row&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bicep:&lt;/strong&gt; Curls, Hammer Curls (both Cable)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rear Delts:&lt;/strong&gt; Reverse Pec Deck&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;legs&#34;&gt;Legs&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quads:&lt;/strong&gt; Squats&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hammies:&lt;/strong&gt; Leg Curl&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The way I structure my week is;&lt;br&gt;&#xA;Push, Pull, Leg, Rest.&lt;br&gt;&#xA;And then I repeat.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>search</title>
-      <link>https://savar.is-a.dev/work/search/</link>
-      <pubDate>Thu, 09 Jan 2025 02:38:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/work/search/</guid>
-      <description>&lt;section  id=wrapper&gt;&#xA;  &lt;section id=engines-search&gt;&#xA;    &lt;section id=engines&gt;&#xA;      &lt;span id=&#34;engine-0&#34; onclick=&#34;toggleActiveColor(0)&#34; class=&#34;engine active-engine&#34;&gt;Google&lt;/span&gt;&#xA;      &lt;span id=&#34;engine-1&#34; onclick=&#34;toggleActiveColor(1)&#34; class=&#34;engine&#34;&gt;ArchWiki&lt;/span&gt;&#xA;      &lt;span id=&#34;engine-2&#34; onclick=&#34;toggleActiveColor(2)&#34; class=&#34;engine&#34;&gt;Youtube&lt;/span&gt;&#xA;      &lt;span id=&#34;engine-3&#34; onclick=&#34;toggleActiveColor(3)&#34; class=&#34;engine&#34;&gt;Github&lt;/span&gt;&#xA;    &lt;/section&gt;&#xA;  &lt;section id=search-bar&gt;&#xA;    &lt;span aria-label=&#34;search&#34; onclick=&#34;search()&#34; title=&#34;search&#34; id=search-icon class=&#34;ph ph-magnifying-glass&#34;&gt;&lt;/span&gt;&#xA;    &lt;input id=searchInput placeholder=&#34;Search over youtube&#34; /&gt;&#xA;    &lt;span aria-label=&#34;clear search input&#34; onclick=&#34;clearInput()&#34; title=&#34;Clear Input&#34; id=tabButton class=&#34;tab&#34;&gt;&lt;span onclick=&#34;toggleEngine()&#34;&gt;Tab&lt;/span&gt;&lt;/span&gt;&#xA;    &lt;span aria-label=&#34;clear search input&#34; onclick=&#34;clearInput()&#34; title=&#34;Clear Input&#34; id=clearButton class=&#34;ph ph-x-circle&#34;&gt;&lt;/span&gt;&#xA;  &lt;/section&gt;&#xA;  &lt;/section&gt;&#xA;  &lt;section id=cards&gt;&#xA;    &lt;!--span class=&#34;ph ph-magnifying-glass&#34; aria-label=&#34;search over search engines like github and archwiki&#34; onclick=&#34;search()&#34;&gt;&lt;/span--&gt;&#xA;    &lt;a class=&#34;ph ph-github-logo&#34; aria-label=&#34;google tasks&#34; href=https://github.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-check-circle&#34; aria-label=&#34;google tasks&#34; href=https://tasks.google.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-lightbulb&#34; aria-label=&#34;google keep notes&#34; href=https://keep.google.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-phosphor-logo&#34; aria-label=&#34;phosphor icons&#34; href=https://phosphoricons.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-lightning&#34; aria-label=&#34;spotify web&#34; href=https://gemini.google.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-scribble-loop&#34; aria-label=&#34;home&#34; href=https://savar.is-a.dev/&gt;&lt;/a&gt;&#xA;  &lt;/section&gt;&#xA;  &lt;!--button aria-label=&#34;send search query&#34; onclick=&#34;search()&#34; title=&#34;Search&#34; class=&#34;ph-bold ph-magnifying-glass&#34; id=searchButton&gt;&lt;/button--&gt;&#xA;&lt;script src=&#34;https://savar.is-a.dev/js/search.js&#34;&gt;&lt;/script&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;search.css&#34; /&gt;&#xA;&lt;!--script src=https://savar.is-a.dev/js/date.js&gt;&lt;/scrip--&gt;</description>
-    </item>
-    <item>
-      <title>Fix your attention span</title>
-      <link>https://savar.is-a.dev/blog/attentionspan/</link>
-      <pubDate>Mon, 06 Jan 2025 01:26:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/attentionspan/</guid>
-      <description>&lt;p&gt;A summary to &lt;a href=&#34;https://www.youtube.com/watch?v=H86iO0mtsDI&amp;amp;pp=ygUNYnJhaW5yb3QgYWV2eQ%3D%3D&#34;&gt;this video&lt;/a&gt; by @&lt;a href=&#34;https://www.youtube.com/@aevytv/videos&#34;&gt;aevytv&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://savar.is-a.dev/imgs/attentionspan.webp&#34; alt=&#34;attention span&#34;&gt;&lt;/p&gt;&#xA;&lt;figcaption&gt;Culprits for a low attention span&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;h2 id=&#34;why-to-fix-attention&#34;&gt;Why to fix attention?&lt;/h2&gt;&#xA;&lt;p&gt;The ability to &lt;span class=highlight&gt;focus&lt;/span&gt;, &lt;span class=highlight&gt;be creative&lt;/span&gt;, and being bored are innate to human beings and probably the very reasons they are powerful. If we lose our ability to channel our attention, we risk losing all these qualities that make us interesting and useful, and that&amp;rsquo;s no bueno.&lt;br&gt;&#xA;It makes doing simple low dopamine tasks like reading books, going through an assignment, even working out a great challenge to push through.&lt;br&gt;&#xA;Personally, I would like myself better if I&amp;rsquo;m more productive and consuming media consciously.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Movies &amp; Shows</title>
-      <link>https://savar.is-a.dev/blog/movies/</link>
-      <pubDate>Mon, 08 Jan 2024 02:38:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/movies/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;d recommend everyone to watch these at least once in their lifetimes.&lt;/p&gt;&#xA;&lt;h2 style=&#34;margin: 2rem 0 0.25rem 0;&#34;&gt;42 (2013)&lt;/h2&gt;&#xA;&lt;p class=small-caps-text style=&#34;color: var(--clr-gray);margin: 0.1em 0 0 0;&#34;&gt;added on &lt;span class=highligh&gt;07 Feb, 2025&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;The story of the baseball legend Jackie Robinson&amp;rsquo;s journey starting out in the MLB, highlighting the racism in the sport. All the leads have done phenomenal acting, and this is a movie you won&amp;rsquo;t forget anytime soon.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://savar.is-a.dev/imgs/42.webp&#34; alt=&#34;42&#34;&gt;&lt;/p&gt;&#xA;&lt;figcaption&gt;Chadwick Bosesman as Jackie Robinson in 42&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Fun fact - This is the movie that earned Chadwick Boseman his role as Black Panther, and rightfully so. May he rest in peace.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why Deepseek is better than ChatGPT</title>
-      <link>https://savar.is-a.dev/blog/deepseek/</link>
-      <pubDate>Tue, 01 Feb 2000 14:32:22 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/deepseek/</guid>
-      <description>&lt;h2 id=&#34;why-deepseek-is-better-than-chatgpt-a-comprehensive-analysis&#34;&gt;Why DeepSeek Is Better Than ChatGPT: A Comprehensive Analysis&lt;/h2&gt;&#xA;&lt;p&gt;In the rapidly evolving world of artificial intelligence, language models like ChatGPT have made significant strides in natural language processing, enabling machines to generate human-like text and engage in meaningful conversations. However, as a more advanced iteration of AI, DeepSeek brings several key advantages that set it apart from ChatGPT. Here’s why DeepSeek is better:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1-enhanced-contextual-understanding&#34;&gt;1. &lt;strong&gt;Enhanced Contextual Understanding&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;While ChatGPT is impressive in its ability to generate coherent responses, DeepSeek is designed with a deeper understanding of context. It can maintain longer and more complex conversations without losing track of the topic. This allows DeepSeek to provide more accurate and relevant responses, especially in nuanced or multi-layered discussions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>https://savar.is-a.dev/blog/loremipsum/</link>
-      <pubDate>Fri, 21 Jan 2000 17:26:28 +0530</pubDate>
-      <guid>https://savar.is-a.dev/blog/loremipsum/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;&#xA;&lt;p&gt;Mauris dapibus volutpat libero, eu malesuada nulla. Aenean at tincidunt mi. Fusce eget enim et orci facilisis efficitur. Quisque sit amet orci non ipsum interdum congue vel ac neque. Etiam suscipit nulla at turpis venenatis, non sollicitudin justo sollicitudin.&lt;/p&gt;&#xA;&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;&#xA;&lt;p&gt;Sed sit amet ligula placerat, interdum mi eget, blandit sem. Donec eget metus ac eros scelerisque rhoncus. Fusce eget justo eu ante vulputate sodales. Nulla et orci et elit fringilla ullamcorper sed vel purus.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>savar</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on savar</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 13 Oct 2026 02:35:53 +0530</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Desolating Destiny</title>
+				<link>http://localhost:1313/blog/desolating-destiny/</link>
+				<pubDate>Tue, 13 Oct 2026 02:35:53 +0530</pubDate>
+				<guid>http://localhost:1313/blog/desolating-destiny/</guid>
+				<description>&lt;!--&#xA;&lt;figure&gt;&#xA;&#xA;![odyssey](/imgs/lotus-eaters.webp)&#xA;&lt;figcaption&gt;The Lotus Eaters, Thomas Moran&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;--&gt;&#xA;&lt;p&gt;As I rot in this AirBnb from the last two days, I realise how time flies when you&amp;rsquo;re not &lt;span class=&#34;highlight&#34;&gt;intentionally constructive&lt;/span&gt; towards something.&#xA;It&amp;rsquo;s the same reason why I don&amp;rsquo;t remember much from my holidays at home. And why time just vanishes over there.&lt;/p&gt;&#xA;&lt;p&gt;When you don&amp;rsquo;t understand the urgency and the gravity of the fact that your time in this world is limited, it&amp;rsquo;s really easy to waste away your prime years.&#xA;To put to perspective, they say &lt;span class=&#34;highlight&#34;&gt;the percieved midpoint of one&amp;rsquo;s life is at eighteen&lt;/span&gt;, considering they live till eighty-one.&#xA;That means you&amp;rsquo;ve basically lived half your life when you&amp;rsquo;re eighteen. And you have even less time from eighteen to fourty, which is where the peak of your life lies.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Url Shortner</title>
+				<link>http://localhost:1313/work/url-shortner/</link>
+				<pubDate>Thu, 18 Dec 2025 11:45:33 +0530</pubDate>
+				<guid>http://localhost:1313/work/url-shortner/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>2.4 Frequncy, Volume, and Progression</title>
+				<link>http://localhost:1313/blog/workout-sections/2/4/</link>
+				<pubDate>Sun, 14 Dec 2025 21:33:38 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/2/4/</guid>
+				<description>&lt;h2 id=&#34;getting-stronger-at-the-basics&#34;&gt;Getting stronger at the Basics&lt;/h2&gt;&#xA;&lt;p&gt;Once proper technique is learnt, focus on progressive overload. This is what&amp;rsquo;ll allow you to build muscle now, the previous step was a foundation or a precursor to this.&lt;/p&gt;&#xA;&lt;p&gt;But before I tell you the progression I recommend, you should first know what progressive overload actually mean.&lt;br&gt;&#xA;Progressive Overload means you either increase the reps and sets at the same weight, or you increase the weight. In the long run, your weights increase.&lt;br&gt;&#xA;If you don&amp;rsquo;t progressively overload, you simply won&amp;rsquo;t keep growing as the muscles need more stimulus to grow more.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Breathe</title>
+				<link>http://localhost:1313/work/breathe/</link>
+				<pubDate>Fri, 12 Dec 2025 10:34:25 +0530</pubDate>
+				<guid>http://localhost:1313/work/breathe/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pss Website</title>
+				<link>http://localhost:1313/work/pss-website/</link>
+				<pubDate>Sun, 07 Dec 2025 10:41:05 +0530</pubDate>
+				<guid>http://localhost:1313/work/pss-website/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>dwm</title>
+				<link>http://localhost:1313/work/dwm/</link>
+				<pubDate>Sun, 21 Sep 2025 16:43:28 +0530</pubDate>
+				<guid>http://localhost:1313/work/dwm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>imgedit</title>
+				<link>http://localhost:1313/work/imgedit/</link>
+				<pubDate>Sat, 21 Jun 2025 16:43:28 +0530</pubDate>
+				<guid>http://localhost:1313/work/imgedit/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>1.1 Terminology for Dummies</title>
+				<link>http://localhost:1313/blog/workout-sections/1/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/1/1/</guid>
+				<description>&lt;p&gt;Really common vocabulary that gym goers use.&lt;/p&gt;&#xA;&lt;h2 id=&#34;gym&#34;&gt;Gym&lt;/h2&gt;&#xA;&lt;p&gt;A place of physical wellbeing. One could use this to pursue various goals such as more muscle mass or strength, cardiovascular strength, plyometrics, sports like crossfit, or health in general to name a few. In this article, we&amp;rsquo;ll only be discussing the size and strength aspect of it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reps--repetitions&#34;&gt;Reps / Repetitions&lt;/h2&gt;&#xA;&lt;p&gt;The number of times you perform a movement at once. For example, 10 reps of bicep curl.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>1.2 Terminology</title>
+				<link>http://localhost:1313/blog/workout-sections/1/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/1/2/</guid>
+				<description>&lt;p&gt;Techincal but common words gym goers use.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hypertrophy&#34;&gt;Hypertrophy&lt;/h2&gt;&#xA;&lt;p&gt;A fancy word for muscle bulding.&lt;/p&gt;&#xA;&lt;h2 id=&#34;compound-movement&#34;&gt;Compound Movement&lt;/h2&gt;&#xA;&lt;p&gt;Any lift that involves two or more joints. Typically accompanied with two or more muscle groups being involved. Example, dips (chest, tricep, and front delt).&lt;/p&gt;&#xA;&lt;h2 id=&#34;isolation-movement&#34;&gt;Isolation Movement&lt;/h2&gt;&#xA;&lt;p&gt;Only one joint is involved in the movement, usually accompanied with just one muscle. Example, tricep pushdown (tricep)&lt;/p&gt;&#xA;&lt;h2 id=&#34;progressive-overload&#34;&gt;Progressive Overload&lt;/h2&gt;&#xA;&lt;p&gt;Increase in weights over time, to get the same stimulus for growth.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>1.3 Why Workout?</title>
+				<link>http://localhost:1313/blog/workout-sections/1/3/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/1/3/</guid>
+				<description>&lt;p&gt;Before we even begin to dive into the article, we gotta ask ourselves&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-should-we-even-workout-to-begin-with&#34;&gt;&lt;em&gt;Why&lt;/em&gt; should we even workout to begin with?&lt;/h2&gt;&#xA;&lt;p&gt;Here are a few generic but solid reasons why you could consider working out.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll feel stronger and more capable and empowered.&lt;br&gt;&#xA;You&amp;rsquo;ll age slower.&lt;br&gt;&#xA;You&amp;rsquo;ll think better.&lt;br&gt;&#xA;Not to mention you will also become more attractive.&lt;br&gt;&#xA;And it is an indication that you&amp;rsquo;re a dedicated and commited person.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>1.4 Quickstart</title>
+				<link>http://localhost:1313/blog/workout-sections/1/4/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/1/4/</guid>
+				<description>&lt;p&gt;As a newcomer to lifting weights, the first goal should be to learn and get good at the basic movement patterns.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pulling&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Vertical Pull (like Pullups)&lt;/li&gt;&#xA;&lt;li&gt;A Horizontal Pull or a Row (like Barbell Rows)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Pushing&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Horizontal Push (like Pushups)&lt;/li&gt;&#xA;&lt;li&gt;An Overhead Press (like standing barbell overhead press).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Legs&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A Squat Pattern&lt;/li&gt;&#xA;&lt;li&gt;A Hip-Hinge (like Deadlifts)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Most people just wanna look good and feel strong, just getting stronger at the basics along with some isolation work should do that.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2.1 Basic Muscle Science</title>
+				<link>http://localhost:1313/blog/workout-sections/2/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/2/1/</guid>
+				<description>&lt;p&gt;This section dives into the various big muscles we need to focus on. To make it easier to follow, I&amp;rsquo;ll categorise muscles and movement patterns into three simple buckets: Push, Pull, and Legs.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#the-pushing-musculature&#34;&gt;Push&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chest&#34;&gt;Chest&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#anteriorfront-delt&#34;&gt;Front Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#triceps&#34;&gt;Tricep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#the-pulling-musculature&#34;&gt;Pull&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#back&#34;&gt;Back&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#biceps&#34;&gt;Bicep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#rear-delt&#34;&gt;Rear Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#legs&#34;&gt;Legs&lt;/a&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#quadriceps&#34;&gt;Quads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hamstrings&#34;&gt;Hams&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;glutes-maximus&#34;&gt;Glutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#calves&#34;&gt;Calves&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-pushing-musculature&#34;&gt;The Pushing Musculature&lt;/h2&gt;&#xA;&lt;p&gt;The system of muscles that allow us to push stuff &lt;span class=highlight&gt;away from our body&lt;/span&gt;. For Example, in Bench Press, you&amp;rsquo;re pressing/pushing the barbell away from yourself.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2.2 Functions of different Musculatures</title>
+				<link>http://localhost:1313/blog/workout-sections/2/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/2/2/</guid>
+				<description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This section explores how to train a muscle group based on its functions.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Push&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chest&#34;&gt;Chest&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#anterior-delt&#34;&gt;Front Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#tricep&#34;&gt;Tricep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pull&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#back&#34;&gt;Back&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#bicep&#34;&gt;Bicep&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#rear-delt&#34;&gt;Rear Delt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Legs&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#quadriceps&#34;&gt;Quads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hamstrings&#34;&gt;Hams&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;glutes-maximus&#34;&gt;Glutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#calves&#34;&gt;Calves&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;chest&#34;&gt;Chest&lt;/h1&gt;&#xA;&lt;p&gt;The Main function of the chest is to press.&lt;/p&gt;&#xA;&lt;h2 id=&#34;chest-press&#34;&gt;Chest Press&lt;/h2&gt;&#xA;&lt;p&gt;Movements like the barbell bench press, dips etc come over here, where we&amp;rsquo;re pressing the weight using our chest muscles.&lt;br&gt;&#xA;Getting stronger at these builds the majority of the chest.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2.3 What builds muscle?</title>
+				<link>http://localhost:1313/blog/workout-sections/2/3/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/2/3/</guid>
+				<description>&lt;p&gt;Now that I&amp;rsquo;ve familiarized you with most of the basics concepts of training for hypertrophy, it&amp;rsquo;s time to realize what actually builds muscle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-actually-build-muscle&#34;&gt;What &lt;em&gt;actually&lt;/em&gt; build muscle?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;span class=highlight&gt;Training a muscle for it&amp;rsquo;s function under mechanical load and tension till muscular failure gives a stimulus for growth.&lt;/span&gt;&lt;br&gt;&#xA;The protein and calories we consume is used to synthesize muscle, aided with with good sleep and recovery.&lt;/p&gt;&#xA;&lt;p&gt;Essentially, we are breaking down the muscle fibres when we work out, and building it back when we eat and sleep, to slightly bigger size than before.&lt;br&gt;&#xA;This repeated again and again over a period of months/years is what gives significant visible change in one&amp;rsquo;s physique.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3.0 Nutritions 101</title>
+				<link>http://localhost:1313/blog/workout-sections/3/0/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/3/0/</guid>
+				<description>&lt;p&gt;What constituents good food?&lt;br&gt;&#xA;I wanna eat tasty food i look forward to enjoying while watching a series, that is healthy for the gut and nutritious as well.&lt;/p&gt;&#xA;&lt;p&gt;My options right now:&lt;br&gt;&#xA;Boiled Eggs&lt;br&gt;&#xA;Bread&lt;br&gt;&#xA;Rice&lt;br&gt;&#xA;Chapati&lt;br&gt;&#xA;Fruits (Orange, Blueberries, Banana)&lt;br&gt;&#xA;Paneer&lt;/p&gt;&#xA;&lt;p&gt;To watch:&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=GAvW6xBZjSk&amp;amp;list=PLYdkxp9hJ4i58l583rJV7r2LMAiYFJ9gm&#34;&gt;3dmj nutrition pyramid for strength&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3.1 Daily Recommendations</title>
+				<link>http://localhost:1313/blog/workout-sections/3/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/3/1/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;In Works&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Consume &amp;gt; 1.6 x (Bodyweight in KGs) protein&#xA;For example, I am 70 kg, so I should consume 1.6 x 70 ~ 112 g protein.&lt;/p&gt;&#xA;&lt;p&gt;For calories, calculate your maintenance &lt;a href=&#34;https://www.calculator.net/calorie-calculator.html&#34;&gt;here&lt;/a&gt; and eat in a slight surplus (100~200 cal). Never be in a deficit as a beginner. But always fill your calories with clean food.&lt;br&gt;&#xA;No need to track carbs and fat also, just make you&amp;rsquo;re well fed and energized before a workout.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3.2 How to complete protein</title>
+				<link>http://localhost:1313/blog/workout-sections/3/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/3/2/</guid>
+				<description>&lt;p&gt;How to complete protein as a student on a budget.&lt;/p&gt;&#xA;&lt;h2 id=&#34;some-affordable-protein-sources&#34;&gt;Some Affordable Protein Sources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Eggs:&lt;/strong&gt; A complete source with a lot of micronutirents&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chicken:&lt;/strong&gt; Pretty good and cost efficient&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Soya Chunks:&lt;/strong&gt; Great protein per 100g, but lacks some essential aminos. Fine for bumping up the protein, but not as primary source&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Protein Powder:&lt;/strong&gt; The cheapest and most complete source&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Low Fat Paneer:&lt;/strong&gt; Fine but on the costlier side&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;plan-of-action&#34;&gt;Plan of Action&lt;/h2&gt;&#xA;&lt;p&gt;Cost and calories for 100g protein:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>4.1 Sleep</title>
+				<link>http://localhost:1313/blog/workout-sections/4/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/4/1/</guid>
+				<description>&lt;p&gt;Still &lt;strong&gt;In Works&lt;/strong&gt;, but&lt;/p&gt;&#xA;&lt;p&gt;7+ hours sleep preferable before 12 am and at the same time everyday.&lt;/p&gt;&#xA;&lt;p&gt;TODO: huberman lab optimise sleep and condense it here.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>4.2 Stress Management</title>
+				<link>http://localhost:1313/blog/workout-sections/4/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/4/2/</guid>
+				<description>&lt;p&gt;Still &lt;strong&gt;In Works&lt;/strong&gt;, but&lt;/p&gt;&#xA;&lt;p&gt;Meditate I guess?&lt;/p&gt;&#xA;&lt;p&gt;TODO: huberman lab stress and condense it here.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>5.1 Mindset</title>
+				<link>http://localhost:1313/blog/workout-sections/5/1/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/5/1/</guid>
+				<description>&lt;p&gt;The following blog sums it up quite well.&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/blog/workout-sections/1/3/&#34;&gt;Here&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>5.2 Points to Ponder</title>
+				<link>http://localhost:1313/blog/workout-sections/5/2/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/5/2/</guid>
+				<description>&lt;p&gt;This is &lt;strong&gt;In Works&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>5.3 Resources</title>
+				<link>http://localhost:1313/blog/workout-sections/5/3/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-sections/5/3/</guid>
+				<description>&lt;p&gt;A list of resources I think are good.&lt;/p&gt;&#xA;&lt;h2 id=&#34;youtube-channels&#34;&gt;Youtube Channels&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@JeffNippard&#34;&gt;Jeff Nipard&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@MaxEuceda7&#34;&gt;Max Euceda&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@NaturalHypertrophy&#34;&gt;Natural Hypertrophy&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@GVS&#34;&gt;Geoffery Verity Schofield&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@BasementBodybuilding&#34;&gt;Basement Bodybuilding&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@BrainsandGainsPodcast&#34;&gt;Brains and Gains&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/@hubermanlab&#34;&gt;Huberman Lab&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;apps&#34;&gt;Apps&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.boostcamp.app/&#34;&gt;Boostcamp&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Lifting for Beginners</title>
+				<link>http://localhost:1313/blog/workout-beginners/</link>
+				<pubDate>Sat, 01 Feb 2025 14:35:02 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout-beginners/</guid>
+				<description>&lt;!--Everything he did had a purpose--&gt;&#xA;&lt;p&gt;A lot of my friends keep asking me the same basic questions again and again, hence this article.&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/blog/workout&#34;&gt;Here&lt;/a&gt;&amp;rsquo;s my updated workout split, if you&amp;rsquo;re here for just that.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this article is to impart basic knowledge and a roadmap for beginners who wish to get bigger and stronger but don&amp;rsquo;t know where to start.&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&#34;color: var(--clr-fg-dark);&#34; class=&#34;ph ph-file-text&#34;&gt;&lt;/span&gt; &lt;strong&gt;1.1&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/blog/workout-sections/1/1/&#34;&gt;Terminology for Dummies&lt;/a&gt;&lt;br&gt;&#xA;&lt;span style=&#34;color: var(--clr-fg-dark);&#34; class=&#34;ph ph-file-text&#34;&gt;&lt;/span&gt; &lt;strong&gt;1.2&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/blog/workout-sections/1/2/&#34;&gt;Terminology&lt;/a&gt;&lt;br&gt;&#xA;&lt;span style=&#34;color: var(--clr-fg-dark);&#34; class=&#34;ph ph-file-text&#34;&gt;&lt;/span&gt; &lt;strong&gt;1.3&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/blog/workout-sections/1/3/&#34;&gt;Why Workout?&lt;/a&gt;&lt;br&gt;&#xA;&lt;span style=&#34;color: var(--clr-fg-dark);&#34; class=&#34;ph ph-file-text&#34;&gt;&lt;/span&gt; &lt;strong&gt;1.4&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/blog/workout-sections/1/4/&#34;&gt;Quickstart&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>dotfiles</title>
+				<link>http://localhost:1313/work/dotfiles/</link>
+				<pubDate>Tue, 21 Jan 2025 16:43:28 +0530</pubDate>
+				<guid>http://localhost:1313/work/dotfiles/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>My Current Workout Split</title>
+				<link>http://localhost:1313/blog/workout/</link>
+				<pubDate>Sat, 18 Jan 2025 16:35:28 +0530</pubDate>
+				<guid>http://localhost:1313/blog/workout/</guid>
+				<description>&lt;p&gt;I follow a Push, Pull, Leg split.&lt;br&gt;&#xA;If you&amp;rsquo;re here to learn as a beginner, I&amp;rsquo;d redirect you to &lt;a href=&#34;http://localhost:1313/blog/workout-beginners/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;push&#34;&gt;Push&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chest:&lt;/strong&gt; Barbell Bench Press&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Side Delts:&lt;/strong&gt; Lateral Raises (Cable/Dumbbell)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tricep:&lt;/strong&gt; Pushdown, Overhead Extensions (both Cable)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;pull&#34;&gt;Pull&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Back:&lt;/strong&gt; Wide grip Pulldown, Barbell Bent Over Row&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bicep:&lt;/strong&gt; Curls, Hammer Curls (both Cable)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rear Delts:&lt;/strong&gt; Reverse Pec Deck&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;legs&#34;&gt;Legs&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quads:&lt;/strong&gt; Squats&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hammies:&lt;/strong&gt; Leg Curl&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The way I structure my week is;&lt;br&gt;&#xA;Push, Pull, Leg, Rest.&lt;br&gt;&#xA;And then I repeat.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>search</title>
+				<link>http://localhost:1313/work/search/</link>
+				<pubDate>Thu, 09 Jan 2025 02:38:28 +0530</pubDate>
+				<guid>http://localhost:1313/work/search/</guid>
+				<description>&lt;section  id=wrapper&gt;&#xA;  &lt;section id=engines-search&gt;&#xA;    &lt;section id=engines&gt;&#xA;      &lt;span id=&#34;engine-0&#34; onclick=&#34;toggleActiveColor(0)&#34; class=&#34;engine active-engine&#34;&gt;Google&lt;/span&gt;&#xA;      &lt;span id=&#34;engine-1&#34; onclick=&#34;toggleActiveColor(1)&#34; class=&#34;engine&#34;&gt;ArchWiki&lt;/span&gt;&#xA;      &lt;span id=&#34;engine-2&#34; onclick=&#34;toggleActiveColor(2)&#34; class=&#34;engine&#34;&gt;Youtube&lt;/span&gt;&#xA;      &lt;span id=&#34;engine-3&#34; onclick=&#34;toggleActiveColor(3)&#34; class=&#34;engine&#34;&gt;Github&lt;/span&gt;&#xA;    &lt;/section&gt;&#xA;  &lt;section id=search-bar&gt;&#xA;    &lt;span aria-label=&#34;search&#34; onclick=&#34;search()&#34; title=&#34;search&#34; id=search-icon class=&#34;ph ph-magnifying-glass&#34;&gt;&lt;/span&gt;&#xA;    &lt;input id=searchInput placeholder=&#34;Search over youtube&#34; /&gt;&#xA;    &lt;span aria-label=&#34;clear search input&#34; onclick=&#34;clearInput()&#34; title=&#34;Clear Input&#34; id=tabButton class=&#34;tab&#34;&gt;&lt;span onclick=&#34;toggleEngine()&#34;&gt;Tab&lt;/span&gt;&lt;/span&gt;&#xA;    &lt;span aria-label=&#34;clear search input&#34; onclick=&#34;clearInput()&#34; title=&#34;Clear Input&#34; id=clearButton class=&#34;ph ph-x-circle&#34;&gt;&lt;/span&gt;&#xA;  &lt;/section&gt;&#xA;  &lt;/section&gt;&#xA;  &lt;section id=cards&gt;&#xA;    &lt;!--span class=&#34;ph ph-magnifying-glass&#34; aria-label=&#34;search over search engines like github and archwiki&#34; onclick=&#34;search()&#34;&gt;&lt;/span--&gt;&#xA;    &lt;a class=&#34;ph ph-github-logo&#34; aria-label=&#34;google tasks&#34; href=https://github.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-check-circle&#34; aria-label=&#34;google tasks&#34; href=https://tasks.google.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-lightbulb&#34; aria-label=&#34;google keep notes&#34; href=https://keep.google.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-phosphor-logo&#34; aria-label=&#34;phosphor icons&#34; href=https://phosphoricons.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-lightning&#34; aria-label=&#34;spotify web&#34; href=https://gemini.google.com&gt;&lt;/a&gt;&#xA;    &lt;a class=&#34;ph ph-scribble-loop&#34; aria-label=&#34;home&#34; href=http://localhost:1313/&gt;&lt;/a&gt;&#xA;  &lt;/section&gt;&#xA;  &lt;!--button aria-label=&#34;send search query&#34; onclick=&#34;search()&#34; title=&#34;Search&#34; class=&#34;ph-bold ph-magnifying-glass&#34; id=searchButton&gt;&lt;/button--&gt;&#xA;&lt;script src=&#34;http://localhost:1313/js/search.js&#34;&gt;&lt;/script&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;search.css&#34; /&gt;&#xA;&lt;!--script src=http://localhost:1313/js/date.js&gt;&lt;/scrip--&gt;</description>
+			</item>
+			<item>
+				<title>Fix your attention span</title>
+				<link>http://localhost:1313/blog/attentionspan/</link>
+				<pubDate>Mon, 06 Jan 2025 01:26:28 +0530</pubDate>
+				<guid>http://localhost:1313/blog/attentionspan/</guid>
+				<description>&lt;p&gt;A summary to &lt;a href=&#34;https://www.youtube.com/watch?v=H86iO0mtsDI&amp;amp;pp=ygUNYnJhaW5yb3QgYWV2eQ%3D%3D&#34;&gt;this video&lt;/a&gt; by @&lt;a href=&#34;https://www.youtube.com/@aevytv/videos&#34;&gt;aevytv&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/attentionspan.webp&#34; alt=&#34;attention span&#34;&gt;&lt;/p&gt;&#xA;&lt;figcaption&gt;Culprits for a low attention span&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;h2 id=&#34;why-to-fix-attention&#34;&gt;Why to fix attention?&lt;/h2&gt;&#xA;&lt;p&gt;The ability to &lt;span class=highlight&gt;focus&lt;/span&gt;, &lt;span class=highlight&gt;be creative&lt;/span&gt;, and being bored are innate to human beings and probably the very reasons they are powerful. If we lose our ability to channel our attention, we risk losing all these qualities that make us interesting and useful, and that&amp;rsquo;s no bueno.&lt;br&gt;&#xA;It makes doing simple low dopamine tasks like reading books, going through an assignment, even working out a great challenge to push through.&lt;br&gt;&#xA;Personally, I would like myself better if I&amp;rsquo;m more productive and consuming media consciously.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Movies &amp; Shows</title>
+				<link>http://localhost:1313/blog/movies/</link>
+				<pubDate>Mon, 08 Jan 2024 02:38:28 +0530</pubDate>
+				<guid>http://localhost:1313/blog/movies/</guid>
+				<description>&lt;p&gt;I&amp;rsquo;d recommend everyone to watch these at least once in their lifetimes.&lt;/p&gt;&#xA;&lt;h2 style=&#34;margin: 2rem 0 0.25rem 0;&#34;&gt;42 (2013)&lt;/h2&gt;&#xA;&lt;p class=small-caps-text style=&#34;color: var(--clr-gray);margin: 0.1em 0 0 0;&#34;&gt;added on &lt;span class=highligh&gt;07 Feb, 2025&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;The story of the baseball legend Jackie Robinson&amp;rsquo;s journey starting out in the MLB, highlighting the racism in the sport. All the leads have done phenomenal acting, and this is a movie you won&amp;rsquo;t forget anytime soon.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/42.webp&#34; alt=&#34;42&#34;&gt;&lt;/p&gt;&#xA;&lt;figcaption&gt;Chadwick Bosesman as Jackie Robinson in 42&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Fun fact - This is the movie that earned Chadwick Boseman his role as Black Panther, and rightfully so. May he rest in peace.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why Deepseek is better than ChatGPT</title>
+				<link>http://localhost:1313/blog/deepseek/</link>
+				<pubDate>Tue, 01 Feb 2000 14:32:22 +0530</pubDate>
+				<guid>http://localhost:1313/blog/deepseek/</guid>
+				<description>&lt;h2 id=&#34;why-deepseek-is-better-than-chatgpt-a-comprehensive-analysis&#34;&gt;Why DeepSeek Is Better Than ChatGPT: A Comprehensive Analysis&lt;/h2&gt;&#xA;&lt;p&gt;In the rapidly evolving world of artificial intelligence, language models like ChatGPT have made significant strides in natural language processing, enabling machines to generate human-like text and engage in meaningful conversations. However, as a more advanced iteration of AI, DeepSeek brings several key advantages that set it apart from ChatGPT. Here’s why DeepSeek is better:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1-enhanced-contextual-understanding&#34;&gt;1. &lt;strong&gt;Enhanced Contextual Understanding&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;While ChatGPT is impressive in its ability to generate coherent responses, DeepSeek is designed with a deeper understanding of context. It can maintain longer and more complex conversations without losing track of the topic. This allows DeepSeek to provide more accurate and relevant responses, especially in nuanced or multi-layered discussions.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Lorem Ipsum</title>
+				<link>http://localhost:1313/blog/loremipsum/</link>
+				<pubDate>Fri, 21 Jan 2000 17:26:28 +0530</pubDate>
+				<guid>http://localhost:1313/blog/loremipsum/</guid>
+				<description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;&#xA;&lt;p&gt;Mauris dapibus volutpat libero, eu malesuada nulla. Aenean at tincidunt mi. Fusce eget enim et orci facilisis efficitur. Quisque sit amet orci non ipsum interdum congue vel ac neque. Etiam suscipit nulla at turpis venenatis, non sollicitudin justo sollicitudin.&lt;/p&gt;&#xA;&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;&#xA;&lt;p&gt;Sed sit amet ligula placerat, interdum mi eget, blandit sem. Donec eget metus ac eros scelerisque rhoncus. Fusce eget justo eu ante vulputate sodales. Nulla et orci et elit fringilla ullamcorper sed vel purus.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
